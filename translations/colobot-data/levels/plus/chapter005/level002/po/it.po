@@ -1,0 +1,156 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Invasion"
+msgstr "Invasione"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Hold out against a giant ant invasion."
+msgstr "Resisti all’invasione delle formiche giganti."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid "Eliminate all hostile presence from the region."
+msgstr "Elimina tutte le presenze ostili dalla zona."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Your current situation is of utmost concern to us. The satellite has "
+"detected an extremely strong enemy presence approaching your spaceship from "
+"all directions. Use your best judgment and the quickest, most efficient "
+"defense: either <a object|tower>towers</a> or <a object|botfr>shooters</a>."
+msgstr ""
+"La tua situazione ci preoccupa molto. Il satellite ha rilevato un’enorme "
+"forza nemica che si avvicina all’astronave da ogni direzione. Scegli la "
+"difesa più rapida ed efficace: <a object|tower>torri</a> o <a "
+"object|botfr>robot tiratori</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"In order to increase your survival chances, we have developed a program that"
+" will protect your west flank if you execute it on your <a "
+"object|botfr>wheeled shooter</a>; see the program page <button 53/>."
+msgstr ""
+"Per aumentare le tue possibilità di sopravvivenza, abbiamo sviluppato un "
+"programma che proteggerà il fianco occidentale se eseguito sul <a "
+"object|botfr>robot tiratore su ruote</a>: consulta la pagina dei programmi "
+"<button 53/>."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Saari."
+msgstr "Attualmente in orbita geostazionaria attorno a Saari."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      38.4C\n"
+"\\tab;Atmosphere:       CO2, oxygen, nitrogen\n"
+"\\tab;Wind:             1.4 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      38.4C\n"
+"\\tab;Atmosfera:       CO2, ossigeno, azoto\n"
+"\\tab;Vento:             1.4 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    everywhere\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    ovunque\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants approaching \n"
+"\\tab;  - Danger:       yes, immediate"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti in avvicinamento \n"
+"\\tab;  - Pericolo:       sì, immediato"

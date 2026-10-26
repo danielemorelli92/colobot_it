@@ -1,0 +1,226 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Equipment"
+msgstr "Equipaggiamento"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Prepare yourself to embark on mankind's most thrilling adventure yet."
+msgstr ""
+"Preparati a intraprendere l'avventura più emozionante mai vissuta "
+"dall'umanità."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From the NASA Training Center"
+msgstr "Dal centro di addestramento della NASA"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"We are pleased to inform you that you have been selected for the space "
+"exploration mission Colobot."
+msgstr ""
+"Siamo lieti di informarti che sei stato selezionato per la missione di "
+"esplorazione spaziale Colobot."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Your psychological profile has been established as more than 98.84% "
+"favorable, and your aptitude during the extensive testing period was "
+"undeniable. The detailed results are at your disposal in the central "
+"computer under the registration number that was assigned to you."
+msgstr ""
+"Il tuo profilo psicologico è risultato favorevole per oltre il 98,84% e le "
+"tue capacità durante il lungo periodo di prove sono state indiscutibili. I "
+"risultati dettagliati sono a tua disposizione nel computer centrale, al "
+"numero di registrazione che ti è stato assegnato."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"Please report to the <a object|Huston>Houston Mission Control</a> for "
+"further directives about your forthcoming mission."
+msgstr ""
+"Presentati al <a object|Huston>centro di controllo missione di Houston</a> "
+"per ulteriori direttive sulla tua prossima missione."
+
+#. type: \b; header
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid "From Houston Mission Control"
+msgstr "Dal centro di controllo missione di Houston"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid ""
+"As you know, Earth is heading towards imminent disaster, due to increasing "
+"atmospheric pollution."
+msgstr ""
+"Come sai, la Terra si sta avvicinando a una catastrofe imminente a causa del"
+" crescente inquinamento atmosferico."
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid ""
+"<a object|human>Your</a> mission consists of exploring neighboring galaxies "
+"with the hopes of finding a planet that will be suitable to human needs and "
+"possibly serve as a shelter for mankind. You will be on your own for the "
+"entire mission but your spaceship will be carrying a few bots along."
+msgstr ""
+"La <a object|human>tua</a> missione consiste nell’esplorare le galassie "
+"vicine nella speranza di trovare un pianeta adatto alle esigenze umane, che "
+"possa offrire rifugio all’umanità. Sarai solo per tutta la missione, ma la "
+"tua astronave trasporterà alcuni robot."
+
+#. type: Plain text
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid ""
+"Eight months ago an expedition composed entirely of robots was sent across "
+"the cosmos with the same objective. It encountered a fair share of obstacles"
+" along the way, apparently landing on planets that were unsuitable for "
+"colonization, even possibly outright hostile. Very recently all "
+"communications were terminated."
+msgstr ""
+"Otto mesi fa una spedizione composta interamente da robot è stata inviata "
+"nel cosmo con lo stesso obiettivo. Ha incontrato numerosi ostacoli, "
+"atterrando apparentemente su pianeti inadatti alla colonizzazione, forse "
+"persino ostili. Di recente tutte le comunicazioni si sono interrotte."
+
+#. type: Plain text
+#: ../help/help.E.txt:15
+#, no-wrap
+msgid ""
+"The reasons for the mission's failure are unclear at this date, mainly "
+"because of recurrent transmission problems. It is our hope that you will be "
+"able to use some of the data it gathered to your advantage."
+msgstr ""
+"Le ragioni del fallimento della missione sono tuttora poco chiare, "
+"soprattutto a causa di ricorrenti problemi di trasmissione. Speriamo che tu "
+"possa sfruttare alcuni dei dati raccolti."
+
+#. type: \b; header
+#: ../help/help.E.txt:17
+#, no-wrap
+msgid "Immediate Objective"
+msgstr "Obiettivo immediato"
+
+#. type: Plain text
+#: ../help/help.E.txt:18
+#, no-wrap
+msgid ""
+"The Nevada desert is already bustling with activity. Bots are setting up a "
+"space station catered to your specific needs."
+msgstr ""
+"Il deserto del Nevada è già in piena attività. I robot stanno allestendo una"
+" stazione spaziale adatta alle tue esigenze specifiche."
+
+#. type: Plain text
+#: ../help/help.E.txt:20
+#, no-wrap
+msgid ""
+"In order to let you familiarize with your spacesuit and equipment, we have "
+"set up a few training drills."
+msgstr ""
+"Per permetterti di familiarizzare con la tuta spaziale e l’equipaggiamento, "
+"abbiamo preparato alcune esercitazioni."
+
+#. type: Plain text
+#: ../help/help.E.txt:22
+#, no-wrap
+msgid ""
+"In the first drill, you need to find your survival kit that contains all the"
+" tools necessary to brave the cold of outer space. It is easy to spot since "
+"it contains both an orange and a blue tank."
+msgstr ""
+"Nella prima esercitazione devi trovare il kit di sopravvivenza, che contiene"
+" tutti gli strumenti necessari per affrontare il freddo dello spazio. È "
+"facile da riconoscere: contiene una bombola arancione e una blu."
+
+#. type: Plain text
+#: ../help/help.E.txt:24
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:26 ../help/soluce.E.txt:10
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:27 ../help/soluce.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid "To find the survival kit from your starting point :"
+msgstr "Per trovare il kit di sopravvivenza dal punto di partenza:"
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid "Follow the road heading south."
+msgstr "Segui la strada verso sud."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:5
+#, no-wrap
+msgid "Turn east (left) at the first crossroad."
+msgstr "Al primo incrocio gira verso est (a sinistra)."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"The survival kit is lying between the northern wall of Mission Control and "
+"the first tree on the right hand side of the road."
+msgstr ""
+"Il kit di sopravvivenza si trova tra il muro settentrionale del centro di "
+"controllo missione e il primo albero sul lato destro della strada."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid "Just position yourself close to it to successfully complete the drill."
+msgstr "Avvicinati al kit per completare l’esercitazione."

@@ -1,0 +1,216 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Safe Home"
+msgstr "Ritorno al sicuro"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Get back to your spaceship."
+msgstr "Torna alla tua astronave."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid "Congratulations on a fine job as usual."
+msgstr "Complimenti per l’ottimo lavoro, come sempre."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"This new weapon appears to be yet another practical application of what "
+"we've come to refer to as \"green gold\", the <a object|bullet>organic "
+"matter</a> produced by the insects. We've named this bot the <a "
+"object|botoj>orga shooter</a> or bot equipped with an orgaball cannon."
+msgstr ""
+"Questa nuova arma sembra un’altra applicazione pratica di ciò che chiamiamo "
+"«oro verde», la <a object|bullet>materia organica</a> prodotta dagli "
+"insetti. Abbiamo chiamato questo robot <a object|botoj>tiratore "
+"organico</a>: è dotato di un cannone a proiettili organici."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"It will most certainly come in handy as you make your way back to your <a "
+"object|base>spaceship</a>."
+msgstr ""
+"Ti sarà sicuramente utile per tornare alla tua <a object|base>astronave</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:10 ../help/soluce.E.txt:10
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Volcano."
+msgstr "Attualmente in orbita geostazionaria attorno a Volcano."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      96.6C\n"
+"\\tab;Atmosphere:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Wind:             2.7 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      96.6C\n"
+"\\tab;Atmosfera:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Vento:             2.7 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       immediate\n"
+"\\tab;Detected:         giant spiders\n"
+"\\tab;  - Danger:       not immediate"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       immediato\n"
+"\\tab;Rilevato:         ragni giganti\n"
+"\\tab;  - Pericolo:       non immediato"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Everything is blowing up around you. You need to leave the old basecamp as "
+"quickly as possible. Just retreat the same way you came."
+msgstr ""
+"Tutto sta esplodendo attorno a te. Devi abbandonare al più presto il vecchio"
+" accampamento. Ritirati per la stessa strada da cui sei arrivato."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"<a object|ant>Ants</a> are fairly easy to avoid. If you're badly hit, find a"
+" quiet spot and wait until your shield has regenerated."
+msgstr ""
+"Le <a object|ant>formiche</a> sono abbastanza facili da evitare. Se subisci "
+"molti danni, trova un posto tranquillo e attendi che lo scudo si rigeneri."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"<a object|spider>Spiders</a> are a bit tougher but also more stupid. As soon"
+" as they see you, they burst their abdomen, dying in the process. If one "
+"fragment hits you, you'll die too. One risky but efficient method to rid "
+"yourself of a spider consists in moving dangerously close and, when the "
+"spider's abdomen starts inflating, swiftly fly backwards to safety."
+msgstr ""
+"I <a object|spider>ragni</a> sono più resistenti, ma anche più stupidi. "
+"Appena ti vedono fanno esplodere l’addome e muoiono. Se un frammento ti "
+"colpisce, morirai anche tu. Un metodo rischioso ma efficace consiste "
+"nell’avvicinarsi molto e, appena l’addome comincia a gonfiarsi, volare "
+"rapidamente all’indietro per mettersi al sicuro."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid ""
+"As soon as you have reached a quiet island, you can use the <a "
+"object|botoj>winged orga shooter</a> to clear your way of hostile insects. "
+"Be careful not to lose it, otherwise the whole mission would be in vain."
+msgstr ""
+"Raggiunta un’isola tranquilla, puoi usare il <a object|botoj>robot tiratore "
+"organico volante</a> per liberare il percorso dagli insetti ostili. Non "
+"perderlo, altrimenti l’intera missione sarà stata inutile."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

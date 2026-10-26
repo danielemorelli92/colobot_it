@@ -1,0 +1,167 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Poison Hail"
+msgstr "Grandine velenosa"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Retrieve the second key using only defensive strategies."
+msgstr "Recupera la seconda chiave usando soltanto strategie difensive."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"Retrieve the second <a object|key>key</a> (B). It should be located near "
+"your current position."
+msgstr ""
+"Recupera la seconda <a object|key>chiave</a> (B). Dovrebbe essere vicina "
+"alla tua posizione."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"When your mission is completed and before taking off, bring both <a "
+"object|botshld>shielder</a> and <a object|botsub>subber</a> aboard your "
+"spaceship."
+msgstr ""
+"Dopo aver completato la missione e prima di decollare, porta a bordo "
+"dell’astronave il <a object|botshld>robot scudo</a> e il <a "
+"object|botsub>robot sommergibile</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:8 ../help/soluce.E.txt:5
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Terranova."
+msgstr "Attualmente in orbita geostazionaria attorno a Terranova."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      24.3C\n"
+"\\tab;Atmosphere:       oxygen\n"
+"\\tab;Wind:             0.8 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      24.3C\n"
+"\\tab;Atmosfera:       ossigeno\n"
+"\\tab;Vento:             0.8 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       immediate"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       immediato"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Unfortunately no walkthrough has been provided for this mission.\n"
+"You are on your own..."
+msgstr ""
+"Purtroppo per questa missione non è disponibile una soluzione.\n"
+"Dovrai cavartela da solo..."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

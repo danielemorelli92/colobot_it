@@ -1,0 +1,181 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "System Failure"
+msgstr "Guasto di sistema"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Pursue a rogue bot."
+msgstr "Insegui un robot fuori controllo."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"We have just received this warning from the observation satellite: a rogue "
+"bot from the previous expedition has seized the black box from your "
+"spaceship."
+msgstr ""
+"Abbiamo appena ricevuto questo allarme dal satellite: un robot fuori "
+"controllo della spedizione precedente ha sottratto la scatola nera dalla tua"
+" astronave."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"We are going to investigate this incident further but it is of vital "
+"importance that you retrieve your black box at once."
+msgstr ""
+"Indagheremo sull’incidente, ma è essenziale che tu recuperi subito la "
+"scatola nera."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:8 ../help/soluce.E.txt:6
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Crystalium."
+msgstr "Attualmente in orbita geostazionaria attorno a Crystalium."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      4.3C\n"
+"\\tab;Atmosphere:       nitrogen\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      4.3C\n"
+"\\tab;Atmosfera:       azoto\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         unknown organisms\n"
+"\\tab;  - Danger:       ?"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         organismi sconosciuti\n"
+"\\tab;  - Pericolo:       ?"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"If you lose the bot, it will drop the black box somewhere southwest of your "
+"spaceship on a region surrounded by crystals."
+msgstr ""
+"Se perdi di vista il robot, lascerà la scatola nera a sud-ovest "
+"dell’astronave, in una zona circondata da cristalli."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"In case your power runs out before you can bring the black box back, use the"
+" second grabber left on the spaceship."
+msgstr ""
+"Se esaurisci l’energia prima di riportare la scatola nera a bordo, usa il "
+"secondo robot trasportatore rimasto sull’astronave."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

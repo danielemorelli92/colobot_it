@@ -1,0 +1,1024 @@
+[
+  {
+    "repository": "colobot",
+    "template": "desktop/po/colobot-desktop.pot",
+    "entries": 58,
+    "words": 238,
+    "translated": 10
+  },
+  {
+    "repository": "colobot",
+    "template": "po/colobot.pot",
+    "entries": 659,
+    "words": 2439,
+    "translated": 26
+  },
+  {
+    "repository": "colobot-data",
+    "template": "help/bots/po/bots.pot",
+    "entries": 176,
+    "words": 2255,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "help/cbot/po/cbot.pot",
+    "entries": 1143,
+    "words": 18109,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "help/generic/po/generic.pot",
+    "entries": 141,
+    "words": 2458,
+    "translated": 4
+  },
+  {
+    "repository": "colobot-data",
+    "template": "help/object/po/object.pot",
+    "entries": 323,
+    "words": 3643,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "help/programs/po/programs.pot",
+    "entries": 46,
+    "words": 1704,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter001/level001/po/battle101.pot",
+    "entries": 10,
+    "words": 85,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter001/level002/po/battle102.pot",
+    "entries": 8,
+    "words": 78,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter002/level001/po/battle201.pot",
+    "entries": 15,
+    "words": 178,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter002/level002/po/battle202.pot",
+    "entries": 9,
+    "words": 73,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter002/level003/po/battle203.pot",
+    "entries": 6,
+    "words": 48,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/chapter002/level004/po/battle204.pot",
+    "entries": 6,
+    "words": 57,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/battles/po/battles.pot",
+    "entries": 2,
+    "words": 2,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter001/level001/po/defi101.pot",
+    "entries": 9,
+    "words": 70,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter001/level002/po/defi102.pot",
+    "entries": 9,
+    "words": 71,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter001/level003/po/defi103.pot",
+    "entries": 16,
+    "words": 154,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter001/level004/po/defi104.pot",
+    "entries": 9,
+    "words": 96,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter002/level001/po/defi201.pot",
+    "entries": 11,
+    "words": 111,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter002/level002/po/defi202.pot",
+    "entries": 15,
+    "words": 187,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter002/level003/po/defi203.pot",
+    "entries": 11,
+    "words": 103,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter002/level004/po/defi204.pot",
+    "entries": 19,
+    "words": 208,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter002/level005/po/defi205.pot",
+    "entries": 8,
+    "words": 100,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter003/level001/po/defi301.pot",
+    "entries": 26,
+    "words": 187,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter003/level002/po/defi302.pot",
+    "entries": 9,
+    "words": 87,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter004/level001/po/defi401.pot",
+    "entries": 13,
+    "words": 123,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/chapter004/level002/po/defi402.pot",
+    "entries": 12,
+    "words": 140,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/challenges/po/challenges.pot",
+    "entries": 6,
+    "words": 6,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level001/po/train101.pot",
+    "entries": 38,
+    "words": 503,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level002/po/train102.pot",
+    "entries": 29,
+    "words": 284,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level003/po/train103.pot",
+    "entries": 12,
+    "words": 182,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level004/po/train104.pot",
+    "entries": 27,
+    "words": 529,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level005/po/train105.pot",
+    "entries": 20,
+    "words": 438,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level006/po/train106.pot",
+    "entries": 13,
+    "words": 185,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter001/level007/po/train107.pot",
+    "entries": 12,
+    "words": 180,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level001/po/train201.pot",
+    "entries": 15,
+    "words": 294,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level002/po/train202.pot",
+    "entries": 15,
+    "words": 350,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level003/po/train203.pot",
+    "entries": 15,
+    "words": 308,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level004/po/train204.pot",
+    "entries": 10,
+    "words": 156,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level005/po/train205.pot",
+    "entries": 15,
+    "words": 336,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level006/po/train206.pot",
+    "entries": 12,
+    "words": 277,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter002/level007/po/train207.pot",
+    "entries": 23,
+    "words": 463,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level001/po/train301.pot",
+    "entries": 21,
+    "words": 254,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level002/po/train302.pot",
+    "entries": 37,
+    "words": 458,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level003/po/train303.pot",
+    "entries": 35,
+    "words": 342,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level004/po/train304.pot",
+    "entries": 24,
+    "words": 285,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level005/po/train305.pot",
+    "entries": 28,
+    "words": 320,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level006/po/train306.pot",
+    "entries": 38,
+    "words": 511,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level007/po/train307.pot",
+    "entries": 20,
+    "words": 273,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level008/po/train308.pot",
+    "entries": 17,
+    "words": 305,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter003/level009/po/train309.pot",
+    "entries": 24,
+    "words": 252,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter004/level001/po/train401.pot",
+    "entries": 39,
+    "words": 524,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter004/level002/po/train402.pot",
+    "entries": 31,
+    "words": 552,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter004/level003/po/train403.pot",
+    "entries": 9,
+    "words": 105,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter004/level004/po/train404.pot",
+    "entries": 17,
+    "words": 145,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter004/level005/po/train405.pot",
+    "entries": 28,
+    "words": 548,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter005/level001/po/train501.pot",
+    "entries": 24,
+    "words": 398,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter005/level002/po/train502.pot",
+    "entries": 22,
+    "words": 303,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter005/level003/po/train503.pot",
+    "entries": 34,
+    "words": 373,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter005/level004/po/train504.pot",
+    "entries": 19,
+    "words": 330,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter006/level001/po/train601.pot",
+    "entries": 27,
+    "words": 488,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter006/level002/po/train602.pot",
+    "entries": 16,
+    "words": 310,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter006/level003/po/train603.pot",
+    "entries": 25,
+    "words": 375,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter007/level001/po/train701.pot",
+    "entries": 37,
+    "words": 585,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter007/level002/po/train702.pot",
+    "entries": 46,
+    "words": 673,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/chapter007/level003/po/train703.pot",
+    "entries": 41,
+    "words": 636,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/exercises/po/exercises.pot",
+    "entries": 11,
+    "words": 24,
+    "translated": 0
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter001/level001/po/free101.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter002/level001/po/free201.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter003/level001/po/free301.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter004/level001/po/free401.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter005/level001/po/free501.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter006/level001/po/free601.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter007/level001/po/free701.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter008/level001/po/free801.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/chapter009/level001/po/free901.pot",
+    "entries": 2,
+    "words": 17,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/free/po/free.pot",
+    "entries": 18,
+    "words": 28,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter001/level001/po/scene101.pot",
+    "entries": 24,
+    "words": 401,
+    "translated": 24
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter001/level002/po/scene102.pot",
+    "entries": 18,
+    "words": 238,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter001/level003/po/scene103.pot",
+    "entries": 38,
+    "words": 524,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter002/level001/po/scene201.pot",
+    "entries": 30,
+    "words": 537,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter002/level002/po/scene202.pot",
+    "entries": 23,
+    "words": 282,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter002/level003/po/scene203.pot",
+    "entries": 17,
+    "words": 164,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter002/level004/po/scene204.pot",
+    "entries": 30,
+    "words": 452,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter003/level001/po/scene301.pot",
+    "entries": 19,
+    "words": 176,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter003/level002/po/scene302.pot",
+    "entries": 22,
+    "words": 510,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter003/level003/po/scene303.pot",
+    "entries": 26,
+    "words": 381,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter003/level004/po/scene304.pot",
+    "entries": 20,
+    "words": 279,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter003/level005/po/scene305.pot",
+    "entries": 27,
+    "words": 251,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter004/level001/po/scene401.pot",
+    "entries": 28,
+    "words": 341,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter004/level002/po/scene402.pot",
+    "entries": 30,
+    "words": 332,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter004/level003/po/scene403.pot",
+    "entries": 20,
+    "words": 182,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter004/level004/po/scene404.pot",
+    "entries": 21,
+    "words": 223,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter005/level001/po/scene501.pot",
+    "entries": 25,
+    "words": 276,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter005/level002/po/scene502.pot",
+    "entries": 22,
+    "words": 297,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter005/level003/po/scene503.pot",
+    "entries": 21,
+    "words": 223,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level001/po/scene601.pot",
+    "entries": 26,
+    "words": 318,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level002/po/scene602.pot",
+    "entries": 31,
+    "words": 436,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level003/po/scene603.pot",
+    "entries": 21,
+    "words": 183,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level004/po/scene604.pot",
+    "entries": 23,
+    "words": 363,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level005/po/scene605.pot",
+    "entries": 23,
+    "words": 308,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter006/level006/po/scene606.pot",
+    "entries": 20,
+    "words": 209,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter007/level001/po/scene701.pot",
+    "entries": 29,
+    "words": 375,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter007/level002/po/scene702.pot",
+    "entries": 16,
+    "words": 165,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter007/level003/po/scene703.pot",
+    "entries": 22,
+    "words": 300,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter007/level004/po/scene704.pot",
+    "entries": 32,
+    "words": 452,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter007/level005/po/scene705.pot",
+    "entries": 22,
+    "words": 173,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter008/level001/po/scene801.pot",
+    "entries": 31,
+    "words": 244,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter008/level002/po/scene802.pot",
+    "entries": 22,
+    "words": 241,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter009/level001/po/scene901.pot",
+    "entries": 22,
+    "words": 294,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter009/level002/po/scene902.pot",
+    "entries": 19,
+    "words": 134,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter009/level003/po/scene903.pot",
+    "entries": 19,
+    "words": 156,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/chapter009/level004/po/scene904.pot",
+    "entries": 21,
+    "words": 245,
+    "translated": 2
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/missions/po/missions.pot",
+    "entries": 18,
+    "words": 28,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter001/level001/po/plus101.pot",
+    "entries": 23,
+    "words": 444,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter002/level001/po/plus201.pot",
+    "entries": 23,
+    "words": 302,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter002/level002/po/plus202.pot",
+    "entries": 19,
+    "words": 205,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter002/level003/po/plus203.pot",
+    "entries": 20,
+    "words": 291,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter003/level001/po/plus301.pot",
+    "entries": 19,
+    "words": 210,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter003/level002/po/plus302.pot",
+    "entries": 16,
+    "words": 198,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter003/level003/po/plus303.pot",
+    "entries": 16,
+    "words": 142,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter004/level001/po/plus401.pot",
+    "entries": 18,
+    "words": 270,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter004/level002/po/plus402.pot",
+    "entries": 17,
+    "words": 219,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter004/level003/po/plus403.pot",
+    "entries": 16,
+    "words": 135,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter004/level004/po/plus404.pot",
+    "entries": 17,
+    "words": 148,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter005/level001/po/plus501.pot",
+    "entries": 15,
+    "words": 117,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter005/level002/po/plus502.pot",
+    "entries": 17,
+    "words": 166,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter005/level003/po/plus503.pot",
+    "entries": 16,
+    "words": 159,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level001/po/plus601.pot",
+    "entries": 18,
+    "words": 184,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level002/po/plus602.pot",
+    "entries": 17,
+    "words": 177,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level003/po/plus603.pot",
+    "entries": 21,
+    "words": 259,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level004/po/plus604.pot",
+    "entries": 15,
+    "words": 111,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level005/po/plus605.pot",
+    "entries": 16,
+    "words": 173,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter006/level006/po/plus606.pot",
+    "entries": 15,
+    "words": 102,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter007/level001/po/plus701.pot",
+    "entries": 17,
+    "words": 146,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter007/level002/po/plus702.pot",
+    "entries": 13,
+    "words": 117,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter007/level003/po/plus703.pot",
+    "entries": 16,
+    "words": 151,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter007/level004/po/plus704.pot",
+    "entries": 22,
+    "words": 390,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter007/level005/po/plus705.pot",
+    "entries": 16,
+    "words": 130,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter008/level001/po/plus801.pot",
+    "entries": 18,
+    "words": 150,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter008/level002/po/plus802.pot",
+    "entries": 17,
+    "words": 141,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter009/level001/po/plus901.pot",
+    "entries": 19,
+    "words": 277,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter009/level002/po/plus902.pot",
+    "entries": 16,
+    "words": 117,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter009/level003/po/plus903.pot",
+    "entries": 16,
+    "words": 139,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/chapter009/level004/po/plus904.pot",
+    "entries": 18,
+    "words": 228,
+    "translated": 1
+  },
+  {
+    "repository": "colobot-data",
+    "template": "levels/plus/po/missions.pot",
+    "entries": 18,
+    "words": 28,
+    "translated": 1
+  }
+]

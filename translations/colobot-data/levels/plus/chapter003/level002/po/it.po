@@ -1,0 +1,152 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Shooting Drill #1"
+msgstr "Esercitazione di tiro n. 1"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Sharpen your flying and shooting skills."
+msgstr "Affina le tue abilità di volo e di tiro."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"This is another training course set up by your predecessors and intended "
+"this time to test and train the firing capacity of <a object|botfj>winged "
+"bots</a>. Use it to familiarize yourself with the two simultaneous actions "
+"of shooting while flying."
+msgstr ""
+"Anche questo percorso è stato allestito dai tuoi predecessori, questa volta "
+"per mettere alla prova le capacità di tiro dei <a object|botfj>robot "
+"volanti</a>. Usalo per esercitarti a sparare e volare contemporaneamente."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Fly quickly through all targets and shoot all 10 explosive devices scattered"
+" along the way. Try to complete the drill without touching down. Watch your "
+"reactor though: if it overheats, just settle the bot and let it cool off."
+msgstr ""
+"Attraversa rapidamente tutti i bersagli e distruggi i 10 ordigni lungo il "
+"percorso. Cerca di completare l’esercitazione senza atterrare. Controlla il "
+"propulsore: se si surriscalda, posa il robot a terra e lascialo raffreddare."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"Use one hand on the keyboard to pilot the bot, and the other hand on the "
+"mouse to aim and to shoot (left button)."
+msgstr ""
+"Usa una mano sulla tastiera per pilotare il robot e l’altra sul mouse per "
+"mirare e sparare con il pulsante sinistro."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"It may be useful to come back to these drills once in a while if you wish to"
+" improve your reflexes further."
+msgstr ""
+"Può essere utile tornare ogni tanto su questi percorsi per migliorare "
+"ulteriormente i riflessi."
+
+#. type: Plain text
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:12
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Tropica."
+msgstr "Attualmente in orbita geostazionaria attorno a Tropica."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      32.2C\n"
+"\\tab;Atmosphere:       helium, oxygen\n"
+"\\tab;Wind:             0.7 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      32.2C\n"
+"\\tab;Atmosfera:       elio, ossigeno\n"
+"\\tab;Vento:             0.7 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"

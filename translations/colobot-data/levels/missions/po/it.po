@@ -1,0 +1,123 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../chapter001/chaptertitle.txt:1
+#, no-wrap
+msgid "Leaving Earth"
+msgstr "Partenza dalla Terra"
+
+#. type: Title-resume
+#: ../chapter001/chaptertitle.txt:1
+#, no-wrap
+msgid "Earth"
+msgstr "Terra"
+
+#. type: Title-text
+#: ../chapter002/chaptertitle.txt:1
+#, no-wrap
+msgid "On the Moon"
+msgstr "Sulla Luna"
+
+#. type: Title-resume
+#: ../chapter002/chaptertitle.txt:1
+#, no-wrap
+msgid "Moon"
+msgstr "Luna"
+
+#. type: Title-text
+#: ../chapter003/chaptertitle.txt:1
+#, no-wrap
+msgid "On Tropica"
+msgstr "Su Tropica"
+
+#. type: Title-resume
+#: ../chapter003/chaptertitle.txt:1
+#, no-wrap
+msgid "Tropica"
+msgstr "Tropica"
+
+#. type: Title-text
+#: ../chapter004/chaptertitle.txt:1
+#, no-wrap
+msgid "On Crystalium"
+msgstr "Su Crystalium"
+
+#. type: Title-resume
+#: ../chapter004/chaptertitle.txt:1
+#, no-wrap
+msgid "Crystalium"
+msgstr "Crystalium"
+
+#. type: Title-text
+#: ../chapter005/chaptertitle.txt:1
+#, no-wrap
+msgid "On Saari"
+msgstr "Su Saari"
+
+#. type: Title-resume
+#: ../chapter005/chaptertitle.txt:1
+#, no-wrap
+msgid "Saari"
+msgstr "Saari"
+
+#. type: Title-text
+#: ../chapter006/chaptertitle.txt:1
+#, no-wrap
+msgid "On Volcano"
+msgstr "Su Volcano"
+
+#. type: Title-resume
+#: ../chapter006/chaptertitle.txt:1
+#, no-wrap
+msgid "Volcano"
+msgstr "Volcano"
+
+#. type: Title-text
+#: ../chapter007/chaptertitle.txt:1
+#, no-wrap
+msgid "On Centaury"
+msgstr "Su Centaury"
+
+#. type: Title-resume
+#: ../chapter007/chaptertitle.txt:1
+#, no-wrap
+msgid "Centaury"
+msgstr "Centaury"
+
+#. type: Title-text
+#: ../chapter008/chaptertitle.txt:1
+#, no-wrap
+msgid "On Orpheon"
+msgstr "Su Orpheon"
+
+#. type: Title-resume
+#: ../chapter008/chaptertitle.txt:1
+#, no-wrap
+msgid "Orpheon"
+msgstr "Orpheon"
+
+#. type: Title-text
+#: ../chapter009/chaptertitle.txt:1
+#, no-wrap
+msgid "On Terranova"
+msgstr "Su Terranova"
+
+#. type: Title-resume
+#: ../chapter009/chaptertitle.txt:1
+#, no-wrap
+msgid "Terranova"
+msgstr "Terranova"

@@ -1,0 +1,181 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Alien Queen"
+msgstr "Regina aliena"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid ""
+"Get the fourth key, open the vault and make the planet safe for human "
+"habitation."
+msgstr ""
+"Recupera la quarta chiave, apri il deposito blindato e rendi il pianeta "
+"sicuro per l’insediamento umano."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"With the help of the fourth <a object|key>key</a> (D) located nearby, you "
+"will finally gain access to the <a object|safe>vault</a>. The groundbreaking"
+" bot you'll find inside was named a \"<a object|botphaz>phazer</a>\"."
+msgstr ""
+"Con la quarta <a object|key>chiave</a> (D), che si trova nelle vicinanze, "
+"potrai finalmente aprire il <a object|safe>deposito blindato</a>. "
+"L’innovativo robot al suo interno è stato chiamato «<a "
+"object|botphaz>tiratore a fasore</a>»."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"A program allowing for a collaboration between a <a "
+"object|botphaz>phazer</a> and a <a object|botshld>shielder</a> has been "
+"attached."
+msgstr ""
+"È allegato un programma per coordinare un <a object|botphaz>robot tiratore a"
+" fasore</a> con un <a object|botshld>robot scudo</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"You should soon find yourself in a position to test your new weapon. Your "
+"last mission is to dispose of the <a object|mother>Alien Queen</a>, the "
+"egglayer responsible for the growing number of insects on Terranova. The "
+"phazer might very well be the only bot capable of getting the job done."
+msgstr ""
+"Presto potrai mettere alla prova la nuova arma. L’ultima missione è "
+"eliminare la <a object|mother>Regina aliena</a>, responsabile delle uova da "
+"cui nascono i sempre più numerosi insetti di Terranova. Il tiratore a fasore"
+" potrebbe essere l’unico robot in grado di riuscirci."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"There will then be no further obstacle to the human colonization of this "
+"magnificent planet and you'll soon be able to notify Earth of the success of"
+" your mission."
+msgstr ""
+"Non resterà più alcun ostacolo alla colonizzazione umana di questo splendido"
+" pianeta e potrai finalmente comunicare alla Terra il successo della "
+"missione."
+
+#. type: Plain text
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:12
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Terranova."
+msgstr "Attualmente in orbita geostazionaria attorno a Terranova."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      23.7C\n"
+"\\tab;Atmosphere:       oxygen\n"
+"\\tab;Wind:             0.5 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      some"
+msgstr ""
+"\\tab;Temperatura:      23.7C\n"
+"\\tab;Atmosfera:       ossigeno\n"
+"\\tab;Vento:             0.5 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      presente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    in some places (spaceship)\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    in alcuni punti (astronave)\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       immediate\n"
+"\\tab;Detected:         giant egglayer\n"
+"\\tab;  - Danger:       ?"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       immediato\n"
+"\\tab;Rilevato:         enorme organismo che depone uova\n"
+"\\tab;  - Pericolo:       ?"

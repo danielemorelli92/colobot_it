@@ -1,0 +1,233 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Black Box"
+msgstr "Scatola nera"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Explore the underwater world looking for another black box."
+msgstr "Esplora il mondo sommerso alla ricerca di un’altra scatola nera."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"Locate and retrieve another <a object|bbox>black box</a> from the previous "
+"expedition."
+msgstr ""
+"Trova e recupera un’altra <a object|bbox>scatola nera</a> della spedizione "
+"precedente."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"The observation satellite seems to have spotted it underwater. Water is "
+"harmless to you as long as you wear your helmet but keep in mind that you "
+"can't carry objects underwater. A <a object|botsub>subber</a> may come in "
+"handy."
+msgstr ""
+"Il satellite sembra averla individuata sott’acqua. Con il casco l’acqua non "
+"è pericolosa, ma ricorda che non puoi trasportare oggetti quando sei "
+"immerso. Un <a object|botsub>robot sommergibile</a> potrebbe esserti utile."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:8 ../help/soluce.E.txt:14
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Tropica."
+msgstr "Attualmente in orbita geostazionaria attorno a Tropica."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      29.4C\n"
+"\\tab;Atmosphere:       helium, oxygen\n"
+"\\tab;Wind:             0.3 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      29.4C\n"
+"\\tab;Atmosfera:       elio, ossigeno\n"
+"\\tab;Vento:             0.3 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         titanium ore\n"
+"\\tab;  - Requires:     converter\n"
+"\\tab;Detected:         scattered derelicts\n"
+"\\tab;Detected:         black box (underwater)"
+msgstr ""
+"\\tab;Rilevato:         minerale di titanio\n"
+"\\tab;  - Richiede:     convertitore\n"
+"\\tab;Rilevato:         relitti sparsi\n"
+"\\tab;Rilevato:         scatola nera (sott’acqua)"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Locate the <a object|bbox>black box</a> on your own. You can try to spot it "
+"from above, using your jet engine, or dive into the water."
+msgstr ""
+"Cerca personalmente la <a object|bbox>scatola nera</a>: puoi tentare di "
+"avvistarla dall’alto con il propulsore oppure immergerti."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:3
+#, no-wrap
+msgid ""
+"Build a <a object|convert>converter</a> near the chunks of titanium ore. "
+"You'll find them in the vicinity of the spaceship to the east."
+msgstr ""
+"Costruisci un <a object|convert>convertitore</a> vicino al minerale di "
+"titanio. Lo troverai nei pressi dell’astronave, verso est."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid "Produce two <a object|titan>cubes</a>."
+msgstr "Produci due <a object|titan>cubi</a>."
+
+#. type: Bullet: '4)'
+#: ../help/soluce.E.txt:5
+#, no-wrap
+msgid ""
+"Build a <a object|factory>bot factory</a> not too far from the black box."
+msgstr ""
+"Costruisci una <a object|factory>fabbrica di robot</a> non troppo lontano "
+"dalla scatola nera."
+
+#. type: Bullet: '5)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid "Manufacture a <a object|botsub>subber</a>."
+msgstr "Produci un <a object|botsub>robot sommergibile</a>."
+
+#. type: Bullet: '6)'
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid "Bring the black box back on board."
+msgstr "Riporta la scatola nera a bordo."
+
+#. type: Bullet: '7)'
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid "Take off."
+msgstr "Decolla."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:10
+#, no-wrap
+msgid ""
+"The black box is lying at the bottom of a small lake, northeast of the "
+"spaceship."
+msgstr ""
+"La scatola nera si trova sul fondo di un laghetto a nord-est dell’astronave."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:12
+#, no-wrap
+msgid ""
+"You can build the bot factory right beside the lake, on the south bank."
+msgstr ""
+"Puoi costruire la fabbrica di robot proprio accanto al lago, sulla riva "
+"meridionale."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:15
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

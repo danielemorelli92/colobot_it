@@ -1,0 +1,1178 @@
+{
+  "preview": "0.2",
+  "catalogs": 146,
+  "entries": 5172,
+  "nonempty": 2890,
+  "identical_to_source": 202,
+  "untranslated": 2282,
+  "details": [
+    {
+      "catalog": "translations/colobot/desktop/po/it.po",
+      "entries": 58,
+      "nonempty": 10,
+      "identical_to_source": 1,
+      "untranslated": 48,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot/po/it.po",
+      "entries": 659,
+      "nonempty": 657,
+      "identical_to_source": 7,
+      "untranslated": 2,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/help/bots/po/it.po",
+      "entries": 176,
+      "nonempty": 176,
+      "identical_to_source": 54,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "entries": 1142,
+      "nonempty": 5,
+      "identical_to_source": 0,
+      "untranslated": 1137,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/help/generic/po/it.po",
+      "entries": 141,
+      "nonempty": 141,
+      "identical_to_source": 12,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/help/object/po/it.po",
+      "entries": 323,
+      "nonempty": 323,
+      "identical_to_source": 101,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/help/programs/po/it.po",
+      "entries": 44,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 43,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter001/level001/po/it.po",
+      "entries": 10,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 9,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter001/level002/po/it.po",
+      "entries": 8,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 7,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level001/po/it.po",
+      "entries": 15,
+      "nonempty": 0,
+      "identical_to_source": 0,
+      "untranslated": 15,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level002/po/it.po",
+      "entries": 9,
+      "nonempty": 0,
+      "identical_to_source": 0,
+      "untranslated": 9,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level003/po/it.po",
+      "entries": 6,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 5,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level004/po/it.po",
+      "entries": 6,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 5,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/po/it.po",
+      "entries": 2,
+      "nonempty": 0,
+      "identical_to_source": 0,
+      "untranslated": 2,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter001/level001/po/it.po",
+      "entries": 9,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 7,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter001/level002/po/it.po",
+      "entries": 9,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 7,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter001/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 14,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter001/level004/po/it.po",
+      "entries": 9,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 7,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level001/po/it.po",
+      "entries": 11,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 8,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level002/po/it.po",
+      "entries": 15,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 13,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level003/po/it.po",
+      "entries": 11,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 8,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level004/po/it.po",
+      "entries": 19,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 17,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level005/po/it.po",
+      "entries": 8,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 6,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter003/level001/po/it.po",
+      "entries": 26,
+      "nonempty": 4,
+      "identical_to_source": 2,
+      "untranslated": 22,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter003/level002/po/it.po",
+      "entries": 9,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 7,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter004/level001/po/it.po",
+      "entries": 13,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 11,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter004/level002/po/it.po",
+      "entries": 12,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 10,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/po/it.po",
+      "entries": 6,
+      "nonempty": 0,
+      "identical_to_source": 0,
+      "untranslated": 6,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level001/po/it.po",
+      "entries": 38,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 36,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level002/po/it.po",
+      "entries": 29,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 27,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level003/po/it.po",
+      "entries": 12,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 11,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level004/po/it.po",
+      "entries": 27,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 24,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level005/po/it.po",
+      "entries": 20,
+      "nonempty": 4,
+      "identical_to_source": 0,
+      "untranslated": 16,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level006/po/it.po",
+      "entries": 13,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 10,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level007/po/it.po",
+      "entries": 12,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 9,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level001/po/it.po",
+      "entries": 15,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 12,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level002/po/it.po",
+      "entries": 15,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 12,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level003/po/it.po",
+      "entries": 15,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 12,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level004/po/it.po",
+      "entries": 10,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 8,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level005/po/it.po",
+      "entries": 15,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 12,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level006/po/it.po",
+      "entries": 12,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 9,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level007/po/it.po",
+      "entries": 23,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 20,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level001/po/it.po",
+      "entries": 21,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 18,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level002/po/it.po",
+      "entries": 37,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 35,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level003/po/it.po",
+      "entries": 35,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 33,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level004/po/it.po",
+      "entries": 24,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 21,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level005/po/it.po",
+      "entries": 28,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 25,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level006/po/it.po",
+      "entries": 38,
+      "nonempty": 3,
+      "identical_to_source": 1,
+      "untranslated": 35,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level007/po/it.po",
+      "entries": 20,
+      "nonempty": 4,
+      "identical_to_source": 0,
+      "untranslated": 16,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level008/po/it.po",
+      "entries": 17,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 14,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level009/po/it.po",
+      "entries": 24,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 22,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level001/po/it.po",
+      "entries": 39,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 36,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level002/po/it.po",
+      "entries": 31,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 29,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level003/po/it.po",
+      "entries": 9,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 6,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level004/po/it.po",
+      "entries": 17,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 14,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level005/po/it.po",
+      "entries": 28,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 26,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level001/po/it.po",
+      "entries": 24,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 22,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level002/po/it.po",
+      "entries": 22,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 20,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level003/po/it.po",
+      "entries": 34,
+      "nonempty": 4,
+      "identical_to_source": 2,
+      "untranslated": 30,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level004/po/it.po",
+      "entries": 19,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 17,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter006/level001/po/it.po",
+      "entries": 27,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 25,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter006/level002/po/it.po",
+      "entries": 16,
+      "nonempty": 3,
+      "identical_to_source": 0,
+      "untranslated": 13,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter006/level003/po/it.po",
+      "entries": 25,
+      "nonempty": 2,
+      "identical_to_source": 0,
+      "untranslated": 23,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter007/level001/po/it.po",
+      "entries": 37,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 36,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter007/level002/po/it.po",
+      "entries": 46,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 45,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter007/level003/po/it.po",
+      "entries": 41,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 40,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/po/it.po",
+      "entries": 11,
+      "nonempty": 0,
+      "identical_to_source": 0,
+      "untranslated": 11,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter001/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter002/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter003/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter004/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter005/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter006/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter007/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter008/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/chapter009/level001/po/it.po",
+      "entries": 2,
+      "nonempty": 1,
+      "identical_to_source": 0,
+      "untranslated": 1,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/free/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 7,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter001/level001/po/it.po",
+      "entries": 24,
+      "nonempty": 24,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter001/level002/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter001/level003/po/it.po",
+      "entries": 38,
+      "nonempty": 38,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter002/level001/po/it.po",
+      "entries": 30,
+      "nonempty": 30,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter002/level002/po/it.po",
+      "entries": 23,
+      "nonempty": 23,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter002/level003/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter002/level004/po/it.po",
+      "entries": 30,
+      "nonempty": 30,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter003/level001/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter003/level002/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 1,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter003/level003/po/it.po",
+      "entries": 26,
+      "nonempty": 26,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter003/level004/po/it.po",
+      "entries": 20,
+      "nonempty": 20,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter003/level005/po/it.po",
+      "entries": 27,
+      "nonempty": 27,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter004/level001/po/it.po",
+      "entries": 28,
+      "nonempty": 28,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter004/level002/po/it.po",
+      "entries": 30,
+      "nonempty": 30,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter004/level003/po/it.po",
+      "entries": 20,
+      "nonempty": 20,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter004/level004/po/it.po",
+      "entries": 21,
+      "nonempty": 21,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter005/level001/po/it.po",
+      "entries": 25,
+      "nonempty": 25,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter005/level002/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter005/level003/po/it.po",
+      "entries": 21,
+      "nonempty": 21,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level001/po/it.po",
+      "entries": 26,
+      "nonempty": 26,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level002/po/it.po",
+      "entries": 31,
+      "nonempty": 31,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level003/po/it.po",
+      "entries": 21,
+      "nonempty": 21,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level004/po/it.po",
+      "entries": 23,
+      "nonempty": 23,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level005/po/it.po",
+      "entries": 23,
+      "nonempty": 23,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter006/level006/po/it.po",
+      "entries": 20,
+      "nonempty": 20,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter007/level001/po/it.po",
+      "entries": 29,
+      "nonempty": 29,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter007/level002/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter007/level003/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter007/level004/po/it.po",
+      "entries": 32,
+      "nonempty": 32,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter007/level005/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter008/level001/po/it.po",
+      "entries": 31,
+      "nonempty": 31,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter008/level002/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter009/level001/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter009/level002/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter009/level003/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter009/level004/po/it.po",
+      "entries": 21,
+      "nonempty": 21,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 7,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter001/level001/po/it.po",
+      "entries": 23,
+      "nonempty": 13,
+      "identical_to_source": 0,
+      "untranslated": 10,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter002/level001/po/it.po",
+      "entries": 23,
+      "nonempty": 23,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter002/level002/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter002/level003/po/it.po",
+      "entries": 20,
+      "nonempty": 20,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter003/level001/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter003/level002/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter003/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter004/level001/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter004/level002/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter004/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter004/level004/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter005/level001/po/it.po",
+      "entries": 15,
+      "nonempty": 15,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter005/level002/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter005/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level001/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level002/po/it.po",
+      "entries": 17,
+      "nonempty": 9,
+      "identical_to_source": 0,
+      "untranslated": 8,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level003/po/it.po",
+      "entries": 21,
+      "nonempty": 21,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level004/po/it.po",
+      "entries": 15,
+      "nonempty": 15,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level005/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter006/level006/po/it.po",
+      "entries": 15,
+      "nonempty": 15,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter007/level001/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter007/level002/po/it.po",
+      "entries": 13,
+      "nonempty": 13,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter007/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter007/level004/po/it.po",
+      "entries": 22,
+      "nonempty": 22,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter007/level005/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter008/level001/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter008/level002/po/it.po",
+      "entries": 17,
+      "nonempty": 17,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter009/level001/po/it.po",
+      "entries": 19,
+      "nonempty": 19,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter009/level002/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter009/level003/po/it.po",
+      "entries": 16,
+      "nonempty": 16,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter009/level004/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 0,
+      "untranslated": 0,
+      "fuzzy": 0
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/po/it.po",
+      "entries": 18,
+      "nonempty": 18,
+      "identical_to_source": 7,
+      "untranslated": 0,
+      "fuzzy": 0
+    }
+  ]
+}

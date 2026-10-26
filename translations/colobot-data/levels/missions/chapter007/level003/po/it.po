@@ -1,0 +1,222 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Cleansing"
+msgstr "Bonifica"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Find the resources you need to eradicate all life in the region."
+msgstr ""
+"Trova le risorse necessarie a eliminare ogni forma di vita dalla zona."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"Build a <a object|radar>radar</a> on one of the highest accessible spots and"
+" make sure that no organism can destroy it after <a object|human>you</a>'re "
+"gone."
+msgstr ""
+"Costruisci un <a object|radar>radar</a> in uno dei punti più alti "
+"raggiungibili e assicurati che nessun organismo possa distruggerlo dopo la "
+"<a object|human>tua</a> partenza."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"The destruction of a previous radar set up by the first expedition was "
+"probably the cause of a communication breakdown, which led to complete loss "
+"of contact."
+msgstr ""
+"La distruzione di un radar della prima spedizione ha probabilmente provocato"
+" l’interruzione delle comunicazioni e la successiva perdita di ogni "
+"contatto."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:8 ../help/soluce.E.txt:10
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Centaury."
+msgstr "Attualmente in orbita geostazionaria attorno a Centaury."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      25.4C\n"
+"\\tab;Atmosphere:       oxygen, nitrogen, ammonia\n"
+"\\tab;Wind:             0.7 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      some"
+msgstr ""
+"\\tab;Temperatura:      25.4C\n"
+"\\tab;Atmosfera:       ossigeno, azoto, ammoniaca\n"
+"\\tab;Vento:             0.7 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      presente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         spiders\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         reusable derelicts"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         ragni\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         relitti riutilizzabili"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"In order to kill all ants and spiders in this large and mountainous region, "
+"you will need a <a object|botfj>winged orga shooter</a> powered with <a "
+"object|atomic>nuclear power cells</a>. In a small valley to the southeast "
+"you will find everything you need: <a object|titan>titanium cubes</a>, <a "
+"object|power>power cells</a> and even a <a object|botgj>winged grabber</a> "
+"in working condition."
+msgstr ""
+"Per eliminare formiche e ragni da questa regione vasta e montuosa, servirà "
+"un <a object|botfj>robot tiratore organico volante</a> alimentato da <a "
+"object|atomic>batterie nucleari</a>. In una valletta a sud-est troverai "
+"tutto il necessario: <a object|titan>cubi di titanio</a>, <a "
+"object|power>batterie</a> e persino un <a object|botgj>robot trasportatore "
+"volante</a> funzionante."
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"Build a <a object|radar>radar</a> and a <a object|botfj>winged shooter</a> "
+"and power it. Kill the ant that is watching over the <a "
+"object|uranore>uranium ore</a> further north."
+msgstr ""
+"Costruisci un <a object|radar>radar</a> e un <a object|botfj>robot tiratore "
+"volante</a>, poi alimentalo. Elimina la formica che sorveglia il <a "
+"object|uranore>minerale di uranio</a> più a nord."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"Use the abandoned <a object|nuclear>nuclear plant</a> on the hill above and "
+"the <a object|botgj>winged grabber</a> to produce several <a "
+"object|atomic>nuclear power cells</a>, and use one to power the <a "
+"object|botfj>winged shooter</a>."
+msgstr ""
+"Usa la <a object|nuclear>centrale nucleare</a> abbandonata sulla collina e "
+"il <a object|botgj>robot trasportatore volante</a> per produrre varie <a "
+"object|atomic>batterie nucleari</a>. Usane una per alimentare il <a "
+"object|botfj>robot tiratore volante</a>."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid ""
+"Wipe out all insects from the region. There is one isolated ant in the "
+"northwest hidden in a hole: an approach from the west thorough the deep "
+"valley will make it easier to hit."
+msgstr ""
+"Elimina tutti gli insetti della regione. A nord-ovest c’è una formica "
+"isolata nascosta in una buca: sarà più facile colpirla arrivando da ovest "
+"attraverso la valle profonda."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

@@ -1,0 +1,210 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Flying Drill #1"
+msgstr "Esercitazione di volo n. 1"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Sharpen your flying skills."
+msgstr "Affina le tue abilità di volo."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"This apparatus was set up by the previous expedition to test and train the "
+"flying capacity of winged bots."
+msgstr ""
+"Questo percorso è stato allestito dalla spedizione precedente per mettere "
+"alla prova e allenare le capacità di volo dei robot."
+
+#. type: \b; header
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid "Objective"
+msgstr "Obiettivo"
+
+#. type: Plain text
+#: ../help/help.E.txt:5
+#, no-wrap
+msgid ""
+"Use these drills to your advantage. Your ability to survive future critical "
+"situations may depend upon the dexterity they will have helped you develop."
+msgstr ""
+"Sfrutta queste esercitazioni: la capacità di sopravvivere a future "
+"situazioni critiche potrebbe dipendere dalla destrezza che ti aiuteranno a "
+"sviluppare."
+
+#. type: \b; header
+#: ../help/help.E.txt:7
+#, no-wrap
+msgid "Procedure"
+msgstr "Procedura"
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"Fly as quickly as possible through each target. Try to accomplish this "
+"without causing the engine to overheat. If this appears too difficult, just "
+"touch down and let the engine cool off."
+msgstr ""
+"Attraversa ogni bersaglio in volo il più rapidamente possibile. Cerca di "
+"riuscirci senza surriscaldare il motore. Se è troppo difficile, atterra e "
+"lascia raffreddare il propulsore."
+
+#. type: Plain text
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid ""
+"You should use the arrow keys on the keyboard to pilot the bot, but keep one"
+" hand on the mouse. The mouse is useless in this exercise, but will be "
+"essential in later missions."
+msgstr ""
+"Usa i tasti freccia per pilotare il robot, ma tieni una mano sul mouse. In "
+"questa esercitazione il mouse non serve, ma sarà essenziale nelle missioni "
+"successive."
+
+#. type: Plain text
+#: ../help/help.E.txt:12
+#, no-wrap
+msgid ""
+"It may be useful to come back to these drills once in a while if you wish to"
+" improve your reflexes further."
+msgstr ""
+"Può essere utile tornare ogni tanto su questi percorsi per migliorare "
+"ulteriormente i riflessi."
+
+#. type: Plain text
+#: ../help/help.E.txt:14
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:16 ../help/soluce.E.txt:6
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:17
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of the Moon."
+msgstr "Attualmente in orbita geostazionaria attorno alla Luna."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      -51.0C\n"
+"\\tab;Atmosphere:       none\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      -51.0C\n"
+"\\tab;Atmosfera:       assente\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"If your bot suddenly explodes, this means that you have hit the steel "
+"structures too often. Drive more slowly, so your bot will not be damaged "
+"even if you bump into an obstacle."
+msgstr ""
+"Se il robot esplode improvvisamente, hai urtato troppe volte le strutture "
+"d’acciaio. Procedi più lentamente: anche se urti un ostacolo, il robot non "
+"subirà danni."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"If you can not take off after you have completed the training, this means "
+"that you did not pass through all the targets. Go round one more time, and "
+"pass through the targets where the cross is left in the center."
+msgstr ""
+"Se non puoi decollare dopo l’addestramento, non hai attraversato tutti i "
+"bersagli. Ripercorri il tracciato e attraversa quelli che hanno ancora una "
+"croce al centro."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

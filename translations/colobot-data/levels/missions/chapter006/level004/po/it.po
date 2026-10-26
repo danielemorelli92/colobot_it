@@ -1,0 +1,222 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Technological Treasure"
+msgstr "Tesoro tecnologico"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Rediscover a new type of bot."
+msgstr "Riscopri un nuovo tipo di robot."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "An urgent notification from Mission Control"
+msgstr "Comunicazione urgente dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"As you were about to take off, we received from the satellite the following "
+"piece of information: a bot of a type yet unknown has been spotted on "
+"Volcano. Try to bring it back onto your spaceship for further study."
+msgstr ""
+"Mentre stavi per decollare, il satellite ci ha informati dell’avvistamento "
+"di un robot di tipo sconosciuto su Volcano. Cerca di portarlo a bordo "
+"dell’astronave per studiarlo."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Our engineers on Earth have very recently come up with a formula that should"
+" allow reactors to function properly, at least for a short while, despite "
+"the high temperatures. The data have been transmitted to you."
+msgstr ""
+"I nostri ingegneri sulla Terra hanno appena trovato una soluzione che "
+"dovrebbe consentire ai propulsori di funzionare, almeno per brevi periodi, "
+"nonostante le alte temperature. Ti abbiamo trasmesso i dati."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:8 ../help/soluce.E.txt:12
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Volcano."
+msgstr "Attualmente in orbita geostazionaria attorno a Volcano."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      96.7C\n"
+"\\tab;Atmosphere:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Wind:             2.8 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      96.7C\n"
+"\\tab;Atmosfera:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Vento:             2.8 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         bot\n"
+"\\tab;  - Type:         unknown\n"
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate"
+msgstr ""
+"\\tab;Rilevato:         robot\n"
+"\\tab;  - Tipo:         sconosciuto\n"
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"A gap in the northwest mountain leads the way to a lake of boiling lava."
+msgstr ""
+"Un varco nella montagna a nord-ovest conduce a un lago di lava bollente."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"Just hop from one rocky island to the next. Keep checking your reactor, let "
+"it cool off completely before taking off again. The mini map will help you "
+"to figure out where the closest island is."
+msgstr ""
+"Passa da un’isola rocciosa all’altra. Controlla il propulsore e lascialo "
+"raffreddare completamente prima di ripartire. La minimappa ti aiuterà a "
+"individuare l’isola più vicina."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"In case of an ant attack, don't worry too much. Just take the time for your "
+"reactor to cool off, without lingering longer than necessary, and your "
+"built-in shield should do its duty. However we advise you to save the game "
+"from time to time (key Esc, and \"Save\"), so you will not have to start "
+"from the beginning in case of a landing in the lava lake."
+msgstr ""
+"Se le formiche ti attaccano, non preoccuparti troppo. Aspetta soltanto il "
+"tempo necessario a raffreddare il propulsore: lo scudo integrato dovrebbe "
+"proteggerti. Ti consigliamo comunque di salvare ogni tanto (tasto Esc, poi "
+"«Salva»), per non dover ricominciare se cadi nella lava."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid ""
+"The bot is at the westernmost point on your map though you'll have to take a"
+" roundabout route to reach it. A <a object|atomic>nuclear power cell</a> "
+"lies nearby."
+msgstr ""
+"Il robot è nel punto più occidentale della mappa, ma dovrai seguire un "
+"percorso tortuoso per raggiungerlo. Vicino si trova una <a "
+"object|atomic>batteria nucleare</a>."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:10
+#, no-wrap
+msgid ""
+"You don't have to radio-control the bot back to the spaceship by the same "
+"way you came because its reactor has a greater range than yours. One or two "
+"stops may still be needed and watch out for those ants."
+msgstr ""
+"Non devi riportare il robot indietro per la stessa strada: il suo propulsore"
+" ha un’autonomia maggiore del tuo. Potrebbero comunque servire una o due "
+"soste. Attenzione alle formiche."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:13
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

@@ -1,0 +1,147 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Target Practice"
+msgstr "Tiro al bersaglio"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Practise shooting with your new orgaball canon."
+msgstr "Esercitati a sparare con il nuovo cannone a proiettili organici."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"It is time for <a object|human>you</a> to improve your shooting skills "
+"again. In the following drill, hit all the <a object|tnt>explosive "
+"devices</a> but watch out: your <a object|botoj>orga shooter</a> has very "
+"little power left in it, barely enough to complete the drill."
+msgstr ""
+"È tempo di migliorare ancora le <a object|human>tue</a> abilità di tiro. In "
+"questa esercitazione colpisci tutti gli <a object|tnt>ordigni esplosivi</a>,"
+" ma attenzione: al <a object|botoj>robot tiratore organico</a> resta "
+"pochissima energia, appena sufficiente per terminare il percorso."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:6 ../help/soluce.E.txt:4
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:7
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Centaury."
+msgstr "Attualmente in orbita geostazionaria attorno a Centaury."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      25.4C\n"
+"\\tab;Atmosphere:       oxygen, nitrogen, ammonia\n"
+"\\tab;Wind:             1.2 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      25.4C\n"
+"\\tab;Atmosfera:       ossigeno, azoto, ammoniaca\n"
+"\\tab;Vento:             1.2 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Drive the <a object|botos>legged orga shooter</a> to each of the pads in "
+"front of the targets, and hit all targets that you see with only one burst, "
+"moving the mouse during the burst. With 4 bursts, you must be able to hit "
+"all the targets."
+msgstr ""
+"Guida il <a object|botos>robot tiratore organico a zampe</a> su ciascuna "
+"piattaforma davanti ai bersagli. Colpisci tutti quelli visibili con un’unica"
+" raffica, muovendo il mouse mentre spari. Devi riuscire a colpirli tutti con"
+" 4 raffiche."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:5
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

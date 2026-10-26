@@ -1,0 +1,246 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Viruses"
+msgstr "Virus"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "A new bug threatens all your systems."
+msgstr "Un nuovo pericolo minaccia tutti i tuoi sistemi."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"Build a <a object|radar>radar</a> on the highest point in the area. Make "
+"sure that the radar will work safely even after your departure to other "
+"planets. Your <a object|research>research center</a> should be able to "
+"provide a solution."
+msgstr ""
+"Costruisci un <a object|radar>radar</a> nel punto più alto della zona. "
+"Assicurati che possa continuare a funzionare in sicurezza anche dopo la tua "
+"partenza per altri pianeti. Il <a object|research>centro di ricerca</a> "
+"dovrebbe poter trovare una soluzione."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"It is possible that the organisms detected are in fact the <a "
+"object|worm>worms</a> alluded to by the first expedition. If this is indeed "
+"the case, don't be excessively alarmed: they seem fairly harmless to living "
+"organisms but could cause the programs of bots and buildings to malfunction "
+"through the emission of viruses."
+msgstr ""
+"Gli organismi rilevati potrebbero essere i <a object|worm>vermi</a> citati "
+"dalla prima spedizione. In tal caso non allarmarti troppo: sembrano "
+"piuttosto innocui per gli esseri viventi, ma emettono virus che possono "
+"compromettere i programmi di robot ed edifici."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"Radars not only give you precious information about objects and organisms "
+"present in the region, they also relay information to and from the Earth "
+"once you have taken off to other planets. It is highly probable that "
+"problems with the radar stations built by the first expedition caused the "
+"transmission problems that we are aware of."
+msgstr ""
+"I radar non forniscono soltanto informazioni sugli oggetti e sugli organismi"
+" della zona: mantengono anche le comunicazioni con la Terra dopo la tua "
+"partenza per altri pianeti. È molto probabile che i problemi delle stazioni "
+"radar della prima spedizione abbiano causato le difficoltà di trasmissione "
+"che conosciamo."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"In order to help you with the boring task of gathering the necessary raw "
+"material, we have developed a program that instructs the <a "
+"object|botgr>wheeled grabber</a> to look for <a object|titanore>titanium "
+"ore</a> on its own (see the programming page <button 53/>)."
+msgstr ""
+"Per aiutarti nel noioso compito di raccogliere le materie prime, abbiamo "
+"sviluppato un programma che permette al <a object|botgr>robot trasportatore "
+"su ruote</a> di cercare autonomamente il <a object|titanore>minerale di "
+"titanio</a> (pagina dei programmi <button 53/>)."
+
+#. type: Plain text
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:12 ../help/soluce.E.txt:11
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Crystalium."
+msgstr "Attualmente in orbita geostazionaria attorno a Crystalium."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      5.4C\n"
+"\\tab;Atmosphere:       nitrogen\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      5.4C\n"
+"\\tab;Atmosfera:       azoto\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     data not available\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     dati non disponibili\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         unidentified organisms\n"
+"\\tab;  - Danger:       ?"
+msgstr ""
+"\\tab;Rilevato:         organismi non identificati\n"
+"\\tab;  - Pericolo:       ?"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid "Build a <a object|factory>bot factory</a>."
+msgstr "Costruisci una <a object|factory>fabbrica di robot</a>."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:3
+#, no-wrap
+msgid "Produce a <a object|botgj>winged grabber</a>."
+msgstr "Produci un <a object|botgj>robot trasportatore volante</a>."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid "Carry a <a object|titan>titanium cube</a> to the highest point."
+msgstr "Porta un <a object|titan>cubo di titanio</a> nel punto più alto."
+
+#. type: Bullet: '4)'
+#: ../help/soluce.E.txt:5
+#, no-wrap
+msgid "Build a <a object|radar>radar</a> on the spot."
+msgstr "Costruisci lì un <a object|radar>radar</a>."
+
+#. type: Bullet: '5)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid "Build a <a object|research>research center</a> next to the spaceship."
+msgstr ""
+"Costruisci un <a object|research>centro di ricerca</a> accanto "
+"all’astronave."
+
+#. type: Bullet: '6)'
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid "Initiate the <defense tower research program> <button 68/>."
+msgstr "Avvia la <ricerca sulla torre difensiva> <button 68/>."
+
+#. type: Bullet: '7)'
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid "Build the <a object|tower>defense tower</a> next to the radar."
+msgstr "Costruisci la <a object|tower>torre difensiva</a> accanto al radar."
+
+#. type: Bullet: '8)'
+#: ../help/soluce.E.txt:9
+#, no-wrap
+msgid ""
+"When all the worms are destroyed, you can go back to your ship and take off."
+msgstr ""
+"Quando tutti i vermi sono stati eliminati, torna all’astronave e decolla."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:12
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

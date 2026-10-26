@@ -1,0 +1,35 @@
+{
+  "base_release": "colobot-gold-0.2.2-alpha",
+  "catalogs": 146,
+  "normalized_entries": 5172,
+  "translated_entries": 2890,
+  "untranslated_entries": 2282,
+  "checks": {
+    "gnu_gettext": "passed",
+    "markup_and_mo_lookup": "passed",
+    "cpp_language_roundtrip": "passed",
+    "official_data_build": "passed for 0.2",
+    "generated_first_mission": "passed",
+    "font_accent_coverage": "passed",
+    "full_engine_build": "blocked: OpenGL development files missing at CMake configuration",
+    "ctest": "not run",
+    "interactive_game": "not run",
+    "external_translation_search": "partial",
+    "generated_campaign": "all 878 entries verified",
+    "gameplay_preservation": "all packaged scenes and chapter titles compared to original, excluding localized labels",
+    "negative_localization_tests": "passed: link/button/key/code/printf/tooltip corruptions rejected"
+  },
+  "preview": "0.2",
+  "identical_to_source": 202,
+  "fully_populated_categories": {
+    "interface": 659,
+    "campaign": 878,
+    "generic_help": 141,
+    "bot_help": 176,
+    "object_help": 323
+  },
+  "windows": {
+    "preview_0.1": "User confirmed launch and Italian mission/SatCom, screenshots reviewed; font issue resolved by restart",
+    "preview_0.2": "not run on Windows"
+  }
+}

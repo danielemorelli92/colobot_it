@@ -1,0 +1,301 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Analysis"
+msgstr "Analisi"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Recover and analyze some organic matter."
+msgstr "Recupera e analizza della materia organica."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"The previous expedition provided us with a piece of information about some "
+"<a object|bullet>organic matter</a>, which seems to be produced by the <a "
+"object|ant>ants</a>, and which opened startling new possibilities. It "
+"apparently allows the creation of a new type of mutant bot with enhanced "
+"performance through the use of insect parts."
+msgstr ""
+"La prima spedizione ci ha fornito informazioni su una <a "
+"object|bullet>materia organica</a>, apparentemente prodotta dalle <a "
+"object|ant>formiche</a>, che apre possibilità sorprendenti. Sembra "
+"consentire la creazione di robot mutanti più efficienti, grazie all’impiego "
+"di parti degli insetti."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Your mission is to experiment with the first practical application of this "
+"\"green gold\". Build a <a object|botgs>legged grabber bot</a>, load it on "
+"the spaceship and take off."
+msgstr ""
+"Devi sperimentare la prima applicazione pratica di questo «oro verde». "
+"Costruisci un <a object|botgs>robot trasportatore a zampe</a>, portalo "
+"sull’astronave e decolla."
+
+#. type: \b; header
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid "Procedure"
+msgstr "Procedura"
+
+#. type: Plain text
+#: ../help/help.E.txt:7
+#, no-wrap
+msgid ""
+"Take a sample of organic matter from a nest of giant ants. The analysis of "
+"it will be performed by an <a object|labo>autolab</a>, which will also "
+"perform the necessary research to allow a practical application."
+msgstr ""
+"Preleva un campione di materia organica da un nido di formiche giganti. Un "
+"<a object|labo>laboratorio automatico</a> lo analizzerà ed eseguirà anche la"
+" ricerca necessaria a un’applicazione pratica."
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid ""
+"In order to improve your defense capacity, we have transmitted a program to "
+"your <a object|botgr>grabber bots</a> that takes care of recharging the "
+"power cell of a <a object|tower>defense tower</a> (see <button 53/> )."
+msgstr ""
+"Per migliorare le tue difese, abbiamo trasmesso ai <a object|botgr>robot "
+"trasportatori</a> un programma che ricarica la batteria di una <a "
+"object|tower>torre difensiva</a> (vedi <button 53/> )."
+
+#. type: \b; header
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "Note"
+msgstr "Nota"
+
+#. type: Plain text
+#: ../help/help.E.txt:12
+#, no-wrap
+msgid ""
+"The temperature has dropped significantly, it should therefore be possible "
+"to fly."
+msgstr ""
+"La temperatura è scesa notevolmente: dovrebbe essere di nuovo possibile "
+"volare."
+
+#. type: Plain text
+#: ../help/help.E.txt:14
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:16 ../help/soluce.E.txt:18
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:17
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Volcano."
+msgstr "Attualmente in orbita geostazionaria attorno a Volcano."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      53.1C\n"
+"\\tab;Atmosphere:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Wind:             0.3 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      little"
+msgstr ""
+"\\tab;Temperatura:      53.1C\n"
+"\\tab;Atmosfera:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Vento:             0.3 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      scarso"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    everywhere\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    ovunque\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       yes, not immediate\n"
+"\\tab;Detected:         unknown flying organisms\n"
+"\\tab;  - Danger:       yes, immediate"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       sì, non immediato\n"
+"\\tab;Rilevato:         organismi volanti sconosciuti\n"
+"\\tab;  - Pericolo:       sì, immediato"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Quickly build a <a object|tower>defense tower</a> north of your spaceship.  "
+"After you <a object|power>powered</a> it, execute the program "
+"<code>ServiceTower1</code> on one of the <a object|botgr>grabbers</a> which "
+"will recharge the power cell when it is empty. Place another power cell 2 m "
+"north of the tower as a first target for the attacking wasps."
+msgstr ""
+"Costruisci rapidamente una <a object|tower>torre difensiva</a> a nord "
+"dell’astronave. Dopo averla <a object|power>alimentata</a>, esegui "
+"<code>ServiceTower1</code> su un <a object|botgr>robot trasportatore</a>, "
+"che ricaricherà la batteria quando sarà vuota. Posa un’altra batteria 2 m a "
+"nord della torre, come primo bersaglio per le vespe attaccanti."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"Build a <a object|station>power station</a> close to the defense tower."
+msgstr ""
+"Costruisci una <a object|station>centrale elettrica</a> vicino alla torre "
+"difensiva."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"Build a <a object|convert>converter</a> south of the spaceship and execute "
+"the program <code>CollectTitanium3</code> on the second <a "
+"object|botgr>grabber</a> in order to produce some <a "
+"object|titan>titanium</a>."
+msgstr ""
+"Costruisci un <a object|convert>convertitore</a> a sud dell’astronave ed "
+"esegui <code>CollectTitanium3</code> sul secondo <a object|botgr>robot "
+"trasportatore</a> per produrre <a object|titan>titanio</a>."
+
+#. type: Bullet: '4)'
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid ""
+"Build a <a object|factory>bot factory</a> and a <a object|botfj>winged "
+"shooter</a> to eliminate the <a object|ant>ants</a>."
+msgstr ""
+"Costruisci una <a object|factory>fabbrica di robot</a> e un <a "
+"object|botfj>robot tiratore volante</a> per eliminare le <a "
+"object|ant>formiche</a>."
+
+#. type: Bullet: '5)'
+#: ../help/soluce.E.txt:10
+#, no-wrap
+msgid ""
+"Use a <a object|botgj>winged grabber</a> to bring back some <a "
+"object|bullet>organic matter</a> from the island in the middle of the lava "
+"lake."
+msgstr ""
+"Usa un <a object|botgj>robot trasportatore volante</a> per recuperare della "
+"<a object|bullet>materia organica</a> sull’isola al centro del lago di lava."
+
+#. type: Bullet: '6)'
+#: ../help/soluce.E.txt:12
+#, no-wrap
+msgid ""
+"Build an <a object|labo>autolab</a>, drop the <a object|bullet>organic "
+"matter</a> on the platform and click the button <button 109/> in order to "
+"develop the blueprints for legged bots."
+msgstr ""
+"Costruisci un <a object|labo>laboratorio automatico</a>, posa la <a "
+"object|bullet>materia organica</a> sulla piattaforma e fai clic sul pulsante"
+" <button 109/> per sviluppare i progetti dei robot a zampe."
+
+#. type: Bullet: '7)'
+#: ../help/soluce.E.txt:14
+#, no-wrap
+msgid ""
+"As soon as the organic matter has been analyzed, produce a <a "
+"object|botgs>legged grabber</a> and bring it aboard the spaceship."
+msgstr ""
+"Una volta analizzata la materia organica, produci un <a object|botgs>robot "
+"trasportatore a zampe</a> e portalo sull’astronave."
+
+#. type: Bullet: '8)'
+#: ../help/soluce.E.txt:16
+#, no-wrap
+msgid "Take off."
+msgstr "Decolla."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:19
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

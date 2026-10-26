@@ -1,0 +1,168 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Subterranean strategy"
+msgstr "Strategia sotterranea"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Use the planet's resources to combat the virus-spreading worms."
+msgstr ""
+"Usa le risorse del pianeta per combattere i vermi che diffondono virus."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"Cleanse the area of all hostile organisms. The way you accomplish this (<a "
+"object|tower>defense tower</a> or <a object|botfj>winged shooter</a>) is up "
+"to you."
+msgstr ""
+"Libera la zona da tutti gli organismi ostili. Puoi scegliere come farlo: con"
+" una <a object|tower>torre difensiva</a> o un <a object|botfj>robot tiratore"
+" volante</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"The radar seems to be perfectly suited to the detection of worms. Keep in "
+"mind though that they only appear when they are on the surface."
+msgstr ""
+"Il radar sembra perfettamente adatto a rilevare i vermi. Ricorda però che "
+"compaiono soltanto quando sono in superficie."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"We relayed a transmission to your <a object|factory>bot factory</a>. It "
+"concerns a bot designed to detect raw materials in the subsoil: energy "
+"sources, ore. We call it a <a object|botsr>sniffer</a> for short. "
+"Preliminary analysis leads us to believe that the presence of titanium ore "
+"on Crystalium is closely linked to the growth of large blue crystals. If "
+"this is indeed the case, this information should allow you to save some "
+"precious time. A <a object|derrick>derrick</a> is of course required for the"
+" extraction."
+msgstr ""
+"Abbiamo inviato una trasmissione alla tua <a object|factory>fabbrica di "
+"robot</a>. Riguarda un robot progettato per rilevare materie prime nel "
+"sottosuolo: fonti di energia e minerali. Lo chiamiamo <a object|botsr>robot "
+"rilevatore</a>. Le prime analisi fanno pensare che il minerale di titanio di"
+" Crystalium sia strettamente legato alla crescita dei grandi cristalli blu. "
+"Se così fosse, questa informazione ti farebbe risparmiare tempo prezioso. "
+"Per l’estrazione serve naturalmente una <a object|derrick>torre di "
+"estrazione</a>."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Crystalium."
+msgstr "Attualmente in orbita geostazionaria attorno a Crystalium."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      3.2C\n"
+"\\tab;Atmosphere:       nitrogen\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      3.2C\n"
+"\\tab;Atmosfera:       azoto\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    isolated (close to the spaceship)\n"
+"\\tab;Titanium ore:     scattered\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    isolata (vicino all’astronave)\n"
+"\\tab;Minerale di titanio:     sparso\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         worms\n"
+"\\tab;  - Danger:       no"
+msgstr ""
+"\\tab;Rilevato:         vermi\n"
+"\\tab;  - Pericolo:       no"

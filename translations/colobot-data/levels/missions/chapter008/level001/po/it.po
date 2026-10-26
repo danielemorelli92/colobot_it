@@ -1,0 +1,252 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Logistics"
+msgstr "Logistica"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Lay the foundations for a relay station and a refueling station."
+msgstr "Getta le basi per una stazione di comunicazione e rifornimento."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"It seems obvious enough that this planet will be no haven for humanity. "
+msgstr ""
+"È ormai evidente che questo pianeta non sarà un rifugio per l’umanità. "
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid "Build a radar to relay future transmissions."
+msgstr "Costruisci un radar per ritrasmettere le comunicazioni future."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"Also... we're very sorry to inform you that you may need to exterminate all "
+"hostile organisms."
+msgstr ""
+"Inoltre... ci dispiace informarti che potrebbe essere necessario eliminare "
+"tutti gli organismi ostili."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"The first expedition located <a object|titanore>titanium ore</a> under the "
+"surface of Orpheon. The spot is marked with a blue <a object|flag>flag</a>."
+msgstr ""
+"La prima spedizione ha individuato <a object|titanore>minerale di "
+"titanio</a> nel sottosuolo di Orpheon. Il punto è segnato da una <a "
+"object|flag>bandiera</a> blu."
+
+#. type: Plain text
+#: ../help/help.E.txt:10
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:12 ../help/soluce.E.txt:14
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Orpheon."
+msgstr "Attualmente in orbita geostazionaria attorno a Orpheon."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      -72.8C\n"
+"\\tab;Atmosphere:       none\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      -72.8C\n"
+"\\tab;Atmosfera:       assente\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     some (blue flag)\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     presente (bandiera blu)\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         fierce electromagnetic storms"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         violente tempeste elettromagnetiche"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Bullet: '1)'
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid "Quickly build a <a object|captor>power captor</a> near the blue flag."
+msgstr ""
+"Costruisci rapidamente un <a object|captor>parafulmine</a> vicino alla "
+"bandiera blu."
+
+#. type: Bullet: '2)'
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"Carry some empty <a object|power>power cells</a> under the power captor. "
+"When lightning strikes, they will be recharged."
+msgstr ""
+"Porta alcune <a object|power>batterie</a> scariche sotto il parafulmine: "
+"quando sarà colpito da un fulmine, si ricaricheranno."
+
+#. type: Bullet: '3)'
+#: ../help/soluce.E.txt:5
+#, no-wrap
+msgid "Build a <a object|derrick>derrick</a>."
+msgstr "Costruisci una <a object|derrick>torre di estrazione</a>."
+
+#. type: Bullet: '4)'
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid "Build a <a object|convert>converter</a>."
+msgstr "Costruisci un <a object|convert>convertitore</a>."
+
+#. type: Bullet: '5)'
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid ""
+"Execute the program <code>CollectTitanium3</code> in order to produce <a "
+"object|titan>titanium</a>."
+msgstr ""
+"Esegui <code>CollectTitanium3</code> per produrre <a "
+"object|titan>titanio</a>."
+
+#. type: Bullet: '6)'
+#: ../help/soluce.E.txt:8
+#, no-wrap
+msgid "Build a <a object|factory>bot factory</a>."
+msgstr "Costruisci una <a object|factory>fabbrica di robot</a>."
+
+#. type: Bullet: '7)'
+#: ../help/soluce.E.txt:9
+#, no-wrap
+msgid "Manufacture a <a object|botoj>winged orga shooter</a>."
+msgstr "Produci un <a object|botoj>robot tiratore organico volante</a>."
+
+#. type: Bullet: '8)'
+#: ../help/soluce.E.txt:10
+#, no-wrap
+msgid "Build a <a object|radar>radar</a>."
+msgstr "Costruisci un <a object|radar>radar</a>."
+
+#. type: Bullet: '9)'
+#: ../help/soluce.E.txt:11
+#, no-wrap
+msgid "Locate and terminate all <a object|ant>ants</a>."
+msgstr "Trova ed elimina tutte le <a object|ant>formiche</a>."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:12
+#, no-wrap
+msgid "10) Return to your <a object|base>spaceship</a> and take off."
+msgstr "10) Torna alla tua <a object|base>astronave</a> e decolla."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:15
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:3
+#, no-wrap
+msgid ""
+"All subsequent buildings should be erected within the <range> <button 41/> "
+"covered by the power captor."
+msgstr ""
+"Costruisci tutti gli edifici successivi entro il <raggio> <button 41/> di "
+"protezione del parafulmine."

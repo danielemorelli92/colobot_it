@@ -1,0 +1,203 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "Storm Shelter"
+msgstr "Riparo dalla tempesta"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid ""
+"Retrieve the black box while protecting your bots from electrical storms."
+msgstr ""
+"Recupera la scatola nera proteggendo i robot dalle tempeste elettriche."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid "Retrieve the black box."
+msgstr "Recupera la scatola nera."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"Electromagnetic lightning bolts appear to strike even more frequently now "
+"than they did previously. You need to protect your equipment."
+msgstr ""
+"I fulmini elettromagnetici sembrano colpire ancora più spesso di prima. Devi"
+" proteggere l’equipaggiamento."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid ""
+"Please note that your spaceship also naturally acts as a lightning "
+"conductor, and our engineers assure us that your space suit does not attract"
+" lightning."
+msgstr ""
+"Ricorda che anche l’astronave funge da parafulmine; i nostri ingegneri "
+"assicurano inoltre che la tuta spaziale non attira i fulmini."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:10 ../help/soluce.E.txt:8
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Orpheon."
+msgstr "Attualmente in orbita geostazionaria attorno a Orpheon."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      -64.7C\n"
+"\\tab;Atmosphere:       none\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      -64.7C\n"
+"\\tab;Atmosfera:       assente\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         fierce electromagnetic storms"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         violente tempeste elettromagnetiche"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"You will find a <a object|radar>radar</a>, a <a object|captor>power "
+"captor</a>, a <a object|power>power cell</a> and a <a object|botoj>winged "
+"orga shooter</a> in the valley south of the spaceship. This will allow you "
+"to kill the ants close to the spaceship and to locate the <a "
+"object|bbox>black box</a> in the north next to the remains of the first "
+"expedition spaceship."
+msgstr ""
+"Nella valle a sud dell’astronave troverai un <a object|radar>radar</a>, un "
+"<a object|captor>parafulmine</a>, una <a object|power>batteria</a> e un <a "
+"object|botoj>robot tiratore organico volante</a>. Potrai eliminare le "
+"formiche vicine all’astronave e individuare la <a object|bbox>scatola "
+"nera</a> a nord, accanto ai resti dell’astronave della prima spedizione."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"Build a succession of <a object|captor>power captors</a> along the natural "
+"path offered by the northern mountain peaks. 5 or 6 captors should offer "
+"sufficient protection against lightning."
+msgstr ""
+"Costruisci una serie di <a object|captor>parafulmini</a> lungo il percorso "
+"naturale offerto dalle cime montuose a nord. Ne dovrebbero bastare 5 o 6 per"
+" proteggerti dai fulmini."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:6
+#, no-wrap
+msgid ""
+"Bring the black box back aboard your <a object|base>spaceship</a> and take "
+"off."
+msgstr "Riporta la scatola nera sull’<a object|base>astronave</a> e decolla."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:9
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"

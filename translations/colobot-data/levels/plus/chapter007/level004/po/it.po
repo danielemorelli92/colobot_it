@@ -1,0 +1,220 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "New Policies"
+msgstr "Nuove direttive"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Try a more humane method of dealing with insects."
+msgstr "Prova un metodo più compassionevole per affrontare gli insetti."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "A Word on New Policies"
+msgstr "A proposito delle nuove direttive"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"We are sorry to have to bring this to your attention but this seems like a "
+"good a time to let you in on a little concern we're having at the moment. "
+"There has been a strong reaction in the public opinion and in Congress "
+"concerning your systematic termination of the \"indigenous inhabitants\" of "
+"the planets you've been visiting. Congress has chosen to demonstrate its "
+"sensitivity to the concerns of the general population."
+msgstr ""
+"Ci dispiace informarti che è sorta una questione delicata. L’eliminazione "
+"sistematica degli «abitanti indigeni» dei pianeti visitati ha suscitato "
+"forti reazioni nell’opinione pubblica e nel Congresso. Il Congresso ha "
+"deciso di dimostrarsi sensibile alle preoccupazioni della popolazione."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"We hereby relay their new directives and these directives intimate for you "
+"to limit the casualties as much as humanly possible. In other words, do your"
+" very best to spare the life-forms you encounter from now on. Your mission "
+"should of course in no way find itself jeopardized by this new course of "
+"action."
+msgstr ""
+"Ti trasmettiamo quindi le nuove direttive: limitare le vittime quanto più "
+"possibile. In altre parole, da ora in poi fai del tuo meglio per risparmiare"
+" le forme di vita che incontri. Naturalmente questa nuova condotta non deve "
+"in alcun modo compromettere la missione."
+
+#. type: \b; header
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:7
+#, no-wrap
+msgid ""
+"Your energy resources appear dangerously limited at this time and so is your"
+" arsenal but you need to locate and retrieve the previous expedition's <a "
+"object|bbox>black box</a> so you can proceed to the next planet."
+msgstr ""
+"Le tue risorse energetiche e il tuo arsenale sono pericolosamente limitati, "
+"ma devi trovare e recuperare la <a object|bbox>scatola nera</a> della "
+"spedizione precedente per proseguire verso il prossimo pianeta."
+
+#. type: Plain text
+#: ../help/help.E.txt:9
+#, no-wrap
+msgid ""
+"We received a piece of information from your predecessors, via the "
+"observation satellite, regarding a new type of weaponry they have developed "
+"precisely for a predicament such as this one."
+msgstr ""
+"Tramite il satellite abbiamo ricevuto dai tuoi predecessori informazioni su "
+"un nuovo tipo di arma, sviluppata proprio per situazioni come questa."
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid ""
+"This weapon will offer you an opportunity to demonstrate your newfound "
+"compassion towards <a object|ant>indigenous species</a> for it is not a "
+"weapon of mass destruction. What it offers instead, to the best of our "
+"knowledge, is an option to incapacitate them, rendering them, if only "
+"temporarily, harmless. If this is indeed the case, you'll need to act "
+"quickly before they are given a chance to become hostile to you again."
+msgstr ""
+"Quest’arma ti permetterà di dimostrare la tua nuova compassione per le <a "
+"object|ant>specie indigene</a>, perché non è uno strumento di distruzione di"
+" massa. Per quanto ne sappiamo, permette invece di stordirle, rendendole "
+"temporaneamente innocue. Dovrai quindi agire in fretta, prima che tornino a "
+"essere pericolose."
+
+#. type: \b; header
+#: ../help/help.E.txt:13
+#, no-wrap
+msgid "Procedure"
+msgstr "Procedura"
+
+#. type: Plain text
+#: ../help/help.E.txt:14
+#, no-wrap
+msgid ""
+"Perform the <a object|research>research program</a> and experiment for "
+"yourself but don't forget to bring this new weapon back on board. We are "
+"very curious to study its workings."
+msgstr ""
+"Esegui la <a object|research>ricerca</a> e sperimentala personalmente, ma "
+"non dimenticare di portare a bordo la nuova arma. Siamo molto curiosi di "
+"studiarne il funzionamento."
+
+#. type: Plain text
+#: ../help/help.E.txt:16
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:18
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:19
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Centaury."
+msgstr "Attualmente in orbita geostazionaria attorno a Centaury."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      21.3C\n"
+"\\tab;Atmosphere:       oxygen, nitrogen, ammonia\n"
+"\\tab;Wind:             1.9 mps\n"
+"\\tab;Titanium ore:     some\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      21.3C\n"
+"\\tab;Atmosfera:       ossigeno, azoto, ammoniaca\n"
+"\\tab;Vento:             1.9 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         giant ants\n"
+"\\tab;  - Danger:       not immediate\n"
+"\\tab;Detected:         derelicts of no particular use"
+msgstr ""
+"\\tab;Rilevato:         formiche giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         relitti senza particolare utilità"

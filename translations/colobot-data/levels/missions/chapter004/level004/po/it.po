@@ -1,0 +1,192 @@
+# Italian translation of Colobot: Gold Edition.
+# Distributed under the same license as the upstream package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"POT-Creation-Date: DATE\n"
+"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"Last-Translator: Colobot Italian translation contributors\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Title-text
+#: ../scene.txt:1
+#, no-wrap
+msgid "The Lost Valley"
+msgstr "La valle perduta"
+
+#. type: Resume-text
+#: ../scene.txt:2
+#, no-wrap
+msgid "Explore a foggy and perilous valley."
+msgstr "Esplora una valle nebbiosa e piena di pericoli."
+
+#. type: \b; header
+#: ../help/help.E.txt:1
+#, no-wrap
+msgid "From Mission Control"
+msgstr "Dal centro di controllo missione"
+
+#. type: Plain text
+#: ../help/help.E.txt:2
+#, no-wrap
+msgid ""
+"This planet has turned out to be a very unlikely candidate for colonization."
+" Better to leave it for good. Retrieve the <a object|bbox>black box</a> from"
+" the previous expedition and head towards the next planet."
+msgstr ""
+"Questo pianeta si è dimostrato ben poco adatto alla colonizzazione. È meglio"
+" lasciarlo definitivamente. Recupera la <a object|bbox>scatola nera</a> "
+"della spedizione precedente e dirigiti verso il prossimo pianeta."
+
+#. type: Plain text
+#: ../help/help.E.txt:4
+#, no-wrap
+msgid ""
+"The observation satellite has indicated that its present location is at the "
+"bottom of a valley. However the pervasive stratum of electromagnetic smog "
+"could make all satellite information rather undependable."
+msgstr ""
+"Il satellite indica che si trova sul fondo di una valle. Tuttavia lo spesso "
+"strato di smog elettromagnetico potrebbe rendere poco affidabili tutte le "
+"informazioni satellitari."
+
+#. type: Plain text
+#: ../help/help.E.txt:6
+#, no-wrap
+msgid "Stay alert."
+msgstr "Resta in guardia."
+
+#. type: Plain text
+#: ../help/help.E.txt:8
+#, no-wrap
+msgid ""
+"<format key><key help/></format> allows you to review these instructions at "
+"all times on your personal SatCom <button 63/>."
+msgstr ""
+"<format key><key help/></format> ti permette di rileggere queste istruzioni "
+"in qualsiasi momento sul tuo SatCom personale <button 63/>."
+
+#. type: \t; header
+#: ../help/help.E.txt:10 ../help/soluce.E.txt:6
+#, no-wrap
+msgid "See also"
+msgstr "Vedi anche"
+
+#. type: Plain text
+#: ../help/help.E.txt:11
+#, no-wrap
+msgid "<a command>Controls</a> and <a cbot>CBOT Language</a>"
+msgstr "<a command>Comandi</a> e <a cbot>linguaggio CBOT</a>"
+
+#. type: \b; header
+#: ../help/report.E.txt:1
+#, no-wrap
+msgid "Satellite Report"
+msgstr "Rapporto satellitare"
+
+#. type: Plain text
+#: ../help/report.E.txt:2
+#, no-wrap
+msgid "Currently in a geo-stationary orbit of Crystalium."
+msgstr "Attualmente in orbita geostazionaria attorno a Crystalium."
+
+#. type: Source code
+#: ../help/report.E.txt:4
+#, no-wrap
+msgid "-> SURFACE<c/>"
+msgstr "-> SUPERFICIE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:5
+#, no-wrap
+msgid ""
+"\\tab;Temperature:      1.2C\n"
+"\\tab;Atmosphere:       nitrogen\n"
+"\\tab;Wind:             0.0 mps\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Temperatura:      1.2C\n"
+"\\tab;Atmosfera:       azoto\n"
+"\\tab;Vento:             0.0 mps\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:11
+#, no-wrap
+msgid "-> SUBSOIL<c/>"
+msgstr "-> SOTTOSUOLO<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:12
+#, no-wrap
+msgid ""
+"\\tab;Energy source:    none\n"
+"\\tab;Titanium ore:     none\n"
+"\\tab;Uranium ore:      none"
+msgstr ""
+"\\tab;Fonte di energia:    assente\n"
+"\\tab;Minerale di titanio:     assente\n"
+"\\tab;Minerale di uranio:      assente"
+
+#. type: Source code
+#: ../help/report.E.txt:16
+#, no-wrap
+msgid "-> ADDITIONAL INFORMATION<c/>"
+msgstr "-> INFORMAZIONI AGGIUNTIVE<c/>"
+
+#. type: Plain text
+#: ../help/report.E.txt:17
+#, no-wrap
+msgid ""
+"\\tab;Detected:         electromagnetic smog\n"
+"\\tab;Detected:         reusable derelicts"
+msgstr ""
+"\\tab;Rilevato:         smog elettromagnetico\n"
+"\\tab;Rilevato:         relitti riutilizzabili"
+
+#. type: \b; header
+#: ../help/soluce.E.txt:1
+#, no-wrap
+msgid "Walkthrough"
+msgstr "Soluzione"
+
+#. type: Plain text
+#: ../help/soluce.E.txt:2
+#, no-wrap
+msgid ""
+"Somewhere northeast in the valley itself you should come across a fully "
+"functional <a object|station>power station</a>. Northwest you will find "
+"several <a object|power>power cells</a>."
+msgstr ""
+"Nella valle, verso nord-est, dovresti trovare una <a object|station>centrale"
+" elettrica</a> perfettamente funzionante. A nord-ovest troverai diverse <a "
+"object|power>batterie</a>."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:4
+#, no-wrap
+msgid ""
+"A few shooters in working condition have been abandoned in and around the "
+"same area in the valley; use them to shoot all the ants. With the <a "
+"object|botgj>winged grabber</a>, you can then retrieve the <a "
+"object|bbox>black box</a> that is located behind the derelict spaceship and "
+"take off."
+msgstr ""
+"Nella valle e nei dintorni sono stati abbandonati alcuni robot tiratori "
+"funzionanti: usali per eliminare tutte le formiche. Con il <a "
+"object|botgj>robot trasportatore volante</a> puoi poi recuperare la <a "
+"object|bbox>scatola nera</a> dietro il relitto dell’astronave e decollare."
+
+#. type: Plain text
+#: ../help/soluce.E.txt:7
+#, no-wrap
+msgid "<a command>Controls</a>"
+msgstr "<a command>Comandi</a>"
