@@ -232,7 +232,7 @@ msgstr ""
 #: ../E/array.txt:11
 #, no-wrap
 msgid "int a[5];  // a is now a null reference"
-msgstr "int a[5];  // a is now a null reference"
+msgstr "int a[5];  // a è ora un riferimento null"
 
 #. type: Plain text
 #: ../E/array.txt:13
@@ -251,8 +251,8 @@ msgid ""
 "a[2] = 213;  // a points to\n"
 "             // 3 elements [0], [1] et [2]"
 msgstr ""
-"a[2] = 213;  // a points to\n"
-"             // 3 elements [0], [1] et [2]"
+"a[2] = 213;  // a fa riferimento a\n"
+"             // 3 elementi: [0], [1] e [2]"
 
 #. type: Plain text
 #: ../E/array.txt:18
@@ -294,8 +294,8 @@ msgid ""
 msgstr ""
 "{\n"
 "\tint a[5];\n"
-"\ta[7] = 123;  // no error at compile time\n"
-"\t             // but error at run time\n"
+"\ta[7] = 123;  // nessun errore in compilazione\n"
+"\t             // ma errore durante l’esecuzione\n"
 "}"
 
 #. type: Plain text
@@ -342,7 +342,7 @@ msgstr ""
 "\t\tfloat  t;\n"
 "\t\tt = a;\n"
 "\t\ta = b;\n"
-"\t\tb = t;  // switches round a and b\n"
+"\t\tb = t;  // scambia a e b\n"
 "\t}"
 
 #. type: Plain text
@@ -2633,10 +2633,10 @@ msgid ""
 "\t<a cbot|fire>fire</a>(2);          // fire\n"
 "\tmotor(0,0);       // stops the rotation"
 msgstr ""
-"\t<a cbot|turn>turn</a>(45);         // turns 45 degrees left\n"
-"\tmotor(0.5, -0.5); // slow rotation to the right\n"
-"\t<a cbot|fire>fire</a>(2);          // fire\n"
-"\tmotor(0,0);       // stops the rotation"
+"\t<a cbot|turn>turn</a>(45);         // gira di 45 gradi a sinistra\n"
+"\tmotor(0.5, -0.5); // ruota lentamente a destra\n"
+"\t<a cbot|fire>fire</a>(2);          // spara\n"
+"\tmotor(0,0);       // interrompe la rotazione"
 
 #. type: Plain text
 #: ../E/motor.txt:12
@@ -2822,7 +2822,7 @@ msgid ""
 "\t}"
 msgstr ""
 "\tvalue = receive(\"Length\");\n"
-"\tif ( value == nan )  // not found ?\n"
+"\tif ( value == nan )  // non trovato?\n"
 "\t{\n"
 "\t\t\n"
 "\t}"
@@ -2853,7 +2853,7 @@ msgid ""
 "<c/><s/>\tMyClass item;    // now item is a null reference"
 msgstr ""
 "L’operatore <code>new</code> crea un’istanza di una <a cbot|class>classe</a>:\n"
-"<c/><s/>\tMyClass item;    // now item is a null reference"
+"<c/><s/>\tMyClass item;    // ora item è un riferimento null"
 
 #. type: Source code
 #: ../E/new.txt:4
@@ -2862,8 +2862,8 @@ msgid ""
 "\titem = new MyClass(); // now item is a reference\n"
 "\t                      // to a new class instance"
 msgstr ""
-"\titem = new MyClass(); // now item is a reference\n"
-"\t                      // to a new class instance"
+"\titem = new MyClass(); // ora item fa riferimento\n"
+"\t                      // a una nuova istanza della classe"
 
 #. type: Plain text
 #: ../E/new.txt:7
@@ -3185,10 +3185,10 @@ msgid ""
 msgstr ""
 "\tobject a;\n"
 "\ta = radar(BotGrabberRoller);\n"
-"\tif ( a == null )  // object does not exist ?\n"
+"\tif ( a == null )  // l’oggetto non esiste?\n"
 "\t{\n"
 "\t}\n"
-"\tif ( a.position.z > 50 )  // is it on a mountain ?\n"
+"\tif ( a.position.z > 50 )  // si trova su una montagna?\n"
 "\t{\n"
 "\t}"
 
@@ -3428,15 +3428,15 @@ msgid ""
 "\tmessage(item2.a);// displays 12\n"
 "}"
 msgstr ""
-"\tMyClass item1(); // create a new instance\n"
-"\t                 // referenced by item1\n"
-"\tMyClass item2;   // create a null reference\n"
-"\titem2 = item1;   // copy the reference,\n"
-"\t                 // item2 and item1 now reference\n"
-"\t                 // the same instance\n"
-"\titem1.a = 12;    // modifies the instance\n"
-"\t                 // referenced by item1 (and item2)\n"
-"\tmessage(item2.a);// displays 12\n"
+"\tMyClass item1(); // crea una nuova istanza\n"
+"\t                 // a cui fa riferimento item1\n"
+"\tMyClass item2;   // crea un riferimento null\n"
+"\titem2 = item1;   // copia il riferimento:\n"
+"\t                 // item2 e item1 ora indicano\n"
+"\t                 // la stessa istanza\n"
+"\titem1.a = 12;    // modifica l’istanza\n"
+"\t                 // indicata da item1 e item2\n"
+"\tmessage(item2.a);// mostra 12\n"
 "}"
 
 #. type: Plain text
@@ -3469,9 +3469,9 @@ msgid ""
 "}"
 msgstr ""
 "{\n"
-"\titem.a = 12;          // modify the original instance\n"
-"\titem = new MyClass(); // new local instance\n"
-"\titem.a = 33;          // modifie the local instance\n"
+"\titem.a = 12;          // modifica l’istanza originale\n"
+"\titem = new MyClass(); // nuova istanza locale\n"
+"\titem.a = 33;          // modifica l’istanza locale\n"
 "}"
 
 #. type: Plain text
@@ -3495,7 +3495,7 @@ msgid ""
 msgstr ""
 "\tMyClass toto();\n"
 "\tTest(toto);\n"
-"\tmessage(toto.a);  // displays 12\n"
+"\tmessage(toto.a);  // mostra 12\n"
 "}"
 
 #. type: Plain text
@@ -3543,9 +3543,9 @@ msgid ""
 "}"
 msgstr ""
 "\tMyClass toto;\n"
-"\ttoto = Test2(); // toto will contain a reference to\n"
-"\t                // the instance created by Test2()\n"
-"\tmessage(toto.a); // displays 33\n"
+"\ttoto = Test2(); // toto conterrà un riferimento\n"
+"\t                // all’istanza creata da Test2()\n"
+"\tmessage(toto.a); // mostra 33\n"
 "}"
 
 #. type: Plain text
@@ -3583,15 +3583,15 @@ msgid ""
 msgstr ""
 "public class MyClass\n"
 "{\n"
-"\tint    b;                // public by default\n"
-"\tpublic int a;            // also public \n"
-"\tprivate point position;  // private\n"
+"\tint    b;                // pubblico per impostazione predefinita\n"
+"\tpublic int a;            // anch’esso pubblico \n"
+"\tprivate point position;  // privato\n"
 "}\n"
 "void Test()\n"
 "{\n"
 "\tMyClass item;\n"
-"\titem.a = item.b = 12;      // ok\n"
-"\tmessage( item.position );  // this is an error\n"
+"\titem.a = item.b = 12;      // corretto\n"
+"\tmessage( item.position );  // questo è un errore\n"
 "}"
 
 #. type: \b; header
@@ -3734,15 +3734,15 @@ msgid ""
 msgstr ""
 "public class MyClass\n"
 "{\n"
-"\tint    b;                // public by default\n"
-"\tpublic int a;            // also public \n"
-"\tprivate point position;  // privat\n"
+"\tint    b;                // pubblico per impostazione predefinita\n"
+"\tpublic int a;            // anch’esso pubblico \n"
+"\tprivate point position;  // privato\n"
 "}\n"
 "void Test()\n"
 "{\n"
 "\tMyClass item;\n"
-"\titem.a = item.b = 12;      // ok\n"
-"\tmessage( item.position );  // this is an error\n"
+"\titem.a = item.b = 12;      // corretto\n"
+"\tmessage( item.position );  // questo è un errore\n"
 "}"
 
 #. type: \b; header
@@ -3773,10 +3773,10 @@ msgid ""
 "// Look for the closest ant\n"
 "item = radar(AlienAnt);"
 msgstr ""
-"// At the beginning of the program:\n"
-"object  item; // variable declaration\n"
+"// All’inizio del programma:\n"
+"object  item; // dichiarazione della variabile\n"
 "\n"
-"// Look for the closest ant\n"
+"// Cerca la formica più vicina\n"
 "item = radar(AlienAnt);"
 
 #. type: Plain text
@@ -3898,7 +3898,7 @@ msgid ""
 "\tradar(Titanium);  // equivalent"
 msgstr ""
 "\tradar(Titanium, 0, 360, 0, 1000);\n"
-"\tradar(Titanium);  // equivalent"
+"\tradar(Titanium);  // equivalente"
 
 #. type: Source code
 #: ../E/radar.txt:74
@@ -3908,7 +3908,7 @@ msgid ""
 "\tradar(Titanium, 0, 90);  // equivalent"
 msgstr ""
 "\tradar(Titanium, 0, 90, 0, 1000);\n"
-"\tradar(Titanium, 0, 90);  // equivalent"
+"\tradar(Titanium, 0, 90);  // equivalente"
 
 #. type: Plain text
 #: ../E/radar.txt:77
@@ -4400,7 +4400,7 @@ msgstr ""
 "{\n"
 "\tint a[12];\n"
 "\ta[5] = 345;\n"
-"\tmessage( sizeof(a) );  // will display 6\n"
+"\tmessage( sizeof(a) );  // mostrerà 6\n"
 "}"
 
 #. type: Plain text
@@ -4431,10 +4431,10 @@ msgid ""
 "message( sizeof(xy)    );  // will display 6\n"
 "message( sizeof(xy[5]) );  // will display 11\n"
 msgstr ""
-"float xy[][];  // 2 dimensionnal array\n"
+"float xy[][];  // array bidimensionale\n"
 "xy[5][10] = 67;\n"
-"message( sizeof(xy)    );  // will display 6\n"
-"message( sizeof(xy[5]) );  // will display 11\n"
+"message( sizeof(xy)    );  // mostrerà 6\n"
+"message( sizeof(xy[5]) );  // mostrerà 11\n"
 
 #. type: \b; header
 #: ../E/sniff.txt:1
@@ -4618,7 +4618,7 @@ msgstr ""
 "\tMyClasse item2();\n"
 "\titem1.nb = 3;\n"
 "\titem1.list[item1.nb] = \"Hello\";\n"
-"\tmessage( item2.list[item2.nb] ); // display \"Hello\"\n"
+"\tmessage( item2.list[item2.nb] ); // mostra \"Hello\"\n"
 "}"
 
 #. type: Plain text
@@ -4706,9 +4706,9 @@ msgid ""
 "\tint pos = strfind(\"abcdef\", \"de\"); // pos will be 3\n"
 "\tint pos = strfind(\"abcdef\", \"xy\"); // pos will be <a cbot|nan>nan</a>"
 msgstr ""
-"<c/>\tint pos = strfind(\"abcdef\", \"ab\"); // pos will be 0\n"
-"\tint pos = strfind(\"abcdef\", \"de\"); // pos will be 3\n"
-"\tint pos = strfind(\"abcdef\", \"xy\"); // pos will be <a cbot|nan>nan</a>"
+"<c/>\tint pos = strfind(\"abcdef\", \"ab\"); // pos varrà 0\n"
+"\tint pos = strfind(\"abcdef\", \"de\"); // pos varrà 3\n"
+"\tint pos = strfind(\"abcdef\", \"xy\"); // pos varrà <a cbot|nan>nan</a>"
 
 #. type: Plain text
 #: ../E/strfind.txt:19
@@ -4751,7 +4751,7 @@ msgstr ""
 "<c/>\t\"Hello!\"\n"
 "\t\"This is a string\"\n"
 "\t\"x\"\n"
-"\t\"\"  // empty string"
+"\t\"\"  // stringa vuota"
 
 #. type: Plain text
 #: ../E/string.txt:10
@@ -4872,8 +4872,8 @@ msgid ""
 "<c/>\tstring s = strleft(\"abcdef\", 2);  // s is \"ab\"\n"
 "\tstring s = strleft(\"abc\", 10);  // s is \"abc\""
 msgstr ""
-"<c/>\tstring s = strleft(\"abcdef\", 2);  // s is \"ab\"\n"
-"\tstring s = strleft(\"abc\", 10);  // s is \"abc\""
+"<c/>\tstring s = strleft(\"abcdef\", 2);  // s vale \"ab\"\n"
+"\tstring s = strleft(\"abc\", 10);  // s vale \"abc\""
 
 #. type: Plain text
 #: ../E/strleft.txt:15
@@ -4911,9 +4911,9 @@ msgid ""
 "\tint len = strlen(\"\");  // len is 0\n"
 "\tif ( strlen(s) == 0 )  // is string empty ?"
 msgstr ""
-"<c/>\tint len = strlen(\"abc\");  // len is 3\n"
-"\tint len = strlen(\"\");  // len is 0\n"
-"\tif ( strlen(s) == 0 )  // is string empty ?"
+"<c/>\tint len = strlen(\"abc\");  // len vale 3\n"
+"\tint len = strlen(\"\");  // len vale 0\n"
+"\tif ( strlen(s) == 0 )  // la stringa è vuota?"
 
 #. type: Plain text
 #: ../E/strlen.txt:13
@@ -4947,7 +4947,7 @@ msgstr "<c/>strlower ( string );<n/>"
 #: ../E/strlower.txt:8
 #, no-wrap
 msgid "<c/>\tstring s = strlower(\"Abc\");  // s is \"abc\""
-msgstr "<c/>\tstring s = strlower(\"Abc\");  // s is \"abc\""
+msgstr "<c/>\tstring s = strlower(\"Abc\");  // s vale \"abc\""
 
 #. type: Plain text
 #: ../E/strlower.txt:11
@@ -5002,9 +5002,9 @@ msgid ""
 "\tstring s = strmid(\"abcdef\", 4, 5);  // s is \"ef\"\n"
 "\tstring s = strmid(\"abcdef\", 9, 2);  // s is \"\""
 msgstr ""
-"<c/>\tstring s = strmid(\"abcdef\", 1, 2);  // s is \"bc\"\n"
-"\tstring s = strmid(\"abcdef\", 4, 5);  // s is \"ef\"\n"
-"\tstring s = strmid(\"abcdef\", 9, 2);  // s is \"\""
+"<c/>\tstring s = strmid(\"abcdef\", 1, 2);  // s vale \"bc\"\n"
+"\tstring s = strmid(\"abcdef\", 4, 5);  // s vale \"ef\"\n"
+"\tstring s = strmid(\"abcdef\", 9, 2);  // s vale \"\""
 
 #. type: Plain text
 #: ../E/strmid.txt:19
@@ -5042,8 +5042,8 @@ msgid ""
 "<c/>\tstring s = strright(\"abcdef\", 2);  // s is \"ef\"\n"
 "\tstring s = strright(\"abc\", 10);  // s is \"abc\""
 msgstr ""
-"<c/>\tstring s = strright(\"abcdef\", 2);  // s is \"ef\"\n"
-"\tstring s = strright(\"abc\", 10);  // s is \"abc\""
+"<c/>\tstring s = strright(\"abcdef\", 2);  // s vale \"ef\"\n"
+"\tstring s = strright(\"abc\", 10);  // s vale \"abc\""
 
 #. type: Plain text
 #: ../E/strright.txt:15
@@ -5077,7 +5077,7 @@ msgstr "<c/>strupper ( string );<n/>"
 #: ../E/strupper.txt:8
 #, no-wrap
 msgid "<c/>\tstring s = strupper(\"Abc\");  // s is \"ABC\""
-msgstr "<c/>\tstring s = strupper(\"Abc\");  // s is \"ABC\""
+msgstr "<c/>\tstring s = strupper(\"Abc\");  // s vale \"ABC\""
 
 #. type: Plain text
 #: ../E/strupper.txt:11
@@ -5114,8 +5114,8 @@ msgid ""
 "<c/>\tstring s = \"45\"+\"12\";  // s contains \"4512\"\n"
 "\tfloat  n =  45 + 12;   // n contains 67"
 msgstr ""
-"<c/>\tstring s = \"45\"+\"12\";  // s contains \"4512\"\n"
-"\tfloat  n =  45 + 12;   // n contains 67"
+"<c/>\tstring s = \"45\"+\"12\";  // s contiene \"4512\"\n"
+"\tfloat  n =  45 + 12;   // n contiene 67"
 
 #. type: Source code
 #: ../E/strval.txt:9
@@ -5132,10 +5132,10 @@ msgid ""
 "\tfloat n = strval(\"abc\");      // n is 0\n"
 "\tfloat n = strval(\"100\")+2;    // n is 102"
 msgstr ""
-"<c/>\tfloat n = strval(\"1.23\");     // n is 1.23\n"
-"\tfloat n = strval(\"12abc45\");  // n is 12\n"
-"\tfloat n = strval(\"abc\");      // n is 0\n"
-"\tfloat n = strval(\"100\")+2;    // n is 102"
+"<c/>\tfloat n = strval(\"1.23\");     // n vale 1.23\n"
+"\tfloat n = strval(\"12abc45\");  // n vale 12\n"
+"\tfloat n = strval(\"abc\");      // n vale 0\n"
+"\tfloat n = strval(\"100\")+2;    // n vale 102"
 
 #. type: Plain text
 #: ../E/strval.txt:18
@@ -5193,7 +5193,7 @@ msgstr ""
 "\tsynchronized int inc( )\n"
 "\t{\n"
 "\t\tint val = nb;\n"
-"\t\twait ( 2 );  // wait 2 sec.\n"
+"\t\twait ( 2 );  // attendi 2 secondi\n"
 "\t\tnb = nb + 1;\n"
 "\t\treturn val;\n"
 "\t}\n"
@@ -5276,7 +5276,7 @@ msgstr ""
 "\t{\n"
 "\t\tfloat dist;\n"
 "\t\tdist = distance(p1, p2);\n"
-"\t} <n/>// no semicolon here!<c/>"
+"\t} <n/>// qui nessun punto e virgola!<c/>"
 
 #. type: Plain text
 #: ../E/term.txt:13
@@ -5298,7 +5298,7 @@ msgid ""
 "\t\tb = 100-a;\n"
 "\t}"
 msgstr ""
-"\tif ( a < b ) <n/>// no semicolon here!<c/>\n"
+"\tif ( a < b ) <n/>// qui nessun punto e virgola!<c/>\n"
 "\t{\n"
 "\t\tb = 100-a;\n"
 "\t}"
@@ -5476,7 +5476,7 @@ msgstr ""
 "{\n"
 "\tMyClass item();\n"
 "\titem.m_str = \"Hello\";\n"
-"\titem.MyFunction();  // display \"Hello\"\n"
+"\titem.MyFunction();  // mostra \"Hello\"\n"
 "}"
 
 #. type: Plain text
@@ -5500,7 +5500,7 @@ msgid ""
 "\tthis.m_int = 2;  // identical"
 msgstr ""
 "\tm_int = 2;\n"
-"\tthis.m_int = 2;  // identical"
+"\tthis.m_int = 2;  // identico"
 
 #. type: Plain text
 #: ../E/this.txt:32
@@ -5526,8 +5526,8 @@ msgstr ""
 "extern void object::Display()\n"
 "{\n"
 "\tmessage(orientation);\n"
-"\tmessage(this.orientation); // same thing but\n"
-"\t                           // more explicit\n"
+"\tmessage(this.orientation); // stessa cosa, ma\n"
+"\t                           // più esplicita\n"
 "}"
 
 #. type: Plain text
@@ -6103,8 +6103,8 @@ msgid ""
 "\tj = 25;  // j takes the value 25\n"
 "\tj = i;   // can not write this, because i has got no content yet."
 msgstr ""
-"\tj = 25;  // j takes the value 25\n"
-"\tj = i;   // can not write this, because i has got no content yet."
+"\tj = 25;  // j assume il valore 25\n"
+"\tj = i;   // non valido: i non ha ancora un valore."
 
 #. type: Plain text
 #: ../E/var.txt:46
@@ -6134,9 +6134,9 @@ msgid ""
 "\tj = i+6;  // j takes the value of i plus 6, this is 13\n"
 "\ti = j;    // i takes the value of j, this is 13"
 msgstr ""
-"\ti = 5+2;  // i takes the value 7\n"
-"\tj = i+6;  // j takes the value of i plus 6, this is 13\n"
-"\ti = j;    // i takes the value of j, this is 13"
+"\ti = 5+2;  // i assume il valore 7\n"
+"\tj = i+6;  // j assume il valore di i più 6, cioè 13\n"
+"\ti = j;    // i assume il valore di j, cioè 13"
 
 #. type: Plain text
 #: ../E/var.txt:55
@@ -6155,7 +6155,7 @@ msgid ""
 "<c/><s/>\ti+2 = j;  // impossible"
 msgstr ""
 "Questa assegnazione è errata: a sinistra di <code>=</code> può esserci solo il nome di una variabile:\n"
-"<c/><s/>\ti+2 = j;  // impossible"
+"<c/><s/>\ti+2 = j;  // impossibile"
 
 #. type: Plain text
 #: ../E/var.txt:60
@@ -6175,9 +6175,9 @@ msgid ""
 "\ta = b;     // the content of b is copied into a\n"
 "\tb = temp;  // the content of temp is copied into b"
 msgstr ""
-"\ttemp = a;  // temp takes the value of a\n"
-"\ta = b;     // the content of b is copied into a\n"
-"\tb = temp;  // the content of temp is copied into b"
+"\ttemp = a;  // temp assume il valore di a\n"
+"\ta = b;     // il contenuto di b viene copiato in a\n"
+"\tb = temp;  // il contenuto di temp viene copiato in b"
 
 #. type: \b; header
 #: ../E/void.txt:1
@@ -7377,7 +7377,7 @@ msgstr ""
 "extern void object::ProgramName()\n"
 "{\n"
 "\t\n"
-"\t// instructions\n"
+"\t// istruzioni\n"
 "\t\n"
 "}"
 
@@ -7614,7 +7614,7 @@ msgstr ""
 "{\n"
 "\tfloat value;\n"
 "\tvalue = Average(2, 6);\n"
-"\tmessage(value);  // will display 4\n"
+"\tmessage(value);  // mostrerà 4\n"
 "}"
 
 #. type: Plain text
@@ -9190,10 +9190,10 @@ msgid ""
 "\tstring s = 2.5 + \"bc\";  // returns \"2.5bc\"\n"
 "\tstring s = \"a\" + true;  // returns \"atrue\""
 msgstr ""
-"\tstring s = \"a\" + \"bc\";  // returns \"abc\"\n"
-"\tstring s = 1 + \"bc\";    // returns \"1bc\"\n"
-"\tstring s = 2.5 + \"bc\";  // returns \"2.5bc\"\n"
-"\tstring s = \"a\" + true;  // returns \"atrue\""
+"\tstring s = \"a\" + \"bc\";  // restituisce \"abc\"\n"
+"\tstring s = 1 + \"bc\";    // restituisce \"1bc\"\n"
+"\tstring s = 2.5 + \"bc\";  // restituisce \"2.5bc\"\n"
+"\tstring s = \"a\" + true;  // restituisce \"atrue\""
 
 #. type: Plain text
 #: ../E/expr.txt:107
@@ -9313,7 +9313,7 @@ msgid ""
 " message(\"\"+pi);"
 msgstr ""
 " float pi = 3.14;\n"
-" // message(pi); // does not work\n"
+" // message(pi); // non funziona\n"
 " message(\"\"+pi);"
 
 #. type: Source code
@@ -9326,7 +9326,7 @@ msgid ""
 msgstr ""
 " a = 2;\n"
 " b = a++;\n"
-" // now b contains 2 and a contains 3"
+" // ora b contiene 2 e a contiene 3"
 
 #. type: Source code
 #: ../E/expr.txt:194
@@ -9338,7 +9338,7 @@ msgid ""
 msgstr ""
 " a = 2;\n"
 " b = ++a;\n"
-" // now b contains 3 and a contains 3"
+" // ora b contiene 3 e a contiene 3"
 
 #. type: \b; header
 #: ../E/expr.txt:138
@@ -9520,10 +9520,10 @@ msgid ""
 "string s[3];    // an array of 3 strings\n"
 "float  xy[][];  // a 2 dimensionnal array of floats"
 msgstr ""
-"int    [ ] a;   // an array of int\n"
-"int    a [12];  // an array of int limited to 12 elements\n"
-"string s[3];    // an array of 3 strings\n"
-"float  xy[][];  // a 2 dimensionnal array of floats"
+"int    [ ] a;   // array di int\n"
+"int    a [12];  // array di int limitato a 12 elementi\n"
+"string s[3];    // array di 3 stringhe\n"
+"float  xy[][];  // array bidimensionale di float"
 
 #. type: \b; header
 #: ../E/array.txt:30
@@ -9998,10 +9998,10 @@ msgid ""
 msgstr ""
 "extern void object::Test()\n"
 "{\n"
-"\tMyClass object1();       // Call default constructor (without parameters)\n"
-"\tMyClass object2(4, 5);   // Call constructor with two int parameters\n"
-"\tMyClass object3;         // No constructor called, object3 == null\n"
-"\tobject3 = new MyClass(); // We call constructor now, object3 != null\n"
+"\tMyClass object1();       // Chiama il costruttore predefinito senza parametri\n"
+"\tMyClass object2(4, 5);   // Chiama il costruttore con due parametri int\n"
+"\tMyClass object3;         // Nessun costruttore chiamato, object3 == null\n"
+"\tobject3 = new MyClass(); // Ora chiamiamo il costruttore, object3 != null\n"
 "}"
 
 #. type: Plain text
@@ -10046,14 +10046,14 @@ msgid ""
 msgstr ""
 "public class MyClass\n"
 "{\n"
-"\tstatic private int counter = 0; // instance counter\n"
+"\tstatic private int counter = 0; // contatore delle istanze\n"
 "\tvoid  MyClass( )\n"
 "\t{\n"
-"\t\tcounter++;  // one instance more\n"
+"\t\tcounter++;  // un’istanza in più\n"
 "\t}\n"
 "\tvoid ~MyClass( )\n"
 "\t{\n"
-"\t\tcounter--;  // one instance less\n"
+"\t\tcounter--;  // un’istanza in meno\n"
 "\t}\n"
 "}\n"
 "extern void object::Test()\n"
@@ -10235,7 +10235,7 @@ msgstr ""
 "{\n"
 "\tChild child();\n"
 "\tchild.Print(); // 0\n"
-"\t//child.field = 1; // Error!\n"
+"\t//child.field = 1; // Errore!\n"
 "}"
 
 #. type: Plain text
@@ -10411,7 +10411,7 @@ msgstr ""
 "extern void object::Test()\n"
 "{\n"
 "\tChild child();\n"
-"\tchild.foo(); // Will show \"bar\"\n"
+"\tchild.foo(); // Mostrerà \"bar\"\n"
 "}"
 
 #. type: \b; header
@@ -10503,9 +10503,9 @@ msgstr ""
 "\t{\n"
 "\t\tpeople[i].foo();\n"
 "\t}\n"
-"\t//people[1].bar(); // Error\n"
+"\t//people[1].bar(); // Errore\n"
 "\tChild child = people[1];\n"
-"\tchild.bar(); // OK\n"
+"\tchild.bar(); // Corretto\n"
 "}"
 
 #. type: \b; header
@@ -10625,7 +10625,7 @@ msgstr ""
 "extern void object::Test()\n"
 "{\n"
 "\tChild child();\n"
-"\tchild.Print(); // Will show both 0 and 1\n"
+"\tchild.Print(); // Mostrerà sia 0 sia 1\n"
 "}"
 
 #. type: Plain text
@@ -10687,8 +10687,8 @@ msgstr ""
 "extern void object::Test()\n"
 "{\n"
 "\tChild child();\n"
-"\tchild.foo(); // Will show \"foo\"\n"
-"\tchild.bar(); // Will show \"bar\"\n"
+"\tchild.foo(); // Mostrerà \"foo\"\n"
+"\tchild.bar(); // Mostrerà \"bar\"\n"
 "}"
 
 #. type: Plain text
@@ -10801,10 +10801,10 @@ msgstr ""
 "\treturn a + b;\n"
 "}\n"
 "\n"
-"// Somewhere in the main program...\n"
-"Add(); // Will return 0.0\n"
-"Add(2.0); // Will return 2.0\n"
-"Add(2.0, 3.0); // Will return 5.0\n"
+"// In un punto del programma principale...\n"
+"Add(); // Restituirà 0.0\n"
+"Add(2.0); // Restituirà 2.0\n"
+"Add(2.0, 3.0); // Restituirà 5.0\n"
 "// ..."
 
 #. type: \t; header
@@ -10854,10 +10854,10 @@ msgstr ""
 "\treturn a + b;\n"
 "}\n"
 "\n"
-"// Somewhere in the main program...\n"
-"Add(); // Compilation error: ambiguous call\n"
-"Add(\"\"); // Ok\n"
-"Add(0.0); // Ok\n"
+"// In un punto del programma principale...\n"
+"Add(); // Errore di compilazione: chiamata ambigua\n"
+"Add(\"\"); // Corretto\n"
+"Add(0.0); // Corretto\n"
 "// ..."
 
 #. type: Plain text
@@ -11473,9 +11473,9 @@ msgstr ""
 " \n"
 " float  f = 3.01 * 10;   // f == 30.1\n"
 " \n"
-" int    i = 5 / 3;       // i == 1 (automatic conversion to int)\n"
+" int    i = 5 / 3;       // i == 1 (conversione automatica a int)\n"
 " float  f = 5 / 3;       // f == 1.67\n"
-" float  f = 5 / 0;       // returns an error (division by zero)\n"
+" float  f = 5 / 0;       // restituisce un errore (divisione per zero)\n"
 " \n"
 " int    i = 13 % 5;      // i == 3\n"
 " int    i = -8 % 3;      // i == -2\n"

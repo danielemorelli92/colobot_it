@@ -20,11 +20,11 @@
     "negative_localization_tests": "passed: link/button/key/code/printf/tooltip corruptions rejected",
     "plural_runtime_lookup": "passed for 0, 1, 2, 10",
     "generated_all_data": "all 4455 data entries found",
-    "code_preservation": "542 examples, image references and ScriptName values preserved",
+    "code_preservation": "Executable code unchanged after excluding lexically identified // comments; strings and identifiers preserved",
     "raw_code_and_tabs": "passed: native <c/> code and literal indentation preserved"
   },
-  "preview": "0.3",
-  "identical_to_source": 777,
+  "preview": "0.4",
+  "identical_to_source": 702,
   "fully_populated_categories": {
     "interface": 659,
     "campaign": 878,
@@ -36,9 +36,11 @@
   "windows": {
     "preview_0.1": "User confirmed launch and Italian mission/SatCom, screenshots reviewed; font issue resolved by restart",
     "preview_0.2": "User confirmed launch; no extended interactive test",
-    "preview_0.3": "not run; full interactive testing deferred at user request"
+    "preview_0.3": "User reported everything appears to work",
+    "preview_0.4": "not run"
   },
   "fuzzy_entries": 0,
   "data_entries_verified_in_generated_output": 4455,
-  "preserved_code_images_script_names": 542
+  "preserved_code_images_script_names": 542,
+  "translated_comment_entries": 80
 }

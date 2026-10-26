@@ -1,8 +1,8 @@
 # Colobot: Gold Edition — italiano
 
-**Anteprima 0.3 con cataloghi completi per Colobot Gold 0.2.2-alpha Windows 64 bit.**
+**Anteprima 0.4 con cataloghi completi per Colobot Gold 0.2.2-alpha Windows 64 bit.**
 
-[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.3.zip)
+[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.4.zip)
 Apri il file su GitHub e premi **Download raw file**.
 
 ## Installare o aggiornare
@@ -12,7 +12,7 @@ Apri il file su GitHub e premi **Download raw file**.
 3. Se hai la 0.1 o 0.2, accetta la sostituzione dei file dell’anteprima.
 4. Avvia sempre `Avvia-Italiano.cmd`.
 
-Non sostituire la cartella `lang` originale. La 0.3 riutilizza
+Non sostituire la cartella `lang` originale. La 0.4 riutilizza
 `%LOCALAPPDATA%\ColobotItalianPreview-0.1`: **conserva salvataggi e impostazioni
 precedenti**. Il launcher è identico a quello della 0.1 e 0.2.
 
@@ -30,11 +30,11 @@ descrizioni dei programmi e catalogo desktop/manuale.
 
 Sono inclusi entrambi i plurali italiani delle due voci che li richiedono:
 il numero di voci non coincide quindi con il numero di forme tradotte.
-777 voci sono intenzionalmente identiche al sorgente: codice, identificatori,
+702 voci sono intenzionalmente identiche al sorgente: codice, identificatori,
 nomi, riferimenti alle immagini, crediti e simili. I nomi tecnici dei programmi
-restano coerenti con gli esempi. Il codice e i suoi commenti restano invariati.
+restano coerenti con gli esempi. Il codice eseguibile resta invariato; i commenti degli esempi sono tradotti.
 
-[Copertura per catalogo](docs/coverage-0.3.json).
+[Copertura per catalogo](docs/coverage-0.4.json).
 Il 100% riguarda i cataloghi della release, non promette l’assenza di qualsiasi
 parola inglese: oltre al codice, restano i nomi delle lingue nel binario e i
 metadati non gettext dell’addon AltTextures. Le mod esterne non sono incluse.
@@ -47,7 +47,7 @@ Questa è la prima stesura completa, **da collaudare nel gioco e revisionare
 linguisticamente**, non una release ufficiale approvata dagli sviluppatori.
 L’utente ha confermato l’avvio della 0.1 e 0.2 su Windows. Su sua richiesta,
 il collaudo interattivo esteso viene rinviato a questa versione completa.
-La 0.3 non è ancora stata avviata su Windows nell’ambiente di sviluppo.
+La 0.4 non è ancora stata avviata su Windows nell’ambiente di sviluppo.
 
 Controlli automatici eseguiti:
 
@@ -87,7 +87,7 @@ cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON
 cmake --build build/data -j2
 COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/test_generated.py build/data
 .venv/bin/python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
-COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.3.zip
+COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.4.zip
 ```
 
 Il preparatore usa archivi dei commit ufficiali, preserva i checkout originali

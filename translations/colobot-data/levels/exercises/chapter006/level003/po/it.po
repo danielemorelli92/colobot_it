@@ -116,13 +116,13 @@ msgid ""
 "<c/><s/>\t<a cbot|send>send</a>(\"order\",  1, 100);  // order \"move\""
 msgstr ""
 "L’ordine n. 1 significa «avanza», il n. 2 «ruota». Il parametro indica distanza o angolo. Per avanzare di 20 m:\n"
-"<c/><s/>\t<a cbot|send>send</a>(\"order\",  1, 100);  // order \"move\""
+"<c/><s/>\t<a cbot|send>send</a>(\"order\",  1, 100);  // ordine \"move\""
 
 #. type: Source code
 #: ../help/help.E.txt:17
 #, no-wrap
 msgid "\t<a cbot|send>send</a>(\"param\", 20, 100);  // distance 20 meters"
-msgstr "\t<a cbot|send>send</a>(\"param\", 20, 100);  // distance 20 meters"
+msgstr "\t<a cbot|send>send</a>(\"param\", 20, 100);  // distanza di 20 metri"
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -144,7 +144,7 @@ msgid ""
 "<c/><s/>\twhile ( <a cbot|testinfo>testinfo</a>(\"order\", 100) )  // wait for end of work"
 msgstr ""
 "L’esecutore attende un ordine, lo esegue e lo elimina dal centro. Prima di inviarne un altro, il robot di controllo deve aspettare che il precedente scompaia. Scrivi:\n"
-"<c/><s/>\twhile ( <a cbot|testinfo>testinfo</a>(\"order\", 100) )  // wait for end of work"
+"<c/><s/>\twhile ( <a cbot|testinfo>testinfo</a>(\"order\", 100) )  // attendi la fine del lavoro"
 
 #. type: Source code
 #: ../help/help.E.txt:25
@@ -183,10 +183,10 @@ msgid ""
 "}"
 msgstr ""
 "{\n"
-"\tsend(\"param\", param, 100);  // send the parameter\n"
-"\tsend(\"order\", order, 100);  // send the order\n"
+"\tsend(\"param\", param, 100);  // invia il parametro\n"
+"\tsend(\"order\", order, 100);  // invia l’ordine\n"
 "\n"
-"\twhile ( testinfo(\"order\", 100) )  // wait for end of work\n"
+"\twhile ( testinfo(\"order\", 100) )  // attendi la fine del lavoro\n"
 "\t{\n"
 "\t\twait(1);\n"
 "\t}\n"

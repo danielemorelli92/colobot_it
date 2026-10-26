@@ -1,6 +1,7 @@
 """Checks for Colobot's documented pseudo-HTML and native control sequences."""
 from collections import Counter
 import re
+from code_comments import without_comments
 
 # Angle-bracketed button captions such as <build a ...> are visible prose,
 # not control tags. Match the documented grammar, including nested real links.
@@ -23,8 +24,8 @@ def check_translation(source, target, flags=()):
             raise ValueError('Changed label/tooltip separator count')
     if source.count('\t') != target.count('\t'):
         raise ValueError('Changed literal tab indentation')
-    if Counter(re.findall(r'<c/>(.*?)<n/>', source, re.S)) != Counter(re.findall(r'<c/>(.*?)<n/>', target, re.S)):
+    if Counter(re.findall(r'<c/>(.*?)<n/>', without_comments(source), re.S)) != Counter(re.findall(r'<c/>(.*?)<n/>', without_comments(target), re.S)):
         raise ValueError('Changed native-style code example')
-    for code in re.findall(r'<code>.*?</code>', source, re.S):
-        if code not in target:
+    for code in re.findall(r'<code>.*?</code>', without_comments(source), re.S):
+        if code not in without_comments(target):
             raise ValueError('Changed CBot code block')

@@ -2,6 +2,7 @@
 """Protect whole code examples, artwork names and generated CBot function names."""
 from pathlib import Path
 import polib
+from code_comments import without_comments
 root=Path(__file__).resolve().parents[1]/'translations/colobot-data'
 count=0
 for path in root.rglob('it.po'):
@@ -18,6 +19,6 @@ for path in root.rglob('it.po'):
             assert entry.msgstr==headings[entry.msgid]
             continue
         if any(kind in entry.comment for kind in ['type: Source code','type: Image filename','type: ScriptName-text']):
-            assert entry.msgstr==entry.msgid,(path,entry.msgid)
+            assert (without_comments(entry.msgstr)==without_comments(entry.msgid) if 'type: Source code' in entry.comment else entry.msgstr==entry.msgid),(path,entry.msgid)
             count+=1
 print(f'PASS: {count} complete code examples, artwork references and ScriptName identifiers preserved.')

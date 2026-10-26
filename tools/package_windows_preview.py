@@ -64,7 +64,7 @@ with tempfile.TemporaryDirectory() as temp:
     add(base+'lang/fr/LC_MESSAGES/colobot.mo',mo.read_bytes())
     translated=gettext.GNUTranslations(io.BytesIO(mo.read_bytes()))
     assert translated.gettext('Missions')=='Missioni'
-add(base+'mod/manifest.txt','DisplayName text="Italiano - anteprima 0.3 (slot French)"\nVersion text="0.3"\nSummary text="Cataloghi italiani completi per 0.2.2-alpha. Usa French solo in questa anteprima."\n')
+add(base+'mod/manifest.txt','DisplayName text="Italiano - anteprima 0.4 (slot French)"\nVersion text="0.4"\nSummary text="Cataloghi italiani completi per 0.2.2-alpha. Usa French solo in questa anteprima."\n')
 # This file is a template copied on first launch; it never replaces existing saves.
 add(base+'config-iniziale.ini','[Language]\nLang=fr\n\n[Mods]\nNames=mod\nEnabled=1\n')
 launcher=r'''@echo off
@@ -102,7 +102,7 @@ if not "%GAME_EXIT%"=="0" (
 exit /b %GAME_EXIT%
 '''
 add('Avvia-Italiano.cmd',launcher.replace('\n','\r\n').encode('ascii'))
-add('LEGGIMI-ITALIANO.txt','''COLOBOT GOLD 0.2.2-alpha WIN64 - ANTEPRIMA ITALIANA 0.3
+add('LEGGIMI-ITALIANO.txt','''COLOBOT GOLD 0.2.2-alpha WIN64 - ANTEPRIMA ITALIANA 0.4
 
 1. Chiudi il gioco.
 2. Estrai TUTTO questo ZIP nella cartella che contiene colobot.exe e data.
@@ -111,7 +111,7 @@ add('LEGGIMI-ITALIANO.txt','''COLOBOT GOLD 0.2.2-alpha WIN64 - ANTEPRIMA ITALIAN
 4. Apri Missioni, Terra, prima missione: Equipaggiamento.
    Campagna principale, interfaccia e aiuto generale sono ora tradotti.
    Se aggiorni dalla 0.1 o 0.2, sostituisci i file dell'anteprima.
-   Conserva la cartella dei salvataggi: la 0.3 riutilizza quella precedente.
+   Conserva la cartella dei salvataggi: la 0.4 riutilizza quella precedente.
 
 NON copiare file nella cartella lang originale. Non sostituire l'eseguibile.
 L'anteprima usa un catalogo separato e una mod tramite le opzioni ufficiali.
@@ -135,11 +135,11 @@ Completati anche esercizi, sfide, battaglie, livelli aggiuntivi, CBOT e manuale.
 5172/5172 voci compilate nei 146 cataloghi; nessuna vuota o fuzzy.
 Non e' una revisione linguistica finale: il collaudo completo nel gioco resta da fare.
 Nessun nuovo eseguibile. Completati i testi dei cataloghi della release.
-Nomi di programmi, codice, commenti degli esempi e crediti restano invariati.
+Nomi di programmi, codice eseguibile e crediti restano invariati; i commenti sono tradotti.
 Le descrizioni di mod esterne e i metadati dell'addon AltTextures non sono cataloghi del gioco.
 Catalogo gettext, testi generati, marcatori e struttura del pacchetto verificati
 in Linux. Il funzionamento di base della 0.1 e' stato confermato su Windows
-dall’utente. Anche la 0.2 e' stata avviata su Windows dall’utente. La 0.3 e' da collaudare.
+dall’utente. Anche la 0.2 e' stata avviata su Windows dall’utente. La 0.4 e' da collaudare.
 Se non parte o i testi restano francesi, conserva il messaggio di errore e
 segnala il contenuto della finestra e la disposizione delle cartelle.
 
@@ -166,7 +166,7 @@ for folder in ['translations','tools','docs']:
             add(base+'sources/'+src.relative_to(ROOT).as_posix(),src.read_bytes())
 add(base+'sources/README.md',(ROOT/'README.md').read_bytes())
 add(base+'sources/patches/colobot-0.2.2-alpha-italian.patch',(ROOT/'patches/colobot-0.2.2-alpha-italian.patch').read_bytes())
-add(base+'COPERTURA.json', json.dumps({'version':'0.3','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count},indent=2)+'\n')
+add(base+'COPERTURA.json', json.dumps({'version':'0.4','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count},indent=2)+'\n')
 # Inspect the actual archive after writing; no Windows launch is claimed.
 manifest={name:hashlib.sha256(data).hexdigest() for name,data in files.items()}
 add(base+'SHA256SUMS.json',json.dumps(manifest,indent=2)+'\n')

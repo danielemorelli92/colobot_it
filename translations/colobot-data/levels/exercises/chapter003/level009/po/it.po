@@ -109,10 +109,10 @@ msgid ""
 "    3 -> move(10);   // move 10 meters forward\n"
 "    4 -> move(-10);  // move 10 meters backwards"
 msgstr ""
-"    1 -> grab();     // take an object\n"
-"    2 -> drop();     // drop an object\n"
-"    3 -> move(10);   // move 10 meters forward\n"
-"    4 -> move(-10);  // move 10 meters backwards"
+"    1 -> grab();     // prendi un oggetto\n"
+"    2 -> drop();     // posa un oggetto\n"
+"    3 -> move(10);   // avanza di 10 metri\n"
+"    4 -> move(-10);  // arretra di 10 metri"
 
 #. type: Plain text
 #: ../help/help.E.txt:21
@@ -122,7 +122,7 @@ msgid ""
 "<c/><s/>\t<a cbot|send>send</a>(\"order\", 3, 100);  // order 3 -> \"move(10)\""
 msgstr ""
 "Per far avanzare l’esecutore di 10 metri basta:\n"
-"<c/><s/>\t<a cbot|send>send</a>(\"order\", 3, 100);  // order 3 -> \"move(10)\""
+"<c/><s/>\t<a cbot|send>send</a>(\"order\", 3, 100);  // ordine 3 -> \"move(10)\""
 
 #. type: Plain text
 #: ../help/help.E.txt:24
