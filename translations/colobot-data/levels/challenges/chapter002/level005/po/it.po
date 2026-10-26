@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Radar and traps 2"
-msgstr ""
+msgstr "Radar e trappole 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Try to figure out how to survive in a hostile environment."
-msgstr ""
+msgstr "Trova il modo di sopravvivere in un ambiente ostile."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Traps"
-msgstr ""
+msgstr "Traps"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,6 +46,9 @@ msgid ""
 "object|waypoint>blue crosses</a> on the ground, but do not get too close to "
 "the <a object|mine>mines</a>."
 msgstr ""
+"Programma il <a object|bottr>robot</a> perché trovi tutte le <a "
+"object|waypoint>croci blu</a> senza avvicinarsi troppo alle <a "
+"object|mine>mine</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -56,6 +59,9 @@ msgid ""
 "must take into account the inertia of the bot. Probably a safety distance of"
 " 3 to 3.5m would be more appropriate."
 msgstr ""
+"A meno di 2 m dal centro di una mina, cioè la posizione restituita dal "
+"radar, il robot esplode. Tieni conto dell’inerzia: conviene mantenere una "
+"distanza di sicurezza di 3-3,5 m."
 
 #. type: \t; header
 #: ../help/help.E.txt:6

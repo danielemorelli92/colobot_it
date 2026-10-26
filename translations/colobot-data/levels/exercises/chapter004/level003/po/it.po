@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Crazy bot"
-msgstr ""
+msgstr "Robot impazzito"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -26,18 +26,19 @@ msgstr ""
 msgid ""
 "Use the radar to put some order into a big mess left behind by a crazy bot."
 msgstr ""
+"Usa il radar per riordinare il disastro lasciato da un robot impazzito."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -48,6 +49,9 @@ msgid ""
 "written in the previous exercise. This can show you the flexibility of such "
 "a program: it adapts to whatever environment it encounters."
 msgstr ""
+"Un «robot impazzito» dissemina <a object|waypoint>croci blu</a>. Puoi "
+"riutilizzare il programma precedente: dimostra quanto sia flessibile e "
+"capace di adattarsi all’ambiente."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
@@ -62,6 +66,8 @@ msgid ""
 "Do not wait too long, because the crazy bot gets down to work immediately. "
 "Fortunately, as long as you are in the program editor, the game will pause."
 msgstr ""
+"Non aspettare troppo: il robot impazzito si mette subito al lavoro. "
+"Fortunatamente il gioco resta in pausa mentre sei nell’editor."
 
 #. type: \t; header
 #: ../help/help.E.txt:7

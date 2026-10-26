@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Exchange posts 1"
-msgstr ""
+msgstr "Centri di scambio dati 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Collect valuable information from information exchange posts."
-msgstr ""
+msgstr "Raccogli preziose informazioni dai centri di scambio dati."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,18 +45,20 @@ msgid ""
 "Several <a object|exchange>information exchange posts</a> stand in the middle of a <a object|mine>mine</a> field. When the bot is close enough to an exchange post, it can read the information that it contains. Every exchange post contains the angle of the rotation that must be performed in order to reach the next exchange post, without touching a <a object|mine>mine</a>.\n"
 "The exchange posts are distant 20m from each other."
 msgstr ""
+"Vari <a object|exchange>centri di scambio dati</a> si trovano in un campo di <a object|mine>mine</a>. Avvicinandosi, il robot può leggere l’angolo necessario a raggiungere il centro successivo evitando le <a object|mine>mine</a>.\n"
+"I centri distano 20 m fra loro."
 
 #. type: \b; header
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "General principe"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Move 20m forward."
-msgstr ""
+msgstr "Avanza di 20 m."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
@@ -65,18 +67,20 @@ msgid ""
 "Read the direction of the next <a object|exchange>information exchange "
 "post</a>."
 msgstr ""
+"Leggi la direzione del prossimo <a object|exchange>centro di scambio "
+"dati</a>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Execute the necessary rotation."
-msgstr ""
+msgstr "Esegui la rotazione necessaria."
 
 #. type: Image filename
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "tinfo1"
-msgstr ""
+msgstr "tinfo1"
 
 #. type: Plain text
 #: ../help/help.E.txt:12
@@ -85,18 +89,20 @@ msgid ""
 "In order to repeat the steps above, use a <code><a cbot|for>for</a></code> "
 "loop, as we saw it before."
 msgstr ""
+"Ripeti questi passaggi con un ciclo <code><a cbot|for>for</a></code>, come "
+"già visto."
 
 #. type: Source code
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "<c/>\tfor ( int i=0 ; i<5 ; i=i+1 )"
-msgstr ""
+msgstr "<c/>\tfor ( int i=0 ; i<5 ; i=i+1 )"
 
 #. type: Plain text
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "Move forward with the instruction <c/>move(20);<n/>."
-msgstr ""
+msgstr "Avanza con <c/>move(20);<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -105,12 +111,14 @@ msgid ""
 "Use the instruction <c/><a cbot|receive>receive</a>(\"Direction\");<n/> in order to read the information contained in the <a object|exchange>exchange post</a>. This is of course possible only when the bot is close enough to the exchange post.\n"
 "You will need a <a cbot|var>variable</a> to contain the value retrieved from the exchange post. Let us call it <code>dir</code>; you must declare it with the following line:"
 msgstr ""
+"Usa <c/><a cbot|receive>receive</a>(\"Direction\");<n/> per leggere i dati del <a object|exchange>centro</a>, quando sei abbastanza vicino.\n"
+"Conserva il valore in una <a cbot|var>variabile</a>, per esempio <code>dir</code>, da dichiarare così:"
 
 #. type: Source code
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "<c/>\tfloat  dir;"
-msgstr ""
+msgstr "<c/>\tfloat  dir;"
 
 #. type: Plain text
 #: ../help/help.E.txt:21
@@ -118,25 +126,25 @@ msgstr ""
 msgid ""
 "Then retrieve the rotation angle from the exchange post, and put it into the"
 " variable:"
-msgstr ""
+msgstr "Leggi poi l’angolo dal centro e memorizzalo:"
 
 #. type: Source code
 #: ../help/help.E.txt:22
 #, no-wrap
 msgid "<c/>\tdir = receive(...);"
-msgstr ""
+msgstr "<c/>\tdir = receive(...);"
 
 #. type: Plain text
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "Then you can execute the rotation:"
-msgstr ""
+msgstr "Puoi quindi ruotare:"
 
 #. type: Source code
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "<c/>\tturn(dir);"
-msgstr ""
+msgstr "<c/>\tturn(dir);"
 
 #. type: \b; header
 #: ../help/help.E.txt:27
@@ -154,6 +162,9 @@ msgid ""
 "contain up to 10 different values, as you will see in some of the following "
 "exercises."
 msgstr ""
+"Fai clic su un <a object|exchange>centro</a> per leggerne i dati. Qui ognuno"
+" contiene solo <code>\"Direction\"</code>, ma può conservare fino a 10 "
+"valori, come vedrai in seguito."
 
 #. type: \t; header
 #: ../help/help.E.txt:30
@@ -175,4 +186,4 @@ msgstr ""
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Repeat 5 times :"
-msgstr ""
+msgstr "Ripeti 5 volte:"

@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Exchange posts 3"
-msgstr ""
+msgstr "Centri di scambio dati 3"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Collect lots of valuable information from information exchange posts."
-msgstr ""
+msgstr "Raccogli preziose informazioni dai centri di scambio dati."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercice"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -49,48 +49,52 @@ msgid ""
 "distance. And you do not know how many exchange posts you must get in touch "
 "with before arriving at your goal."
 msgstr ""
+"Lungo il percorso ci sono vari <a object|exchange>centri di scambio "
+"dati</a>. Avvicinandosi abbastanza, il robot può leggere le istruzioni "
+"contenute. I <a object|exchange>centri</a> indicano direzione e distanza del"
+" successivo. Non sai quanti dovrai consultarne prima di arrivare."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Retrieve the direction from the <a object|exchange>exchange post</a>."
-msgstr ""
+msgstr "Leggi la direzione dal <a object|exchange>centro di scambio dati</a>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Retrieve the distance from the <a object|exchange>exchange post</a>."
-msgstr ""
+msgstr "Leggi la distanza dal <a object|exchange>centro di scambio dati</a>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "If no information could be retrieved, stop the program."
-msgstr ""
+msgstr "Se non ricevi alcuna informazione, termina il programma."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Execute the rotation."
-msgstr ""
+msgstr "Esegui la rotazione."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "Move forward to the next post."
-msgstr ""
+msgstr "Avanza fino al centro successivo."
 
 #. type: \b; header
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
@@ -101,6 +105,10 @@ msgid ""
 "<code><a cbot|move>move</a></code> to move the bot\n"
 "<code><a cbot|turn>turn</a></code> to turn the bot"
 msgstr ""
+"<code><a cbot|while>while</a></code> per ripetere le istruzioni\n"
+"<code><a cbot|receive>receive</a></code> per leggere i dati da un centro\n"
+"<code><a cbot|move>move</a></code> per spostare il robot\n"
+"<code><a cbot|turn>turn</a></code> per ruotarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:18
@@ -122,4 +130,4 @@ msgstr ""
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "\tAlways repeat:"
-msgstr ""
+msgstr "\tRipeti sempre:"

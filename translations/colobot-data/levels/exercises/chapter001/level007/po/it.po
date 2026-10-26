@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Spiders 3"
-msgstr ""
+msgstr "Ragni 3"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Learn to move the bot so that no spider can escape."
-msgstr ""
+msgstr "Impara a muovere il robot perché nessun ragno sfugga."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Spider3"
-msgstr ""
+msgstr "Spider3"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -42,13 +42,13 @@ msgstr "Obiettivo"
 #: ../help/help.E.txt:2
 #, no-wrap
 msgid "Move towards the spiders that are out of shooting range."
-msgstr ""
+msgstr "Avvicinati ai ragni fuori portata."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -57,6 +57,8 @@ msgid ""
 "The program will look like the previous one, but before you shoot, use the "
 "instruction <c/><a cbot|move>move</a>();<n/> in order to get close enough."
 msgstr ""
+"Il programma somiglia al precedente, ma prima di sparare avvicinati con "
+"<c/><a cbot|move>move</a>();<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -73,6 +75,12 @@ msgid ""
 "bot must move forward <code><a cbot|dist>distance</a>(position, "
 "item.position)-40</code> meters. The following line will do this:"
 msgstr ""
+"Di quanti metri? <code><a cbot|dist>distance</a>( , )</code> calcola la "
+"distanza fra due punti. Il bersaglio è a <code>item.position</code>, il "
+"robot a <code>position</code>: la distanza è <code><a "
+"cbot|dist>distance</a>(position, item.position)</code>. Il cannone arriva a "
+"40 m, quindi avanza di <code><a cbot|dist>distance</a>(position, "
+"item.position)-40</code> metri. Scrivi:"
 
 #. type: Source code
 #: ../help/help.E.txt:9
@@ -81,6 +89,8 @@ msgid ""
 "\t<a cbot|move>move</a>(<a cbot|dist>distance</a>(position, "
 "item.position)-40);"
 msgstr ""
+"\t<a cbot|move>move</a>(<a cbot|dist>distance</a>(position, "
+"item.position)-40);"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -89,6 +99,7 @@ msgid ""
 "Just insert this line into the program before the instruction "
 "<c/>fire(1);<n/>, and the bot will start to move."
 msgstr ""
+"Inserisci la riga prima di <c/>fire(1);<n/> e il robot inizierà a muoversi."
 
 #. type: \t; header
 #: ../help/help.E.txt:13

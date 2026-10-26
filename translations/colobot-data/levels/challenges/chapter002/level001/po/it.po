@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Crazy bot 2"
-msgstr ""
+msgstr "Robot impazzito 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -26,18 +26,19 @@ msgstr ""
 msgid ""
 "Use the radar to put some order into a big mess left behind by a crazy bot."
 msgstr ""
+"Usa il radar per riordinare il disastro lasciato da un robot impazzito."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Radar"
-msgstr ""
+msgstr "Radar"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,12 +47,14 @@ msgid ""
 "In this exercise, a \"crazy bot\" places many <a object|waypoint>blue "
 "crosses</a> on the ground. Just try to find them all."
 msgstr ""
+"Un «robot impazzito» dissemina <a object|waypoint>croci blu</a> sul terreno."
+" Cerca di trovarle tutte."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -62,6 +65,10 @@ msgid ""
 "<code><a cbot|if>if</a></code> to test a condition\n"
 "<code><a cbot|motor>motor</a></code> to set the motor speeds"
 msgstr ""
+"<code><a cbot|radar>radar</a></code> per trovare le croci blu (categoria <code><a object|waypoint>WayPoint</a></code>)\n"
+"<code><a cbot|direct>direction</a></code> per calcolare una direzione\n"
+"<code><a cbot|if>if</a></code> per verificare una condizione\n"
+"<code><a cbot|motor>motor</a></code> per impostare le velocità dei motori"
 
 #. type: \t; header
 #: ../help/help.E.txt:10
@@ -76,6 +83,8 @@ msgid ""
 "Do not wait too long, because the crazy bot gets down to work immediately. "
 "Fortunately, as long as you are in the program editor, the game will pause."
 msgstr ""
+"Non aspettare troppo: il robot impazzito si mette subito al lavoro. "
+"Fortunatamente il gioco resta in pausa mentre sei nell’editor."
 
 #. type: \t; header
 #: ../help/help.E.txt:13

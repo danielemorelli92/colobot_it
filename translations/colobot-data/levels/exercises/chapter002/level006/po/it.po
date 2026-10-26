@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Wasp Hunter 1"
-msgstr ""
+msgstr "Caccia alle vespe 1"
 
 #. type: Resume-text, Plain text
 #: ../scene.txt:2 ../help/help.E.txt:2
 #, no-wrap
 msgid "Shoot down the flying wasps."
-msgstr ""
+msgstr "Abbatti le vespe in volo."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Wasp1"
-msgstr ""
+msgstr "Wasp1"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -42,7 +42,7 @@ msgstr "Obiettivo"
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -51,6 +51,7 @@ msgid ""
 "Here is again the program of the previous exercise that shoots all ants and "
 "adapts to the terrain:"
 msgstr ""
+"Ecco ancora il programma che elimina le formiche adattandosi al terreno:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -86,6 +87,35 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::JetFighter2()\n"
+"{\n"
+"\t<a cbot|type>object</a> item;\n"
+"\t\n"
+"\t<a cbot|aim>aim</a>(-20);\n"
+"\t\n"
+"\t<a cbot|while>while</a> (true)\n"
+"\t{\n"
+"\t\t<a cbot|while>while</a> (<a cbot|radar>radar</a>(AlienAnt, 0, 360, 0, 20) == null)\n"
+"\t\t{\n"
+"\t\t\titem = <a cbot|radar>radar</a>(AlienAnt);\n"
+"\t\t\t<a cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));\n"
+"\t\t\t<a cbot|motor>motor</a>(1,1);\n"
+"\t\t\t\n"
+"\t\t\t<a cbot|jet>jet</a>(0);\n"
+"\t\t\t<a cbot|if>if</a> (position.z-topo(position) < 6)\n"
+"\t\t\t{\n"
+"\t\t\t\t<a cbot|jet>jet</a>(1);\n"
+"\t\t\t}\n"
+"\t\t\t\n"
+"\t\t\t<a cbot|if>if</a> (position.z-topo(position) > 9)\n"
+"\t\t\t{\n"
+"\t\t\t\t<a cbot|jet>jet</a>(-1);\n"
+"\t\t\t}\n"
+"\t\t\t<a cbot|wait>wait</a>(0.2);\n"
+"\t\t}\n"
+"\t\t<a cbot|fire>fire</a>(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:37
@@ -105,12 +135,20 @@ msgid ""
 " wasp. In this case, we admit that the altitude of the bot ranges between "
 "the altitude of the wasp and the altitude of the wasp minus 1."
 msgstr ""
+"Sostituisci <code>radar(AlienAnt)</code> con <code>radar(AlienWasp)</code> e"
+" <c/>aim(-20);<n/> con <c/>aim(0);<n/> per mirare orizzontalmente. Confronta"
+" l’altitudine del robot, <code>position.z</code>, con quella della vespa, "
+"<code>item.position.z</code>: se <code>position.z > item.position.z</code> "
+"scendi con <c/>jet(-0.3);<n/>; se <code>position.z < "
+"item.position.z-1</code> sali con <c/>jet(0.3);<n/>. Il tiratore è più alto "
+"della vespa, quindi mantienilo fra la sua altitudine e un metro più in "
+"basso."
 
 #. type: \t; header
 #: ../help/help.E.txt:39
 #, no-wrap
 msgid "Further improvement"
-msgstr ""
+msgstr "Ulteriore miglioramento"
 
 #. type: Plain text
 #: ../help/help.E.txt:40
@@ -121,6 +159,8 @@ msgid ""
 "<code>turn</code> in order to perform a last readjustment of the direction "
 "before the shot."
 msgstr ""
+"Le vespe sono rapide. Prima di <c/>fire(1);<n/> ripeti <code>radar</code> e "
+"<code>turn</code> per correggere la mira all’ultimo momento."
 
 #. type: \t; header
 #: ../help/help.E.txt:42

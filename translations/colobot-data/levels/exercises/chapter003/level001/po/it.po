@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Follow a path"
-msgstr ""
+msgstr "Segui un percorso"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Move the bot along a given path."
-msgstr ""
+msgstr "Guida il robot lungo un percorso prestabilito."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,6 +45,8 @@ msgid ""
 "Program the robot in such a way that it arrives on the finishing pad, after "
 "having passed by the three blue crosses."
 msgstr ""
+"Programma il robot per raggiungere la piattaforma di arrivo passando per le "
+"tre croci blu."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
@@ -56,13 +58,13 @@ msgstr "Procedura"
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Take the power cell and put it on the rear of the bot."
-msgstr ""
+msgstr "Prendi la batteria e montala sul dorso del robot."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Walk around on reconnaissance to understand what the bot must do. "
-msgstr ""
+msgstr "Esplora la zona per capire cosa deve fare il robot. "
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:7
@@ -71,6 +73,8 @@ msgid ""
 "Program the bot. To do so, you must select it, and then click on the braces "
 "button <button 22/>; you will get into the program editor."
 msgstr ""
+"Seleziona il robot e premi le graffe <button 22/> per aprire l’editor e "
+"programmarlo."
 
 #. type: Bullet: '4)'
 #: ../help/help.E.txt:8
@@ -78,13 +82,13 @@ msgstr ""
 msgid ""
 "Once you finished writing the program, click \"OK\", and execute the program"
 " with the arrow key <button 21/>."
-msgstr ""
+msgstr "Al termine premi «OK» e avvia con la freccia <button 21/>."
 
 #. type: \b; header
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -95,12 +99,16 @@ msgid ""
 "The instruction <c/>turn(90);<n/> turns left with an angle of 90 degrees. \n"
 "The instruction <c/>turn(-90);<n/> turns right with an angle of 90 degrees. "
 msgstr ""
+"Le piattaforme distano 20 metri.\n"
+"<c/>move(20);<n/> avanza di 20 metri. \n"
+"<c/>turn(90);<n/> gira di 90 gradi a sinistra. \n"
+"<c/>turn(-90);<n/> gira di 90 gradi a destra. "
 
 #. type: Plain text
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "The frame of the program consists in:"
-msgstr ""
+msgstr "Lo scheletro del programma è:"
 
 #. type: Source code
 #: ../help/help.E.txt:18
@@ -111,6 +119,10 @@ msgid ""
 "\t\t<n/>\\\\write the necessary instructions here ...<c/>\n"
 "\t}"
 msgstr ""
+"\textern void object::MoveBot( )\n"
+"\t{\n"
+"\t\t<n/>\\\\write the necessary instructions here ...<c/>\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:23
@@ -120,12 +132,14 @@ msgid ""
 "instructions you need to move the bot around between the braces <code>{ "
 "}</code>."
 msgstr ""
+"Per ora non modificarlo: inserisci solo le istruzioni fra le graffe <code>{ "
+"}</code>."
 
 #. type: \b; header
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "Attention"
-msgstr ""
+msgstr "Attenzione"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
@@ -134,12 +148,14 @@ msgid ""
 "Be very careful about upper case and lower case letters!\n"
 "Every instruction must be terminated with a semicolon. "
 msgstr ""
+"Rispetta maiuscole e minuscole!\n"
+"Ogni istruzione termina con un punto e virgola. "
 
 #. type: \b; header
 #: ../help/help.E.txt:29
 #, no-wrap
 msgid "Helpful trick"
-msgstr ""
+msgstr "Trucco utile"
 
 #. type: Plain text
 #: ../help/help.E.txt:30
@@ -149,6 +165,8 @@ msgid ""
 "button <Reduce> <button 51/>, and by moving the mouse to the edges of the "
 "window to turn the camera. "
 msgstr ""
+"Mentre programmi puoi osservare la scena premendo <Riduci> <button 51/> e "
+"spostando il mouse ai bordi per ruotare la visuale. "
 
 #. type: \t; header
 #: ../help/help.E.txt:32

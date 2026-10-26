@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Flying tower 1"
-msgstr ""
+msgstr "Torre volante 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Make a flying defense tower out of a winged shooter."
-msgstr ""
+msgstr "Trasforma un robot tiratore volante in una torre difensiva volante."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -45,12 +45,14 @@ msgid ""
 "As a defense against ants attacking from all sides, adapt the program "
 "<code>Spider2</code> in order to fly at a given altitude."
 msgstr ""
+"Per respingere le formiche da ogni direzione, adatta <code>Spider2</code> al"
+" volo a un’altitudine prestabilita."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -60,6 +62,8 @@ msgid ""
 "<code>Spider2</code> that looks for the closest ant, turns towards it and "
 "fires:"
 msgstr ""
+"Il programma somiglia a <code>Spider2</code>: cerca il nemico più vicino, si"
+" gira e spara:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -77,6 +81,17 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::Spider2()\n"
+"{\t\n"
+"\tobject    item;\n"
+"\t\n"
+"\twhile (true)\n"
+"\t{\n"
+"\t\titem = radar(AlienSpider);\n"
+"\t\tturn(direction(item.position));\n"
+"\t\tfire(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -88,6 +103,10 @@ msgid ""
 "<a object|botfj>winged shooter</a> until the bot reaches an altitude of 20 "
 "meters."
 msgstr ""
+"Copialo nell’editor e adattalo. Sostituisci <c/>radar(AlienSpider);<n/> con "
+"<c/>radar(AlienAnt);<n/>. Prima del ciclo <code>while</code> aggiungine uno "
+"che azioni il propulsore del <a object|botfj>tiratore volante</a> fino a 20 "
+"metri di altitudine."
 
 #. type: Plain text
 #: ../help/help.E.txt:21
@@ -101,6 +120,11 @@ msgid ""
 "upward slowly with <c/>jet(0.2);<n/>, wait until it has reached the desired "
 "height, then stabilize the altitude with <c/>jet(0);<n/>."
 msgstr ""
+"<code><a cbot|jet>jet</a>()</code> controlla il propulsore. Il valore va da "
+"<code>-1</code> a <code>1</code>.<c/> jet(1);<n/> sale alla massima "
+"velocità,<c/> jet(-1);<n/> scende alla massima velocità e <c/>jet(0);<n/> "
+"mantiene l’altitudine. Per raggiungere un’altezza precisa sali lentamente "
+"con <c/>jet(0.2);<n/>, attendi e stabilizza con <c/>jet(0);<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:23
@@ -115,6 +139,10 @@ msgid ""
 " and the z-axis is the vertical axis. Therefore we must wait while "
 "<code>position.z</code> is smaller than 20:"
 msgstr ""
+"Per attendere l’altezza desiderata serve un ciclo condizionale: si ripete "
+"finché la condizione è vera. <code>position.z</code> è l’altitudine del "
+"robot. <code>position</code> ha tre coordinate: x ovest-est, y sud-nord e z "
+"verticale. Attendi quindi finché <code>position.z</code> è minore di 20:"
 
 #. type: Source code
 #: ../help/help.E.txt:25
@@ -125,6 +153,10 @@ msgid ""
 "\t\twait(0.2);\n"
 "\t}"
 msgstr ""
+"\twhile (position.z < 20)\n"
+"\t{\n"
+"\t\twait(0.2);\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:30
@@ -136,6 +168,9 @@ msgid ""
 "<code>}</code>. Do not forget after the loop to stabilize the altitude with "
 "<c/>jet(0);<n/>."
 msgstr ""
+"Dopo 0,2 secondi verifica se l’altitudine è ancora sotto i 20 m. In tal caso"
+" attende ancora; altrimenti prosegue dopo la graffa <code>}</code>. Poi "
+"stabilizza con <c/>jet(0);<n/>."
 
 #. type: \t; header
 #: ../help/help.E.txt:32

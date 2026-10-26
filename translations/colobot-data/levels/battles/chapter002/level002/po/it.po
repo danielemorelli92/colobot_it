@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "BaseBuilding"
-msgstr ""
+msgstr "Costruzione della base"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Challenge the developers! Fight against a simple enemy program."
-msgstr ""
+msgstr "Sfida gli sviluppatori: affronta un semplice programma avversario."
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (vs Computer)"
-msgstr ""
+msgstr "Battaglia di codice (contro il computer)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -39,24 +39,26 @@ msgid ""
 "This is <a battles>a code battle</a> level, where you fight against a simple"
 " program written by the developers of the game."
 msgstr ""
+"Livello di <a battles>battaglia di codice</a> contro un semplice programma "
+"scritto dagli sviluppatori."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Your objective"
-msgstr ""
+msgstr "Il tuo obiettivo"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Destroy the red team located on the opposite side of the river."
-msgstr ""
+msgstr "Distruggi la squadra rossa sull’altra sponda del fiume."
 
 #. type: \b; header
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Notes\\m notes;"
-msgstr ""
+msgstr "Note\\m notes;"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
@@ -65,6 +67,8 @@ msgid ""
 "There is <a object/enerspot>an underground power source</a> only under the "
 "beginning base areas."
 msgstr ""
+"Una <a object/enerspot>fonte sotterranea di energia</a> è presente solo "
+"nelle aree delle basi iniziali."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
@@ -73,3 +77,5 @@ msgid ""
 "The pre-built <a object|derrick>Derricks</a> and <a "
 "|object\\radar>RadarStations</a> are indestructible."
 msgstr ""
+"Le <a object|derrick>torri di estrazione</a> e le <a |object\\radar>stazioni"
+" radar</a> già costruite sono indistruttibili."

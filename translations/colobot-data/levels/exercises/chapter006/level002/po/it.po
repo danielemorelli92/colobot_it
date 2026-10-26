@@ -18,37 +18,37 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Spiral"
-msgstr ""
+msgstr "Spirale"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Create a procedure in order to teach your bot to perform a spiral."
-msgstr ""
+msgstr "Crea una procedura che insegni al robot a percorrere una spirale."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Image filename
 #: ../help/help.E.txt:3
 #, no-wrap
 msgid "tproc2"
-msgstr ""
+msgstr "tproc2"
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Function"
-msgstr ""
+msgstr "Funzione"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -60,6 +60,10 @@ msgid ""
 "with writing the <a cbot|function>function</a> that will move the bot on a "
 "\"L\"-shaped part whose length will be given as a parameter:"
 msgstr ""
+"Il percorso è composto da tratti a «L» incastrati fra loro: il primo, blu "
+"scuro, ha due lati di 25 m; il secondo, azzurro, è più corto di 5 m. Scrivi "
+"prima una <a cbot|function>funzione</a> che percorra una «L» della lunghezza"
+" ricevuta:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -74,6 +78,14 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"void object::Part(float length)\n"
+"{\n"
+"\tfor ( int i=0 ; i<2 ; i=i+1 )\n"
+"\t{\n"
+"\t\tmove(length);\n"
+"\t\tturn(90);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:16
@@ -86,6 +98,10 @@ msgid ""
 "the loop, first call the function <code>Part</code> (see above), then "
 "subtract 5m to the length of the L."
 msgstr ""
+"La funzione principale deve chiamare <code>Part</code>. Inizia con "
+"<code>rest</code> a 25 m; il ciclo <code>while</code> continua finché "
+"<code>rest</code> è positivo. Dentro chiama <code>Part</code>, poi sottrai 5"
+" m alla lunghezza."
 
 #. type: Source code
 #: ../help/help.E.txt:18
@@ -101,6 +117,15 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::Function2( )\n"
+"{\n"
+"\tfloat\trest = 25;\n"
+"\twhile ( rest > 0 )\n"
+"\t{\n"
+"\t\tPart(rest);\n"
+"\t\trest = rest-5;\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:28
@@ -111,6 +136,9 @@ msgid ""
 "of the variable <code>rest</code> to zero, and the <code>while</code> loop "
 "will stop."
 msgstr ""
+"L’ultima chiamata a <code>Part</code> usa <code>5</code>. Poi "
+"<code>rest-5</code> azzera <code>rest</code> e termina il ciclo "
+"<code>while</code>."
 
 #. type: \b; header
 #: ../help/help.E.txt:30
@@ -128,6 +156,9 @@ msgid ""
 "functions in the program does not matter, you can write a program either "
 "way."
 msgstr ""
+"Nell’esercizio precedente la funzione principale era all’inizio; qui è alla "
+"fine, dopo <code>Part</code>. L’ordine delle funzioni non conta: entrambe le"
+" disposizioni sono valide."
 
 #. type: \t; header
 #: ../help/help.E.txt:33
@@ -152,3 +183,5 @@ msgid ""
 "Follow the way in form of a spiral. The bot must move 2 times 25m forward "
 "and turn, then move 2 times 20m forward and turn, and so on."
 msgstr ""
+"Segui la spirale. Il robot deve avanzare e girare due volte per 25 m, poi "
+"due volte per 20 m e così via."

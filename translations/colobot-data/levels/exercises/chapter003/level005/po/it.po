@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Exchange posts 2"
-msgstr ""
+msgstr "Centri di scambio dati 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Collect more valuable information from information exchange posts."
-msgstr ""
+msgstr "Raccogli altre informazioni dai centri di scambio dati."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -47,42 +47,44 @@ msgid ""
 "you do not know how many exchange posts you must get in touch with before "
 "arriving at your goal."
 msgstr ""
+"Qui i <a object|exchange>centri</a> indicano direzione e distanza del "
+"successivo. Non sai quanti dovrai consultarne prima di arrivare."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Retrieve the direction from the <a object|exchange>exchange post</a>."
-msgstr ""
+msgstr "Leggi la direzione dal <a object|exchange>centro di scambio dati</a>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Retrieve the distance from the <a object|exchange>exchange post</a>."
-msgstr ""
+msgstr "Leggi la distanza dal <a object|exchange>centro di scambio dati</a>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "If no information could be retrieved, stop the program."
-msgstr ""
+msgstr "Se non ricevi alcuna informazione, termina il programma."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Execute the rotation."
-msgstr ""
+msgstr "Esegui la rotazione."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "Move forward to the next post."
-msgstr ""
+msgstr "Avanza fino al centro successivo."
 
 #. type: Plain text
 #: ../help/help.E.txt:12
@@ -93,12 +95,15 @@ msgid ""
 " over and over, or until a <code><a cbot|break>break</a></code> instruction "
 "is executed."
 msgstr ""
+"Usa <code><a cbot|while>while</a> (true)</code> per ripetere senza fine le "
+"istruzioni fra <code>{ }</code>, oppure fino a <code><a "
+"cbot|break>break</a></code>."
 
 #. type: Source code
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "<c/>\twhile ( true )"
-msgstr ""
+msgstr "<c/>\twhile ( true )"
 
 #. type: Plain text
 #: ../help/help.E.txt:15
@@ -107,18 +112,20 @@ msgid ""
 "This time you need 2 <a cbot|var>variables</a>, one for the rotation angle, "
 "one for the distance, for example <code>dir</code> and <code>len</code> :"
 msgstr ""
+"Servono 2 <a cbot|var>variabili</a>: angolo e distanza, per esempio "
+"<code>dir</code> e <code>len</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "<c/>\tfloat  dir, len;"
-msgstr ""
+msgstr "<c/>\tfloat  dir, len;"
 
 #. type: Plain text
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "Then you can retrieve the information:"
-msgstr ""
+msgstr "Poi leggi i dati:"
 
 #. type: Source code
 #: ../help/help.E.txt:19
@@ -127,6 +134,8 @@ msgid ""
 "<c/>\tdir = receive(\"Direction\");\n"
 "<c/>\tlen = receive(\"Length\");"
 msgstr ""
+"<c/>\tdir = receive(\"Direction\");\n"
+"<c/>\tlen = receive(\"Length\");"
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -135,12 +144,14 @@ msgid ""
 "A variable of the <a cbot|type>type</a> <code><a cbot|float>float</a></code> can take a special value called <code><a cbot|nan>nan</a></code>. This value means that the variable contains no number (Not A Number).\n"
 "When there is no <a object|exchange>exchange post</a> nearby, either because the bot has reached the goal, or because it took the wrong way, the two variables <code>dir</code> and <code>len</code> contain this value. You can test this with the instruction <code><a cbot|if>if</a></code>, and stop the program if necessary with the instruction <code><a cbot|break>break</a></code>:"
 msgstr ""
+"Una variabile di <a cbot|type>tipo</a> <code><a cbot|float>float</a></code> può assumere <code><a cbot|nan>nan</a></code>, cioè «non è un numero».\n"
+"Quando non c’è un <a object|exchange>centro</a> vicino, perché sei arrivato o hai sbagliato strada, <code>dir</code> e <code>len</code> contengono questo valore. Verificalo con <code><a cbot|if>if</a></code> e, se necessario, termina con <code><a cbot|break>break</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "<c/>\tif ( dir == nan )  break;"
-msgstr ""
+msgstr "<c/>\tif ( dir == nan )  break;"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
@@ -149,24 +160,25 @@ msgid ""
 "If the information retrieval from the <a object|exchange>exchange post</a> "
 "has been performed successfully, execute the rotation:"
 msgstr ""
+"Se la lettura dal <a object|exchange>centro</a> riesce, esegui la rotazione:"
 
 #. type: Source code
 #: ../help/help.E.txt:27
 #, no-wrap
 msgid "<c/>\tturn(dir);"
-msgstr ""
+msgstr "<c/>\tturn(dir);"
 
 #. type: Plain text
 #: ../help/help.E.txt:29
 #, no-wrap
 msgid "And move forward:"
-msgstr ""
+msgstr "E avanza:"
 
 #. type: Source code
 #: ../help/help.E.txt:30
 #, no-wrap
 msgid "<c/>\tmove(len);"
-msgstr ""
+msgstr "<c/>\tmove(len);"
 
 #. type: \b; header
 #: ../help/help.E.txt:32
@@ -183,6 +195,8 @@ msgid ""
 " post contains two values called <code>\"Direction\"</code> and "
 "<code>\"Length\"</code>."
 msgstr ""
+"Fai clic su un <a object|exchange>centro</a> per leggerne i dati. In questo "
+"esercizio contiene <code>\"Direction\"</code> e <code>\"Length\"</code>."
 
 #. type: \t; header
 #: ../help/help.E.txt:35
@@ -204,4 +218,4 @@ msgstr ""
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "\tRepeat forever:"
-msgstr ""
+msgstr "\tRipeti all’infinito:"

@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Shadow 2"
-msgstr ""
+msgstr "Ombra 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Follow a bot, as if you were its shadow."
-msgstr ""
+msgstr "Segui un robot come la sua ombra."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Follow"
-msgstr ""
+msgstr "Follow"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -49,43 +49,47 @@ msgid ""
 " the finishing pad, and the exercise is over. At every stop, the target bot "
 "checks that you are there. If you are not there, you must start over again."
 msgstr ""
+"Segui il <a object|bottr>robot bersaglio</a> carico di esplosivo senza "
+"toccarlo, altrimenti esploderà. Ogni volta che si ferma devi essere a meno "
+"di 10 m. Dopo 10 soste consecutive riuscite, ti condurrà alla piattaforma di"
+" arrivo. A ogni sosta verifica che tu ci sia: se manchi, devi ricominciare."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Look for the target bot."
-msgstr ""
+msgstr "Cerca il robot bersaglio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Calculate the distance to the bot."
-msgstr ""
+msgstr "Calcola la distanza dal robot."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "if the distance to the target bot is less than 5m, move backward."
-msgstr ""
+msgstr "Se sei a meno di 5 m dal bersaglio, arretra."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid ""
 "Otherwise, calculate the direction of the target bot, and move towards it."
-msgstr ""
+msgstr "Altrimenti calcolane la direzione e avvicinati."
 
 #. type: \b; header
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:12
@@ -98,6 +102,12 @@ msgid ""
 "<code><a cbot|if>if</a></code> to test a condition\n"
 "<code><a cbot|motor>motor</a></code> to set the motor speeds"
 msgstr ""
+"<code><a cbot|radar>radar</a></code> per trovare il robot (categoria <code><a object|bottarg>TargetBot</a></code>)\n"
+"<code><a cbot|radar>radar</a></code> per rilevare gli ostacoli\n"
+"<code><a cbot|dist>distance</a></code> per calcolare una distanza\n"
+"<code><a cbot|direct>direction</a></code> per calcolare una direzione\n"
+"<code><a cbot|if>if</a></code> per verificare una condizione\n"
+"<code><a cbot|motor>motor</a></code> per impostare le velocità dei motori"
 
 #. type: \t; header
 #: ../help/help.E.txt:19
@@ -119,4 +129,4 @@ msgstr ""
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Repeat forever:"
-msgstr ""
+msgstr "Ripeti all’infinito:"

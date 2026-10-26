@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Massacre"
-msgstr ""
+msgstr "Massacro"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Use a loop in order to destroy six targets."
-msgstr ""
+msgstr "Usa un ciclo per distruggere sei bersagli."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,72 +45,74 @@ msgid ""
 "Destroy the six <a object|bottarg>targets</a> with a program using a loop. "
 "The bot must move 5m forward to get from one target to the next."
 msgstr ""
+"Distruggi i sei <a object|bottarg>bersagli</a> con un ciclo. Avanza di 5 m "
+"per passare da uno all’altro."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "move 5m forward"
-msgstr ""
+msgstr "avanza di 5 m"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "turn 90 degrees left"
-msgstr ""
+msgstr "gira di 90 gradi a sinistra"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "shoot"
-msgstr ""
+msgstr "spara"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "turn 90 degrees right"
-msgstr ""
+msgstr "gira di 90 gradi a destra"
 
 #. type: Image filename
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "tfor1"
-msgstr ""
+msgstr "tfor1"
 
 #. type: \b; header
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "Instruction <code>for ( )</code>"
-msgstr ""
+msgstr "Istruzione <code>for ( )</code>"
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "Initialize the counting variable."
-msgstr ""
+msgstr "Inizializza il contatore."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "The end <a cbot|cond>condition</a>."
-msgstr ""
+msgstr "La <a cbot|cond>condizione</a> di fine."
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:17
 #, no-wrap
 msgid "The counting <a cbot|expr>expression</a>."
-msgstr ""
+msgstr "L’<a cbot|expr>espressione</a> di conteggio."
 
 #. type: Plain text
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "Here is the loop once it is integrated into the program frame:"
-msgstr ""
+msgstr "Ecco il ciclo nello scheletro del programma:"
 
 #. type: Source code
 #: ../help/help.E.txt:20
@@ -124,6 +126,13 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"<c/>extern void object::Massacre( )\n"
+"{\n"
+"\tfor ( int i=0 ; i<6 ; i=i+1 )\n"
+"\t{\n"
+"\t\t<n/>instructions repeated 6 times ...<c/>\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:28
@@ -132,18 +141,20 @@ msgid ""
 "ATTENTION: The line <code>for ( )</code> must not be followed by a <a "
 "cbot|term>semicolon</a> !"
 msgstr ""
+"ATTENZIONE: dopo <code>for ( )</code> non inserire un <a cbot|term>punto e "
+"virgola</a>!"
 
 #. type: \b; header
 #: ../help/help.E.txt:30
 #, no-wrap
 msgid "Explanation of the instruction <code>for ( )</code>"
-msgstr ""
+msgstr "Spiegazione di <code>for ( )</code>"
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:31
 #, no-wrap
 msgid "<code>int i=0</code>"
-msgstr ""
+msgstr "<code>int i=0</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:32
@@ -151,37 +162,37 @@ msgstr ""
 msgid ""
 "    The <a cbot|var>variable</a> i is set to zero before the beginning of "
 "the loop."
-msgstr ""
+msgstr "    La <a cbot|var>variabile</a> i viene azzerata prima del ciclo."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:34
 #, no-wrap
 msgid "<code>i<6</code>"
-msgstr ""
+msgstr "<code>i<6</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:35
 #, no-wrap
 msgid "    The loop will be executed as long as i is smaller than 6."
-msgstr ""
+msgstr "    Il ciclo continua finché i è minore di 6."
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:37
 #, no-wrap
 msgid "<code>i=i+1</code>"
-msgstr ""
+msgstr "<code>i=i+1</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:38
 #, no-wrap
 msgid "    At the end of every loop, add 1 to the variable i."
-msgstr ""
+msgstr "    Alla fine di ogni iterazione aggiungi 1 a i."
 
 #. type: \b; header
 #: ../help/help.E.txt:40
 #, no-wrap
 msgid "Blocks"
-msgstr ""
+msgstr "Blocchi"
 
 #. type: Plain text
 #: ../help/help.E.txt:41
@@ -191,6 +202,8 @@ msgid ""
 " the instructions that must be executed in the <code>for</code> loop are "
 "held together by a block. The whole program itself is made up of a block:"
 msgstr ""
+"Usa le graffe <code>{ }</code> per creare un <a cbot|bloc>blocco</a> con le "
+"istruzioni del ciclo <code>for</code>. Anche l’intero programma è un blocco:"
 
 #. type: Source code
 #: ../help/help.E.txt:43
@@ -201,6 +214,10 @@ msgid ""
 "\t<n/>fill in here ...<c/>\n"
 "}"
 msgstr ""
+"extern void object::massacre( )\n"
+"{\n"
+"\t<n/>fill in here ...<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:48
@@ -209,12 +226,14 @@ msgid ""
 "Never change these characters. Just add the instructions of the program between the braces.\n"
 "You can fit several blocks one into the other. For example the <code>for</code> block is fitted into the block of the whole program. In order to improve readability, the editor lines up the braces belonging to the different blocks."
 msgstr ""
+"Non modificare questi caratteri: inserisci le istruzioni fra le graffe.\n"
+"I blocchi possono essere annidati: per esempio quello del <code>for</code> è dentro il programma. L’editor allinea le graffe per migliorarne la leggibilità."
 
 #. type: \b; header
 #: ../help/help.E.txt:51
 #, no-wrap
 msgid "Remember"
-msgstr ""
+msgstr "Ricorda"
 
 #. type: Plain text
 #: ../help/help.E.txt:52
@@ -224,6 +243,9 @@ msgid ""
 "The instruction used to turn the bot is <c/><a cbot|turn>turn</a>();<n/>. A positive angle turns left.\n"
 "The instruction used to fire the cannon is <c/><a cbot|fire>fire</a>(1);<n/>. A one-second burst allows to destroy all six <a object|bottarg>targets</a>."
 msgstr ""
+"Per avanzare usa <c/><a cbot|move>move</a>();<n/>.\n"
+"Per ruotare usa <c/><a cbot|turn>turn</a>();<n/>; positivo gira a sinistra.\n"
+"Per sparare usa <c/><a cbot|fire>fire</a>(1);<n/>. Una raffica di un secondo basta a distruggere i sei <a object|bottarg>bersagli</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:56
@@ -248,10 +270,12 @@ msgid ""
 "The program must execute the following scheme:\n"
 "Repeat 6 times :"
 msgstr ""
+"Il programma deve seguire questo schema:\n"
+"Ripeti 6 volte:"
 
 #. type: Plain text
 #: ../help/help.E.txt:14
 #, no-wrap
 msgid ""
 "The instruction <code><a cbot|for>for</a></code> asks for 3 expressions:"
-msgstr ""
+msgstr "<code><a cbot|for>for</a></code> richiede 3 espressioni:"

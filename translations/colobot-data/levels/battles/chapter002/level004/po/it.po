@@ -18,19 +18,20 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "ShootOut"
-msgstr ""
+msgstr "Scontro a fuoco"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Challenge the developers! Sharpen your CodeBattle skills."
 msgstr ""
+"Sfida gli sviluppatori e affina le tue abilità nelle battaglie di codice."
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (shooting an other shooter)"
-msgstr ""
+msgstr "Battaglia di codice (tiro contro un altro tiratore)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -40,6 +41,9 @@ msgid ""
 " program for Shooter, written by the developers of the game, in order to "
 "improve your aim."
 msgstr ""
+"Livello di <a battles>battaglia di codice</a>: affronti un semplice "
+"programma per robot tiratore scritto dagli sviluppatori, per migliorare la "
+"mira."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
@@ -54,3 +58,5 @@ msgid ""
 "Destroy the other <a object/botfj>Shooter</a> located on the opposite side "
 "of the river."
 msgstr ""
+"Distruggi l’altro <a object/botfj>robot tiratore</a> sull’altra sponda del "
+"fiume."

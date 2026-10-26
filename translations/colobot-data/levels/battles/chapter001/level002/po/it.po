@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "ShootOut"
-msgstr ""
+msgstr "Scontro a fuoco"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -27,12 +27,14 @@ msgid ""
 "Challenge your friend in this simple 1v1 scenario. May the best "
 "WingedShooter win!"
 msgstr ""
+"Sfida un amico in questo semplice duello. Che vinca il miglior robot "
+"tiratore volante!"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (shooting an other player)"
-msgstr ""
+msgstr "Battaglia di codice (tiro contro un altro giocatore)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -42,6 +44,8 @@ msgid ""
 " program, presumably written by some other player, in order to improve your "
 "aim."
 msgstr ""
+"Livello di <a battles>battaglia di codice</a>: affronti un altro programma, "
+"presumibilmente di un altro giocatore, per migliorare la mira."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
@@ -56,12 +60,14 @@ msgid ""
 "Destroy the other <a object/botfj>Shooter</a> located on the opposite side "
 "of the river."
 msgstr ""
+"Distruggi l’altro <a object/botfj>robot tiratore</a> sull’altra sponda del "
+"fiume."
 
 #. type: \b; header
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Notes\\m notes;"
-msgstr ""
+msgstr "Note\\m notes;"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
@@ -70,3 +76,5 @@ msgid ""
 "You can try to find a program to fight against in the International Colobot "
 "Community (<code>http://colobot.info</code>)."
 msgstr ""
+"Puoi cercare un programma avversario nella comunità internazionale di "
+"Colobot (<code>http://colobot.info</code>)."

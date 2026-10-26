@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Wasp Hunter 2"
-msgstr ""
+msgstr "Caccia alle vespe 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Get better at shooting down the wasps."
-msgstr ""
+msgstr "Migliora nell’abbattere le vespe."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Wasp2"
-msgstr ""
+msgstr "Wasp2"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -44,13 +44,13 @@ msgstr "Obiettivo"
 msgid ""
 "Bring down the flying wasps in a more efficient way than with the previous "
 "program."
-msgstr ""
+msgstr "Abbatti le vespe più efficacemente del programma precedente."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -59,6 +59,8 @@ msgid ""
 "Here is again the program of the previous exercise that shoots down all the "
 "wasps after many, many unsuccessful attempts:"
 msgstr ""
+"Ecco il programma precedente, che abbatte le vespe dopo molti tentativi "
+"falliti:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -97,6 +99,38 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::Wasp1()\n"
+"{\n"
+"\t<a cbot|type>object</a>    item;\n"
+"\t\n"
+"\t<a cbot|aim>aim</a>(0);\n"
+"\t\n"
+"\t<a cbot|while>while</a> (true)\n"
+"\t{\n"
+"\t\t<a cbot|while>while</a> (<a cbot|radar>radar</a>(AlienWasp, 0, 360, 0, 20) == null)\n"
+"\t\t{\n"
+"\t\t\titem = <a cbot|radar>radar</a>(AlienWasp);\n"
+"\t\t\t<a cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));\n"
+"\t\t\t<a cbot|motor>motor</a>(1,1);\n"
+"\t\t\t\n"
+"\t\t\t<a cbot|jet>jet</a>(0);\n"
+"\t\t\t<a cbot|if>if</a> (position.z > item.position.z)\n"
+"\t\t\t{\n"
+"\t\t\t\t<a cbot|jet>jet</a>(-0.3);\n"
+"\t\t\t}\n"
+"\t\t\t\n"
+"\t\t\t<a cbot|if>if</a> (position.z < item.position.z - 1)\n"
+"\t\t\t{\n"
+"\t\t\t\t<a cbot|jet>jet</a>(0.3);\n"
+"\t\t\t}\n"
+"\t\t\t\n"
+"\t\t\t<a cbot|wait>wait</a>(0.2);\n"
+"\t\t}\n"
+"\t\titem = <a cbot|radar>radar</a>(AlienWasp);\n"
+"\t\t<a cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));\n"
+"\t\t<a cbot|fire>fire</a>(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:40
@@ -107,6 +141,9 @@ msgid ""
 "setting the power of the two motors and of the jet in such a way that the "
 "bot follows the movement of the target during the burst."
 msgstr ""
+"Gli errori dipendono dal movimento delle vespe prima dell’arrivo dei colpi. "
+"Per migliorare devi impostare motori e propulsore in modo da seguire il "
+"bersaglio durante la raffica."
 
 #. type: Plain text
 #: ../help/help.E.txt:42
@@ -119,6 +156,10 @@ msgid ""
 "left during the burst; if the angle was negative, the bot must continue to "
 "turn right."
 msgstr ""
+"Prima di sparare il programma corregge la direzione con "
+"<c/>turn(direction(item.position));<n/>. Ricorda l’angolo: se è positivo "
+"continua a girare a sinistra durante la raffica; se negativo continua a "
+"destra."
 
 #. type: Plain text
 #: ../help/help.E.txt:44
@@ -129,12 +170,14 @@ msgid ""
 "<code>angle</code>, we must define the variable with the following line at "
 "the beginning of the program:"
 msgstr ""
+"Per ricordare l’angolo serve una variabile numerica. Se la chiami "
+"<code>angle</code>, dichiarala all’inizio così:"
 
 #. type: Source code
 #: ../help/help.E.txt:46
 #, no-wrap
 msgid "\t<a cbot|type>float</a> angle;"
-msgstr ""
+msgstr "\t<a cbot|type>float</a> angle;"
 
 #. type: Plain text
 #: ../help/help.E.txt:48
@@ -145,6 +188,8 @@ msgid ""
 "<a cbot|type>text about variable types</a> if you want to know more about "
 "the different types of variables and what they can contain."
 msgstr ""
+"Il tipo <a cbot|type>float</a> contiene numeri interi o reali. Per "
+"approfondire consulta i <a cbot|type>tipi di variabili</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:50
@@ -154,12 +199,15 @@ msgid ""
 "cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));<n/>, we "
 "will put the rotation angle into the variable <code>angle</code>:"
 msgstr ""
+"Prima di <c/>fire(1);<n/>, anziché scrivere <c/><a cbot|turn>turn</a>(<a "
+"cbot|direct>direction</a>(item.position));<n/>, memorizza l’angolo in "
+"<code>angle</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:52
 #, no-wrap
 msgid "\tangle = direction(item.position);"
-msgstr ""
+msgstr "\tangle = direction(item.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:54
@@ -168,6 +216,7 @@ msgid ""
 "Then we perform the rotation, and we set the power of the motors so that the"
 " bot continues the movement:"
 msgstr ""
+"Esegui poi la rotazione e imposta i motori per continuare il movimento:"
 
 #. type: Source code
 #: ../help/help.E.txt:56
@@ -183,6 +232,15 @@ msgid ""
 "\t\tmotor(0.5,1);\n"
 "\t}"
 msgstr ""
+"\tturn(angle);\n"
+"\tif (angle < 0)\n"
+"\t{\n"
+"\t\tmotor(1,0.5);\n"
+"\t}\n"
+"\telse\n"
+"\t{\n"
+"\t\tmotor(0.5,1);\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:66
@@ -192,6 +250,8 @@ msgid ""
 "should execute if the condition stated in the <code>if</code> instruction is"
 " false."
 msgstr ""
+"<code>else</code> indica cosa eseguire quando la condizione "
+"dell’<code>if</code> è falsa."
 
 #. type: Plain text
 #: ../help/help.E.txt:68
@@ -199,7 +259,7 @@ msgstr ""
 msgid ""
 "Then we must set the power of the jet so that the bot follows the wasp also "
 "in the vertical direction:"
-msgstr ""
+msgstr "Imposta anche il propulsore per seguire verticalmente la vespa:"
 
 #. type: Source code
 #: ../help/help.E.txt:70
@@ -216,13 +276,23 @@ msgid ""
 "\t\tjet(0.3);\n"
 "\t}"
 msgstr ""
+"\tjet(0);\n"
+"\tif(position.z > item.position.z)\n"
+"\t{\n"
+"\t\tjet(-0.3);\n"
+"\t}\n"
+"\t\n"
+"\tif(position.z < item.position.z - 1)\n"
+"\t{\n"
+"\t\tjet(0.3);\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:81
 #, no-wrap
 msgid ""
 "As you will see, this program is much more efficient than the previous one!"
-msgstr ""
+msgstr "Vedrai che questo programma è molto più efficiente!"
 
 #. type: \t; header
 #: ../help/help.E.txt:83

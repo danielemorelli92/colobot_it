@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "BaseBuilding"
-msgstr ""
+msgstr "Costruzione della base"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Build your base and eliminate your foe!"
-msgstr ""
+msgstr "Costruisci la tua base ed elimina l’avversario!"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (vs Player)"
-msgstr ""
+msgstr "Battaglia di codice (contro un giocatore)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -39,6 +39,8 @@ msgid ""
 "This is <a battles>a code battle</a> level, where you fight against an other"
 " program, presumably written by some other player."
 msgstr ""
+"Livello di <a battles>battaglia di codice</a>: affronti un altro programma, "
+"presumibilmente scritto da un altro giocatore."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
@@ -50,13 +52,13 @@ msgstr "Obiettivo"
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Destroy the other team located on the opposite side of the river."
-msgstr ""
+msgstr "Distruggi la squadra avversaria sull’altra sponda del fiume."
 
 #. type: \b; header
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Notes\\m notes;"
-msgstr ""
+msgstr "Note\\m notes;"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
@@ -65,6 +67,8 @@ msgid ""
 "There is <a object/enerspot>an underground power source</a> only under the "
 "beginning base areas."
 msgstr ""
+"Una <a object/enerspot>fonte sotterranea di energia</a> è presente solo "
+"nelle aree delle basi iniziali."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
@@ -73,6 +77,8 @@ msgid ""
 "The pre-built <a object|derrick>Derricks</a> and <a "
 "|object\\radar>RadarStations</a> are indestructible."
 msgstr ""
+"Le <a object|derrick>torri di estrazione</a> e le <a |object\\radar>stazioni"
+" radar</a> già costruite sono indistruttibili."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
@@ -81,3 +87,5 @@ msgid ""
 "You can try to find a program to fight against in the International Colobot "
 "Community (<code>http://colobot.info</code>)."
 msgstr ""
+"Puoi cercare un programma avversario nella comunità internazionale di "
+"Colobot (<code>http://colobot.info</code>)."

@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Radar and traps 1"
-msgstr ""
+msgstr "Radar e trappole 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Use your radar to look for various items, but watch out for the mines."
-msgstr ""
+msgstr "Cerca vari oggetti con il radar, ma fai attenzione alle mine."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Traps"
-msgstr ""
+msgstr "Traps"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,54 +46,57 @@ msgid ""
 "ground, but do not get too close to the <a object|mine>mines</a>. When the "
 "bot passes over a cross, it disappears. Here is the general principle:"
 msgstr ""
+"Fai trovare al robot tutte le <a object|waypoint>croci blu</a> sul terreno "
+"senza avvicinarsi troppo alle <a object|mine>mine</a>. Le croci scompaiono "
+"al passaggio. Principio generale:"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Look for a mine"
-msgstr ""
+msgstr "Cerca una mina"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "If a mine has been found, calculate the opposite direction"
-msgstr ""
+msgstr "Se la trovi, calcola la direzione opposta"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Look for a cross"
-msgstr ""
+msgstr "Cerca una croce"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "If nothing has been found, stop the program"
-msgstr ""
+msgstr "Se non trovi nulla, termina il programma"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Calculate the direction of the cross"
-msgstr ""
+msgstr "Calcola la direzione della croce"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "Calculate the mean value of the two directions"
-msgstr ""
+msgstr "Calcola la media delle due direzioni"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "Set the motor speeds in order to head towards the mean direction"
-msgstr ""
+msgstr "Imposta i motori per seguire la direzione media"
 
 #. type: \b; header
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "The instruction <code>radar</code>"
-msgstr ""
+msgstr "L’istruzione <code>radar</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:14
@@ -103,6 +106,9 @@ msgid ""
 "<c/><s/>\tradar(Mine, 0, 180, 0, 5);<n/>\n"
 "With the opening angle of 180 degrees, mines that are behind the bot will not be found. Mines that are at more than 5 meters are also ignored."
 msgstr ""
+"Per trovare una mina con <code><a cbot|radar>radar</a></code>, consigliamo:\n"
+"<c/><s/>\tradar(Mine, 0, 180, 0, 5);<n/>\n"
+"L’apertura di 180 gradi esclude le mine dietro al robot. Vengono ignorate anche quelle oltre 5 metri."
 
 #. type: Plain text
 #: ../help/help.E.txt:18
@@ -112,6 +118,9 @@ msgid ""
 "<c/><s/>\tradar(WayPoint);<n/>\n"
 "Blue crosses will be found everywhere."
 msgstr ""
+"Per trovare una croce blu basta:\n"
+"<c/><s/>\tradar(WayPoint);<n/>\n"
+"Le croci vengono rilevate ovunque."
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -120,6 +129,8 @@ msgid ""
 "In order to calculate a direction, use <code><a cbot|direct>direction</a></code>.\n"
 "In order to set the motor speeds, use <code><a cbot|motor>motor</a></code>."
 msgstr ""
+"Per calcolare una direzione usa <code><a cbot|direct>direction</a></code>.\n"
+"Per impostare i motori usa <code><a cbot|motor>motor</a></code>."
 
 #. type: \t; header
 #: ../help/help.E.txt:25
@@ -141,4 +152,4 @@ msgstr ""
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "\tRepeat forever:"
-msgstr ""
+msgstr "\tRipeti all’infinito:"

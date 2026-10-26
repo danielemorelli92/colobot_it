@@ -2,13 +2,13 @@
   "base_release": "colobot-gold-0.2.2-alpha",
   "catalogs": 146,
   "normalized_entries": 5172,
-  "translated_entries": 2890,
-  "untranslated_entries": 2282,
+  "translated_entries": 5172,
+  "untranslated_entries": 0,
   "checks": {
-    "gnu_gettext": "passed",
+    "gnu_gettext": "passed for all 146 catalogs including both plural forms",
     "markup_and_mo_lookup": "passed",
     "cpp_language_roundtrip": "passed",
-    "official_data_build": "passed for 0.2",
+    "official_data_build": "passed for 0.3",
     "generated_first_mission": "passed",
     "font_accent_coverage": "passed",
     "full_engine_build": "blocked: OpenGL development files missing at CMake configuration",
@@ -17,19 +17,28 @@
     "external_translation_search": "partial",
     "generated_campaign": "all 878 entries verified",
     "gameplay_preservation": "all packaged scenes and chapter titles compared to original, excluding localized labels",
-    "negative_localization_tests": "passed: link/button/key/code/printf/tooltip corruptions rejected"
+    "negative_localization_tests": "passed: link/button/key/code/printf/tooltip corruptions rejected",
+    "plural_runtime_lookup": "passed for 0, 1, 2, 10",
+    "generated_all_data": "all 4455 data entries found",
+    "code_preservation": "542 examples, image references and ScriptName values preserved",
+    "raw_code_and_tabs": "passed: native <c/> code and literal indentation preserved"
   },
-  "preview": "0.2",
-  "identical_to_source": 202,
+  "preview": "0.3",
+  "identical_to_source": 777,
   "fully_populated_categories": {
     "interface": 659,
     "campaign": 878,
     "generic_help": 141,
     "bot_help": 176,
-    "object_help": 323
+    "object_help": 323,
+    "all_catalogs": 5172
   },
   "windows": {
     "preview_0.1": "User confirmed launch and Italian mission/SatCom, screenshots reviewed; font issue resolved by restart",
-    "preview_0.2": "not run on Windows"
-  }
+    "preview_0.2": "User confirmed launch; no extended interactive test",
+    "preview_0.3": "not run; full interactive testing deferred at user request"
+  },
+  "fuzzy_entries": 0,
+  "data_entries_verified_in_generated_output": 4455,
+  "preserved_code_images_script_names": 542
 }

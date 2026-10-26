@@ -18,19 +18,20 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Power Cell 1"
-msgstr ""
+msgstr "Batteria 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Instruct a bot to change the power cell of a nearby winged shooter."
 msgstr ""
+"Insegna a un robot a cambiare la batteria di un tiratore volante vicino."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Spider2"
-msgstr ""
+msgstr "Spider2"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -46,6 +47,9 @@ msgid ""
 "object|power>power cell</a> of the <a object|botfj>winged shooter</a>. The "
 "winged shooter can then shoot the spiders."
 msgstr ""
+"Programma il <a object|botgr>robot trasportatore</a> perché cambi la <a "
+"object|power>batteria</a> del <a object|botfj>tiratore volante</a>, che "
+"potrà così sparare ai ragni."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
@@ -57,13 +61,13 @@ msgstr "Procedura"
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Program the <a object|botgr>grabber bot</a>."
-msgstr ""
+msgstr "Programma il <a object|botgr>robot trasportatore</a>."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Execute the program with the arrow button <button 21/>."
-msgstr ""
+msgstr "Esegui con la freccia <button 21/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -72,48 +76,50 @@ msgid ""
 "The <a object|botfj>winged shooter</a> is already programmed, it will do its"
 " job as soon as it has got a new power cell."
 msgstr ""
+"Il <a object|botfj>tiratore volante</a> è già programmato: agirà appena "
+"riceve una batteria nuova."
 
 #. type: \t; header
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "You will need the following instructions:"
-msgstr ""
+msgstr "Ti serviranno queste istruzioni:"
 
 #. type: Source code
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "grab();<n/>"
-msgstr ""
+msgstr "grab();<n/>"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "<n/>Takes whatever there is in front of the bot."
-msgstr ""
+msgstr "<n/>Prende ciò che si trova davanti al robot."
 
 #. type: Source code
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "drop();<n/>"
-msgstr ""
+msgstr "drop();<n/>"
 
 #. type: Plain text
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "<n/>Drops whatever the bot is carrying in front."
-msgstr ""
+msgstr "<n/>Posa davanti al robot l’oggetto trasportato."
 
 #. type: Source code
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "turn();<n/>"
-msgstr ""
+msgstr "turn();<n/>"
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -122,36 +128,38 @@ msgid ""
 "<n/>We have seen this instruction already in the previous exercise: it "
 "performs a rotation of a certain angle, given in degrees."
 msgstr ""
+"<n/>Questa istruzione, già vista nell’esercizio precedente, ruota il robot "
+"dell’angolo indicato in gradi."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:22
 #, no-wrap
 msgid "pick up the empty power cell with <c/>grab();<n/>"
-msgstr ""
+msgstr "prendi la batteria scarica con <c/>grab();<n/>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:23
 #, no-wrap
 msgid "turn left 90 degrees (quarter turn) with <code>turn(90)</code>"
-msgstr ""
+msgstr "gira di 90 gradi a sinistra con <code>turn(90)</code>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "drop the empty cell with <c/>drop();<n/>"
-msgstr ""
+msgstr "posa la batteria scarica con <c/>drop();<n/>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "etc."
-msgstr ""
+msgstr "ecc."
 
 #. type: Plain text
 #: ../help/help.E.txt:27
 #, no-wrap
 msgid "It is up to you now to write the rest of the program!"
-msgstr ""
+msgstr "Ora tocca a te completare il programma!"
 
 #. type: Plain text
 #: ../help/help.E.txt:29
@@ -160,12 +168,14 @@ msgid ""
 "If you have got a problem, you can always look at the solution: select the "
 "<code>Solution</code> program, and click the braces button <button 22/>."
 msgstr ""
+"Se hai difficoltà, seleziona il programma <code>Solution</code> e premi le "
+"graffe <button 22/>."
 
 #. type: \t; header
 #: ../help/help.E.txt:31
 #, no-wrap
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 #. type: Plain text
 #: ../help/help.E.txt:32
@@ -174,6 +184,7 @@ msgid ""
 "Be careful to write the instructions precisely, respecting lower and upper "
 "case letters."
 msgstr ""
+"Scrivi le istruzioni con precisione, rispettando maiuscole e minuscole."
 
 #. type: Plain text
 #: ../help/help.E.txt:34
@@ -181,6 +192,7 @@ msgstr ""
 msgid ""
 "Always write one instruction per line, finishing each line with a semicolon."
 msgstr ""
+"Scrivi un’istruzione per riga, terminandola sempre con un punto e virgola."
 
 #. type: Plain text
 #: ../help/help.E.txt:36
@@ -191,6 +203,9 @@ msgid ""
 "start over again from the beginning (hit the key \"Esc\", the click "
 "\"Restart\"). The program you have written will not be lost."
 msgstr ""
+"Se il programma non fa ciò che volevi, riporta il robot alla partenza con "
+"<button 59/>. Puoi ricominciare con Esc e «Ricomincia»: il programma non "
+"andrà perso."
 
 #. type: Plain text
 #: ../help/help.E.txt:38
@@ -199,9 +214,11 @@ msgid ""
 "<format key><key help/></format> allows you to review these instructions at "
 "all times."
 msgstr ""
+"<format key><key help/></format> permette di rileggere queste istruzioni in "
+"ogni momento."
 
 #. type: Plain text
 #: ../help/help.E.txt:21
 #, no-wrap
 msgid "Let us see the beginning of the program:"
-msgstr ""
+msgstr "Vediamo l’inizio del programma:"

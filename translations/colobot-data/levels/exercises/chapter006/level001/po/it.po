@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "A function"
-msgstr ""
+msgstr "Una funzione"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Create a function in order to make your program shorter."
-msgstr ""
+msgstr "Crea una funzione per abbreviare il programma."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,18 +46,21 @@ msgid ""
 "crosses</a> on the ground. The way that must be covered is made of two "
 "squares. The first one measures 15 meters, the second 25 meters."
 msgstr ""
+"Il <a object|bottr>robot</a> deve attraversare tutte le <a "
+"object|waypoint>croci blu</a>. Il percorso forma due quadrati, uno di 15 "
+"metri di lato e l’altro di 25."
 
 #. type: Image filename
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "tproc1a"
-msgstr ""
+msgstr "tproc1a"
 
 #. type: \b; header
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Plain text
 #: ../help/help.E.txt:6
@@ -68,6 +71,9 @@ msgid ""
 " square shape of a certain size. The main program becomes then very "
 "simple:<c/>"
 msgstr ""
+"La soluzione più efficiente è una <a cbot|function>funzione</a> che faccia "
+"percorrere un quadrato della dimensione specificata. Il programma principale"
+" diventa semplicissimo:<c/>"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -79,6 +85,11 @@ msgid ""
 "\tSquare(25);\n"
 "}"
 msgstr ""
+"extern void object::Function1( )\n"
+"{\n"
+"\tSquare(15);\n"
+"\tSquare(25);\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
@@ -91,6 +102,9 @@ msgid ""
 "will define the function <code>Square</code>. The program will take the "
 "following shape:"
 msgstr ""
+"Devi ancora definire <code>Square</code>. Scrivila fuori dal <a "
+"cbot|bloc>blocco</a> principale, dopo l’ultima graffa. Definiamo lì "
+"<code>Square</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:15
@@ -106,6 +120,15 @@ msgid ""
 "\t</code>new function ...<c/>\n"
 "}"
 msgstr ""
+"extern void object::Function1( )\n"
+"{\n"
+"\t<n/>main function ...<code>\n"
+"}\n"
+"\n"
+"void object::Square(float length)\n"
+"{\n"
+"\t</code>new function ...<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:25
@@ -113,7 +136,7 @@ msgstr ""
 msgid ""
 "Let us look in detail at the different elements of the declaration of the "
 "function <code>Square</code>:"
-msgstr ""
+msgstr "Vediamo gli elementi della dichiarazione di <code>Square</code>:"
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -122,6 +145,8 @@ msgid ""
 "<code><a cbot|void>void</a></code>\n"
 "This means that this function will return no value."
 msgstr ""
+"<code><a cbot|void>void</a></code>\n"
+"La funzione non restituisce un valore."
 
 #. type: Plain text
 #: ../help/help.E.txt:30
@@ -130,6 +155,8 @@ msgid ""
 "<code><a cbot|object>object</a>::</code>\n"
 "When you write this in front of the function name, you can have access in the function to all the characteristics of the bot, such as <code>position</code>, <code>orientation</code>, etc. In this exercise, this element is not compulsory, as we will not need the characteristics of the bot in the function."
 msgstr ""
+"<code><a cbot|object>object</a>::</code>\n"
+"Permette di accedere nella funzione alle proprietà del robot, come <code>position</code> e <code>orientation</code>. Qui è facoltativo perché non servono."
 
 #. type: Plain text
 #: ../help/help.E.txt:33
@@ -138,6 +165,8 @@ msgid ""
 "<code>Square (  )</code>\n"
 "This is the name of the function. You can call it Square, or any other name."
 msgstr ""
+"<code>Square (  )</code>\n"
+"È il nome della funzione: puoi sceglierne anche un altro."
 
 #. type: Plain text
 #: ../help/help.E.txt:36
@@ -146,12 +175,14 @@ msgid ""
 "<code><a cbot|float>float</a> length</code>\n"
 "Here you define the parameters that the function will get when it is called. The first time the function is actually called with <code>Square(15)</code>, the variable <code>length</code> will contain the value <code>15</code>. The second time, <code>length</code> will contain <code>25</code>."
 msgstr ""
+"<code><a cbot|float>float</a> length</code>\n"
+"Definisce il parametro ricevuto. Alla prima chiamata, <code>Square(15)</code>, <code>length</code> contiene <code>15</code>; alla seconda, <code>length</code> contiene <code>25</code>."
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:40
 #, no-wrap
 msgid "First the main function <code>Function</code> will be executed."
-msgstr ""
+msgstr "Viene eseguita prima la funzione principale <code>Function</code>."
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:41
@@ -161,6 +192,8 @@ msgid ""
 "and enter the function <code>Square</code> a first time, <code>length</code>"
 " containing <code>15</code>."
 msgstr ""
+"A <code>Square(15)</code> segue la freccia rossa ed entra in "
+"<code>Square</code> con <code>length</code> uguale a <code>15</code>."
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:42
@@ -169,6 +202,8 @@ msgid ""
 "At the end of the function <code>Square</code>, the program follows the "
 "orange arrow and comes back to the main function."
 msgstr ""
+"Alla fine di <code>Square</code> segue la freccia arancione e torna alla "
+"funzione principale."
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:43
@@ -177,6 +212,8 @@ msgid ""
 "At the line <code>Square(25)</code>, the program will follow the blue arrow "
 "and enter the function <code>Square</code> a second time."
 msgstr ""
+"A <code>Square(25)</code> segue la freccia blu ed entra una seconda volta in"
+" <code>Square</code>."
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:44
@@ -185,12 +222,14 @@ msgid ""
 "At the end of the function <code>Square</code>, the program follows the "
 "light blue arrow and comes back to the main function."
 msgstr ""
+"Alla fine di <code>Square</code> segue la freccia azzurra e torna alla "
+"funzione principale."
 
 #. type: Image filename
 #: ../help/help.E.txt:46
 #, no-wrap
 msgid "tproc1b"
-msgstr ""
+msgstr "tproc1b"
 
 #. type: Plain text
 #: ../help/help.E.txt:47
@@ -202,6 +241,10 @@ msgid ""
 "that will repeat the instructions <code><a cbot|move>move</a></code> and "
 "<code><a cbot|turn>turn</a></code> 4 times; however, this is not compulsory."
 msgstr ""
+"In <code>Square</code> usa <code><a cbot|move>move</a></code> e <code><a "
+"cbot|turn>turn</a></code>. Puoi abbreviare con un ciclo <code><a "
+"cbot|for>for</a></code> che ripeta <code><a cbot|move>move</a></code> e "
+"<code><a cbot|turn>turn</a></code> 4 volte, ma non è obbligatorio."
 
 #. type: Source code
 #: ../help/help.E.txt:49
@@ -216,6 +259,14 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"void object::Square(float length)\n"
+"{\n"
+"\tfor ( int i=0 ; i<4 ; i=i+1 )\n"
+"\t{\n"
+"\t\tmove(length);\n"
+"\t\tturn(90);\n"
+"\t}\n"
+"}"
 
 #. type: \t; header
 #: ../help/help.E.txt:58
@@ -237,4 +288,4 @@ msgstr ""
 #: ../help/help.E.txt:39
 #, no-wrap
 msgid "Here is in detail what will happen when the program is executed:"
-msgstr ""
+msgstr "Ecco nel dettaglio cosa avviene durante l’esecuzione:"

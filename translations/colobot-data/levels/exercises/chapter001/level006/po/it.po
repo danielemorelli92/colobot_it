@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Spiders 2"
-msgstr ""
+msgstr "Ragni 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Use the radar to find and kill all spiders."
-msgstr ""
+msgstr "Trova ed elimina tutti i ragni con il radar."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Spider2"
-msgstr ""
+msgstr "Spider2"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -44,13 +44,13 @@ msgstr "Obiettivo"
 msgid ""
 "Kill several spiders whose exact location we do not know. Use the bot's "
 "radar to find them."
-msgstr ""
+msgstr "Elimina vari ragni di posizione sconosciuta, trovandoli con il radar."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -65,12 +65,17 @@ msgid ""
 "rotation that the robot must perform in order to aim at the spider. In order"
 " to actually aim at the spider, just write:"
 msgstr ""
+"Cerca il ragno più vicino con <c/><a cbot|radar>radar</a>(AlienSpider);<n/>,"
+" come per minerale e batterie. Non raggiungerlo: il robot verrebbe distrutto"
+" prima. Girati soltanto verso il ragno. <code><a "
+"cbot|direct>direction</a>(item.position)</code> calcola l’angolo necessario."
+" Per mirare scrivi:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "\t<a cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));"
-msgstr ""
+msgstr "\t<a cbot|turn>turn</a>(<a cbot|direct>direction</a>(item.position));"
 
 #. type: Plain text
 #: ../help/help.E.txt:9
@@ -80,12 +85,14 @@ msgid ""
 "semicolon. There are two open brackets, so there must be two closing "
 "brackets."
 msgstr ""
+"Nota le due parentesi di chiusura prima del punto e virgola: corrispondono "
+"alle due di apertura."
 
 #. type: Plain text
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "Then shoot with the instruction <c/><a cbot|fire>fire</a>(1);<n/>."
-msgstr ""
+msgstr "Poi spara con <c/><a cbot|fire>fire</a>(1);<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:13
@@ -95,6 +102,8 @@ msgid ""
 "(true)</code> in order not to have to execute the program again for every "
 "spider, as we did in the last exercise."
 msgstr ""
+"Anche qui un ciclo <code><a cbot|while>while</a> (true)</code> evita di "
+"riavviare il programma per ogni ragno, come nell’ultimo esercizio."
 
 #. type: \t; header
 #: ../help/help.E.txt:15

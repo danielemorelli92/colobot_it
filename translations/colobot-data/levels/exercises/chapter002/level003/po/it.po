@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Flying Tower 2"
-msgstr ""
+msgstr "Torre volante 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Program a flying tower that wastes less energy."
-msgstr ""
+msgstr "Programma una torre volante che sprechi meno energia."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -45,12 +45,14 @@ msgid ""
 "Adapt the program <code>Tower1</code> in order to avoid wasting energy when "
 "shooting at ants that are out of range."
 msgstr ""
+"Adatta <code>Tower1</code> per non sprecare colpi sulle formiche fuori "
+"portata."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -59,6 +61,8 @@ msgid ""
 "The program <code>Tower1</code> shoots in the direction of the closest ant, "
 "even if it is still out of range:"
 msgstr ""
+"<code>Tower1</code> spara verso la formica più vicina anche quando è fuori "
+"portata:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -83,6 +87,24 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::Tour1()\n"
+"{\n"
+"\tobject    item;\n"
+"\t\n"
+"\tjet(0.2);\n"
+"\twhile(position.z < 20)\n"
+"\t{\n"
+"\t\twait(0.2);\n"
+"\t}\n"
+"\tjet(0);\n"
+"\t\n"
+"\twhile(true)\n"
+"\t{\n"
+"\t\titem = radar(AlienAnt);\n"
+"\t\tturn(direction(item.position));\n"
+"\t\tfire(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
@@ -93,6 +115,9 @@ msgid ""
 "the ant is close enough, i.e. until the ant is at less than 40 meters. Only "
 "one burst will be needed for every ant then."
 msgstr ""
+"Per riuscirci con una <a object|power>batteria normale</a>, aggiungi un "
+"ciclo che attenda la formica entro 40 metri. Basterà una raffica per "
+"ciascuna."
 
 #. type: Plain text
 #: ../help/help.E.txt:28
@@ -109,6 +134,12 @@ msgid ""
 "then write a conditional loop similar to the one written in the last "
 "exercise that waits as long as there is no ant closer than 40 meters:"
 msgstr ""
+"<code><a cbot|radar()>radar</a></code> accetta parametri che delimitano la "
+"ricerca. <c/>radar(AlienAnt,0,360,0,40);<n/> cerca formiche entro 40 m: i "
+"primi due numeri coprono ogni direzione, gli ultimi due le distanze da 0 a "
+"40 m. Se non ne trova, <code><a cbot|radar()>radar</a></code> restituisce "
+"<code>null</code>. Puoi attendere con un ciclo condizionale finché non ne "
+"compare una:"
 
 #. type: Source code
 #: ../help/help.E.txt:30
@@ -119,6 +150,10 @@ msgid ""
 "\t\t\twait(0.2);\n"
 "\t\t}"
 msgstr ""
+"\t\twhile (radar(AlienAnt, 0, 360, 0, 40) == null)\n"
+"\t\t{\n"
+"\t\t\twait(0.2);\n"
+"\t\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:35
@@ -126,7 +161,7 @@ msgstr ""
 msgid ""
 "Notice that two equal signs \"==\" are needed to perform a comparison of "
 "equality."
-msgstr ""
+msgstr "Per confrontare l’uguaglianza servono due segni uguale: «==»."
 
 #. type: \t; header
 #: ../help/help.E.txt:39
@@ -152,3 +187,5 @@ msgid ""
 " will wait before shooting until the ant is closer than 40 meters. Like this"
 " a regular power cell is enough to kill all ants. "
 msgstr ""
+"Inserisci queste righe prima di <c/>fire(1);<n/>: il robot aspetterà la "
+"formica entro 40 m. Basterà così una batteria normale per eliminarle tutte. "

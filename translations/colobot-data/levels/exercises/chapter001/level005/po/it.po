@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Power Cell 2"
-msgstr ""
+msgstr "Batteria 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Power all the winged shooters."
-msgstr ""
+msgstr "Alimenta tutti i robot tiratori volanti."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Spider2"
-msgstr ""
+msgstr "Spider2"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -46,12 +46,14 @@ msgid ""
 "cells</a>, so that they can kill the ants in the ant nest located in a hole "
 "north of your position."
 msgstr ""
+"Fornisci <a object|power>batterie</a> ai <a object|botfj>tiratori "
+"volanti</a> perché eliminino le formiche nel nido, in una buca a nord."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -62,6 +64,10 @@ msgid ""
 "cell. This task is very similar to the task performed in the previous "
 "exercise. Here is this program again:"
 msgstr ""
+"Il <a object|botgr>trasportatore su ruote</a> deve raggiungere una <a "
+"object|power>batteria</a>, prenderla, raggiungere un <a "
+"object|botfj>tiratore volante</a> e posarla. È simile all’esercizio "
+"precedente, di cui riportiamo il programma:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -80,6 +86,18 @@ msgid ""
 "\tdrop();\n"
 "}"
 msgstr ""
+"extern void object::Titanium2()\n"
+"{\n"
+"\tobject    item;\n"
+"\t\n"
+"\titem = radar(TitaniumOre);\n"
+"\tgoto(item.position);\n"
+"\tgrab();\n"
+"\t\n"
+"\titem = radar(Converter);\n"
+"\tgoto(item.position);\n"
+"\tdrop();\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:20
@@ -91,6 +109,9 @@ msgid ""
 "you just have to make the necessary changes in order to adapt it to the new "
 "task."
 msgstr ""
+"Conviene copiare <button 61/> il programma precedente, da "
+"<code>object</code> a <c/>drop();<n/>, e incollarlo <button 62/> "
+"nell’editor. Poi adattalo al nuovo compito."
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -102,6 +123,10 @@ msgid ""
 "(<code>WingedShooter</code>). As soon as the winged shooter has got a new "
 "power cell, it will get down to work."
 msgstr ""
+"Cerca una batteria (<code>PowerCell</code>) invece del minerale "
+"(<code>TitaniumOre</code>), e raggiungi un tiratore volante "
+"(<code>WingedShooter</code>) anziché il convertitore "
+"(<code>Converter</code>). Appena riceve la batteria, il tiratore agisce."
 
 #. type: Plain text
 #: ../help/help.E.txt:24
@@ -111,12 +136,14 @@ msgid ""
 " programming language, please refer to the <a cbot|category>text about "
 "categories</a>."
 msgstr ""
+"Per conoscere i nomi degli oggetti nel linguaggio, consulta le <a "
+"cbot|category>categorie</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:26
 #, no-wrap
 msgid "Further improvement: loops"
-msgstr ""
+msgstr "Miglioramento: i cicli"
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -126,6 +153,8 @@ msgid ""
 " to repeat the task over and over again. Like this you will not have to "
 "execute the program several times in order to power several bots."
 msgstr ""
+"Quando il programma funziona, miglioralo per ripetere automaticamente il "
+"compito: non dovrai riavviarlo per alimentare ogni robot."
 
 #. type: Plain text
 #: ../help/help.E.txt:29
@@ -139,6 +168,11 @@ msgid ""
 " is an example of a program that repeats over and over the instructions that"
 " look for a power cell, grab it, and drop it on a winged shooter:"
 msgstr ""
+"Finora i programmi eseguivano una sola volta tutte le istruzioni, in "
+"sequenza. Per ripeterle, scrivi <code>while (true)</code>, una graffa "
+"aperta, le istruzioni e una graffa chiusa. Questa ripetizione è un ciclo. "
+"Ecco un programma che cerca continuamente batterie, le prende e le posa sui "
+"tiratori volanti:"
 
 #. type: Source code
 #: ../help/help.E.txt:31
@@ -155,6 +189,16 @@ msgid ""
 "\t\tdrop();\n"
 "\t}"
 msgstr ""
+"\twhile (true)\n"
+"\t{\n"
+"\t\titem = radar(PowerCell);\n"
+"\t\tgoto(item.position);\n"
+"\t\tgrab();\n"
+"\t\t\n"
+"\t\titem = radar(WingedShooter);\n"
+"\t\tgoto(item.position);\n"
+"\t\tdrop();\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:42
@@ -163,6 +207,8 @@ msgid ""
 "Of course the variable declaration <c/>object item;<n/> must not be inside "
 "the loop, but just before: declare a variable only once."
 msgstr ""
+"La dichiarazione <c/>object item;<n/> deve stare prima del ciclo, non "
+"dentro: la variabile si dichiara una sola volta."
 
 #. type: \t; header
 #: ../help/help.E.txt:44
@@ -179,6 +225,9 @@ msgid ""
 "nest, the show is worth it. But be careful not to get shot by your own "
 "bots..."
 msgstr ""
+"Il robot esegue autonomamente il programma. Nel frattempo puoi selezionare "
+"l’astronauta e osservare il nido: lo spettacolo merita. Attenzione però al "
+"fuoco dei tuoi robot..."
 
 #. type: \t; header
 #: ../help/help.E.txt:47

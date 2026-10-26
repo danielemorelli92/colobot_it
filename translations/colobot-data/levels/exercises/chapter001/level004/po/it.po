@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Titanium 2"
-msgstr ""
+msgstr "Titanio 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -26,13 +26,13 @@ msgstr ""
 msgid ""
 "Use the bot's radar to look for the titanium ore and bring it to the "
 "converter."
-msgstr ""
+msgstr "Usa il radar per trovare il minerale e portarlo al convertitore."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Titanium2"
-msgstr ""
+msgstr "Titanium2"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -48,12 +48,15 @@ msgid ""
 "which we do not know. Use the bot's radar to find it. Bring the titanium ore"
 " to the <a object|convert>converter</a>."
 msgstr ""
+"Trova con il radar un pezzo di <a object|titanore>minerale di titanio</a> di"
+" cui non conosci la posizione e portalo al <a "
+"object|convert>convertitore</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -63,6 +66,8 @@ msgid ""
 "exercises were completely \"blind\": if the titanium ore, the power cell or "
 "the spiders had been at another location, the bot would not have found them."
 msgstr ""
+"I programmi precedenti erano «ciechi»: con minerale, batterie o ragni in "
+"posizioni diverse, il robot non li avrebbe trovati."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -76,6 +81,11 @@ msgid ""
 "cbot|radar>radar</a>(TitaniumOre);<n/> somewhere. For this task we will need"
 " a <a cbot|var>variable</a>."
 msgstr ""
+"Il radar è l’«occhio» del robot e rileva gli oggetti circostanti. Per "
+"esempio <c/><a cbot|radar>radar</a>(TitaniumOre);<n/> descrive il <a "
+"object|titanore>minerale</a> più vicino. Dobbiamo però conservare il "
+"risultato di <c/><a cbot|radar>radar</a>(TitaniumOre);<n/> da qualche parte:"
+" serve una <a cbot|var>variabile</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:9
@@ -91,12 +101,17 @@ msgid ""
 "example <code>item</code>. If we put this together, we get the following "
 "line:"
 msgstr ""
+"Una <a cbot|var>variabile</a> è una scatola con un nome, dove conservare, "
+"leggere o modificare informazioni. Prima dichiarala indicando il <a "
+"cbot|type>tipo</a>, qui <code>object</code>, che descrive oggetti come "
+"minerale, ragni, formiche, robot o batterie. Poi scegli il nome, per esempio"
+" <code>item</code>. Ottieni:"
 
 #. type: Source code
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "<a cbot|type>object</a> item;"
-msgstr ""
+msgstr "<a cbot|type>object</a> item;"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
@@ -105,12 +120,14 @@ msgid ""
 "Then we must put the information returned by the instruction <code><a "
 "cbot|radar>radar</a>(TitaniumOre)</code> into this variable:"
 msgstr ""
+"Memorizza poi il risultato di <code><a "
+"cbot|radar>radar</a>(TitaniumOre)</code> nella variabile:"
 
 #. type: Source code
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "item = <a cbot|radar>radar</a>(TitaniumOre);"
-msgstr ""
+msgstr "item = <a cbot|radar>radar</a>(TitaniumOre);"
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -122,12 +139,15 @@ msgid ""
 " Then we use the instruction <c/>goto();<n/> in order to move the bot to "
 "this position. Here is a line that puts all this together:"
 msgstr ""
+"<code>item</code> contiene posizione, orientamento, inclinazione e altri "
+"dati. Scrivi <code>item.position</code> per leggerne la posizione e "
+"raggiungila con <c/>goto();<n/>. Ecco l’istruzione completa:"
 
 #. type: Source code
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "<a cbot|goto>goto</a>(item.position);"
-msgstr ""
+msgstr "<a cbot|goto>goto</a>(item.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:21
@@ -136,6 +156,8 @@ msgid ""
 "If we \"translate\" this into English, this would mean: go to the position "
 "of the object described by the variable <code>item</code>."
 msgstr ""
+"In parole semplici: vai alla posizione dell’oggetto descritto da "
+"<code>item</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:23
@@ -143,13 +165,13 @@ msgstr ""
 msgid ""
 "You can then just pick up what is at this position with the instruction "
 "<c/><a cbot|grab>grab</a>();<n/>."
-msgstr ""
+msgstr "Prendi poi l’oggetto con <c/><a cbot|grab>grab</a>();<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "If we put all this together, we get the following program:"
-msgstr ""
+msgstr "Mettendo insieme le istruzioni otteniamo:"
 
 #. type: Source code
 #: ../help/help.E.txt:27
@@ -165,6 +187,15 @@ msgid ""
 "\t\n"
 "}"
 msgstr ""
+"extern void object::Titanium2( )\n"
+"{\n"
+"\t\n"
+"\t<a cbot|type>object</a> item;\n"
+"\titem = <a cbot|radar>radar</a>(TitaniumOre);\n"
+"\t<a cbot|goto>goto</a>(item.position);\n"
+"\tgrab();\n"
+"\t\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:37
@@ -173,12 +204,14 @@ msgid ""
 "Then you must look for the <a cbot|convert>converter</a>, and put the "
 "information about the converter into the variable <code>item</code>:"
 msgstr ""
+"Cerca quindi il <a cbot|convert>convertitore</a> e memorizzane i dati in "
+"<code>item</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:39
 #, no-wrap
 msgid "item = <a cbot|radar>radar</a>(Converter);"
-msgstr ""
+msgstr "item = <a cbot|radar>radar</a>(Converter);"
 
 #. type: Plain text
 #: ../help/help.E.txt:41
@@ -188,6 +221,8 @@ msgid ""
 "cbot|goto>goto</a>(item.position);<n/> as above, drop the titanium, and step"
 " back. The converter will take care of the rest."
 msgstr ""
+"Raggiungilo con <c/><a cbot|goto>goto</a>(item.position);<n/>, posa il "
+"minerale e arretra. Il convertitore farà il resto."
 
 #. type: Plain text
 #: ../help/help.E.txt:43
@@ -197,12 +232,14 @@ msgid ""
 " programming language, please refer to the <a cbot|category>text about "
 "categories</a>."
 msgstr ""
+"Per conoscere i nomi degli oggetti nel linguaggio, consulta le <a "
+"cbot|category>categorie</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:45
 #, no-wrap
 msgid "Remarks"
-msgstr ""
+msgstr "Osservazioni"
 
 #. type: Plain text
 #: ../help/help.E.txt:46
@@ -211,6 +248,8 @@ msgid ""
 "A <a cbot|var>variable</a> must be declared only once at the beginning of "
 "the program! You can then use it as often as you want."
 msgstr ""
+"Dichiara una <a cbot|var>variabile</a> una sola volta all’inizio; poi "
+"riutilizzala quanto vuoi."
 
 #. type: Plain text
 #: ../help/help.E.txt:48
@@ -219,6 +258,8 @@ msgid ""
 "In order to avoid retyping the instructions explained above, you can select "
 "them with the mouse, and copy-paste <button 61/> them into your program."
 msgstr ""
+"Per non riscrivere le istruzioni, selezionale con il mouse e copiale <button"
+" 61/> nel programma."
 
 #. type: \t; header
 #: ../help/help.E.txt:50

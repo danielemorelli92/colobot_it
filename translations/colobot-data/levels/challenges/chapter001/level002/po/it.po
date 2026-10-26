@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Massacre"
-msgstr ""
+msgstr "Massacro"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Use a loop in order to destroy four targets."
-msgstr ""
+msgstr "Usa un ciclo per distruggere quattro bersagli."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,12 +45,15 @@ msgid ""
 "Destroy all four <a object|bottarg>targets</a> with a program using a "
 "<code>for</code> loop. You must move 10m to get from one target to another."
 msgstr ""
+"Distruggi tutti e quattro i <a object|bottarg>bersagli</a> con un programma "
+"che usa un ciclo <code>for</code>. Per passare da un bersaglio all’altro "
+"devi avanzare di 10 m."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -61,6 +64,10 @@ msgid ""
 "<code><a cbot|turn>turn</a></code> to turn the bot\n"
 "<code><a cbot|fire>fire</a></code> to fire the cannon"
 msgstr ""
+"Ciclo <code><a cbot|for>for</a></code> per ripetere le istruzioni\n"
+"<code><a cbot|move>move</a></code> per spostare il robot\n"
+"<code><a cbot|turn>turn</a></code> per ruotarlo\n"
+"<code><a cbot|fire>fire</a></code> per sparare"
 
 #. type: \t; header
 #: ../help/help.E.txt:10

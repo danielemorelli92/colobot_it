@@ -7,6 +7,7 @@ import polib
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--output', type=Path)
+p.add_argument('--preview', default='0.3')
 a=p.parse_args()
 rows=[]
 for path in sorted((ROOT/'translations').rglob('it.po')):
@@ -16,7 +17,7 @@ for path in sorted((ROOT/'translations').rglob('it.po')):
                  'nonempty':len(translated),
                  'identical_to_source':sum(e.msgstr==e.msgid for e in translated),
                  'untranslated':len(po.untranslated_entries()),'fuzzy':len(po.fuzzy_entries())})
-report={'preview':'0.2','catalogs':len(rows),'entries':sum(r['entries'] for r in rows),
+report={'preview':a.preview,'catalogs':len(rows),'entries':sum(r['entries'] for r in rows),
         'nonempty':sum(r['nonempty'] for r in rows),
         'identical_to_source':sum(r['identical_to_source'] for r in rows),
         'untranslated':sum(r['untranslated'] for r in rows),'details':rows}

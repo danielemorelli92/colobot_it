@@ -40,7 +40,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Plan B"
-msgstr ""
+msgstr "Piano B"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -122,6 +122,10 @@ msgid ""
 "colonization, even possibly outright hostile. Very recently all "
 "communications were terminated."
 msgstr ""
+"Sette mesi fa una spedizione di soli robot è stata inviata nel cosmo con lo "
+"stesso obiettivo. Ha incontrato molti ostacoli, atterrando su pianeti "
+"apparentemente inadatti alla colonizzazione, forse persino ostili. Di "
+"recente tutte le comunicazioni si sono interrotte."
 
 #. type: Plain text
 #: ../help/help.E.txt:15
@@ -146,6 +150,11 @@ msgid ""
 "object|flag>flag</a> and <a cbot|send>send</a> an information, a <a "
 "object|botbc>tracked builder</a> may prove useful for this task."
 msgstr ""
+"Prima di partire devi completare un’ultima esercitazione: portare a bordo la"
+" <a object|bbox>scatola nera</a>. Il robot incaricato del trasporto attende "
+"il segnale. Costruisci un <a object|exchange>centro di scambio dati</a> "
+"vicino alla <a object|flag>bandiera</a> blu e <a cbot|send>invia</a> un "
+"dato. Un <a object|botbc>robot costruttore cingolato</a> può esserti utile."
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -156,12 +165,15 @@ msgid ""
 "object|research>research center</a> to come up with a blueprint for this "
 "particular apparatus."
 msgstr ""
+"La <a object|factory>fabbrica di robot</a> non può ancora assemblare questo "
+"tipo. Chiedi al <a object|research>centro di ricerca</a> di sviluppare il "
+"progetto dell’apparato."
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:22
 #, no-wrap
 msgid "Perform the necessary <a cbot|researches>research programs</a>."
-msgstr ""
+msgstr "Esegui le <a cbot|researches>ricerche</a> necessarie."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:23
@@ -171,6 +183,9 @@ msgid ""
 "object|factory>bot factory</a> and build a <a object|botbc>tracked "
 "builder</a>."
 msgstr ""
+"Posa un <a object|titan>cubo di titanio</a> al centro della <a "
+"object|factory>fabbrica</a> e costruisci un <a object|botbc>costruttore "
+"cingolato</a>."
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:24
@@ -179,6 +194,8 @@ msgid ""
 "Reach the top of the southwest-oriented mountain and build an <a "
 "object|exchange>exchange post</a> near a blue <a object|flag>flag</a>."
 msgstr ""
+"Raggiungi la cima a sud-ovest e costruisci un <a object|exchange>centro di "
+"scambio dati</a> vicino alla <a object|flag>bandiera</a> blu."
 
 #. type: Bullet: '4)'
 #: ../help/help.E.txt:25
@@ -187,6 +204,8 @@ msgid ""
 "<a cbot|send>Send</a> an <a cbot|string>empty information</a> to instruct "
 "the carrier to bring the black box back aboard your spaceship."
 msgstr ""
+"<a cbot|send>Invia</a> un <a cbot|string>dato vuoto</a> per ordinare al "
+"robot di portare la scatola nera a bordo."
 
 #. type: Bullet: '5)'
 #: ../help/help.E.txt:26
@@ -195,13 +214,15 @@ msgid ""
 "Don't forget to take your <a object|botgr>grabber</a> and <a "
 "object|botbc>builder</a> along."
 msgstr ""
+"Non dimenticare il <a object|botgr>robot trasportatore</a> e il <a "
+"object|botbc>costruttore</a>."
 
 #. type: Bullet: '6)'
 #: ../help/help.E.txt:27
 #, no-wrap
 msgid ""
 "Climb aboard the <a object|base>spaceship</a> and take off <button 28/>."
-msgstr ""
+msgstr "Sali sull’<a object|base>astronave</a> e decolla <button 28/>."
 
 #. type: \t; header
 #: ../help/help.E.txt:31

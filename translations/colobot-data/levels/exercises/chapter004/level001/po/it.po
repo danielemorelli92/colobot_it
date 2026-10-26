@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1 ../scene.txt:3
 #, no-wrap
 msgid "Dragster"
-msgstr ""
+msgstr "Dragster"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -27,12 +27,14 @@ msgid ""
 "Program a progressive deceleration in order to avoid the mines right behind "
 "the goal."
 msgstr ""
+"Programma una decelerazione progressiva per evitare le mine subito dopo "
+"l’arrivo."
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -43,6 +45,9 @@ msgid ""
 "progressively at the end of the move, otherwise the bot will get blown up on"
 " the <a object|mine>mines</a>."
 msgstr ""
+"Raggiungi il più rapidamente possibile la piattaforma 25 m davanti, usando "
+"<code>motor( , )</code>. Rallenta progressivamente alla fine, altrimenti "
+"finirai sulle <a object|mine>mine</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -52,30 +57,32 @@ msgid ""
 "this would work perfectly well. However, the aim of this exercise is to "
 "learn how to use the instruction <code><a cbot|motor>motor</a></code>."
 msgstr ""
+"<c/><a cbot|move>move</a>(25);<n/> basterebbe, ma l’esercizio serve a "
+"imparare <code><a cbot|motor>motor</a></code>."
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "The speed of the left-hand motor."
-msgstr ""
+msgstr "Velocità del motore sinistro."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "The speed of the right-hand motor."
-msgstr ""
+msgstr "Velocità del motore destro."
 
 #. type: Source code
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "<c/>\tmotor( left, right );"
-msgstr ""
+msgstr "<c/>\tmotor( left, right );"
 
 #. type: Bullet: '-'
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "1 = full throttle backward"
-msgstr ""
+msgstr "1 = massima velocità indietro"
 
 #. type: Plain text
 #: ../help/help.E.txt:14
@@ -84,6 +91,8 @@ msgid ""
 " 0 = stop\n"
 " 1 = full throttle forward"
 msgstr ""
+" 0 = fermo\n"
+" 1 = massima velocità avanti"
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -92,6 +101,8 @@ msgid ""
 "For example, <c/>motor(0.5, 0.5);<n/> will move the motor forward with half-"
 "speed, until new instructions are given to the motors."
 msgstr ""
+"<c/>motor(0.5, 0.5);<n/> avanza a metà velocità fino a nuovi ordini ai "
+"motori."
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -102,12 +113,15 @@ msgid ""
 "hand motor moves a little faster (<code>0.6</code>) than the left-hand motor"
 " (<code>0.5</code>)."
 msgstr ""
+"Con <c/>motor(0.5, 0.6);<n/> avanzi a circa metà velocità curvando a "
+"sinistra: il motore destro (<code>0.6</code>) è più veloce del sinistro "
+"(<code>0.5</code>)."
 
 #. type: \b; header
 #: ../help/help.E.txt:21
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -116,18 +130,20 @@ msgid ""
 "In order to move forward for exactly 25 meters and not more, you must move full speed during the first 23 meters, then reduce the speed of the motors progressively during the last two meters.\n"
 "The <a cbot|var>variable</a> <a cbot|object>position</a> gives you at any moment the current position of the bot, and the instruction <c/><a cbot|dist>distance</a>( , );<n/> returns the distance between two points. The best way to know where you are consists in saving the current position before the start into a <a cbot|var>variable</a>, for example a variable called <code>start</code>. Then you can calculate the distance between the starting position and your current position with <code>distance(position, start)</code>."
 msgstr ""
+"Per avanzare esattamente di 25 metri, vai alla massima velocità per i primi 23 e rallenta negli ultimi due.\n"
+"La <a cbot|var>variabile</a> <a cbot|object>position</a> indica la posizione attuale e <c/><a cbot|dist>distance</a>( , );<n/> calcola la distanza fra due punti. Salva la posizione iniziale in una <a cbot|var>variabile</a>, per esempio <code>start</code>, poi usa <code>distance(position, start)</code>."
 
 #. type: \b; header
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "The program"
-msgstr ""
+msgstr "Il programma"
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:26
 #, no-wrap
 msgid "declare the variables"
-msgstr ""
+msgstr "dichiara le variabili"
 
 #. type: Source code
 #: ../help/help.E.txt:27
@@ -136,36 +152,38 @@ msgid ""
 "<c/>\tpoint start;\n"
 "\tfloat len;"
 msgstr ""
+"<c/>\tpoint start;\n"
+"\tfloat len;"
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:30
 #, no-wrap
 msgid "save the starting position"
-msgstr ""
+msgstr "salva la posizione iniziale"
 
 #. type: Source code
 #: ../help/help.E.txt:31
 #, no-wrap
 msgid "<c/>\tstart = position;"
-msgstr ""
+msgstr "<c/>\tstart = position;"
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:33
 #, no-wrap
 msgid "start full throttle :"
-msgstr ""
+msgstr "parti alla massima velocità:"
 
 #. type: Source code
 #: ../help/help.E.txt:34
 #, no-wrap
 msgid "<c/>\tmotor(1, 1);"
-msgstr ""
+msgstr "<c/>\tmotor(1, 1);"
 
 #. type: Bullet: '4)'
 #: ../help/help.E.txt:36
 #, no-wrap
 msgid "Perform an infinite <code><a cbot|while>while</a></code> loop:"
-msgstr ""
+msgstr "Esegui un ciclo infinito <code><a cbot|while>while</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:37
@@ -180,6 +198,14 @@ msgid ""
 "\t\t}\n"
 "\t}"
 msgstr ""
+"<c/>\twhile ( true )\n"
+"\t{\n"
+"\t\tlen = distance(position, start);\n"
+"\t\tif ( len > 25-2 )\n"
+"\t\t{\n"
+"\t\t\tmotor( less than before ! );\n"
+"\t\t}\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:46
@@ -191,42 +217,47 @@ msgid ""
 "their maximum speed as they were told by the <c/><a "
 "cbot|motor>motor</a>(1,1);<n/> instruction."
 msgstr ""
+"Finché sei a meno di 23 m dalla partenza, il blocco <code><a "
+"cbot|if>if</a></code> non viene eseguito: i motori mantengono la velocità "
+"massima impostata con <c/><a cbot|motor>motor</a>(1,1);<n/>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:49
 #, no-wrap
 msgid "<code>2.0</code> meters left -> speed = <code>1.00</code> (maximum)"
 msgstr ""
+"<code>2.0</code> metri rimanenti -> velocità = <code>1.00</code> (massima)"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:50
 #, no-wrap
 msgid "<code>1.5</code> meters left -> speed = <code>0.75</code>"
-msgstr ""
+msgstr "<code>1.5</code> metri rimanenti -> velocità = <code>0.75</code>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:51
 #, no-wrap
 msgid "<code>1.0</code> meter left  -> speed = <code>0.50</code>"
-msgstr ""
+msgstr "<code>1.0</code> metro rimanente -> velocità = <code>0.50</code>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:52
 #, no-wrap
 msgid "<code>0.5</code> meter left  -> speed = <code>0.25</code>"
-msgstr ""
+msgstr "<code>0.5</code> metri rimanenti -> velocità = <code>0.25</code>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:53
 #, no-wrap
 msgid "<code>0.0</code> meter left  -> speed = <code>0.00</code> (stop)"
 msgstr ""
+"<code>0.0</code> metri rimanenti -> velocità = <code>0.00</code> (fermo)"
 
 #. type: Image filename
 #: ../help/help.E.txt:55
 #, no-wrap
 msgid "tdragst1"
-msgstr ""
+msgstr "tdragst1"
 
 #. type: Plain text
 #: ../help/help.E.txt:56
@@ -236,13 +267,15 @@ msgid ""
 "<code>(25-len)/2</code> in order to calculate the value for the speed "
 "instruction that must be given to the motors."
 msgstr ""
+"Calcola la velocità dei motori con l’<a cbot|expr>espressione</a> "
+"<code>(25-len)/2</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:58
 #, no-wrap
 msgid ""
 "It is now up to you to put everything together and to test the program."
-msgstr ""
+msgstr "Ora metti insieme le parti e prova il programma."
 
 #. type: \b; header
 #: ../help/help.E.txt:60
@@ -257,6 +290,8 @@ msgid ""
 "You can use values greater than 1 for the instruction <c/><a "
 "cbot|motor>motor</a>();<n/>, but the bot will not move any faster."
 msgstr ""
+"Puoi passare valori maggiori di 1 a <c/><a cbot|motor>motor</a>();<n/>, ma "
+"il robot non andrà più veloce."
 
 #. type: \t; header
 #: ../help/help.E.txt:63
@@ -278,13 +313,13 @@ msgstr ""
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "This instruction asks for two values:"
-msgstr ""
+msgstr "L’istruzione richiede due valori:"
 
 #. type: Plain text
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "The values must range between -1 and 1:"
-msgstr ""
+msgstr "I valori devono essere fra -1 e 1:"
 
 #. type: Plain text
 #: ../help/help.E.txt:48
@@ -293,3 +328,5 @@ msgid ""
 "In order to slow down progressively, the speed of the motors must be "
 "proportional to the remaining distance:"
 msgstr ""
+"Per rallentare progressivamente, la velocità deve essere proporzionale alla "
+"distanza residua:"

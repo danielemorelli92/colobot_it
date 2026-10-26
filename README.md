@@ -1,58 +1,76 @@
 # Colobot: Gold Edition — italiano
 
-**Anteprima 0.2 per la versione ufficiale 0.2.2-alpha Windows 64 bit.**
+**Anteprima 0.3 con cataloghi completi per Colobot Gold 0.2.2-alpha Windows 64 bit.**
 
-[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.2.zip)
+[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.3.zip)
 Apri il file su GitHub e premi **Download raw file**.
 
 ## Installare o aggiornare
 
 1. Chiudi il gioco.
 2. Estrai tutto lo ZIP nella cartella che contiene `colobot.exe` e `data`.
-3. Se hai già la 0.1, accetta la sostituzione dei file dell’anteprima.
-4. Avvia `Avvia-Italiano.cmd` come prima.
+3. Se hai la 0.1 o 0.2, accetta la sostituzione dei file dell’anteprima.
+4. Avvia sempre `Avvia-Italiano.cmd`.
 
-Non sostituire i file della cartella `lang` originale. La 0.2 conserva la cartella
-separata `%LOCALAPPDATA%\ColobotItalianPreview-0.1`: **salvataggi e impostazioni
-dell’anteprima precedente restano disponibili**. L’avvio normale resta separato.
+Non sostituire la cartella `lang` originale. La 0.3 riutilizza
+`%LOCALAPPDATA%\ColobotItalianPreview-0.1`: **conserva salvataggi e impostazioni
+precedenti**. Il launcher è identico a quello della 0.1 e 0.2.
 
-L’anteprima usa temporaneamente lo slot **French** del gioco ufficiale: è normale
-leggere questo nome nelle impostazioni. La vera integrazione della lingua `it`
-è nella patch sorgente, ma non è necessaria per provare questo ZIP.
+Per compatibilità con l’eseguibile ufficiale, l’anteprima continua a usare lo
+slot **French**: è normale leggerlo nelle impostazioni. La vera integrazione
+`it`/`it_IT.utf8` è disponibile nella patch sorgente, ma non serve per lo ZIP.
+Non vengono distribuiti o sostituiti eseguibili, DLL o font.
 
-## Cosa è tradotto
+## Copertura completata
 
-- Interfaccia: 659/659 voci, compresi comandi, impostazioni e messaggi d’errore.
-- Campagna principale: 878/878 voci nei 37 cataloghi, dalla Terra a Terranova;
-  briefing, rapporti satellitari e soluzioni disponibili nei sorgenti.
-- Aiuto generale SatCom: 141/141 voci.
-- Schede dei robot: 176/176; oggetti, edifici e creature: 323/323.
-- Testi identici riutilizzati nei cataloghi degli altri livelli e dell’aiuto.
+**146 cataloghi, 5.172 voci compilate, zero vuote e zero fuzzy.**
+Sono tradotti interfaccia, campagna, esercizi, sfide, battaglie, gioco libero,
+missioni aggiuntive, aiuto generale, robot, edifici, oggetti, riferimento CBOT,
+descrizioni dei programmi e catalogo desktop/manuale.
 
-Copertura complessiva: **2.890/5.172 voci compilate (55,9%)**, contro 230 nella
-0.1. Il numero comprende ripetizioni, nomi propri, riferimenti a immagini e
-identificatori/codice lasciati invariati: non significa che il 55,9% delle parole
-sia stato tradotto. [Conteggio dettagliato](docs/coverage-0.2.json).
+Sono inclusi entrambi i plurali italiani delle due voci che li richiedono:
+il numero di voci non coincide quindi con il numero di forme tradotte.
+777 voci sono intenzionalmente identiche al sorgente: codice, identificatori,
+nomi, riferimenti alle immagini, crediti e simili. I nomi tecnici dei programmi
+restano coerenti con gli esempi. Il codice e i suoi commenti restano invariati.
 
-Restano parziali esercizi di programmazione, sfide, battaglie, missioni aggiuntive,
-riferimento dettagliato CBOT e manuale desktop. Gli identificatori e i programmi
-CBOT non vengono tradotti. Le voci mancanti conservano il testo inglese.
-La traduzione richiede ancora una revisione linguistica e prove visive estese.
+[Copertura per catalogo](docs/coverage-0.3.json).
+Il 100% riguarda i cataloghi della release, non promette l’assenza di qualsiasi
+parola inglese: oltre al codice, restano i nomi delle lingue nel binario e i
+metadati non gettext dell’addon AltTextures. Le mod esterne non sono incluse.
+Il catalogo desktop è tradotto nei sorgenti; lo ZIP Windows non sostituisce
+l’installatore né genera una pagina man Unix.
 
-## Verifiche
+## Stato del collaudo
 
-La 0.1 è stata provata dall’utente su Windows: avvio, prima missione e SatCom
-italiano confermati; il formato dei testi si è sistemato dopo il riavvio.
+Questa è la prima stesura completa, **da collaudare nel gioco e revisionare
+linguisticamente**, non una release ufficiale approvata dagli sviluppatori.
+L’utente ha confermato l’avvio della 0.1 e 0.2 su Windows. Su sua richiesta,
+il collaudo interattivo esteso viene rinviato a questa versione completa.
+La 0.3 non è ancora stata avviata su Windows nell’ambiente di sviluppo.
 
-Per la 0.2 sono stati eseguiti gettext, controlli su marcatori/segnaposto,
-compilazione completa dei dati e riscontro di tutte le 878 voci della campagna
-negli output italiani generati. Non è stata ancora provata su Windows.
-Nessuna modifica ai font, all’eseguibile o alla logica delle missioni.
+Controlli automatici eseguiti:
 
-## Sorgenti e riproduzione
+- GNU gettext: tutti i PO compilano con `--check --check-format`.
+- Plurali: validazione delle due forme e lookup MO per 0, 1, 2 e 10.
+- Marcatori, collegamenti, tasti, pulsanti e blocchi di codice verificati.
+- Build completa dei dati ufficiali riuscita; tutte le 4.455 voci dei dati
+  ritrovate nei file italiani generati.
+- 542 esempi di codice, riferimenti a immagini e nomi di programmi preservati;
+  le intestazioni testuali dei rapporti monospaziati vengono tradotte.
+- Confronto della logica di tutte le scene e dei titoli di capitolo nel pacchetto:
+  cambiano solo le righe localizzate, non gli oggetti o le condizioni di vittoria.
+- Archivio ZIP verificato con CRC e SHA256 dei contenuti.
 
-Python >=3.12, Git, GNU gettext, CMake >=3.16 e compilatore C++17.
-Usare il checkout esistente: il cloud è già isolato e non serve creare worktree.
+La compilazione completa del motore si ferma alle dipendenze OpenGL mancanti;
+CTest del gioco e prove interattive non sono stati eseguiti qui. Lo ZIP riusa
+l’eseguibile già installato dall’utente.
+
+## Sorgenti e ricostruzione
+
+Servono Python >=3.12, Git, GNU gettext, CMake >=3.16 e compilatore C++17.
+Usa il checkout esistente: il cloud è già isolato e non serve creare worktree.
+I pin sono in `tools/prepare.py`: release ufficiali, nessun uso implicito di dev.
 
 ```sh
 python3 -m venv .venv
@@ -60,31 +78,28 @@ python3 -m venv .venv
 git clone https://github.com/colobot/colobot.git ../colobot
 git clone https://github.com/colobot/colobot-data.git ../colobot-data
 .venv/bin/python tools/prepare.py --engine ../colobot --data ../colobot-data --output build/prepared
-.venv/bin/python tools/validate.py --engine build/prepared/colobot --data build/prepared/colobot-data
+.venv/bin/python tools/validate.py --require-complete --engine build/prepared/colobot --data build/prepared/colobot-data
 .venv/bin/python tools/test_localization_checks.py
+.venv/bin/python tools/test_code_preservation.py
 g++ -std=c++17 -I build/prepared/colobot/src build/prepared/colobot/src/common/language.cpp tools/test_language.cpp -o build/test_language
 build/test_language
 cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON
 cmake --build build/data -j2
 COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/test_generated.py build/data
-COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.2.zip
+.venv/bin/python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
+COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.3.zip
 ```
 
-Il preparatore usa archivi Git di commit ufficiali fissati, lascia inalterati i
-checkout originali e rifiuta di sovrascrivere l’output esistente. I pin sono in
-`tools/prepare.py`. Gli script generano i dati con la pipeline ufficiale.
+Il preparatore usa archivi dei commit ufficiali, preserva i checkout originali
+e rifiuta di sovrascrivere la destinazione. La generazione usa gli script ufficiali.
 
-La compilazione completa del motore richiede inoltre le dipendenze grafiche e
-native indicate nell’[analisi iniziale](docs/ANALISI.md). In questo ambiente
-si è fermata a OpenGL mancante; il pacchetto Windows usa il binario già installato.
-Per una futura versione nativa, applicare la patch italiana, installare la locale
-`it_IT.UTF-8`, compilare il motore, eseguire CTest e verificare selezione e rendering.
-Non sono state inviate modifiche ai repository ufficiali.
+Per una versione nativa, installare le dipendenze indicate nell’[analisi](docs/ANALISI.md),
+applicare la patch, rendere disponibile la locale `it_IT.UTF-8`, compilare il
+motore ed eseguire CTest e le prove di selezione/rendering. Nessuna modifica
+è stata inviata ai repository ufficiali.
 
-## Continuare il lavoro
+[Glossario](docs/GLOSSARIO.md) · [Note Windows](docs/ANTEPRIMA-WINDOWS.md)
 
-[Glossario](docs/GLOSSARIO.md), [analisi iniziale](docs/ANALISI.md) e
-[note dell’anteprima](docs/ANTEPRIMA-WINDOWS.md).
-Le traduzioni seguono la licenza GPL v3 o successiva dei progetti upstream.
-Per nuove release aggiornare i pin dopo il confronto, rigenerare la patch,
-usare `msgmerge` e revisionare le voci fuzzy prima di creare nuovi pacchetti.
+Licenza GPL v3 o successiva, come i progetti upstream. Per nuove release,
+aggiornare i pin dopo il confronto dei sorgenti, rigenerare la patch e usare
+`msgmerge`, revisionando le voci fuzzy prima di distribuire un nuovo pacchetto.

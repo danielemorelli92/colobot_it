@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Titanium 1"
-msgstr ""
+msgstr "Titanio 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Take a chunk of titanium ore and bring it to the converter."
-msgstr ""
+msgstr "Prendi un pezzo di minerale di titanio e portalo al convertitore."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Titanium1"
-msgstr ""
+msgstr "Titanium1"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -46,24 +46,27 @@ msgid ""
 "and drops in on the <a object|convert>converter</a> in order to produce a <a"
 " object|titan>titanium cube</a>."
 msgstr ""
+"Scrivi un programma che prenda <a object|titanore>minerale di titanio</a> e "
+"lo posi sul <a object|convert>convertitore</a> per produrre un <a "
+"object|titan>cubo di titanio</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "You will need a new instruction:"
-msgstr ""
+msgstr "Ti servirà una nuova istruzione:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "move();<n/>"
-msgstr ""
+msgstr "move();<n/>"
 
 #. type: Plain text
 #: ../help/help.E.txt:8
@@ -73,6 +76,8 @@ msgid ""
 "given in brackets in meters: <c/>move(10);<n/> moves the bot 10m forward, "
 "<c/>move(-1);<n/> moves the bot 1m backward."
 msgstr ""
+"Fa avanzare o arretrare il robot della distanza indicata fra parentesi, in "
+"metri: <c/>move(10);<n/> avanza di 10 m, <c/>move(-1);<n/> arretra di 1 m."
 
 #. type: Plain text
 #: ../help/help.E.txt:10
@@ -84,6 +89,9 @@ msgid ""
 "about these instructions, click the name of the instruction underlined in "
 "blue, and an explanation of the instruction will appear."
 msgstr ""
+"<code><a cbot|turn>turn</a>()</code>, <code><a cbot|grab>grab</a>()</code> e"
+" <code><a cbot|drop>drop</a>()</code> sono già state spiegate. Per "
+"chiarimenti, fai clic sul nome sottolineato in blu."
 
 #. type: Plain text
 #: ../help/help.E.txt:12
@@ -94,6 +102,9 @@ msgid ""
 "titanium ore on the converter, do not forget to move back (for example "
 "<c/>move(-2.5);<n/>) so as to allow the converter to get down to work."
 msgstr ""
+"Il <a object|titanore>minerale</a> è 20 m davanti al robot e il <a "
+"object|convert>convertitore</a> 10 m dietro. Dopo aver posato il minerale, "
+"arretra (per esempio con <c/>move(-2.5);<n/>) per consentire la conversione."
 
 #. type: Plain text
 #: ../help/help.E.txt:14
@@ -102,3 +113,5 @@ msgid ""
 "<format key><key help/></format> allows you to review these instructions at "
 "all times."
 msgstr ""
+"<format key><key help/></format> permette di rileggere queste istruzioni in "
+"ogni momento."

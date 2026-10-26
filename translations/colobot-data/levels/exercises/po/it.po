@@ -18,64 +18,64 @@ msgstr ""
 #: ../chapter001/chaptertitle.txt:1
 #, no-wrap
 msgid "Spiders and supply"
-msgstr ""
+msgstr "Ragni e rifornimenti"
 
 #. type: Title-resume
 #: ../chapter001/chaptertitle.txt:1
 #, no-wrap
 msgid "Supply problems and fight against motionless targets"
-msgstr ""
+msgstr "Problemi di rifornimento e combattimento contro bersagli immobili"
 
 #. type: Title-text
 #: ../chapter002/chaptertitle.txt:1
 #, no-wrap
 msgid "Ants and wasps"
-msgstr ""
+msgstr "Formiche e vespe"
 
 #. type: Title-resume
 #: ../chapter002/chaptertitle.txt:1
 #, no-wrap
 msgid "Fight against moving targets"
-msgstr ""
+msgstr "Combattimento contro bersagli mobili"
 
 #. type: Title-text, Title-resume
 #: ../chapter003/chaptertitle.txt:1
 #, no-wrap
 msgid "Fundamentals"
-msgstr ""
+msgstr "Fondamenti"
 
 #. type: Title-text
 #: ../chapter004/chaptertitle.txt:1
 #, no-wrap
 msgid "Motors"
-msgstr ""
+msgstr "Motori"
 
 #. type: Title-resume
 #: ../chapter004/chaptertitle.txt:1
 #, no-wrap
 msgid "Motor"
-msgstr ""
+msgstr "Motore"
 
 #. type: Title-text
 #: ../chapter005/chaptertitle.txt:1
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Trasporto"
 
 #. type: Title-resume
 #: ../chapter005/chaptertitle.txt:1
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Spostamento"
 
 #. type: Title-text, Title-resume
 #: ../chapter006/chaptertitle.txt:1
 #, no-wrap
 msgid "Functions"
-msgstr ""
+msgstr "Funzioni"
 
 #. type: Title-text, Title-resume
 #: ../chapter007/chaptertitle.txt:1
 #, no-wrap
 msgid "Classes"
-msgstr ""
+msgstr "Classi"

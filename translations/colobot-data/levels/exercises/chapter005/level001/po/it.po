@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Mover 1"
-msgstr ""
+msgstr "Trasporto 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Retrieve a titanium cube."
-msgstr ""
+msgstr "Recupera un cubo di titanio."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Mover"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,12 +46,14 @@ msgid ""
 "know the position of the titanium, but we can tell you the position of the "
 "finishing pad x=10 and y=-60."
 msgstr ""
+"Porta il <a object|titan>cubo di titanio</a> sulla piattaforma di arrivo. "
+"Non ne conosci la posizione iniziale, ma la piattaforma è a x=10, y=-60."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "The instruction <code>goto</code>"
-msgstr ""
+msgstr "L’istruzione <code>goto</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -63,18 +65,20 @@ msgid ""
 "location in the form of its x and y coordinates. The bot will turn towards "
 "the goal, move forward, and even turn around any obstacle."
 msgstr ""
+"Per semplificare usa <code><a cbot|goto>goto</a></code>: conoscendo x e y "
+"della destinazione, il robot si gira, avanza e aggira persino gli ostacoli."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "If we summarize, the following are the different ways to move a bot:"
-msgstr ""
+msgstr "Riepilogo dei modi per spostare un robot:"
 
 #. type: Source code
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "<code>motor(left, right)</code>"
-msgstr ""
+msgstr "<code>motor(left, right)</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:10
@@ -83,12 +87,14 @@ msgid ""
 "Allows a direct, precise control of the two motors, and allows you to stay "
 "in control of the motors at every fraction of a second."
 msgstr ""
+"Controllo diretto e preciso dei due motori, modificabile a ogni frazione di "
+"secondo."
 
 #. type: Source code
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "<code>move(distance)</code> and <code>turn(angle)</code>"
-msgstr ""
+msgstr "<code>move(distance)</code> and <code>turn(angle)</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
@@ -98,24 +104,26 @@ msgid ""
 " perform a rotation of a certain angle. All parameters are relative to the "
 "current position of the bot."
 msgstr ""
+"Spostamento di una distanza o rotazione di un angolo, relativi alla "
+"posizione attuale."
 
 #. type: Source code
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "<code>goto(position)</code>"
-msgstr ""
+msgstr "<code>goto(position)</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "Allows you to reach easily a given absolute position."
-msgstr ""
+msgstr "Raggiunge facilmente una posizione assoluta."
 
 #. type: \b; header
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "The program"
-msgstr ""
+msgstr "Il programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -127,6 +135,9 @@ msgid ""
 "there is a titanium cube somewhere. However, it is better to take the habit "
 "of testing whatever your radar returns:"
 msgstr ""
+"Trova il cubo con <c/><a cbot|radar>radar</a>(Titanium);<n/>, poi verifica "
+"il risultato. Qui sappiamo che esiste, ma è bene abituarsi a controllare "
+"sempre il radar:"
 
 #. type: Source code
 #: ../help/help.E.txt:21
@@ -137,6 +148,10 @@ msgid ""
 "if ( item == null )  return;\n"
 "goto(item.position);"
 msgstr ""
+"object  item;\n"
+"item = radar(Titanium);\n"
+"if ( item == null )  return;\n"
+"goto(item.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
@@ -146,6 +161,8 @@ msgid ""
 "cbot|object>object</a></code>. In order to know the exact location of the "
 "object described by the variable, just write <code>item.position</code>."
 msgstr ""
+"<code>item</code> è di tipo <code><a cbot|object>object</a></code>. La "
+"posizione esatta dell’oggetto è <code>item.position</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:28
@@ -154,6 +171,7 @@ msgid ""
 "In order to take the titanium cube, use the instruction <code><a "
 "cbot|grab>grab</a>()</code> without any parameter."
 msgstr ""
+"Prendi il cubo con <code><a cbot|grab>grab</a>()</code> senza parametri."
 
 #. type: Plain text
 #: ../help/help.E.txt:30
@@ -161,7 +179,7 @@ msgstr ""
 msgid ""
 "In order to drop the titanium, use the instruction <code><a "
 "cbot|drop>drop</a>()</code> without any parameter."
-msgstr ""
+msgstr "Posalo con <code><a cbot|drop>drop</a>()</code> senza parametri."
 
 #. type: Plain text
 #: ../help/help.E.txt:32
@@ -170,12 +188,14 @@ msgid ""
 "We know the coordinates of the finishing pad: x=10 et y=-60. You must declare a <a cbot|var>variable</a> of the type <a cbot|point>point</a>, then fill it with the right coordinates. Then you can give this variable as a parameter to the instruction <code><a cbot|goto>goto</a></code>.\n"
 "Remark: You do not have to take care of the <code>z</code> coordinate in the case of a bot that can not fly."
 msgstr ""
+"La piattaforma è a x=10, y=-60. Dichiara una <a cbot|var>variabile</a> <a cbot|point>point</a>, assegnale le coordinate e passala a <code><a cbot|goto>goto</a></code>.\n"
+"Nota: per un robot non volante puoi ignorare <code>z</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:35
 #, no-wrap
 msgid "It is now up to you to finish the program..."
-msgstr ""
+msgstr "Ora completa il programma..."
 
 #. type: \t; header
 #: ../help/help.E.txt:37

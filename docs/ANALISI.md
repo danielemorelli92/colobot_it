@@ -1,7 +1,7 @@
 # Analisi iniziale — 26 ottobre 2026
 
 > Documento storico della prima implementazione. Per la copertura attuale
-> dell’anteprima 0.2 consultare README.md e coverage-0.2.json.
+> dell’anteprima 0.3 consultare README.md e coverage-0.3.json.
 
 ## Base ufficiale
 

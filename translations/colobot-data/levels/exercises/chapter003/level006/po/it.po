@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Labyrinth 1"
-msgstr ""
+msgstr "Labirinto 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Teach your bot how to find its way out of the labyrinth."
-msgstr ""
+msgstr "Insegna al robot a uscire dal labirinto."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Labyrinth"
-msgstr ""
+msgstr "Labyrinth"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -47,12 +47,15 @@ msgid ""
 "labyrinth, but there are no bifurcations, and no dead-ends. The labyrinth is"
 " made of squares measuring 5m each."
 msgstr ""
+"Programma il robot perché trovi la strada senza urtare le pareti. Supponiamo"
+" che tu non conosca il labirinto, ma non ci sono bivi né vicoli ciechi. È "
+"composto da quadrati di 5 m di lato."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "The instruction <code>radar</code>"
-msgstr ""
+msgstr "L’istruzione <code>radar</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -62,6 +65,9 @@ msgid ""
 "find any <a object|barrier>barrier</a> in front of the radar that is closer "
 "than 5m. Let us take a closer look at the five parameters used:"
 msgstr ""
+"<c/><a cbot|radar>radar</a>(Barrier, 0, 45, 0, 5);<n/> trova le <a "
+"object|barrier>barriere</a> davanti al robot entro 5 m. Vediamo i cinque "
+"parametri:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -75,13 +81,13 @@ msgstr "<code>Barrier</code>"
 msgid ""
 "<a cbot|category>Category</a> of the object that the radar must look for, "
 "i.e. a barrier."
-msgstr ""
+msgstr "<a cbot|category>Categoria</a> da cercare: una barriera."
 
 #. type: Source code
 #: ../help/help.E.txt:10 ../help/help.E.txt:16
 #, no-wrap
 msgid "<code>0</code>"
-msgstr ""
+msgstr "<code>0</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -89,13 +95,13 @@ msgstr ""
 msgid ""
 "Direction of the radar. <code>0</code> means that the radar must search "
 "straight forward."
-msgstr ""
+msgstr "Direzione del radar. <code>0</code> cerca davanti."
 
 #. type: Source code
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "<code>45</code>"
-msgstr ""
+msgstr "<code>45</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:14
@@ -104,7 +110,7 @@ msgid ""
 "Opening angle in degrees. With an opening angle of 45 degrees, barriers "
 "situated between 22.5 degrees to the left and 22.5 degrees to the right will"
 " be detected."
-msgstr ""
+msgstr "Apertura in gradi: 45 copre da 22,5 gradi a sinistra a 22,5 a destra."
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -113,12 +119,13 @@ msgid ""
 "Minimum detection distance. <code>0</code> means that even object that are "
 "very close to the bot will be detected."
 msgstr ""
+"Distanza minima: <code>0</code> include anche gli oggetti vicinissimi."
 
 #. type: Source code
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "<code>5</code>"
-msgstr ""
+msgstr "<code>5</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:20
@@ -126,7 +133,7 @@ msgstr ""
 msgid ""
 "Maximum detection range. Any barrier situated beyond <code>5</code> meters "
 "will not be detected."
-msgstr ""
+msgstr "Distanza massima: esclude le barriere oltre <code>5</code> metri."
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -136,37 +143,39 @@ msgid ""
 "5);<n/> will direct the radar 90 degrees to the left, in order to test if "
 "the way to the left is free."
 msgstr ""
+"Per esempio <c/><a cbot|radar>radar</a>(Barrier, 90, 45, 0, 5);<n/> orienta "
+"il radar di 90 gradi a sinistra e verifica se il passaggio è libero."
 
 #. type: Image filename
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "tlaby1"
-msgstr ""
+msgstr "tlaby1"
 
 #. type: \b; header
 #: ../help/help.E.txt:25
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:27
 #, no-wrap
 msgid "If there is nothing in front, move forward."
-msgstr ""
+msgstr "Se davanti non c’è nulla, avanza."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:28
 #, no-wrap
 msgid "If there is nothing on the left side, quarter turn left, move forward."
-msgstr ""
+msgstr "Se a sinistra è libero, gira di un quarto a sinistra e avanza."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:29
 #, no-wrap
 msgid ""
 "If there is nothing on the right side, quarter turn right, move forward."
-msgstr ""
+msgstr "Se a destra è libero, gira di un quarto a destra e avanza."
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:31
@@ -177,12 +186,16 @@ msgid ""
 "<code>left</code> and <code>right</code>. Variables of this type can contain"
 " the description of any object, for example of a barrier found by the radar."
 msgstr ""
+"Dichiara tre <a cbot|var>variabili</a> <code><a "
+"cbot|object>object</a></code>: <code>front</code>, <code>left</code> e "
+"<code>right</code>. Possono descrivere qualsiasi oggetto, come una barriera "
+"rilevata dal radar."
 
 #. type: Source code
 #: ../help/help.E.txt:32
 #, no-wrap
 msgid "<c/>\tobject   front, left, right;<n/>"
-msgstr ""
+msgstr "<c/>\tobject   front, left, right;<n/>"
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:34
@@ -193,6 +206,9 @@ msgid ""
 " If the radar finds nothing, the variable will contain the value <code><a "
 "cbot|null>null</a></code>."
 msgstr ""
+"Cerca barriere nelle tre direzioni e salva il risultato di "
+"<code>radar</code> nelle variabili. Se non trova nulla, la variabile vale "
+"<code><a cbot|null>null</a></code>."
 
 #. type: Source code
 #: ../help/help.E.txt:35
@@ -202,6 +218,9 @@ msgid ""
 "\tleft  = radar(Barrier,  90, 45, 0, 5);\n"
 "\tright = radar(Barrier, -90, 45, 0, 5);"
 msgstr ""
+"<c/>\tfront = radar(Barrier,   0, 45, 0, 5);\n"
+"\tleft  = radar(Barrier,  90, 45, 0, 5);\n"
+"\tright = radar(Barrier, -90, 45, 0, 5);"
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:39
@@ -212,13 +231,16 @@ msgid ""
 "<code>{ }</code> will be executed, otherwise the execution will resume after"
 " the closing brace <code>}</code>."
 msgstr ""
+"Verifica con <code><a cbot|if>if</a></code> se davanti è libero. Se vero, "
+"esegue il blocco <code>{ }</code>; altrimenti prosegue dopo la graffa "
+"<code>}</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:40
 #, no-wrap
 msgid ""
 "The instruction <code>return</code> leaves the program: the job is done."
-msgstr ""
+msgstr "<code>return</code> termina il programma: il compito è concluso."
 
 #. type: Source code
 #: ../help/help.E.txt:41
@@ -230,6 +252,11 @@ msgid ""
 "\treturn;\n"
 "}"
 msgstr ""
+"<c/>if ( front == null )\n"
+"{\n"
+"\tmove(5);\n"
+"\treturn;\n"
+"}"
 
 #. type: Bullet: '4)'
 #: ../help/help.E.txt:47
@@ -238,6 +265,8 @@ msgid ""
 "Test if it is possible to turn left; if so, turn left with the instruction "
 "<code><a cbot|turn>turn</a></code> and move 5m forward."
 msgstr ""
+"Verifica se puoi girare a sinistra: in tal caso usa <code><a "
+"cbot|turn>turn</a></code> e avanza di 5 m."
 
 #. type: Source code
 #: ../help/help.E.txt:48
@@ -250,24 +279,30 @@ msgid ""
 "\treturn;\n"
 "}"
 msgstr ""
+"<c/>if ( left == null )\n"
+"{\n"
+"\tturn(90);\n"
+"\tmove(5);\n"
+"\treturn;\n"
+"}"
 
 #. type: Bullet: '5)'
 #: ../help/help.E.txt:55
 #, no-wrap
 msgid "Test if it is possible to turn right."
-msgstr ""
+msgstr "Verifica se puoi girare a destra."
 
 #. type: Plain text
 #: ../help/help.E.txt:56
 #, no-wrap
 msgid "    ..."
-msgstr ""
+msgstr "    ..."
 
 #. type: \b; header
 #: ../help/help.E.txt:58
 #, no-wrap
 msgid "Attention"
-msgstr ""
+msgstr "Attenzione"
 
 #. type: Plain text
 #: ../help/help.E.txt:59
@@ -276,6 +311,8 @@ msgid ""
 "The instruction <code>if ( )</code> must never be followed by a <a "
 "cbot|term>semicolon</a>."
 msgstr ""
+"Non inserire mai un <a cbot|term>punto e virgola</a> dopo <code>if ( "
+")</code>."
 
 #. type: \t; header
 #: ../help/help.E.txt:61
@@ -301,3 +338,5 @@ msgid ""
 "will have to execute it several times in order to arrive at the finishing "
 "pad."
 msgstr ""
+"Il programma affronta un solo quadrato del labirinto: dovrai avviarlo più "
+"volte per arrivare."

@@ -18,20 +18,20 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Barrage Fire"
-msgstr ""
+msgstr "Fuoco di sbarramento"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid ""
 "Set the power of the different motors in order to achieve a barrage fire."
-msgstr ""
+msgstr "Imposta i motori per eseguire un fuoco di sbarramento."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -46,12 +46,14 @@ msgid ""
 "As a defense against several giant ants attacking from the north, rotate the"
 " bot when shooting in order to perform barrage fire."
 msgstr ""
+"Per difenderti dalle formiche giganti a nord, ruota mentre spari e copri "
+"l’intera zona."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -70,6 +72,14 @@ msgid ""
 "<c/>motor(1,-1);<n/> will turn the bot clockwise on the spot: the left-hand "
 "motor moves forward, the right-hand motor moves backward."
 msgstr ""
+"Nel controllo manuale puoi ruotare il cannone durante la raffica. Nel "
+"programma ruota invece il robot con <code><a cbot|motor>motor</a>( , "
+")</code>. I due numeri sono le velocità dei motori sinistro e destro, fra -1"
+" e +1.<c/> motor(1,1);<n/> avanza alla massima velocità.<c/> "
+"motor(-1,-1);<n/> arretra alla massima velocità.<c/> motor(1,0.9);<n/> "
+"avanza curvando leggermente a destra, perché il motore sinistro è più "
+"veloce.<c/>motor(1,-1);<n/> ruota sul posto in senso orario: sinistro "
+"avanti, destro indietro."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -82,30 +92,35 @@ msgid ""
 "<c/>motor(1,-1);<n/> and afterward you shoot with <c/>fire(1);<n/>, the bot "
 "will continue to turn during the burst, and will sweep a whole zone."
 msgstr ""
+"Dopo <a cbot|motor>motor</a>, le velocità restano tali fino al prossimo "
+"<code>motor</code>, <code><a cbot|move>move</a></code>, <code><a "
+"cbot|turn>turn</a></code> o <code><a cbot|goto>goto</a></code>. Con "
+"<c/>motor(1,-1);<n/> seguito da <c/>fire(1);<n/>, il robot continua a "
+"ruotare durante la raffica e copre un’intera zona."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "rotate clockwise with <c/>motor(1,-1);<n/>"
-msgstr ""
+msgstr "ruota in senso orario con <c/>motor(1,-1);<n/>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "a 2 seconds burst with <c/>fire(2);<n/>"
-msgstr ""
+msgstr "spara per 2 secondi con <c/>fire(2);<n/>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "rotate counter-clockwise with <c/>motor(-1,1);<n/>"
-msgstr ""
+msgstr "ruota in senso antiorario con <c/>motor(-1,1);<n/>"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "a 2 seconds burst."
-msgstr ""
+msgstr "spara per 2 secondi."
 
 #. type: \t; header
 #: ../help/help.E.txt:15
@@ -132,3 +147,6 @@ msgid ""
 "always with <code><a cbot|while>while</a> (true)</code> the following "
 "instructions:"
 msgstr ""
+"Le formiche arrivano da nord. Gira prima di 90 gradi a sinistra con "
+"<c/>turn(90);<n/>, poi ripeti sempre con <code><a cbot|while>while</a> "
+"(true)</code>:"

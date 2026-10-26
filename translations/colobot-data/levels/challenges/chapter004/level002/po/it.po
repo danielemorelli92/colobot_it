@@ -18,37 +18,37 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Spiral 2"
-msgstr ""
+msgstr "Spirale 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Create a procedure in order to teach your bot to perform a spiral."
-msgstr ""
+msgstr "Crea una procedura che insegni al robot a percorrere una spirale."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Image filename
 #: ../help/help.E.txt:3
 #, no-wrap
 msgid "tproc2"
-msgstr ""
+msgstr "tproc2"
 
 #. type: \b; header
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Function"
-msgstr ""
+msgstr "Funzione"
 
 #. type: Plain text
 #: ../help/help.E.txt:6
@@ -60,12 +60,16 @@ msgid ""
 "with writing the <a cbot|function>function</a> that will move the bot on a "
 "\"L\"-shaped part whose length will be given as a parameter."
 msgstr ""
+"Il percorso è composto da tratti a «L» incastrati tra loro. Il primo, blu "
+"scuro, ha due lati di 25 metri. Il secondo, azzurro, ha lati più corti di 5 "
+"metri. Inizia con una <a cbot|function>funzione</a> che percorra una «L» "
+"della lunghezza passata come parametro."
 
 #. type: \b; header
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:9
@@ -75,6 +79,9 @@ msgid ""
 "<code><a cbot|move>move</a></code> to move the bot\n"
 "<code><a cbot|turn>turn</a></code> to turn the bot"
 msgstr ""
+"Ciclo <code><a cbot|for>for</a></code> per ripetere istruzioni\n"
+"<code><a cbot|move>move</a></code> per spostare il robot\n"
+"<code><a cbot|turn>turn</a></code> per ruotarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:13
@@ -99,3 +106,5 @@ msgid ""
 "Follow the way in form of a spiral. The bot must move 2 times 25m forward "
 "and turn, then move 2 times 20m forward and turn, and so on."
 msgstr ""
+"Segui la spirale. Il robot deve avanzare e girare due volte per 25 m, poi "
+"due volte per 20 m e così via."

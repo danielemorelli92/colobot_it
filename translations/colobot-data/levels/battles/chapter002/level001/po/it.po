@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "AlienHunt"
-msgstr ""
+msgstr "Caccia agli alieni"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -27,12 +27,14 @@ msgid ""
 "A map for begginers! Research technologies, build your infrastructure, and "
 "kill all AlienAnts on the opposite side of the river."
 msgstr ""
+"Mappa per principianti: ricerca tecnologie, costruisci infrastrutture ed "
+"elimina le formiche aliene oltre il fiume."
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (vs Aliens)"
-msgstr ""
+msgstr "Battaglia di codice (contro gli alieni)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -41,12 +43,14 @@ msgid ""
 "This is a training code battle level, which purpose is to familiarize you "
 "with this <a battles>game mode</a>."
 msgstr ""
+"Livello di addestramento per familiarizzare con questa <a battles>modalità "
+"di gioco</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Brief introduction"
-msgstr ""
+msgstr "Breve introduzione"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -56,6 +60,9 @@ msgid ""
 " There are two or more teams and the one that survives the longest is the "
 "winner. As the name suggest, you can only use programming in this game mode."
 msgstr ""
+"Le battaglie di codice sono una nuova modalità della Gold Edition. Due o più"
+" squadre si affrontano e vince quella che sopravvive più a lungo. Come "
+"suggerisce il nome, puoi usare solo la programmazione."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -64,24 +71,26 @@ msgid ""
 "It is recommended to read <a %lvl%/help/help.%lng% notes>the notes "
 "section</a> below."
 msgstr ""
+"È consigliabile leggere le <a %lvl%/help/help.%lng% notes>note</a> qui "
+"sotto."
 
 #. type: \b; header
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Your objective"
-msgstr ""
+msgstr "Il tuo obiettivo"
 
 #. type: Plain text
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "Kill all the aliens located on the other side of the river."
-msgstr ""
+msgstr "Elimina tutti gli alieni dall’altro lato del fiume."
 
 #. type: \b; header
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "Notes\\m notes;"
-msgstr ""
+msgstr "Note\\m notes;"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:13
@@ -89,7 +98,7 @@ msgstr ""
 msgid ""
 "The <a object/ant>aliens</a> will not attack you, unless you come too close "
 "to them."
-msgstr ""
+msgstr "Gli <a object/ant>alieni</a> non attaccano se non ti avvicini troppo."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:14
@@ -98,6 +107,8 @@ msgid ""
 "There is <a object/enerspot>an underground power source</a> only under the "
 "beginning base areas."
 msgstr ""
+"Una <a object/enerspot>fonte sotterranea di energia</a> è presente solo "
+"nelle aree delle basi iniziali."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:15
@@ -106,12 +117,14 @@ msgid ""
 "The pre-built <a object|derrick>Derrick</a> and <a "
 "|object\\radar>RadarStation</a> are indestructible."
 msgstr ""
+"La <a object|derrick>torre di estrazione</a> e la <a |object\\radar>stazione"
+" radar</a> già costruite sono indistruttibili."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "<a cbot>The CBOT documentation</a> might come in handy."
-msgstr ""
+msgstr "La <a cbot>documentazione CBOT</a> può esserti utile."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:17
@@ -120,3 +133,5 @@ msgid ""
 "If you have not played Colobot before, it is recommended to read about <a "
 "battles production>the basics of production line</a>."
 msgstr ""
+"Se non hai mai giocato, leggi le <a battles production>basi della catena di "
+"produzione</a>."

@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Remote control #5"
-msgstr ""
+msgstr "Controllo a distanza n. 5"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -26,19 +26,19 @@ msgstr ""
 msgid ""
 "Remote control a bot without using an information exchange post by storing "
 "the orders."
-msgstr ""
+msgstr "Guida un robot senza centro di scambio dati, memorizzando gli ordini."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Remote5"
-msgstr ""
+msgstr "Remote5"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -47,6 +47,8 @@ msgid ""
 "Remote control a slave robot without using an <a object|exchange>information"
 " exchange post</a>. The robot should pass over the 6 blue crosses. "
 msgstr ""
+"Guida l’esecutore attraverso le 6 croci blu senza un <a "
+"object|exchange>centro di scambio dati</a>. "
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:5
@@ -56,6 +58,8 @@ msgid ""
 " immobile. This is the master you should program so it will transmit orders "
 "to the slave."
 msgstr ""
+"Il <a object|botgr>trasportatore su ruote</a> senza batteria e quindi "
+"immobile: programma questo robot perché invii ordini."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:6
@@ -64,6 +68,8 @@ msgid ""
 "The slave <a object|bottr>practice bot</a> which is already programmed and "
 "just waits for orders from the master."
 msgstr ""
+"L’esecutore è un <a object|bottr>robot da esercitazione</a> già programmato,"
+" che attende gli ordini."
 
 #. type: Plain text
 #: ../help/help.E.txt:8
@@ -73,12 +79,14 @@ msgid ""
 "orders without waiting for each order being processed. We use an <a "
 "cbot|array>array</a> for this purpose."
 msgstr ""
+"Memorizza gli ordini, così il robot di controllo può inviarne diversi senza "
+"aspettare ogni esecuzione. Usa un <a cbot|array>array</a>."
 
 #. type: \b; header
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "The slave"
-msgstr ""
+msgstr "Il robot esecutore"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -89,12 +97,15 @@ msgid ""
 "<code>m_type</code> is the order to execute (move or turn) and "
 "<code>m_param</code> is the distance to move or the rotation angle:"
 msgstr ""
+"La <a cbot|class>classe</a> <code>order</code> ha due membri: "
+"<code>m_type</code> indica l’azione (avanzare o ruotare), "
+"<code>m_param</code> la distanza o l’angolo:"
 
 #. type: Plain text
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> order"
-msgstr ""
+msgstr "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> order"
 
 #. type: Source code
 #: ../help/help.E.txt:14
@@ -105,6 +116,10 @@ msgid ""
 "\t<a cbot|float>float</a>  m_param;\n"
 "}"
 msgstr ""
+"{\n"
+"\t<a cbot|int>int</a>    m_type;\n"
+"\t<a cbot|float>float</a>  m_param;\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:19
@@ -117,12 +132,17 @@ msgid ""
 "insures that the member <code>m_fifo</code> is shared between all instances "
 "of the <a cbot|class>class</a> exchange."
 msgstr ""
+"La seconda <a cbot|class>classe</a>, <code>exchange</code>, gestisce lo "
+"scambio. Il membro <code><a cbot|static>static</a></code> "
+"<code>m_fifo</code> contiene la lista di ordini. <code>static</code> rende "
+"<code>m_fifo</code> condiviso da tutte le istanze della <a "
+"cbot|class>classe</a> exchange."
 
 #. type: Plain text
 #: ../help/help.E.txt:21
 #, no-wrap
 msgid "<c/><s/>{"
-msgstr ""
+msgstr "<c/><s/>{"
 
 #. type: Source code
 #: ../help/help.E.txt:22
@@ -131,6 +151,8 @@ msgid ""
 "\t<a cbot|static>static</a> <a cbot|private>private</a> order m_fifo[] = "
 "null;"
 msgstr ""
+"\t<a cbot|static>static</a> <a cbot|private>private</a> order m_fifo[] = "
+"null;"
 
 #. type: Plain text
 #: ../help/help.E.txt:24
@@ -140,12 +162,14 @@ msgid ""
 "transmitting an order. The order will simply be added at the end of the "
 "<code>m_fifo</code> array:"
 msgstr ""
+"Il robot di controllo usa <code>put</code> per aggiungere un ordine in fondo"
+" all’array <code>m_fifo</code>:"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|synchro>synchronized</a> void put(order a)"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|synchro>synchronized</a> void put(order a)"
 
 #. type: Source code
 #: ../help/help.E.txt:27
@@ -155,6 +179,9 @@ msgid ""
 "\t\tm_fifo[sizeof(m_fifo)] = a;\n"
 "\t}"
 msgstr ""
+"\t{\n"
+"\t\tm_fifo[sizeof(m_fifo)] = a;\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:31
@@ -167,12 +194,16 @@ msgid ""
 "orders must be \"scrolled up\". As an array can not be \"shortened\" we use "
 "a temporary array <code>copy</code>:"
 msgstr ""
+"L’esecutore legge con <code>get</code>. Se la lista è vuota, riceve "
+"<code>null</code> e attende altri ordini. Altrimenti riceve il primo e gli "
+"altri avanzano nella lista. Poiché un array non può essere accorciato, "
+"usiamo l’array temporaneo <code>copy</code>:"
 
 #. type: Plain text
 #: ../help/help.E.txt:33
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|synchro>synchronized</a> order get()"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|synchro>synchronized</a> order get()"
 
 #. type: Source code
 #: ../help/help.E.txt:34
@@ -191,6 +222,18 @@ msgid ""
 "\t\treturn a;\n"
 "\t}"
 msgstr ""
+"\t{\n"
+"\t\tif ( sizeof(m_fifo) == 0 )  return null;\n"
+"\n"
+"\t\torder a = m_fifo[0];\n"
+"\t\torder copy[] = null;\n"
+"\t\tfor ( int i=1 ; i<sizeof(m_fifo) ; i++ )\n"
+"\t\t{\n"
+"\t\t\tcopy[i-1] = m_fifo[i];\n"
+"\t\t}\n"
+"\t\tm_fifo = copy;\n"
+"\t\treturn a;\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:47
@@ -201,12 +244,15 @@ msgid ""
 "<code>list</code> in order to create an instance of the class "
 "<code>exchange</code>."
 msgstr ""
+"Il programma contiene un’istanza della classe <code>exchange</code> chiamata"
+" <code>list</code>. Le () dopo <code>list</code> creano l’istanza di "
+"<code>exchange</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:49
 #, no-wrap
 msgid "<c/><s/><a cbot|extern>extern</a> void object::Slave5( )"
-msgstr ""
+msgstr "<c/><s/><a cbot|extern>extern</a> void object::Slave5( )"
 
 #. type: Source code
 #: ../help/help.E.txt:50
@@ -216,6 +262,9 @@ msgid ""
 "\texchange list();\n"
 "\torder    todo;"
 msgstr ""
+"{\n"
+"\texchange list();\n"
+"\torder    todo;"
 
 #. type: Plain text
 #: ../help/help.E.txt:54
@@ -226,12 +275,16 @@ msgid ""
 "method of the <code>exchange</code> class. As soon as <code>get</code> "
 "returns a value different from <code>null</code>, the while loop stops."
 msgstr ""
+"Il ciclo esterno <code>while</code> è infinito. Quello interno "
+"<code>while</code> attende un ordine con <code>get</code> della classe "
+"<code>exchange</code>; termina quando <code>get</code> restituisce un valore"
+" diverso da <code>null</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:56
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|while>while</a> ( true )"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|while>while</a> ( true )"
 
 #. type: Source code
 #: ../help/help.E.txt:57
@@ -245,6 +298,13 @@ msgid ""
 "\t\t\twait(1);\n"
 "\t\t}"
 msgstr ""
+"\t{\n"
+"\t\t<a cbot|while>while</a> ( true )\n"
+"\t\t{\n"
+"\t\t\ttodo = list.get();\n"
+"\t\t\tif ( todo != null )  break;\n"
+"\t\t\twait(1);\n"
+"\t\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:65
@@ -252,13 +312,13 @@ msgstr ""
 msgid ""
 "Now we have received the order in the <code>todo</code> variable. All we "
 "have to do is execute it:"
-msgstr ""
+msgstr "L’ordine è ora in <code>todo</code>. Basta eseguirlo:"
 
 #. type: Plain text
 #: ../help/help.E.txt:67
 #, no-wrap
 msgid "<c/><s/>\t\tif ( todo.m_type == 1 )"
-msgstr ""
+msgstr "<c/><s/>\t\tif ( todo.m_type == 1 )"
 
 #. type: Source code
 #: ../help/help.E.txt:68
@@ -278,12 +338,25 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"\t\t{\n"
+"\t\t\tmove(todo.m_param);\n"
+"\t\t}\n"
+"\t\telse if ( todo.m_type == 2 )\n"
+"\t\t{\n"
+"\t\t\tturn(todo.m_param);\n"
+"\t\t}\n"
+"\t\telse\n"
+"\t\t{\n"
+"\t\t\tmessage(\"Unknown order\");\n"
+"\t\t}\n"
+"\t}\n"
+"}"
 
 #. type: \b; header
 #: ../help/help.E.txt:82
 #, no-wrap
 msgid "The master"
-msgstr ""
+msgstr "Il robot di controllo"
 
 #. type: Plain text
 #: ../help/help.E.txt:83
@@ -292,12 +365,14 @@ msgid ""
 "In the master we write a function called <code>SendOrder</code> which will "
 "send an order to the slave:"
 msgstr ""
+"Nel robot di controllo scrivi la funzione <code>SendOrder</code> per inviare"
+" un ordine:"
 
 #. type: Plain text
 #: ../help/help.E.txt:85
 #, no-wrap
 msgid "<c/><s/>void object::SendOrder(float order, float param)"
-msgstr ""
+msgstr "<c/><s/>void object::SendOrder(float order, float param)"
 
 #. type: Source code
 #: ../help/help.E.txt:86
@@ -312,18 +387,26 @@ msgid ""
 "\tlist.put(todo);\n"
 "}"
 msgstr ""
+"{\n"
+"\texchange list();\n"
+"\torder    todo();\n"
+"\t\n"
+"\ttodo.m_type = order;\n"
+"\ttodo.m_param = param;\n"
+"\tlist.put(todo);\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:95
 #, no-wrap
 msgid "Now the main program of the master is very simple:"
-msgstr ""
+msgstr "Il programma principale diventa semplice:"
 
 #. type: Plain text
 #: ../help/help.E.txt:97
 #, no-wrap
 msgid "<c/><s/>extern void object::Remote5( )"
-msgstr ""
+msgstr "<c/><s/>extern void object::Remote5( )"
 
 #. type: Source code
 #: ../help/help.E.txt:98
@@ -341,12 +424,23 @@ msgid ""
 "\tSendOrder(1, 10);  // move(10);\n"
 "}"
 msgstr ""
+"{\n"
+"\tSendOrder(1, 20);  // move(20);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 20);  // move(20);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"\tSendOrder(2,-90);  // turn(-90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:110
 #, no-wrap
 msgid "<format key><key help/></format> show these instruction at any time."
-msgstr ""
+msgstr "<format key><key help/></format> mostra sempre queste istruzioni."
 
 #. type: \t; header
 #: ../help/help.E.txt:112
@@ -358,10 +452,10 @@ msgstr "Vedi anche"
 #: ../help/help.E.txt:113
 #, no-wrap
 msgid "<a command>Controls</a> and <a cbot>programming</a>."
-msgstr ""
+msgstr "<a command>Comandi</a> e <a cbot>programmazione</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "The two main actors of this exercise are:"
-msgstr ""
+msgstr "I due protagonisti sono:"

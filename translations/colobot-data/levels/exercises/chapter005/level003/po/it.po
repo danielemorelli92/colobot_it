@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Mover 3"
-msgstr ""
+msgstr "Trasporto 3"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Convert some titanium ore to titanium cubes."
-msgstr ""
+msgstr "Converti minerale di titanio in cubi."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Mover"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,6 +45,8 @@ msgid ""
 "Convert some <a object|titanore>titanium ore</a> to <a object|titan>titanium"
 " cubes</a>, then drop 2 titanium cubes on the pads whose coordinates are:"
 msgstr ""
+"Converti il <a object|titanore>minerale</a> in <a object|titan>cubi di "
+"titanio</a>, poi posa 2 cubi sulle piattaforme alle coordinate:"
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -53,6 +55,8 @@ msgid ""
 "\tx=10, y=-60\n"
 "\tx=10, y=-65"
 msgstr ""
+"\tx=10, y=-60\n"
+"\tx=10, y=-65"
 
 #. type: Image filename
 #: ../help/help.E.txt:7
@@ -67,6 +71,8 @@ msgid ""
 "The <a object|derrick>derrick</a> extracts titanium ore from the subsoil; "
 "you just have to pick it up."
 msgstr ""
+"La <a object|derrick>torre di estrazione</a> estrae il minerale dal "
+"sottosuolo: devi soltanto raccoglierlo."
 
 #. type: Image filename
 #: ../help/help.E.txt:10
@@ -82,78 +88,80 @@ msgid ""
 " Just drop the titanium ore on the platform, move backward, and wait until "
 "it has been converted."
 msgstr ""
+"Il <a object|convert>convertitore</a> trasforma il minerale in cubi. Posa il"
+" minerale sulla piattaforma, arretra e attendi la conversione."
 
 #. type: \b; header
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "Wait until there is some titanium ore."
-msgstr ""
+msgstr "Attendi la presenza di minerale di titanio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "Go to the titanium ore."
-msgstr ""
+msgstr "Raggiungi il minerale."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:17
 #, no-wrap
 msgid "Pick it up."
-msgstr ""
+msgstr "Prendilo."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "Go to converter."
-msgstr ""
+msgstr "Raggiungi il convertitore."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "Drop the titanium ore."
-msgstr ""
+msgstr "Posa il minerale."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:20
 #, no-wrap
 msgid "Move back 2.5 meters."
-msgstr ""
+msgstr "Arretra di 2,5 metri."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:21
 #, no-wrap
 msgid "Wait until there is a titanium cube."
-msgstr ""
+msgstr "Attendi la presenza di un cubo di titanio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:22
 #, no-wrap
 msgid "Pick up the titanium cube."
-msgstr ""
+msgstr "Prendi il cubo."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:23
 #, no-wrap
 msgid "Go to the platform."
-msgstr ""
+msgstr "Raggiungi la piattaforma."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "Drop the titanium cube."
-msgstr ""
+msgstr "Posa il cubo."
 
 #. type: \b; header
 #: ../help/help.E.txt:26
 #, no-wrap
 msgid "The program"
-msgstr ""
+msgstr "Il programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -162,6 +170,8 @@ msgid ""
 "A <code><a cbot|for>for</a></code> loop allows you to repeat 2 times all the instructions.\n"
 "The titanium ore is not available immediately. You will have to wait until the derrick extracts it. Use a <code><a cbot|do>do</a></code> loop, as follows:"
 msgstr ""
+"Un ciclo <code><a cbot|for>for</a></code> ripete tutto due volte.\n"
+"Il minerale non è subito disponibile: attendi l’estrazione con un ciclo <code><a cbot|do>do</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:30
@@ -173,6 +183,11 @@ msgid ""
 "}\n"
 "while ( obj == null );"
 msgstr ""
+"do\n"
+"{\n"
+"\tobj = radar(TitaniumOre);\n"
+"}\n"
+"while ( obj == null );"
 
 #. type: Plain text
 #: ../help/help.E.txt:36
@@ -181,12 +196,14 @@ msgid ""
 "After the loop (when the radar has found one titanium ore), you can go to its location <code>obj.position</code> with the instruction <code><a cbot|goto>goto</a></code>. Use the instruction <code><a cbot|grab>grab</a></code> to grab the titanium ore.\n"
 "Use the following instruction in order to find the converter:"
 msgstr ""
+"Quando il radar trova il minerale, raggiungi <code>obj.position</code> con <code><a cbot|goto>goto</a></code> e prendilo con <code><a cbot|grab>grab</a></code>.\n"
+"Per cercare il convertitore usa:"
 
 #. type: Source code
 #: ../help/help.E.txt:39
 #, no-wrap
 msgid "obj = radar(Converter);"
-msgstr ""
+msgstr "obj = radar(Converter);"
 
 #. type: Plain text
 #: ../help/help.E.txt:41
@@ -195,6 +212,8 @@ msgid ""
 "After you dropped the ore on the converter, move back 2.5 meters with <code><a cbot|move>move</a>(-2.5)</code>.\n"
 "A second <code>do</code> loop allows you to wait until the titanium cube is available. You must limit the range of the radar to 5m, otherwise you would immediately find the titanium cube that you already dropped on a pad:"
 msgstr ""
+"Dopo aver posato il minerale, arretra di 2,5 m con <code><a cbot|move>move</a>(-2.5)</code>.\n"
+"Un secondo ciclo <code>do</code> attende il cubo. Limita il radar a 5 m, altrimenti troverebbe subito il cubo già sulla piattaforma:"
 
 #. type: Source code
 #: ../help/help.E.txt:44
@@ -206,6 +225,11 @@ msgid ""
 "}\n"
 "while ( obj == null );"
 msgstr ""
+"do\n"
+"{\n"
+"\tobj = radar(Titanium, 0, 360, 0, 5);\n"
+"}\n"
+"while ( obj == null );"
 
 #. type: Plain text
 #: ../help/help.E.txt:50
@@ -217,6 +241,9 @@ msgid ""
 " of the <code>for</code> loop that will take successively the values 0 and "
 "1:"
 msgstr ""
+"Le due coordinate <code>x</code> valgono 10; le <code>y</code> sono -60 e "
+"-65. Ricavale con <code>i</code> del ciclo <code>for</code>, che assume 0 e "
+"1:"
 
 #. type: Source code
 #: ../help/help.E.txt:52
@@ -225,12 +252,14 @@ msgid ""
 "dest.x = 10;\n"
 "dest.y = -60-5*i;"
 msgstr ""
+"dest.x = 10;\n"
+"dest.y = -60-5*i;"
 
 #. type: Plain text
 #: ../help/help.E.txt:55
 #, no-wrap
 msgid "It is up to you to finish the program..."
-msgstr ""
+msgstr "Completa tu il programma..."
 
 #. type: \t; header
 #: ../help/help.E.txt:57
@@ -252,4 +281,4 @@ msgstr ""
 #: ../help/help.E.txt:14
 #, no-wrap
 msgid "Repeat two times :"
-msgstr ""
+msgstr "Ripeti due volte:"

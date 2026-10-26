@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Remote control #1"
-msgstr ""
+msgstr "Controllo a distanza n. 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -27,18 +27,19 @@ msgid ""
 "Remote control a robot using an information exchange post, so it will "
 "transport uranium ore."
 msgstr ""
+"Controlla un robot tramite un centro di scambio dati per trasportare uranio."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "remote"
-msgstr ""
+msgstr "remote"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -47,12 +48,15 @@ msgid ""
 "Remote control a robot using an <a object|exchange>information exchange post</a>, so it will transport <a object|uranore>uranium ore</a>.\n"
 "The main actors of this exercise are:"
 msgstr ""
+"Controlla un robot mediante un <a object|exchange>centro di scambio dati</a> per trasportare <a object|uranore>minerale di uranio</a>.\n"
+"I protagonisti sono:"
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "A <a object|botsr>sniffer</a> (can't carry anything)."
 msgstr ""
+"Un <a object|botsr>robot rilevatore</a>, incapace di trasportare oggetti."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:6
@@ -61,6 +65,8 @@ msgid ""
 "An <a object|exchange>information exchange post</a> that receives "
 "information from a sender and then transmits it to a receiver."
 msgstr ""
+"Un <a object|exchange>centro di scambio dati</a>, che riceve dal mittente e "
+"ritrasmette al destinatario."
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:7
@@ -69,12 +75,14 @@ msgid ""
 "A <a object|botgr>grabber</a> which waits for orders from the exchange post."
 " You have no way control this robot directly."
 msgstr ""
+"Un <a object|botgr>robot trasportatore</a> in attesa degli ordini. Non puoi "
+"controllarlo direttamente."
 
 #. type: Image filename
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "tremot1a"
-msgstr ""
+msgstr "tremot1a"
 
 #. type: Plain text
 #: ../help/help.E.txt:10
@@ -83,12 +91,14 @@ msgid ""
 "An information exchange post stores \"name/value\" couples. To control the "
 "\"slave\" robot we use just one couple:"
 msgstr ""
+"Il centro conserva coppie «nome/valore». Per il robot esecutore ne usiamo "
+"una sola:"
 
 #. type: Plain text
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "    name=\"order\", valuer=order number"
-msgstr ""
+msgstr "    name=\"order\", valuer=numero dell’ordine"
 
 #. type: Plain text
 #: ../help/help.E.txt:16
@@ -99,6 +109,10 @@ msgid ""
 "    3 -> move(10);   // move 10 meters forward\n"
 "    4 -> move(-10);  // move 10 meters backwards"
 msgstr ""
+"    1 -> grab();     // take an object\n"
+"    2 -> drop();     // drop an object\n"
+"    3 -> move(10);   // move 10 meters forward\n"
+"    4 -> move(-10);  // move 10 meters backwards"
 
 #. type: Plain text
 #: ../help/help.E.txt:21
@@ -107,6 +121,8 @@ msgid ""
 "To instruct the slave to move forward 10 meters all you have to do is:\n"
 "<c/><s/>\t<a cbot|send>send</a>(\"order\", 3, 100);  // order 3 -> \"move(10)\""
 msgstr ""
+"Per far avanzare l’esecutore di 10 metri basta:\n"
+"<c/><s/>\t<a cbot|send>send</a>(\"order\", 3, 100);  // order 3 -> \"move(10)\""
 
 #. type: Plain text
 #: ../help/help.E.txt:24
@@ -115,6 +131,8 @@ msgid ""
 "After the send instruction we wait for 5 seconds to be sure the move is done.\n"
 "<c/><s/>\t<a cbot|wait>wait</a>(5);"
 msgstr ""
+"Dopo l’invio attendi 5 secondi per assicurarti che lo spostamento sia concluso.\n"
+"<c/><s/>\t<a cbot|wait>wait</a>(5);"
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -123,42 +141,44 @@ msgid ""
 "Remark: There is a better way for waiting the order has been executed, but "
 "we'll see this later in exercise \"Remote Control #2\"."
 msgstr ""
+"Esiste un metodo migliore per attendere il completamento dell’ordine: lo "
+"vedremo in «Controllo a distanza n. 2»."
 
 #. type: Plain text
 #: ../help/help.E.txt:29
 #, no-wrap
 msgid "To finish the exercise you must:"
-msgstr ""
+msgstr "Per completare l’esercizio:"
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:31
 #, no-wrap
 msgid "Take the uranium ore"
-msgstr ""
+msgstr "Prendi il minerale di uranio"
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:32
 #, no-wrap
 msgid "Move forward by 10 meters"
-msgstr ""
+msgstr "Avanza di 10 metri"
 
 #. type: Bullet: '3)'
 #: ../help/help.E.txt:33
 #, no-wrap
 msgid "Drop the uranium ore"
-msgstr ""
+msgstr "Posa il minerale di uranio"
 
 #. type: Bullet: '4)'
 #: ../help/help.E.txt:34
 #, no-wrap
 msgid "Move backwards by 10 meters"
-msgstr ""
+msgstr "Arretra di 10 metri"
 
 #. type: Plain text
 #: ../help/help.E.txt:36
 #, no-wrap
 msgid "It's up to you to write the program."
-msgstr ""
+msgstr "Ora scrivi tu il programma."
 
 #. type: \t; header
 #: ../help/help.E.txt:38
@@ -180,4 +200,4 @@ msgstr ""
 #: ../help/help.E.txt:14
 #, no-wrap
 msgid "The slave robot understands following orders:"
-msgstr ""
+msgstr "Il robot esecutore comprende questi ordini:"

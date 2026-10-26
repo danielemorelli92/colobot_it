@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Mover 2"
-msgstr ""
+msgstr "Trasporto 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Try to figure out how to move the titanium cube across obstacles."
-msgstr ""
+msgstr "Scopri come trasportare il cubo di titanio superando gli ostacoli."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Mover"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,12 +46,14 @@ msgid ""
 "know the position of the titanium, but we can tell you the position of the "
 "finishing pad x=10 and y=-60."
 msgstr ""
+"Porta il <a object|titan>cubo di titanio</a> sulla piattaforma di arrivo. "
+"Non ne conosci la posizione iniziale, ma la piattaforma è a x=10, y=-60."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -62,6 +64,10 @@ msgid ""
 "<code><a cbot|grab>grab</a></code> to grab an object\n"
 "<code><a cbot|drop>drop</a></code> to drop an object"
 msgstr ""
+"<code><a cbot|radar>radar</a></code> per trovare il cubo (categoria <code><a object|titan>Titanium</a></code>)\n"
+"<code><a cbot|goto>goto</a></code> per spostare il robot\n"
+"<code><a cbot|grab>grab</a></code> per prendere un oggetto\n"
+"<code><a cbot|drop>drop</a></code> per posarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:10

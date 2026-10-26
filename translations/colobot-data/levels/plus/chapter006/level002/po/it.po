@@ -18,13 +18,13 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Reverse Engineering"
-msgstr ""
+msgstr "Ingegneria inversa"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Ruin a ruin."
-msgstr ""
+msgstr "Distruggi una rovina."
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -40,6 +40,9 @@ msgid ""
 "on this planet is located on the highest mountain in this region. "
 "Unfortunately it is already occupied by a <a object|ruin>ruined radar</a>."
 msgstr ""
+"Il punto migliore per un <a object|radar>radar</a> è sulla montagna più alta"
+" della regione. Purtroppo è occupato da un <a object|ruin>radar in "
+"rovina</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -50,6 +53,10 @@ msgid ""
 "object|factory>bot factory</a> to replicate the <a object|bottarg>target "
 "bot</a> designed by the previous expedition."
 msgstr ""
+"Costruisci un <a object|labo>laboratorio automatico</a> e analizza l’<a "
+"object|tnt>ordigno</a> recuperato. La <a object|factory>fabbrica</a> potrà "
+"così riprodurre il <a object|bottarg>robot bersaglio</a> della prima "
+"spedizione."
 
 #. type: Plain text
 #: ../help/help.E.txt:6
@@ -58,6 +65,8 @@ msgid ""
 "Use the target bot to dispose of the ruin and build a new radar in its "
 "place."
 msgstr ""
+"Usa il robot bersaglio per distruggere la rovina e costruisci al suo posto "
+"un radar nuovo."
 
 #. type: Plain text
 #: ../help/help.E.txt:8
@@ -109,6 +118,11 @@ msgid ""
 "\\tab;Titanium ore:     some\n"
 "\\tab;Uranium ore:      some"
 msgstr ""
+"\\tab;Temperatura:      82.7C\n"
+"\\tab;Atmosfera:       CO2, SO2, HCN, HS, CH4, NH3\n"
+"\\tab;Vento:             1.2 mps\n"
+"\\tab;Minerale di titanio:     presente\n"
+"\\tab;Minerale di uranio:      presente"
 
 #. type: Source code
 #: ../help/report.E.txt:11
@@ -124,6 +138,9 @@ msgid ""
 "\\tab;Titanium ore:     some (blue flag)\n"
 "\\tab;Uranium ore:      none"
 msgstr ""
+"\\tab;Fonte di energia:    in alcuni punti (elevati)\n"
+"\\tab;Minerale di titanio:     presente (bandiera blu)\n"
+"\\tab;Minerale di uranio:      assente"
 
 #. type: Source code
 #: ../help/report.E.txt:16
@@ -139,3 +156,6 @@ msgid ""
 "\\tab;  - Danger:       not immediate\n"
 "\\tab;Detected:         reusable derelicts"
 msgstr ""
+"\\tab;Rilevato:         ragni giganti\n"
+"\\tab;  - Pericolo:       non immediato\n"
+"\\tab;Rilevato:         relitti riutilizzabili"

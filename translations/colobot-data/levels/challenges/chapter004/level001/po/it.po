@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Function"
-msgstr ""
+msgstr "Funzione"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Create a function to move a bot."
-msgstr ""
+msgstr "Crea una funzione per spostare un robot."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,18 +46,21 @@ msgid ""
 "crosses</a> on the ground. The way that must be covered is made of two "
 "squares. The first one measures 15 meters, the second 25 meters."
 msgstr ""
+"Il <a object|bottr>robot</a> deve attraversare tutte le <a "
+"object|waypoint>croci blu</a>. Il percorso forma due quadrati, uno di 15 "
+"metri di lato e l’altro di 25."
 
 #. type: Image filename
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "tproc1a"
-msgstr ""
+msgstr "tproc1a"
 
 #. type: \b; header
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Plain text
 #: ../help/help.E.txt:6
@@ -68,6 +71,9 @@ msgid ""
 " square shape of a certain size. The main program becomes then very "
 "simple:<c/>"
 msgstr ""
+"La soluzione più efficiente è una <a cbot|function>funzione</a> che faccia "
+"percorrere un quadrato della dimensione specificata. Il programma principale"
+" diventa semplicissimo:<c/>"
 
 #. type: Source code
 #: ../help/help.E.txt:8
@@ -79,12 +85,17 @@ msgid ""
 "\t\tSquare(25);\n"
 "\t}"
 msgstr ""
+"\textern void object::Function3( )\n"
+"\t{\n"
+"\t\tSquare(15);\n"
+"\t\tSquare(25);\n"
+"\t}"
 
 #. type: \b; header
 #: ../help/help.E.txt:14
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:15
@@ -94,6 +105,9 @@ msgid ""
 "<code><a cbot|move>move</a></code> to move the bot\n"
 "<code><a cbot|turn>turn</a></code> to turn the bot"
 msgstr ""
+"Ciclo <code><a cbot|for>for</a></code> per ripetere istruzioni\n"
+"<code><a cbot|move>move</a></code> per spostare il robot\n"
+"<code><a cbot|turn>turn</a></code> per ruotarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:19

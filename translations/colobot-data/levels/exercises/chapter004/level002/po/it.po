@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Radar"
-msgstr ""
+msgstr "Radar"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Use the radar to find lots of stupid blue crosses."
-msgstr ""
+msgstr "Usa il radar per trovare tante croci blu."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Find"
-msgstr ""
+msgstr "Find"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,24 +46,26 @@ msgid ""
 "As soon as the bot passed over one of the crosses, it will disappear. Here "
 "is the general principle that you will apply:"
 msgstr ""
+"Fai trovare al robot tutte le <a object|waypoint>croci blu</a>. Scompaiono "
+"al passaggio. Segui questo principio:"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Look for a cross"
-msgstr ""
+msgstr "Cerca una croce"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "If there is none, stop the program."
-msgstr ""
+msgstr "Se non ne trovi, termina il programma."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Calculate the direction of the cross."
-msgstr ""
+msgstr "Calcola la direzione della croce."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
@@ -71,13 +73,13 @@ msgstr ""
 msgid ""
 "Set the speed of the motors in such a way that they will find their way to "
 "the cross."
-msgstr ""
+msgstr "Imposta i motori per raggiungere la croce."
 
 #. type: \b; header
 #: ../help/help.E.txt:10
 #, no-wrap
 msgid "The program"
-msgstr ""
+msgstr "Il programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -86,6 +88,8 @@ msgid ""
 "Use a <code><a cbot|while>while</a></code> loop in order to repeat several "
 "instructions over and over:"
 msgstr ""
+"Usa un ciclo <code><a cbot|while>while</a></code> per ripetere le "
+"istruzioni:"
 
 #. type: Source code
 #: ../help/help.E.txt:12
@@ -96,6 +100,10 @@ msgid ""
 "\t</code>instructions...<c/>\n"
 "}"
 msgstr ""
+"<code>while ( true )\n"
+"{\n"
+"\t</code>instructions...<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -107,12 +115,15 @@ msgid ""
 "needs only one parameter, i.e. the category of the object that it must look "
 "for:"
 msgstr ""
+"<code><a cbot|radar>radar</a></code> rileva le croci e le descrive in una "
+"variabile, per esempio <code>spot</code>. Qui <code><a "
+"cbot|radar>radar</a>()</code> richiede solo la categoria cercata:"
 
 #. type: Source code
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "<c/>spot = radar(WayPoint);"
-msgstr ""
+msgstr "<c/>spot = radar(WayPoint);"
 
 #. type: Plain text
 #: ../help/help.E.txt:20
@@ -122,6 +133,8 @@ msgid ""
 "value <code><a cbot|null>null</a></code>. You will have to test this case "
 "and react accordingly with the instruction <code><a cbot|if>if</a></code>:"
 msgstr ""
+"Finite le croci, <code>radar</code> restituisce <code><a "
+"cbot|null>null</a></code>. Verificalo con <code><a cbot|if>if</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:21
@@ -133,6 +146,11 @@ msgid ""
 "\tbreak;        // stops the loop\n"
 "}"
 msgstr ""
+"<c/>if ( spot == null )  // no more ?\n"
+"{\n"
+"\tmotor(0, 0);  // stops the motors\n"
+"\tbreak;        // stops the loop\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:26
@@ -141,6 +159,8 @@ msgid ""
 "<n/>The instruction <code><a cbot|break>break</a></code> will stop the "
 "infinite loop <code>while (true)</code>."
 msgstr ""
+"<n/><code><a cbot|break>break</a></code> interrompe il ciclo infinito "
+"<code>while (true)</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:28
@@ -152,12 +172,15 @@ msgid ""
 "<code>spot.position</code>. The following line will put the angle of the "
 "necessary rotation into the <a cbot|var>variable</a> <code>dir</code>:"
 msgstr ""
+"<code><a cbot|direct>direction</a>()</code> calcola l’angolo necessario a "
+"orientarsi verso la croce, alle coordinate <code>spot.position</code>. "
+"Salvalo nella <a cbot|var>variabile</a> <code>dir</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:29
 #, no-wrap
 msgid "<c/>dir = direction(spot.position);"
-msgstr ""
+msgstr "<c/>dir = direction(spot.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:31
@@ -168,6 +191,9 @@ msgid ""
 "your left hand, you must set the right-hand motor to full speed, and set the"
 " left-hand motor to a lower speed, according to the angle:"
 msgstr ""
+"L’angolo è positivo se la croce è a sinistra, negativo se è a destra. Per "
+"girare a sinistra imposta il motore destro al massimo e riduci il sinistro "
+"secondo l’angolo:"
 
 #. type: Plain text
 #: ../help/help.E.txt:33
@@ -179,6 +205,11 @@ msgid ""
 "    direction = <code>135</code> -> speed = <code>-0.5</code>\n"
 "    direction = <code>180</code> -> speed = <code>-1.0</code>"
 msgstr ""
+"    direzione = <code>  0</code> -> velocità = <code> 1.0</code>\n"
+"    direzione = <code> 45</code> -> velocità = <code> 0.5</code>\n"
+"    direzione = <code> 90</code> -> velocità = <code> 0.0</code>\n"
+"    direzione = <code>135</code> -> velocità = <code>-0.5</code>\n"
+"    direzione = <code>180</code> -> velocità = <code>-1.0</code>"
 
 #. type: Plain text
 #: ../help/help.E.txt:39
@@ -188,12 +219,14 @@ msgid ""
 "set by the instruction <code><a cbot|motor>motor</a></code>, according to "
 "the angle:"
 msgstr ""
+"Il grafico mostra le velocità dei due motori impostate con <code><a "
+"cbot|motor>motor</a></code> secondo l’angolo:"
 
 #. type: Image filename
 #: ../help/help.E.txt:41
 #, no-wrap
 msgid "radar2"
-msgstr ""
+msgstr "radar2"
 
 #. type: Plain text
 #: ../help/help.E.txt:42
@@ -205,6 +238,9 @@ msgid ""
 "the <a cbot|expr>expression</a> <code>1+dir/90</code> in order to calculate "
 "the necessary speed of the motors:"
 msgstr ""
+"Se la croce è davanti, l’angolo è zero e le velocità sono 1 e 1: avanti al "
+"massimo. Se è dietro, il motore destro va a -1 per girarsi. Puoi usare l’<a "
+"cbot|expr>espressione</a> <code>1+dir/90</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:43
@@ -215,6 +251,10 @@ msgid ""
 "\tmotor(1, 1+dir/90);  // turns more or less\n"
 "}"
 msgstr ""
+"<c/>if ( dir < 0 )  // on the right side?\n"
+"{\n"
+"\tmotor(1, 1+dir/90);  // turns more or less\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:48
@@ -224,6 +264,8 @@ msgid ""
 "between 0 and 180 degrees. It is up to you to work out the exact "
 "instructions to be performed:"
 msgstr ""
+"Applica lo stesso principio per angoli positivi fra 0 e 180 gradi. Ricava tu"
+" le istruzioni:"
 
 #. type: Source code
 #: ../help/help.E.txt:49
@@ -234,6 +276,10 @@ msgid ""
 "\t</code>up to you to fill in here...<c/>\n"
 "}"
 msgstr ""
+"<code>else  // on the left side?\n"
+"{\n"
+"\t</code>up to you to fill in here...<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:54
@@ -243,6 +289,9 @@ msgid ""
 "<code>spot</code> is of type <code><a cbot|object>object</a></code>, whereas"
 " <code>dir</code> is of type <code><a cbot|float>float</a></code>."
 msgstr ""
+"Dichiara le variabili all’inizio: <code>spot</code> di tipo <code><a "
+"cbot|object>object</a></code>, <code>dir</code> di tipo <code><a "
+"cbot|float>float</a></code>."
 
 #. type: \t; header
 #: ../help/help.E.txt:56
@@ -264,4 +313,4 @@ msgstr ""
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Repeat forever:"
-msgstr ""
+msgstr "Ripeti all’infinito:"

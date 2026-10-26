@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Shadow"
-msgstr ""
+msgstr "Ombra"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Follow a bot, as if you were its shadow."
-msgstr ""
+msgstr "Segui un robot come la sua ombra."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Follow"
-msgstr ""
+msgstr "Follow"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -49,37 +49,41 @@ msgid ""
 " the finishing pad, and the exercise is over. At every stop, the target bot "
 "checks that you are there. If you are not there, you must start over again."
 msgstr ""
+"Segui il <a object|bottr>robot bersaglio</a> carico di esplosivo senza "
+"toccarlo, altrimenti esploderà. Ogni volta che si ferma devi essere a meno "
+"di 10 m. Dopo 10 soste consecutive riuscite, ti condurrà alla piattaforma di"
+" arrivo. A ogni sosta verifica che tu ci sia: se manchi, devi ricominciare."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:6
 #, no-wrap
 msgid "Look for the target bot."
-msgstr ""
+msgstr "Cerca il robot bersaglio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "Calculate the distance to the bot."
-msgstr ""
+msgstr "Calcola la distanza dal robot."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "if the distance to the target bot is less than 5m, move backward."
-msgstr ""
+msgstr "Se sei a meno di 5 m dal bersaglio, arretra."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid ""
 "Otherwise, calculate the direction of the target bot, and move towards it."
-msgstr ""
+msgstr "Altrimenti calcolane la direzione e avvicinati."
 
 #. type: Plain text
 #: ../help/help.E.txt:11
@@ -88,6 +92,8 @@ msgid ""
 "As many times before, use <code><a cbot|while>while</a> (true)</code> in "
 "order to perform the infinite loop:"
 msgstr ""
+"Come già visto, usa <code><a cbot|while>while</a> (true)</code> per ripetere"
+" senza fine:"
 
 #. type: Source code
 #: ../help/help.E.txt:12
@@ -98,6 +104,10 @@ msgid ""
 "\t</code>instructions to be repeated ...<c/>\n"
 "}"
 msgstr ""
+"<code>while (true)\n"
+"{\n"
+"\t</code>instructions to be repeated ...<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -105,20 +115,20 @@ msgstr ""
 msgid ""
 "Look for the target bot with the instruction <code><a "
 "cbot|radar>radar</a></code>:"
-msgstr ""
+msgstr "Cerca il bersaglio con <code><a cbot|radar>radar</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "<c/>\ttarget = radar(TargetBot);"
-msgstr ""
+msgstr "<c/>\ttarget = radar(TargetBot);"
 
 #. type: Plain text
 #: ../help/help.E.txt:20
 #, no-wrap
 msgid ""
 "You do not have to test if the radar found a target bot: there must be one."
-msgstr ""
+msgstr "Non devi controllare se è stato trovato: ce n’è sicuramente uno."
 
 #. type: Plain text
 #: ../help/help.E.txt:22
@@ -129,12 +139,15 @@ msgid ""
 "your own bot, given by <code>position</code>. The second point is the "
 "position of the target bot, given by <code>target.position</code>."
 msgstr ""
+"Calcola la distanza con <code><a cbot|dist>distance</a>( , )</code>. Il "
+"primo punto è il tuo robot, <code>position</code>, il secondo il bersaglio, "
+"<code>target.position</code>."
 
 #. type: Source code
 #: ../help/help.E.txt:23
 #, no-wrap
 msgid "<c/>len = distance(position, target.position);"
-msgstr ""
+msgstr "<c/>len = distance(position, target.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:25
@@ -146,6 +159,11 @@ msgid ""
 "\tDistance = 0.0 meters -> speed = -1.0\n"
 "You can use the <a cbot|expr>expression</a> <code>distance/5-1</code> in order to achieve this, together with the <code><a cbot|if>if</a></code> to test if the target is closer than 5m:"
 msgstr ""
+"Sotto i 5 m arretra tanto più rapidamente quanto più sei vicino:\n"
+"\tDistanza = 5.0 metri -> velocità =  0.0\n"
+"\tDistanza = 2.5 metri -> velocità = -0.5\n"
+"\tDistanza = 0.0 metri -> velocità = -1.0\n"
+"Usa l’<a cbot|expr>espressione</a> <code>distance/5-1</code> e <code><a cbot|if>if</a></code> per verificare la distanza:"
 
 #. type: Source code
 #: ../help/help.E.txt:30
@@ -156,6 +174,10 @@ msgid ""
 "\tmotor(len/5-1, len/5-1);  // moves backward\n"
 "}"
 msgstr ""
+"<c/>if ( len < 5 )  // too close ?\n"
+"{\n"
+"\tmotor(len/5-1, len/5-1);  // moves backward\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:35
@@ -166,6 +188,9 @@ msgid ""
 "<code><a cbot|direct>direction</a></code>. You can then adjust the speed of "
 "the right-hand and left-hand motor in order to follow the target:"
 msgstr ""
+"Oltre i 5 m avvicinati. Calcola prima l’angolo con <code><a "
+"cbot|direct>direction</a></code>, poi regola i motori per seguire il "
+"bersaglio:"
 
 #. type: Source code
 #: ../help/help.E.txt:36
@@ -184,6 +209,18 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"<c/>else\n"
+"{\n"
+"\tdir = direction(target.position);\n"
+"\tif ( dir >= 0 )  // target on the left side?\n"
+"\t{\n"
+"\t\tmotor(1-dir/90, 1);\n"
+"\t}\n"
+"\telse  // target on the right side?\n"
+"\t{\n"
+"\t\t<n/>it is up to you to fill in<c/>\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:49
@@ -196,12 +233,18 @@ msgid ""
 "\tdirection = 135 -> speed = -0.5\n"
 "\tdirection = 180 -> speed = -1.0"
 msgstr ""
+"A sinistra <code>dir</code> è positivo, fra 0 e 180. L’<a cbot|expr>espressione</a> <code>1-dir/90</code> dà una velocità fra 1 e -1:\n"
+"\tdirezione =   0 -> velocità =  1.0\n"
+"\tdirezione =  45 -> velocità =  0.5\n"
+"\tdirezione =  90 -> velocità =  0.0\n"
+"\tdirezione = 135 -> velocità = -0.5\n"
+"\tdirezione = 180 -> velocità = -1.0"
 
 #. type: Image filename
 #: ../help/help.E.txt:56
 #, no-wrap
 msgid "radar2"
-msgstr ""
+msgstr "radar2"
 
 #. type: Plain text
 #: ../help/help.E.txt:57
@@ -209,7 +252,7 @@ msgstr ""
 msgid ""
 "When the target is on the right side, <code>dir</code> is negative, ranging "
 "between 0 and -180."
-msgstr ""
+msgstr "A destra <code>dir</code> è negativo, fra 0 e -180."
 
 #. type: Plain text
 #: ../help/help.E.txt:59
@@ -220,6 +263,9 @@ msgid ""
 "<code>object</code>, whereas <code>dir</code> and <code>len</code> are of "
 "type <code>float</code>."
 msgstr ""
+"Devi solo dichiarare le <a cbot|var>variabili</a>: <code>target</code> è "
+"<code>object</code>, <code>dir</code> e <code>len</code> sono "
+"<code>float</code>."
 
 #. type: \t; header
 #: ../help/help.E.txt:61
@@ -241,4 +287,4 @@ msgstr ""
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Repeat forever :"
-msgstr ""
+msgstr "Ripeti all’infinito:"

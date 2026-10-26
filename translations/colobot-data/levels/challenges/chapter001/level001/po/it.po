@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Follow a path"
-msgstr ""
+msgstr "Segui un percorso"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Move the bot along a given path."
-msgstr ""
+msgstr "Guida il robot lungo un percorso prestabilito."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,12 +45,14 @@ msgid ""
 "Program the robot in such a way that it arrives on the finishing pad, after having passed by the three blue crosses.\n"
 "The platforms and the crosses are all distant of 20m from each other."
 msgstr ""
+"Programma il robot affinché raggiunga la piattaforma di arrivo passando per le tre croci blu.\n"
+"Le piattaforme e le croci distano tutte 20 m fra loro."
 
 #. type: \b; header
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:6
@@ -59,6 +61,8 @@ msgid ""
 "<code><a cbot|move>move</a></code> to move the bot\n"
 "<code><a cbot|turn>turn</a></code> to turn the bot"
 msgstr ""
+"<code><a cbot|move>move</a></code> per spostare il robot\n"
+"<code><a cbot|turn>turn</a></code> per ruotarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:9

@@ -10,6 +10,8 @@ for source,target,flags in [
     ('<code>move(10);</code>', '<code>muovi(10);</code>', ()),
     ('%s %d', '%s %s', ('c-format',)),
     (r'Play\Start mission!', 'Gioca', ()),
+    ('<c/>move(10);<n/>', '<c/>muovi(10);<n/>', ()),
+    ('\tmove(10);', r'\tmove(10);', ()),
 ]:
     try: check_translation(source,target,flags)
     except ValueError: pass

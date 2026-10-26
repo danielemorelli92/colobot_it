@@ -18,7 +18,7 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Remote control #4"
-msgstr ""
+msgstr "Controllo a distanza n. 4"
 
 #. type: Resume-text
 #: ../scene.txt:2
@@ -27,18 +27,20 @@ msgid ""
 "Remote control a bot without using an information exchange post by defining "
 "a class for the orders."
 msgstr ""
+"Guida un robot senza centro di scambio dati, definendo una classe per gli "
+"ordini."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Remote4"
-msgstr ""
+msgstr "Remote4"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -49,6 +51,9 @@ msgid ""
 "use a <code><a cbot|static>static</a></code> variable to pass the orders to "
 "the slave bot."
 msgstr ""
+"Guida l’esecutore attraverso 6 croci blu senza <a object|exchange>centro di "
+"scambio dati</a>. Passa gli ordini mediante una variabile <code><a "
+"cbot|static>static</a></code>."
 
 #. type: Bullet: '1)'
 #: ../help/help.E.txt:5
@@ -58,6 +63,8 @@ msgid ""
 " immobile. This is the master you should program so it will transmit orders "
 "to the slave."
 msgstr ""
+"Il <a object|botgr>trasportatore su ruote</a> senza batteria e quindi "
+"immobile: programma questo robot perché invii ordini."
 
 #. type: Bullet: '2)'
 #: ../help/help.E.txt:6
@@ -66,12 +73,14 @@ msgid ""
 "The slave <a object|bottr>practice bot</a> which is already programmed and "
 "just waits for orders from the master."
 msgstr ""
+"L’esecutore è un <a object|bottr>robot da esercitazione</a> già programmato,"
+" che attende gli ordini."
 
 #. type: \b; header
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "The slave"
-msgstr ""
+msgstr "Il robot esecutore"
 
 #. type: Plain text
 #: ../help/help.E.txt:9
@@ -82,12 +91,15 @@ msgid ""
 "<code>m_type</code> is the order to execute (move or turn) and "
 "<code>m_param</code> is the distance to move or the rotation angle:"
 msgstr ""
+"La <a cbot|class>classe</a> <code>order</code> ha due membri: "
+"<code>m_type</code> indica l’azione (avanzare o ruotare), "
+"<code>m_param</code> la distanza o l’angolo:"
 
 #. type: Plain text
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> order"
-msgstr ""
+msgstr "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> order"
 
 #. type: Source code
 #: ../help/help.E.txt:12
@@ -98,6 +110,10 @@ msgid ""
 "\t<a cbot|float>float</a>  m_param;\n"
 "}"
 msgstr ""
+"{\n"
+"\t<a cbot|int>int</a>    m_type = <a cbot|nan>nan</a>;\n"
+"\t<a cbot|float>float</a>  m_param;\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:17
@@ -110,12 +126,17 @@ msgid ""
 "the member <code>m_order</code> is shared between all instances of the <a "
 "cbot|class>class</a> exchange."
 msgstr ""
+"Una seconda <a cbot|class>classe</a>, <code>exchange</code>, gestisce lo "
+"scambio. Il membro <code><a cbot|static>static</a></code> "
+"<code>m_order</code> conserva l’ordine. <code>static</code> rende "
+"<code>m_order</code> condiviso da tutte le istanze della <a "
+"cbot|class>classe</a> exchange."
 
 #. type: Plain text
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> exchange"
-msgstr ""
+msgstr "<c/><s/><a cbot|public>public</a> <a cbot|class>class</a> exchange"
 
 #. type: Source code
 #: ../help/help.E.txt:20
@@ -124,6 +145,8 @@ msgid ""
 "{\n"
 "\t<a cbot|static>static</a> <a cbot|private>private</a> order m_order = new order;"
 msgstr ""
+"{\n"
+"\t<a cbot|static>static</a> <a cbot|private>private</a> order m_order = new order;"
 
 #. type: Plain text
 #: ../help/help.E.txt:23
@@ -135,6 +158,10 @@ msgid ""
 "the <code>put</code> method will return <code>false</code> and will do "
 "nothing:"
 msgstr ""
+"<n/>Il robot di controllo invia con <code>put</code>. Finché "
+"<code>m_order</code> è diverso da <code><a cbot|nan>nan</a></code>, l’ordine"
+" non è finito: <code>put</code> restituisce <code>false</code> senza fare "
+"nulla:"
 
 #. type: Plain text
 #: ../help/help.E.txt:25
@@ -143,6 +170,8 @@ msgid ""
 "<c/><s/>\t<a cbot|synchro>synchronized</a> <a cbot|bool>bool</a> put(order "
 "a)"
 msgstr ""
+"<c/><s/>\t<a cbot|synchro>synchronized</a> <a cbot|bool>bool</a> put(order "
+"a)"
 
 #. type: Source code
 #: ../help/help.E.txt:26
@@ -160,6 +189,17 @@ msgid ""
 "\t\t}\n"
 "\t}"
 msgstr ""
+"\t{\n"
+"\t\tif ( m_order.m_type == nan )\n"
+"\t\t{\n"
+"\t\t\tm_order = a;\n"
+"\t\t\treturn true;\n"
+"\t\t}\n"
+"\t\telse\n"
+"\t\t{\n"
+"\t\t\treturn false;\n"
+"\t\t}\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:38
@@ -167,13 +207,13 @@ msgstr ""
 msgid ""
 "Another method <code>get</code> will be used by the slave to retrieve the "
 "orders. This method returns the order to be executed:"
-msgstr ""
+msgstr "L’esecutore legge l’ordine da eseguire con <code>get</code>:"
 
 #. type: Plain text
 #: ../help/help.E.txt:40
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|synchro>synchronized</a> order get()"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|synchro>synchronized</a> order get()"
 
 #. type: Source code
 #: ../help/help.E.txt:41
@@ -183,6 +223,9 @@ msgid ""
 "\t\treturn m_order;\n"
 "\t}"
 msgstr ""
+"\t{\n"
+"\t\treturn m_order;\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:45
@@ -191,12 +234,13 @@ msgid ""
 "A third method <code>delete</code> will be used by the slave to indicate "
 "that the order has been executed:"
 msgstr ""
+"Un terzo metodo, <code>delete</code>, segnala che l’ordine è concluso:"
 
 #. type: Plain text
 #: ../help/help.E.txt:47
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|synchro>synchronized</a> void delete()"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|synchro>synchronized</a> void delete()"
 
 #. type: Source code
 #: ../help/help.E.txt:48
@@ -207,6 +251,10 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"\t{\n"
+"\t\tm_order.m_type = nan;\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:53
@@ -217,12 +265,15 @@ msgid ""
 "<code>list</code> in order to create an instance of the class "
 "<code>exchange</code>."
 msgstr ""
+"Il programma contiene un’istanza della classe <code>exchange</code> chiamata"
+" <code>list</code>. Le () dopo <code>list</code> creano l’istanza di "
+"<code>exchange</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:55
 #, no-wrap
 msgid "<c/><s/><a cbot|extern>extern</a> void object::Slave3( )"
-msgstr ""
+msgstr "<c/><s/><a cbot|extern>extern</a> void object::Slave3( )"
 
 #. type: Source code
 #: ../help/help.E.txt:56
@@ -232,6 +283,9 @@ msgid ""
 "\texchange list();\n"
 "\torder    todo;"
 msgstr ""
+"{\n"
+"\texchange list();\n"
+"\torder    todo;"
 
 #. type: Plain text
 #: ../help/help.E.txt:60
@@ -242,12 +296,16 @@ msgid ""
 "method of the <code>exchange</code> class. As soon as <code>get</code> "
 "returns a value different from <code>nan</code>, the while loop stops."
 msgstr ""
+"Il ciclo esterno <code>while</code> è infinito. Quello interno "
+"<code>while</code> attende un ordine con <code>get</code> della classe "
+"<code>exchange</code>; termina quando <code>get</code> restituisce un valore"
+" diverso da <code>nan</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:62
 #, no-wrap
 msgid "<c/><s/>\t<a cbot|while>while</a> ( true )"
-msgstr ""
+msgstr "<c/><s/>\t<a cbot|while>while</a> ( true )"
 
 #. type: Source code
 #: ../help/help.E.txt:63
@@ -261,6 +319,13 @@ msgid ""
 "\t\t\twait(1);\n"
 "\t\t}"
 msgstr ""
+"\t{\n"
+"\t\t<a cbot|while>while</a> ( true )\n"
+"\t\t{\n"
+"\t\t\ttodo = list.get();\n"
+"\t\t\tif ( todo.m_type != nan )  break;\n"
+"\t\t\twait(1);\n"
+"\t\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:71
@@ -268,13 +333,13 @@ msgstr ""
 msgid ""
 "Now we have received the order in the <code>todo</code> variable. All we "
 "have to do is execute it:"
-msgstr ""
+msgstr "L’ordine è ora in <code>todo</code>. Basta eseguirlo:"
 
 #. type: Plain text
 #: ../help/help.E.txt:73
 #, no-wrap
 msgid "<c/><s/>\t\tif ( todo.m_type == 1 )"
-msgstr ""
+msgstr "<c/><s/>\t\tif ( todo.m_type == 1 )"
 
 #. type: Source code
 #: ../help/help.E.txt:74
@@ -292,6 +357,17 @@ msgid ""
 "\t\t\tmessage(\"Unknown order\");\n"
 "\t\t}"
 msgstr ""
+"\t\t{\n"
+"\t\t\tmove(todo.m_param);\n"
+"\t\t}\n"
+"\t\telse if ( todo.m_type == 2 )\n"
+"\t\t{\n"
+"\t\t\tturn(todo.m_param);\n"
+"\t\t}\n"
+"\t\telse\n"
+"\t\t{\n"
+"\t\t\tmessage(\"Unknown order\");\n"
+"\t\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:86
@@ -301,12 +377,14 @@ msgid ""
 "<code>delete</code> method so the master knows that another order can be "
 "sent:"
 msgstr ""
+"Al termine dell’ordine chiama <code>delete</code>, così il robot di "
+"controllo sa di poterne inviare un altro:"
 
 #. type: Plain text
 #: ../help/help.E.txt:88
 #, no-wrap
 msgid "<c/><s/>\t\tlist.delete();"
-msgstr ""
+msgstr "<c/><s/>\t\tlist.delete();"
 
 #. type: Source code
 #: ../help/help.E.txt:89
@@ -315,12 +393,14 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"\t}\n"
+"}"
 
 #. type: \b; header
 #: ../help/help.E.txt:92
 #, no-wrap
 msgid "The master"
-msgstr ""
+msgstr "Il robot di controllo"
 
 #. type: Plain text
 #: ../help/help.E.txt:93
@@ -329,12 +409,14 @@ msgid ""
 "In the master we write an function called <code>SendOrder</code> which will "
 "send an order to the slave:"
 msgstr ""
+"Nel robot di controllo scrivi <code>SendOrder</code>, che invia un ordine "
+"all’esecutore:"
 
 #. type: Plain text
 #: ../help/help.E.txt:95
 #, no-wrap
 msgid "<c/><s/>void object::SendOrder(float order, float param)"
-msgstr ""
+msgstr "<c/><s/>void object::SendOrder(float order, float param)"
 
 #. type: Source code
 #: ../help/help.E.txt:96
@@ -353,6 +435,18 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"{\n"
+"\texchange list();\n"
+"\torder    todo();\n"
+"\t\n"
+"\ttodo.m_type = order;\n"
+"\ttodo.m_param = param;\n"
+"\t\n"
+"\twhile ( list.put(todo) == false )\n"
+"\t{\n"
+"\t\twait(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:109
@@ -361,12 +455,14 @@ msgid ""
 "The <code>while</code> loop waits until a pending order has been terminated, that is the slaved has exited from the <code>get</code> method and the <code>delete</code> method has been called.\n"
 "Now the main program of the master is very simple:"
 msgstr ""
+"Il ciclo <code>while</code> attende il completamento dell’ordine: l’esecutore deve essere uscito da <code>get</code> e aver chiamato <code>delete</code>.\n"
+"Il programma principale diventa semplice:"
 
 #. type: Plain text
 #: ../help/help.E.txt:112
 #, no-wrap
 msgid "<c/><s/>extern void object::Remote4( )"
-msgstr ""
+msgstr "<c/><s/>extern void object::Remote4( )"
 
 #. type: Source code
 #: ../help/help.E.txt:113
@@ -384,12 +480,23 @@ msgid ""
 "\tSendOrder(1, 10);  // move(10);\n"
 "}"
 msgstr ""
+"{\n"
+"\tSendOrder(1, 20);  // move(20);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 20);  // move(20);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"\tSendOrder(2, 90);  // turn(90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"\tSendOrder(2,-90);  // turn(-90);\n"
+"\tSendOrder(1, 10);  // move(10);\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:125
 #, no-wrap
 msgid "<format key><key help/></format> show these instruction at any time."
-msgstr ""
+msgstr "<format key><key help/></format> mostra sempre queste istruzioni."
 
 #. type: \t; header
 #: ../help/help.E.txt:128
@@ -401,10 +508,10 @@ msgstr "Vedi anche"
 #: ../help/help.E.txt:129
 #, no-wrap
 msgid "<a command>Controls</a> and <a cbot>programming</a>."
-msgstr ""
+msgstr "<a command>Comandi</a> e <a cbot>programmazione</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "The two main actors of this exercise are:"
-msgstr ""
+msgstr "I due protagonisti sono:"

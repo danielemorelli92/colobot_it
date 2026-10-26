@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "The gold digger"
-msgstr ""
+msgstr "Il cercatore d’oro"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Instruct your bot to search a zone for subsoil resources."
-msgstr ""
+msgstr "Insegna al robot a cercare risorse nel sottosuolo."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Digger"
-msgstr ""
+msgstr "Digger"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -47,12 +47,15 @@ msgid ""
 "subsoil and discovers an adequate location for a derrick, it will mark it "
 "with a red cross."
 msgstr ""
+"Esamina l’intera area tra le barriere con il <a object|botsr>robot "
+"rilevatore</a>. I siti adatti a una torre di estrazione vengono segnati da "
+"croci rosse."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -61,12 +64,14 @@ msgid ""
 "The zone inside the barriers is a square of 25 meters. The most efficient "
 "way is to check every 5 meters."
 msgstr ""
+"L’area è un quadrato di 25 metri di lato. Conviene esaminare il terreno ogni"
+" 5 metri."
 
 #. type: Image filename
 #: ../help/help.E.txt:7
 #, no-wrap
 msgid "sniff1"
-msgstr ""
+msgstr "sniff1"
 
 #. type: Plain text
 #: ../help/help.E.txt:8
@@ -74,7 +79,7 @@ msgstr ""
 msgid ""
 "One way to achieve this is to fit two <code><a cbot|for>for</a></code> loops"
 " one into another:"
-msgstr ""
+msgstr "Puoi annidare due cicli <code><a cbot|for>for</a></code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:10
@@ -93,6 +98,18 @@ msgid ""
 "\t</code>quarter turn left<c/>\n"
 "}"
 msgstr ""
+"for ( int y=0 ; y<6 ; y=y+1 )\n"
+"{\n"
+"\tfor ( int x=0 ; x<5 ; x=x+1 )\n"
+"\t{\n"
+"\t\t<n/>sound the subsoil<code>\n"
+"\t\t</code>move 5m forward<code>\n"
+"\t}\n"
+"\t</code>sound the subsoil<code>\n"
+"\t</code>quarter turn left<code>\n"
+"\t</code>move 5m forward<code>\n"
+"\t</code>quarter turn left<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:23
@@ -103,6 +120,10 @@ msgid ""
 "The <a cbot|expr>expression</a> <code>y%2</code> returns the rest of the division of <code>y</code> by <code>2</code>. For example, if <code>y=3</code>, the expression returns <code>1</code>.\n"
 "The test <code><a cbot|if>if</a> { }</code> can be followed by a <code>else { }</code>. If the test is true, the first <a cbot|bloc>block</a> <code>{ }</code> will be executed. Otherwise, the second block <code>{ }</code> will be executed."
 msgstr ""
+"Il programma funziona solo all’inizio: dopo la prima fila gira correttamente a sinistra, ma dopo la seconda deve girare a destra!\n"
+"Se <code>y</code> è pari deve girare a sinistra, se <code>y</code> è dispari a destra.\n"
+"L’<a cbot|expr>espressione</a> <code>y%2</code> restituisce il resto di <code>y</code> diviso <code>2</code>. Con <code>y=3</code> dà <code>1</code>.\n"
+"Dopo <code><a cbot|if>if</a> { }</code> puoi aggiungere <code>else { }</code>: se il test è vero esegue il primo <a cbot|bloc>blocco</a> <code>{ }</code>, altrimenti il secondo <code>{ }</code>."
 
 #. type: Source code
 #: ../help/help.E.txt:28
@@ -117,12 +138,20 @@ msgid ""
 "\ty </code>is uneven<c/>\n"
 "}"
 msgstr ""
+"if ( y%2 == 0 )\n"
+"{\n"
+"\ty <n/>is even<code>\n"
+"}\n"
+"else\n"
+"{\n"
+"\ty </code>is uneven<c/>\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:37
 #, no-wrap
 msgid "It is up to you to finish the program."
-msgstr ""
+msgstr "Completa tu il programma."
 
 #. type: \b; header
 #: ../help/help.E.txt:39
@@ -138,6 +167,9 @@ msgid ""
 "subsoil, and <code><a cbot|move>move</a>( )</code> and <code><a "
 "cbot|turn>turn</a>( )</code> to move the bot."
 msgstr ""
+"Usa <code><a cbot|sniff>sniff</a>( )</code> per esaminare il sottosuolo, "
+"<code><a cbot|move>move</a>( )</code> e <code><a cbot|turn>turn</a>( "
+")</code> per muoverti."
 
 #. type: \t; header
 #: ../help/help.E.txt:42

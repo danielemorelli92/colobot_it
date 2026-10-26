@@ -1,50 +1,44 @@
-# Anteprima Windows 0.2
+# Anteprima Windows 0.3 — cataloghi completi
 
-Base: distribuzione ufficiale `colobot-gold-0.2.2-alpha-win64`.
-Pacchetto: `dist/colobot-0.2.2-alpha-win64-italiano-anteprima-0.2.zip`.
+Base: `colobot-gold-0.2.2-alpha-win64` ufficiale. Download in `dist/`.
+Estrarre nello stesso percorso della 0.1/0.2 e sostituire i file dell’anteprima.
+La cartella dei salvataggi resta `%LOCALAPPDATA%\ColobotItalianPreview-0.1`:
+non eliminarla. Launcher e configurazione iniziale non cambiano.
 
-## Compatibilità con la 0.1
+Tutti i 146 cataloghi sono completi: 5.172 voci, zero vuote e zero fuzzy.
+Delle voci compilate, 777 sono identiche al sorgente per mantenere codice,
+identificatori, nomi, immagini e crediti. Due messaggi hanno entrambe le forme
+plurali italiane. Vedere `coverage-0.3.json` e `verification.json`.
 
-Stesso launcher, stessa cartella `colobot-it-preview`, stesso nome interno della
-mod (`mod`), stesso percorso dei salvataggi `%LOCALAPPDATA%\ColobotItalianPreview-0.1`.
-La configurazione iniziale si copia soltanto se non esiste: nessuna sovrascrittura
-di preferenze o salvataggi. Chiudere il gioco ed estrarre lo ZIP nello stesso
-percorso usato per la 0.1, sostituendo i file dell’anteprima.
+Il pacchetto resta compatibile con il binario ufficiale grazie allo slot French.
+Il launcher usa `-langdir`, `-mod`, `-datadir` e `-savedir`; catalogo isolato in
+`lang/fr/LC_MESSAGES/colobot.mo`, dati I rimappati in F nell’overlay.
+Non modifica font, DLL, eseguibile, cartella lang originale o logica dei livelli.
+L’avvio normale resta disponibile e separato. La configurazione iniziale è
+copiata soltanto se non esiste, senza sovrascrivere preferenze o salvataggi.
 
-Lo slot resta French, non Italiano, perché il binario ufficiale non include
-la nuova enumerazione. Il launcher usa le opzioni ufficiali `-langdir`, `-mod`,
-`-datadir` e `-savedir`. Il catalogo italiano è nel percorso isolato
-`lang/fr/LC_MESSAGES/colobot.mo`; l’overlay rimappa i testi dati I in F.
-La patch per l’integrazione nativa `it` rimane distinta e non viene applicata
-al binario Windows esistente.
+## Verifiche della 0.3
 
-Nessuna sostituzione di eseguibili, DLL o font. La cartella lang originale non
-viene modificata. Per rimuovere: eliminare i file dell’anteprima; i salvataggi
-separati possono essere conservati. L’avvio normale resta disponibile.
+Gettext, formati, entrambe le forme plurali, lookup dei MO, marcatori e
+collegamenti: riusciti. Build dati completa: riuscita. Tutte le 4.455 voci dei
+cataloghi dati sono presenti negli output italiani generati. Il pacchetto
+confronta tutte le scene con i sorgenti, escludendo solo le righe di testo
+localizzate; verifica anche CRC e SHA256 dei contenuti.
 
-## Copertura
+Il test di preservazione controlla 542 esempi di codice, nomi di programmi e
+riferimenti a immagini. Tre intestazioni dei rapporti e una tabella di esempio
+numerico sono prosa monospaziata, anche se l’estrattore le chiama Source code:
+vengono tradotte preservando marcatori e numeri.
 
-2.890 voci compilate su 5.172, contro 230 nella 0.1. Di queste, 202 sono
-intenzionalmente identiche al sorgente (nomi, identificatori, codice e simili).
-Interfaccia 659/659; campagna 878/878; aiuto generale 141/141; robot 176/176;
-oggetti ed edifici 323/323. Rimane necessaria la revisione linguistica e visiva.
-Non equivale a copertura completa di mod, testo non estraibile dai template o
-esempi CBOT. Vedere coverage-0.2.json per i restanti 2.282 messaggi vuoti.
+Le anteprime 0.1/0.2 sono state avviate su Windows dall’utente. Su sua richiesta,
+le prove estese nel gioco vengono fatte dopo la traduzione completa. La 0.3
+rimane da collaudare interattivamente; nessuna dichiarazione di test Windows,
+CTest o compilazione completa del motore non eseguiti.
 
-## Verifiche
+## Ambito
 
-- GNU gettext, lettura dei MO, confronto dei template e controllo di link,
-  pulsanti, tasti, codice e separatori delle descrizioni: riusciti.
-- Build completa dei dati ufficiali, parallelismo 2: riuscita.
-- Tutte le 878 voci della campagna ritrovate negli output generati italiani.
-- Parsing e serializzazione C++ della nuova lingua e lingue esistenti: riusciti.
-- Lo ZIP confronta ogni scena con i dati sorgenti, ignorando solo le righe
-  Title/Resume/ScriptName tradotte: nessuna modifica alla logica dei livelli.
-- Archivio ZIP: controllo CRC e SHA256 dei file, verifica titolo e briefing.
-- Launcher identico a quello della 0.1, per conservare comportamento e salvataggi.
-
-La 0.1 è stata provata su Windows dall’utente. Dalle schermate risultano
-funzionanti titolo, briefing e accenti; il formato si è sistemato al riavvio.
-La 0.2 non è stata eseguita su Windows nell’ambiente di sviluppo. Il motore
-completo e CTest restano non compilati/eseguiti qui per le dipendenze native
-mancanti. Il confezionamento non richiede di ricompilare il motore.
+Completati i cataloghi della release fissata. La descrizione non gettext
+dell’addon AltTextures resta inglese, i nomi delle lingue sono nel binario
+ufficiale e codice/commenti/esempi non vengono riscritti. Le mod esterne sono
+fuori ambito. La traduzione completa richiede ancora revisione linguistica e
+verifica visiva: completamento dei cataloghi e qualità collaudata sono distinti.

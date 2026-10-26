@@ -21,6 +21,10 @@ def check_translation(source, target, flags=()):
     if '\\' in source and not NATIVE.search(source):
         if source.count('\\') != target.count('\\'):
             raise ValueError('Changed label/tooltip separator count')
+    if source.count('\t') != target.count('\t'):
+        raise ValueError('Changed literal tab indentation')
+    if Counter(re.findall(r'<c/>(.*?)<n/>', source, re.S)) != Counter(re.findall(r'<c/>(.*?)<n/>', target, re.S)):
+        raise ValueError('Changed native-style code example')
     for code in re.findall(r'<code>.*?</code>', source, re.S):
         if code not in target:
             raise ValueError('Changed CBot code block')

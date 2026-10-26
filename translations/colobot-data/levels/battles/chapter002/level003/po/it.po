@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "ShootingRange"
-msgstr ""
+msgstr "Poligono di tiro"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Aim & shoot - simple as that!"
-msgstr ""
+msgstr "Mira e spara: tutto qui!"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Code Battle (shooting a target)"
-msgstr ""
+msgstr "Battaglia di codice (tiro al bersaglio)"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -39,6 +39,8 @@ msgid ""
 "This is <a battles>a code battle</a> level, where you need to shoot a "
 "harmless target, in order to learn how to aim properly."
 msgstr ""
+"Livello di <a battles>battaglia di codice</a>: impara a mirare sparando a un"
+" bersaglio innocuo."
 
 #. type: \b; header
 #: ../help/help.E.txt:4
@@ -50,4 +52,4 @@ msgstr "Obiettivo"
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid "Destroy the target located on the opposite side of the river."
-msgstr ""
+msgstr "Distruggi il bersaglio sull’altra sponda del fiume."

@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Mover 2"
-msgstr ""
+msgstr "Trasporto 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Retrieve several titanium cubes."
-msgstr ""
+msgstr "Recupera più cubi di titanio."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Mover"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -46,6 +46,8 @@ msgid ""
 "object|titan>titanium cubes</a> that you must move to 3 finishing pads. Here"
 " are the coordinates of the finishing pads:"
 msgstr ""
+"Come prima, ma ora sposta tre <a object|titan>cubi</a> su tre piattaforme, "
+"alle coordinate:"
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -55,12 +57,15 @@ msgid ""
 "\tx=10, y=-65\n"
 "\tx=10, y=-70"
 msgstr ""
+"\tx=10, y=-60\n"
+"\tx=10, y=-65\n"
+"\tx=10, y=-70"
 
 #. type: \b; header
 #: ../help/help.E.txt:8
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:10
@@ -68,25 +73,25 @@ msgstr ""
 msgid ""
 "Look for the most distant titanium cube with <code><a "
 "cbot|radar>radar</a></code>."
-msgstr ""
+msgstr "Cerca il cubo più lontano con <code><a cbot|radar>radar</a></code>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:11
 #, no-wrap
 msgid "Pick it up with <code><a cbot|grab>grab</a></code>."
-msgstr ""
+msgstr "Prendilo con <code><a cbot|grab>grab</a></code>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:12
 #, no-wrap
 msgid "Go to one of the pads with <code><a cbot|goto>goto</a></code>."
-msgstr ""
+msgstr "Raggiungi una piattaforma con <code><a cbot|goto>goto</a></code>."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "Drop the titanium with <code><a cbot|drop>drop</a></code>."
-msgstr ""
+msgstr "Posa il titanio con <code><a cbot|drop>drop</a></code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:15
@@ -96,12 +101,14 @@ msgid ""
 " already retrieved and dropped on a pad. Therefore you must look for the "
 "most distant titanium cube."
 msgstr ""
+"Cercando il cubo più vicino ritroveresti quello già posato su una "
+"piattaforma: cerca quindi il più lontano."
 
 #. type: \b; header
 #: ../help/help.E.txt:17
 #, no-wrap
 msgid "The program"
-msgstr ""
+msgstr "Il programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:18
@@ -114,6 +121,10 @@ msgid ""
 "<code>-1</code> means that instead of looking for the closest item, the "
 "radar will return the most distant that it can find."
 msgstr ""
+"Usa un ciclo <code><a cbot|for>for</a></code> per ripetere tre volte il "
+"recupero. Cerca il cubo più lontano con <c/><a "
+"cbot|radar>radar</a>(Titanium, 0, 360, 0, 1000, -1);<n/>: l’ultimo parametro"
+" <code>-1</code> seleziona il più lontano invece del più vicino."
 
 #. type: Source code
 #: ../help/help.E.txt:20
@@ -124,6 +135,10 @@ msgid ""
 "if ( metal == null )  return;\n"
 "goto(metal.position);"
 msgstr ""
+"object  metal;\n"
+"metal = radar(Titanium, 0, 360, 0, 1000, -1);\n"
+"if ( metal == null )  return;\n"
+"goto(metal.position);"
 
 #. type: Plain text
 #: ../help/help.E.txt:25
@@ -133,6 +148,8 @@ msgid ""
 "cbot|object>object</a></code>. In order to know the position of the object "
 "described by the variable, you must write <code>metal.position</code>."
 msgstr ""
+"<code>metal</code> è di tipo <code><a cbot|object>object</a></code>. La "
+"posizione è <code>metal.position</code>."
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -144,6 +161,9 @@ msgid ""
 "<code>i</code> of the <code>for</code> loop that will take successively the "
 "values 0, 1 and 2:"
 msgstr ""
+"Le tre coordinate <code>x</code> valgono 10; le <code>y</code> sono -60, -65"
+" e -70. Ricavale usando <code>i</code> del ciclo <code>for</code>, che "
+"assume 0, 1 e 2:"
 
 #. type: Source code
 #: ../help/help.E.txt:29
@@ -152,12 +172,14 @@ msgid ""
 "dest.x = 10;\n"
 "dest.y = -60-5*i;"
 msgstr ""
+"dest.x = 10;\n"
+"dest.y = -60-5*i;"
 
 #. type: Plain text
 #: ../help/help.E.txt:32
 #, no-wrap
 msgid "It is up to you now to finish the program."
-msgstr ""
+msgstr "Ora completa il programma."
 
 #. type: \t; header
 #: ../help/help.E.txt:34
@@ -179,4 +201,4 @@ msgstr ""
 #: ../help/help.E.txt:9
 #, no-wrap
 msgid "Repeat 3 times:"
-msgstr ""
+msgstr "Ripeti 3 volte:"

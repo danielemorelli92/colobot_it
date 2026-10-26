@@ -18,19 +18,19 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Fighter Jet 2"
-msgstr ""
+msgstr "Caccia volante 2"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Adapt the program to a mountainous terrain."
-msgstr ""
+msgstr "Adatta il programma a un terreno montuoso."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
@@ -45,19 +45,21 @@ msgid ""
 "Adapt the flying height of the <a object|botfj>winged shooter</a> to the "
 "terrain."
 msgstr ""
+"Adatta al terreno l’altezza di volo del <a object|botfj>tiratore "
+"volante</a>."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
 #, no-wrap
 msgid ""
 "Here is one more time the program of the previous exercise that hunts ants:"
-msgstr ""
+msgstr "Ecco ancora il programma precedente per cacciare le formiche:"
 
 #. type: Source code
 #: ../help/help.E.txt:7
@@ -88,6 +90,30 @@ msgid ""
 "\t}\n"
 "}"
 msgstr ""
+"extern void object::JetFighter1()\n"
+"{\n"
+"\tobject    item;\n"
+"\t\n"
+"\taim(-20);\n"
+"\tjet(0.2);\n"
+"\twhile (position.z < 10)\n"
+"\t{\n"
+"\t\twait(0.2);\n"
+"\t}\n"
+"\tjet(0);\n"
+"\t\n"
+"\twhile (true)\n"
+"\t{\n"
+"\t\twhile (radar(AlienAnt, 0, 360, 0, 20) == null)\n"
+"\t\t{\n"
+"\t\t\titem = radar(AlienAnt);\n"
+"\t\t\tturn(direction(item.position));\n"
+"\t\t\tmotor(1,1);\n"
+"\t\t\twait(0.2);\n"
+"\t\t}\n"
+"\t\tfire(1);\n"
+"\t}\n"
+"}"
 
 #. type: Plain text
 #: ../help/help.E.txt:32
@@ -99,6 +125,9 @@ msgid ""
 "<c/>wait(0.2);<n/> a test to see if the height above ground is too low or "
 "too high, and to react accordingly."
 msgstr ""
+"Il robot resta sempre a 10 m sul mare, inadatto a un terreno montuoso. Prima"
+" di <c/>wait(0.2);<n/> verifica se è troppo vicino o lontano dal suolo e "
+"reagisci di conseguenza."
 
 #. type: Plain text
 #: ../help/help.E.txt:34
@@ -114,6 +143,12 @@ msgid ""
 "program these tests, use the instruction <code><a cbot|if>if</a></code>, "
 "that executes the instructions in braces only once if the condition is true:"
 msgstr ""
+"<code>position.z</code> indica l’altitudine sul mare, <code><a "
+"cbot|topo>topo</a>(position)</code> quella del terreno. Per restare tra 6 e "
+"9 m dal suolo: se <code>position.z-topo(position)</code> è sotto 6 sali con "
+"<c/>jet(1);<n/>; se <code>position.z-topo(position)</code> supera 9 scendi "
+"con <c/>jet(-1);<n/>. Usa <code><a cbot|if>if</a></code> per eseguire una "
+"volta il blocco quando la condizione è vera:"
 
 #. type: Source code
 #: ../help/help.E.txt:36
@@ -130,6 +165,16 @@ msgid ""
 "\t\tjet(-1);\n"
 "\t}"
 msgstr ""
+"\tjet(0);\n"
+"\tif (position.z-topo(position) < 6)\n"
+"\t{\n"
+"\t\tjet(1);\n"
+"\t}\n"
+"\t\n"
+"\tif (position.z-topo(position) > 9)\n"
+"\t{\n"
+"\t\tjet(-1);\n"
+"\t}"
 
 #. type: Plain text
 #: ../help/help.E.txt:47
@@ -140,6 +185,9 @@ msgid ""
 "climb nor go down. If afterwards either <c/>jet(1);<n/> or <c/>jet(-1);<n/> "
 "is executed, it will cancel the previous <c/>jet(0);<n/>."
 msgstr ""
+"Prima dei controlli stabilizza con <c/>jet(0);<n/>: fra 6 e 9 m il robot non"
+" deve salire né scendere. Un successivo <c/>jet(1);<n/> o <c/>jet(-1);<n/> "
+"sostituisce il precedente <c/>jet(0);<n/>."
 
 #. type: Plain text
 #: ../help/help.E.txt:49
@@ -149,6 +197,8 @@ msgid ""
 "adapt to the terrain. You can then delete the first lines of the program "
 "that set the initial altitude at 10m."
 msgstr ""
+"Inserisci queste righe prima di <code>wait(0.2)</code>. Puoi poi eliminare "
+"il blocco iniziale che fissava l’altitudine a 10 m."
 
 #. type: \t; header
 #: ../help/help.E.txt:51

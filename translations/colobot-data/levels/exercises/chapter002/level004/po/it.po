@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Fighter Jet 1"
-msgstr ""
+msgstr "Caccia volante 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Instruct a winged shooter to clean the whole region."
-msgstr ""
+msgstr "Ordina a un tiratore volante di liberare l’intera regione."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Move"
-msgstr ""
+msgstr "Move"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Objectif"
-msgstr ""
+msgstr "Obiettivo"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -44,12 +44,14 @@ msgstr ""
 msgid ""
 "Program a <a object|botfj>winged shooter</a> to hunt all ants in the region."
 msgstr ""
+"Programma un <a object|botfj>tiratore volante</a> per cacciare tutte le "
+"formiche della regione."
 
 #. type: \t; header
 #: ../help/help.E.txt:4
 #, no-wrap
 msgid "Program"
-msgstr ""
+msgstr "Programma"
 
 #. type: Plain text
 #: ../help/help.E.txt:5
@@ -59,6 +61,9 @@ msgid ""
 "opposition to spiders, keep moving: you can not just turn towards the "
 "closest ant, move forward and shoot."
 msgstr ""
+"Nella palude un tiratore su ruote o cingoli serve poco. Inoltre le formiche,"
+" diversamente dai ragni, continuano a muoversi: non basta girarsi, avanzare "
+"e sparare."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -72,6 +77,10 @@ msgid ""
 "a little, for example 0.2 seconds. All these instructions must be repeated "
 "until the ant is at less than 20 meters. Then just shoot it."
 msgstr ""
+"Vola a 10 metri, mira in basso con <c/>aim(-20);<n/> e avvicinati finché la "
+"<a cbot|dist>distanza</a> supera 20 m. Nel ciclo cerca la formica più "
+"vicina, girati, avvia i motori con <c/>motor(1,1);<n/> e attendi, per "
+"esempio, 0,2 secondi. Ripeti finché sei a meno di 20 m, poi spara."
 
 #. type: \t; header
 #: ../help/help.E.txt:9

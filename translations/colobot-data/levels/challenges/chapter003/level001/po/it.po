@@ -18,25 +18,25 @@ msgstr ""
 #: ../scene.txt:1
 #, no-wrap
 msgid "Mover 1"
-msgstr ""
+msgstr "Trasporto 1"
 
 #. type: Resume-text
 #: ../scene.txt:2
 #, no-wrap
 msgid "Retrieve some titanium ore in order to convert it to titanium cubes."
-msgstr ""
+msgstr "Recupera minerale di titanio per convertirlo in cubi."
 
 #. type: ScriptName-text
 #: ../scene.txt:3
 #, no-wrap
 msgid "Mover"
-msgstr ""
+msgstr "Mover"
 
 #. type: \b; header
 #: ../help/help.E.txt:1
 #, no-wrap
 msgid "Exercise"
-msgstr ""
+msgstr "Esercizio"
 
 #. type: Plain text
 #: ../help/help.E.txt:2
@@ -45,6 +45,8 @@ msgid ""
 "Convert some <a object|titanore>titanium ore</a> to <a object|titan>titanium"
 " cubes</a>, then drop 2 titanium cubes on the pads whose coordinates are:"
 msgstr ""
+"Converti il <a object|titanore>minerale</a> in <a object|titan>cubi di "
+"titanio</a>, poi posa 2 cubi sulle piattaforme alle coordinate:"
 
 #. type: Plain text
 #: ../help/help.E.txt:4
@@ -53,6 +55,8 @@ msgid ""
 "\tx=10, y=-60\n"
 "\tx=10, y=-65"
 msgstr ""
+"\tx=10, y=-60\n"
+"\tx=10, y=-65"
 
 #. type: Image filename
 #: ../help/help.E.txt:7
@@ -67,6 +71,8 @@ msgid ""
 "The <a object|derrick>derrick</a> extracts titanium ore from the subsoil; "
 "you just have to pick it up."
 msgstr ""
+"La <a object|derrick>torre di estrazione</a> estrae il minerale dal "
+"sottosuolo: devi soltanto raccoglierlo."
 
 #. type: Image filename
 #: ../help/help.E.txt:10
@@ -82,78 +88,80 @@ msgid ""
 " Just drop the titanium ore on the platform, move backward, and wait until "
 "it has been converted."
 msgstr ""
+"Il <a object|convert>convertitore</a> trasforma il minerale in cubi. Posa il"
+" minerale sulla piattaforma, arretra e attendi la conversione."
 
 #. type: \b; header
 #: ../help/help.E.txt:13
 #, no-wrap
 msgid "General principle"
-msgstr ""
+msgstr "Principio generale"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:15
 #, no-wrap
 msgid "Wait until there is some titanium ore."
-msgstr ""
+msgstr "Attendi la presenza di minerale di titanio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:16
 #, no-wrap
 msgid "Go to the titanium ore."
-msgstr ""
+msgstr "Raggiungi il minerale."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:17
 #, no-wrap
 msgid "Pick it up."
-msgstr ""
+msgstr "Prendilo."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:18
 #, no-wrap
 msgid "Go to the converter."
-msgstr ""
+msgstr "Raggiungi il convertitore."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:19
 #, no-wrap
 msgid "Drop the titanium ore."
-msgstr ""
+msgstr "Posa il minerale."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:20
 #, no-wrap
 msgid "Move back 2.5 meters."
-msgstr ""
+msgstr "Arretra di 2,5 metri."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:21
 #, no-wrap
 msgid "Wait until there is a titanium cube."
-msgstr ""
+msgstr "Attendi la presenza di un cubo di titanio."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:22
 #, no-wrap
 msgid "Pick up the titanium cube."
-msgstr ""
+msgstr "Prendi il cubo."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:23
 #, no-wrap
 msgid "Go to the platform."
-msgstr ""
+msgstr "Raggiungi la piattaforma."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:24
 #, no-wrap
 msgid "Drop the titanium cube."
-msgstr ""
+msgstr "Posa il cubo."
 
 #. type: \b; header
 #: ../help/help.E.txt:26
 #, no-wrap
 msgid "Useful instructions"
-msgstr ""
+msgstr "Istruzioni utili"
 
 #. type: Plain text
 #: ../help/help.E.txt:27
@@ -166,6 +174,12 @@ msgid ""
 "<code><a cbot|grab>grab</a></code> to grab an object\n"
 "<code><a cbot|drop>drop</a></code> to drop an object"
 msgstr ""
+"<code><a cbot|for>for</a></code> per ripetere istruzioni\n"
+"<code><a cbot|do>do - while</a></code> per ripetere istruzioni\n"
+"<code><a cbot|radar>radar</a></code> per cercare oggetti\n"
+"<code><a cbot|goto>goto</a></code> per spostare il robot\n"
+"<code><a cbot|grab>grab</a></code> per prendere un oggetto\n"
+"<code><a cbot|drop>drop</a></code> per posarlo"
 
 #. type: \t; header
 #: ../help/help.E.txt:34
@@ -187,4 +201,4 @@ msgstr ""
 #: ../help/help.E.txt:14
 #, no-wrap
 msgid "Repeat two times :"
-msgstr ""
+msgstr "Ripeti due volte:"
