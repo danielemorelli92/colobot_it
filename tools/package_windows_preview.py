@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package an optional French-slot preview for the unmodified official Windows game."""
+"""Package the Italian localization for the unmodified official Windows game."""
 from pathlib import Path
 import argparse
 import gettext
@@ -65,7 +65,7 @@ with tempfile.TemporaryDirectory() as temp:
     add(base+'lang/fr/LC_MESSAGES/colobot.mo',mo.read_bytes())
     translated=gettext.GNUTranslations(io.BytesIO(mo.read_bytes()))
     assert translated.gettext('Missions')=='Missioni'
-add(base+'mod/manifest.txt','DisplayName text="Italiano - 1.0 RC1 (slot French)"\nVersion text="1.0-rc1"\nSummary text="Traduzione italiana revisionata per 0.2.2-alpha. Usa French nelle impostazioni."\n')
+add(base+'mod/manifest.txt','DisplayName text="Italiano - 1.0 (slot French)"\nVersion text="1.0"\nSummary text="Traduzione italiana revisionata per 0.2.2-alpha. Usa French nelle impostazioni."\n')
 # This file is a template copied on first launch; it never replaces existing saves.
 add(base+'config-iniziale.ini','[Language]\nLang=fr\n\n[Mods]\nNames=mod\nEnabled=1\n')
 launcher=r'''@echo off
@@ -103,13 +103,13 @@ if not "%GAME_EXIT%"=="0" (
 exit /b %GAME_EXIT%
 '''
 add('Avvia-Italiano.cmd',launcher.replace('\n','\r\n').encode('ascii'))
-add('LEGGIMI-ITALIANO.txt', """COLOBOT GOLD 0.2.2-alpha WIN64 - ITALIANO 1.0 RC1
+add('LEGGIMI-ITALIANO.txt', """COLOBOT GOLD 0.2.2-alpha WIN64 - ITALIANO 1.0
 
 INSTALLAZIONE E AGGIORNAMENTO
 1. Chiudi il gioco.
 2. Estrai TUTTO questo ZIP nella cartella che contiene colobot.exe e data.
    Devono comparire Avvia-Italiano.cmd e la cartella colobot-it-preview.
-3. Se hai una precedente anteprima, accetta la sostituzione dei suoi file.
+3. Se hai una precedente anteprima o la RC1, accetta la sostituzione dei suoi file.
 4. Avvia Avvia-Italiano.cmd.
 
 Non copiare file nella cartella lang originale e non sostituire l'eseguibile.
@@ -127,27 +127,27 @@ Per giocare normalmente, avvia il tuo consueto colobot.exe.
 Per rimuovere la traduzione elimina Avvia-Italiano.cmd, colobot-it-preview
 e LEGGIMI-ITALIANO.txt. La cartella separata dei salvataggi si puo' conservare.
 
-CANDIDATA ALLA VERSIONE 1.0
+VERSIONE STABILE 1.0
+La 1.0 contiene gli stessi testi, dati di gioco, launcher e configurazione
+della candidata RC1 confermata dall'utente. Cambiano etichetta di versione,
+documentazione e metadati del pacchetto. Se hai gia' la RC1 puoi continuare
+a usarla oppure aggiornare alla 1.0 per avere il pacchetto definitivo.
+
 146 cataloghi, 5172 voci compilate; zero vuote o fuzzy, entrambi i plurali italiani.
 Coperti interfaccia, missioni, esercizi, sfide, battaglie, livelli aggiuntivi,
 gioco libero, SatCom, riferimento CBOT e commenti degli esempi.
 Nomi di programmi, istruzioni, identificatori e stringhe del codice sono invariati.
-La RC1 corregge terminologia, spiegazioni degli esercizi e collegamenti SatCom.
-I controlli Linux verificano cataloghi, dati generati, codice, collegamenti,
-logica delle scene e contenuto dello ZIP. La RC1 richiede ancora una prova
-interattiva su Windows: non e' ancora la versione stabile 1.0.
+Verificati cataloghi, dati generati, codice, logica delle scene, 3534 link SatCom
+e contenuto dello ZIP. Il funzionamento della RC1 e' stato confermato dall'utente;
+non e' stato eseguito qui un collaudo interattivo completo su Windows.
+Questa e' una traduzione della comunita', non una release ufficiale di Colobot.
+Note complete in colobot-it-preview/sources/docs/RELEASE-1.0.md.
 
-TEST FINALE CONSIGLIATO
-- Apri un salvataggio della 0.4, salva e ricarica nella RC1.
-- Apri istruzioni e soluzione di una missione; segui il link per Houston.
-- Nel SatCom apri un robot, un edificio e una funzione CBOT; prova Indietro.
-- Apri SwitchCell1 e controlla commenti e link a grab/drop.
-- In un esercizio copia un esempio nell'editor e compilalo; prova l'aiuto
-  di radar e il collegamento al convertitore.
-- Controlla menu, messaggi e testi lunghi alla tua normale risoluzione.
-La checklist dettagliata e' in sources/docs/COLLAUDO-1.0-RC1.md.
+SEGNALAZIONI
 Se noti problemi, indica missione o esercizio, pagina e frase; per difetti
-visivi aggiungi uno screenshot. Se il gioco non parte, conserva l'errore.
+visivi aggiungi uno screenshot e la risoluzione. Se il gioco non parte,
+conserva il messaggio d'errore. La documentazione comprende la checklist
+storica della RC1, utile anche per verificare future correzioni.
 
 LIMITI NOTI
 French e' il nome dello slot nel binario ufficiale.
@@ -183,7 +183,7 @@ add(base+'sources/patches/colobot-0.2.2-alpha-italian.patch',(ROOT/'patches/colo
 regression_checks()
 link_report = verify_links(files)
 print('PASS packaged SatCom links:', link_report)
-add(base+'COPERTURA.json', json.dumps({'version':'1.0-rc1','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count,'satcom':link_report},indent=2)+'\n')
+add(base+'COPERTURA.json', json.dumps({'version':'1.0','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count,'satcom':link_report},indent=2)+'\n')
 # Inspect the actual archive after writing; no Windows launch is claimed.
 manifest={name:hashlib.sha256(data).hexdigest() for name,data in files.items()}
 add(base+'SHA256SUMS.json',json.dumps(manifest,indent=2)+'\n')

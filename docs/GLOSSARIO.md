@@ -1,4 +1,4 @@
-# Terminologia italiana — 1.0 RC1
+# Terminologia italiana — 1.0
 
 | Inglese | Italiano |
 |---|---|

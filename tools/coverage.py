@@ -7,7 +7,7 @@ import polib
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('--output', type=Path)
-p.add_argument('--preview', default='1.0-rc1')
+p.add_argument('--preview', default='1.0')
 a=p.parse_args()
 rows=[]
 for path in sorted((ROOT/'translations').rglob('it.po')):

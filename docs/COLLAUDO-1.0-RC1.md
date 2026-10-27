@@ -1,4 +1,8 @@
-# Collaudo finale della 1.0 RC1
+# Collaudo finale della 1.0 RC1 — checklist di riferimento
+
+La RC1 è stata accettata dall’utente e promossa alla [stabile 1.0](RELEASE-1.0.md).
+L’accettazione è generale: non è stato fornito un esito distinto per ogni prova.
+Questa checklist rimane come riferimento per le verifiche future.
 
 Gioco: distribuzione ufficiale Windows 64 bit `colobot-gold-0.2.2-alpha-win64`.
 Chiudi il gioco, estrai la RC1 nella cartella di Colobot, sostituisci i file

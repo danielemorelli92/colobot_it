@@ -8,12 +8,12 @@
     "gnu_gettext": "passed for all 146 catalogs including both plural forms",
     "markup_and_mo_lookup": "passed",
     "cpp_language_roundtrip": "passed",
-    "official_data_build": "passed for 1.0-rc1",
+    "official_data_build": "passed for 1.0-rc1; reused without data or catalog changes for 1.0",
     "generated_first_mission": "passed",
     "font_accent_coverage": "passed",
     "full_engine_build": "blocked: OpenGL development files missing at CMake configuration",
     "ctest": "not run",
-    "interactive_game": "not run locally; user confirmed preview 0.4, RC1 awaiting Windows checks",
+    "interactive_game": "not run locally; user accepted RC1, promoted with identical translation payload",
     "external_translation_search": "partial",
     "generated_campaign": "all 878 entries verified",
     "gameplay_preservation": "all packaged scenes and chapter titles compared to original, excluding localized labels",
@@ -31,7 +31,7 @@
     },
     "explicit_upstream_errata": "enumerated exceptions only; negative tests protect arbitrary code, literals, link changes and anchors"
   },
-  "preview": "1.0-rc1",
+  "preview": "1.0",
   "identical_to_source": 700,
   "fully_populated_categories": {
     "interface": 659,
@@ -46,7 +46,8 @@
     "preview_0.2": "User confirmed launch; no extended interactive test",
     "preview_0.3": "User reported everything appears to work",
     "preview_0.4": "User reported everything appears to work",
-    "1.0-rc1": "not run; final checklist supplied"
+    "1.0-rc1": "Accepted by user: translation appears perfect; no per-checklist results provided",
+    "1.0": "Same translation payload, launcher and config as RC1; no separate Windows launch claimed"
   },
   "fuzzy_entries": 0,
   "data_entries_verified_in_generated_output": 4455,
@@ -56,5 +57,13 @@
     "changed_entries": 40,
     "changed_catalogs": 23,
     "method": "whole-catalog automated checks and targeted linguistic review; no claim of exhaustive interactive proofreading"
+  },
+  "release": {
+    "version": "1.0",
+    "status": "stable",
+    "promoted_from": "1.0-rc1",
+    "user_acceptance": "User says the translation appears perfect and ready; no per-checklist results provided",
+    "runtime_changes": "Mod display name and version only; translation payload, launcher and initial config identical to RC1",
+    "comparison": "Byte-for-byte comparison with RC1 archive before publication; translation source catalogs included"
   }
 }

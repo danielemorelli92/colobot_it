@@ -1,20 +1,20 @@
 # Colobot: Gold Edition — italiano
 
-**Candidata 1.0 RC1 per Colobot Gold 0.2.2-alpha Windows 64 bit.**
+**Traduzione italiana 1.0 per Colobot Gold 0.2.2-alpha Windows 64 bit.**
 
-[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-1.0-rc1.zip).
+[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip).
 Apri il file su GitHub e premi **Download raw file**.
 
 ## Installare o aggiornare
 
 1. Chiudi il gioco.
 2. Estrai tutto lo ZIP nella cartella che contiene `colobot.exe` e `data`.
-3. Se hai una precedente anteprima, accetta la sostituzione dei suoi file.
+3. Se hai una precedente anteprima o la RC1, accetta la sostituzione dei suoi file.
 4. Avvia `Avvia-Italiano.cmd`.
 
-La RC1 riutilizza `%LOCALAPPDATA%\ColobotItalianPreview-0.1`:
+La 1.0 riutilizza `%LOCALAPPDATA%\ColobotItalianPreview-0.1`:
 **conserva i salvataggi e le impostazioni delle anteprime**. Il launcher è
-identico a quello della 0.4 e copia la configurazione soltanto al primo avvio.
+identico a quello della RC1 e copia la configurazione soltanto al primo avvio.
 
 Per compatibilità con l’eseguibile ufficiale, scegli **French** nelle impostazioni.
 Il pacchetto carica il catalogo italiano e i dati tramite le opzioni ufficiali
@@ -23,7 +23,16 @@ originale. I salvataggi dell’avvio normale di Colobot restano separati.
 La patch sorgente per integrare nativamente `it`/`it_IT.utf8` è inclusa, ma
 non viene compilata nello ZIP.
 
-## Cosa cambia nella RC1
+## Versione stabile 1.0
+
+La 1.0 promuove la RC1 accettata dall’utente: **testi, dati di gioco, launcher
+e configurazione sono identici**. Cambiano soltanto l’etichetta della versione,
+la documentazione e i metadati del pacchetto. Se hai già la RC1, puoi continuare
+a usarla: l’aggiornamento serve ad avere il pacchetto definitivo.
+
+[Note della versione 1.0](docs/RELEASE-1.0.md).
+
+## Revisione inclusa dalla RC1
 
 Revisionate **40 voci in 23 cataloghi** rispetto alla 0.4:
 
@@ -38,8 +47,8 @@ Il nuovo controllo percorre **3.534 collegamenti in 452 documenti**, comprese
 le due occorrenze con ancore nominate, e richiede destinazioni italiane esistenti.
 Viene eseguito anche leggendo lo ZIP finale.
 
-[Note della RC1](docs/ANTEPRIMA-WINDOWS.md) ·
-[Prove finali su Windows](docs/COLLAUDO-1.0-RC1.md) ·
+[Note storiche della RC1](docs/ANTEPRIMA-WINDOWS.md) ·
+[Checklist di riferimento](docs/COLLAUDO-1.0-RC1.md) ·
 [Registro delle correzioni](docs/revision-1.0-rc1.json).
 
 ## Copertura e limiti
@@ -48,7 +57,7 @@ Viene eseguito anche leggendo lo ZIP finale.
 Coperti interfaccia, campagna, esercizi, sfide, battaglie, gioco libero,
 missioni aggiuntive, SatCom, robot, oggetti, edifici, riferimento CBOT,
 programmi e catalogo desktop/manuale. Le due voci con plurali contengono
-entrambe le forme italiane. [Copertura per catalogo](docs/coverage-1.0-rc1.json).
+entrambe le forme italiane. [Copertura per catalogo](docs/coverage-1.0.json).
 
 700 voci restano identiche al sorgente: codice, identificatori, immagini,
 nomi propri e crediti. I commenti degli esempi sono tradotti; istruzioni,
@@ -60,9 +69,10 @@ Il catalogo desktop è nei sorgenti; lo ZIP Windows non modifica l’installator
 né genera una pagina man Unix.
 
 La revisione ha combinato controlli sull’intero catalogo e lettura mirata delle
-spiegazioni e della terminologia. La RC1 resta **da collaudare nel gioco**,
-in particolare per impaginazione e salvataggi; non è ancora la stabile 1.0
-né una release ufficiale approvata dagli sviluppatori di Colobot.
+spiegazioni e della terminologia. La candidata è stata accettata dall’utente
+come versione finale; non è stato dichiarato un collaudo di ogni schermata
+e missione. Questa è una traduzione della comunità, non una release ufficiale
+approvata dagli sviluppatori di Colobot.
 
 ## Verifiche
 
@@ -77,8 +87,9 @@ né una release ufficiale approvata dagli sviluppatori di Colobot.
 - ZIP verificato con CRC, SHA256 dei file e risoluzione dei link SatCom.
 - Test C++ della mappatura delle lingue riuscito.
 
-L’utente ha confermato il funzionamento delle anteprime, inclusa la 0.4.
-La RC1 non è stata avviata su Windows nell’ambiente di sviluppo. La build
+L’utente ha confermato il funzionamento delle anteprime e accettato la RC1.
+Il contenuto di gioco della 1.0 è confrontato byte per byte con la RC1.
+Nessuna prova interattiva Windows è stata eseguita nell’ambiente di sviluppo. La build
 completa del motore è bloccata dalle dipendenze OpenGL mancanti; CTest del
 gioco non eseguito. Il pacchetto usa l’eseguibile già installato dall’utente.
 [Registro delle verifiche](docs/verification.json).
@@ -103,8 +114,8 @@ g++ -std=c++17 -I build/prepared/colobot/src build/prepared/colobot/src/common/l
 build/test_language
 cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON
 cmake --build build/data -j2
-COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-1.0-rc1.zip
-.venv/bin/python tools/test_package_links.py --archive dist/colobot-0.2.2-alpha-win64-italiano-1.0-rc1.zip
+COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip
+.venv/bin/python tools/test_package_links.py --archive dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip
 ```
 
 Il preparatore usa archivi dei commit fissati, preserva i checkout originali

@@ -1,4 +1,7 @@
-# Italiano 1.0 RC1 per Windows
+# Italiano 1.0 RC1 per Windows — note storiche
+
+La RC1 è stata accettata dall’utente e promossa alla [stabile 1.0](RELEASE-1.0.md)
+con gli stessi testi e dati. Questa pagina conserva lo stato della candidata.
 
 Base: `colobot-gold-0.2.2-alpha-win64` ufficiale.
 Pacchetto: `dist/colobot-0.2.2-alpha-win64-italiano-1.0-rc1.zip`.
