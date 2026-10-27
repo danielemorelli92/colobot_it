@@ -46,8 +46,9 @@ msgid ""
 "As soon as the bot passed over one of the crosses, it will disappear. Here "
 "is the general principle that you will apply:"
 msgstr ""
-"Fai trovare al robot tutte le <a object|waypoint>croci blu</a>. Scompaiono "
-"al passaggio. Segui questo principio:"
+"Fai trovare al robot tutte le <a object|waypoint>croci blu</a> sul terreno. "
+"Ogni croce scompare appena il robot vi passa sopra. Il procedimento generale"
+" è questo:"
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:5
@@ -172,9 +173,10 @@ msgid ""
 "<code>spot.position</code>. The following line will put the angle of the "
 "necessary rotation into the <a cbot|var>variable</a> <code>dir</code>:"
 msgstr ""
-"<code><a cbot|direct>direction</a>()</code> calcola l’angolo necessario a "
-"orientarsi verso la croce, alle coordinate <code>spot.position</code>. "
-"Salvalo nella <a cbot|var>variabile</a> <code>dir</code>:"
+"Usa <code><a cbot|direct>direction</a>()</code> per calcolare l’angolo della"
+" rotazione necessaria a orientare il robot verso la croce blu. Le sue "
+"coordinate sono in <code>spot.position</code>. Questa riga memorizza "
+"l’angolo nella <a cbot|var>variabile</a> <code>dir</code>:"
 
 #. type: Source code
 #: ../help/help.E.txt:29

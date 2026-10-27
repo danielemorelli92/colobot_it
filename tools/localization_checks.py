@@ -2,17 +2,19 @@
 from collections import Counter
 import re
 from code_comments import without_comments
+from review_rules import reviewed_source
 
 # Angle-bracketed button captions such as <build a ...> are visible prose,
 # not control tags. Match the documented grammar, including nested real links.
 TAG = re.compile(r'<(?:button|key) [^<>]*/>|<a [^<>]+>|</a>|<format (?:const|type|token|key)>|</format>|</?code>|<(?:const|type|token|norm|key|s|c|b|n)/>')
-NATIVE = re.compile(r'\\(?:button|key|u|image|font|size) [^;\n]*;|\\(?:tab|const|type|token|norm|key|s|c|b|n|t|l);')
+NATIVE = re.compile(r'\\(?:button|key|u|m|image|font|size) [^;\n]*;|\\(?:tab|const|type|token|norm|key|s|c|b|n|t|l);')
 PRINTF = re.compile(r'%(?:\d+\$)?[-+#0 ]*\d*(?:\.\d+)?[diuoxXfFeEgGcs%]')
 
 def markers(text):
     return Counter(TAG.findall(text) + NATIVE.findall(text))
 
 def check_translation(source, target, flags=()):
+    source = reviewed_source(source)
     if markers(source) != markers(target):
         raise ValueError('Changed Colobot control tags or link targets')
     if 'c-format' in flags and Counter(PRINTF.findall(source)) != Counter(PRINTF.findall(target)):

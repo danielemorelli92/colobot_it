@@ -1103,8 +1103,8 @@ msgid ""
 "object|botsr>wheeled sniffer</a>. A legged bot is also perfectly adapted to "
 "climb the steepest slopes."
 msgstr ""
-"Durante il movimento, un robot tiratore a zampe consuma metà dell’energia di"
-" un <a object|botsr>robot rilevatore su ruote</a>. Le zampe sono inoltre "
+"Durante il movimento, un robot rilevatore a zampe consuma metà dell’energia "
+"di un <a object|botsr>robot rilevatore su ruote</a>. Le zampe sono inoltre "
 "adatte a risalire anche i pendii più ripidi."
 
 #. type: Plain text
@@ -1319,7 +1319,9 @@ msgstr "Puoi trasportare gli oggetti seguenti:"
 #: ../E/botdraw.txt:1
 #, no-wrap
 msgid "TODO"
-msgstr "DA COMPLETARE"
+msgstr ""
+"La documentazione del robot disegnatore non è disponibile in questa versione"
+" del gioco."
 
 #. type: \b; header
 #: ../E/botbc.txt:1
@@ -1359,7 +1361,7 @@ msgid ""
 "<button 174/>   <code><a object|captor>PowerCaptor</a>      </code>Parabolic Lightning Conductor\n"
 "<button 175/>   <code><a object|safe>Vault</a>            </code>Vault"
 msgstr ""
-"<button 196/> Apre un menu di costruzione con le opzioni seguenti :\n"
+"<button 196/> Apre un menu di costruzione con le opzioni seguenti:\n"
 "<button 160/>   <code><a object|factory>BotFactory</a>       </code>Fabbrica di robot\n"
 "<button 163/>   <code><a object|research>ResearchCenter</a>   </code>Centro di ricerca\n"
 "<button 168/>   <code><a object|radar>RadarStation</a>     </code>Radar\n"

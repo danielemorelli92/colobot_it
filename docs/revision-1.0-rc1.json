@@ -1,0 +1,206 @@
+{
+  "version": "1.0-rc1",
+  "changed_entries": 40,
+  "changes": [
+    {
+      "catalog": "translations/colobot/po/it.po",
+      "msgid": "Keyword help(\\key cbot;)",
+      "reason": "Spaziatura del suggerimento"
+    },
+    {
+      "catalog": "translations/colobot-data/help/bots/po/it.po",
+      "msgid": "A moving legged shooter uses up half as much energy as a <a object|botsr>wheeled sniffer</a>. A legged bot is also perfectly adapted to climb the steepest slopes.",
+      "reason": "Corretto il tipo di robot, errato anche nel sorgente"
+    },
+    {
+      "catalog": "translations/colobot-data/help/bots/po/it.po",
+      "msgid": "TODO",
+      "reason": "Reso comprensibile il TODO ereditato dalla pagina originale"
+    },
+    {
+      "catalog": "translations/colobot-data/help/bots/po/it.po",
+      "msgid": "<button 196/> Opens a build menu with the following options :\n<button 160/>   <code><a object|factory>BotFactory</a>       </code>Robot Factory\n<button 163/>   <code><a object|research>ResearchCenter</a>   </code>Research Center\n<button 168/>   <code><a object|radar>RadarStation</a>     </code>Radar\n<button 172/>   <code><a object|exchange>ExchangePost</a>     </code>Information Exchange Post\n<button 169/>   <code><a object|repair>RepairCenter</a>     </code>Repair Center\n<button 165/>   <code><a object|tower>DefenseTower</a>     </code>Defense Tower\n<button 166/>   <code><a object|labo>AutoLab</a>          </code>Organic Matter Analyzer \n<button 164/>   <code><a object|station>PowerStation</a>     </code>Power Station\n<button 167/>   <code><a object|energy>PowerPlant</a>       </code>Power Cell Factory\n<button 170/>   <code><a object|nuclear>NuclearPlant</a>     </code>Nuclear Plant\n<button 162/>   <code><a object|convert>Converter</a>        </code>Titanium Converter\n<button 161/>   <code><a object|derrick>Derrick</a>          </code>Derrick\n<button 174/>   <code><a object|captor>PowerCaptor</a>      </code>Parabolic Lightning Conductor\n<button 175/>   <code><a object|safe>Vault</a>            </code>Vault",
+      "reason": "Spaziatura italiana"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "With this instruction, you can jump over the rest of instructions in the <code><a cbot|bloc>bloc</a></code> of a <code><a cbot|while>while</a></code> or <code><a cbot|for>for</a></code> loop: The execution will resume at the beginning of the bloc, the next time the loop is repeated.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code><a cbot|class>class</a></code>, <code><a cbot|pointer>reference</a></code>\n<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "Any building which can take some action (e.g. <a cbot|convert>Converter</a>).",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "Comparison operators work with values of type <a cbot|bool>float</a> and they always return a <a cbot|bool>bool</a>. They are mainly used in <a cbot|cond>conditions</a>.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|static>static</a></code>, <code><a cbot|synchro>synchronized</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>, <code><a cbot|extends>extends</a></code>\n<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code><a cbot|class>class</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|function>functions</a></code>\n<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code><a cbot|pointer>Reference</a></code> of type Parent can point to an object of type Child. However, such a pointer can't be used to access a child member. In order to access a child member, it must be assured that the Parent reference really points to a Child object. If that's the case, it can be safely copied to a pointer of type Child, which has access to the child members.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code><a cbot|class>class</a></code>, <code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>\n<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>.",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/cbot/po/it.po",
+      "msgid": "<code>\"r\"</code> mode: open for reading.\n<code>\"w\"</code> mode: open for writing.\n<code>\"w\"</code> mode: open for appending.",
+      "reason": "Corretto il refuso della modalità di aggiunta nella documentazione originale"
+    },
+    {
+      "catalog": "translations/colobot-data/help/generic/po/it.po",
+      "msgid": "<code><a cbot|class>class</a>      </code>Class declararion\n<code><a cbot|public>public</a>     </code>Declares a public class member\n<code><a cbot|private>private</a>    </code>Declares a private class member\n<code><a cbot|protected>protected</a>  </code>Declares a protected class member\n<code><a cbot|static>static</a>     </code>Declares a static class member\n<code><a cbot|synchro>synchronized</a> </code>Prevents simultaneous execution\n<code><a cbot|new>new</a>        </code>Creates a new instance\n<code><a cbot|this>this</a>       </code>Reference to the current instance\n<code><a cbot|extends>extends</a>    </code>Extends a class\n<code><a cbot|super>super</a>      </code>Grants access to the parent class",
+      "reason": "Uniformata terminologia delle classi"
+    },
+    {
+      "catalog": "translations/colobot-data/help/object/po/it.po",
+      "msgid": "<code>< no archive picture available  ></code>",
+      "reason": "Tradotta didascalia formattata in monospazio"
+    },
+    {
+      "catalog": "translations/colobot-data/help/object/po/it.po",
+      "msgid": "<button 168/> Radar",
+      "reason": "Nome coerente con l’interfaccia"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter001/level001/po/it.po",
+      "msgid": "The pre-built <a object|derrick>Derricks</a> and <a |object\\radar>RadarStations</a> are indestructible.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level001/po/it.po",
+      "msgid": "The pre-built <a object|derrick>Derrick</a> and <a |object\\radar>RadarStation</a> are indestructible.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/battles/chapter002/level002/po/it.po",
+      "msgid": "The pre-built <a object|derrick>Derricks</a> and <a |object\\radar>RadarStations</a> are indestructible.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/challenges/chapter002/level003/po/it.po",
+      "msgid": "The range of your cannon is about 40m. The category of the enemies is <code>AlienAnt</code>. Turn towards the closest ant, even if it is still more than 40m away. But shoot only when it is closer than 40m, in order not to waste your energy.",
+      "reason": "Eliminata l’ambiguità sulla distanza di tiro"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level004/po/it.po",
+      "msgid": "A <a cbot|var>variable</a> is like a small box with a name where you can put some information, retrieve it, change it, etc. Before you can use a variable, you have got to declare it. First you must indicate the <a cbot|type>type</a> of the variable, in this case <code>object</code>. A variable of this type can contain all the information describing an object such as a chunk of titanium ore, a spider, an ant, a bot, a power cell, etc. Then you must write the name that you want to give to the variable, for example <code>item</code>. If we put this together, we get the following line:",
+      "reason": "Resa più graduale la prima introduzione alle variabili"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level004/po/it.po",
+      "msgid": "The variable <code>item</code> contains many different kinds of information: it contains the position, the orientation, the pitch, etc. In order to get the position of the chunk of titanium ore, write <code>item.position</code>. Then we use the instruction <c/>goto();<n/> in order to move the bot to this position. Here is a line that puts all this together:",
+      "reason": "Eliminato il riferimento ambiguo alla posizione della variabile"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter001/level004/po/it.po",
+      "msgid": "Then you must look for the <a cbot|convert>converter</a>, and put the information about the converter into the variable <code>item</code>:",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level003/po/it.po",
+      "msgid": "You can give the instruction <code><a cbot|radar()>radar</a></code> more parameters (numbers) indicating where the radar should look for the ants. For example <c/>radar(AlienAnt,0,360,0,40);<n/> will only look for ants that are closer than 40 meters. The two first numbers tell the radar to search in all directions, the two last numbers tell the radar to detect only ants that are at a distance between 0 and 40 meters. If no ant is found that is closer than 40 meters, the instruction <code><a cbot|radar()>radar</a></code> returns the value <code>null</code>. We can then write a conditional loop similar to the one written in the last exercise that waits as long as there is no ant closer than 40 meters:",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level006/po/it.po",
+      "msgid": "In order to adapt the program to shooting wasps, you need to make a few changes. Replace all <code>radar(AlienAnt)</code> with <code>radar(AlienWasp)</code>. The cannon must aim straight forward and not downward, replace <c/>aim(-20);<n/> with <c/>aim(0);<n/>. And the bot must fly at the same height as the wasp. For this, you must compare the altitude of the bot given by <code>position.z</code> with the altitude of the wasp given by <code>item.position.z</code>: if <code>position.z > item.position.z</code>, go down slowly with <c/>jet(-0.3);<n/>. If <code>position.z < item.position.z-1</code>, climb slowly with <c/>jet(0.3);<n/>. A winged shooter is higher than a wasp, therefore it is better if the altitude of the bot is a little lower than the altitude of the wasp. In this case, we admit that the altitude of the bot ranges between the altitude of the wasp and the altitude of the wasp minus 1.",
+      "reason": "Chiarite le sostituzioni e l’intervallo di altitudine"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level007/po/it.po",
+      "msgid": "In order to \"remember\" the angle of the last rotation, we need a variable that can contain just one number. If we choose to call it <code>angle</code>, we must define the variable with the following line at the beginning of the program:",
+      "reason": "Chiarito che si memorizza l’ultima rotazione"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter002/level007/po/it.po",
+      "msgid": "The variable type <a cbot|type>float</a> is the variable type that can contain any number, i.e. whole numbers or real numbers. Please refer to the <a cbot|type>text about variable types</a> if you want to know more about the different types of variables and what they can contain.",
+      "reason": "Resa più naturale l’introduzione ai tipi"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level002/po/it.po",
+      "msgid": "The type of a variable determines what kind of information the variable can contain. According to the type, a variable can contain a whole number, a real number, a character string, the coordinates of a point, etc. Here is a list with the most common variable types: ",
+      "reason": "Ripristinata la terminologia dei tipi"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter003/level004/po/it.po",
+      "msgid": "Use the instruction <c/><a cbot|receive>receive</a>(\"Direction\");<n/> in order to read the information contained in the <a object|exchange>exchange post</a>. This is of course possible only when the bot is close enough to the exchange post.\nYou will need a <a cbot|var>variable</a> to contain the value retrieved from the exchange post. Let us call it <code>dir</code>; you must declare it with the following line:",
+      "reason": "Resi espliciti il nome dell’edificio e il valore ricevuto"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level002/po/it.po",
+      "msgid": "Let the bot find all the <a object|waypoint>blue crosses</a> on the ground. As soon as the bot passed over one of the crosses, it will disappear. Here is the general principle that you will apply:",
+      "reason": "Rese esplicite le condizioni del passaggio"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level002/po/it.po",
+      "msgid": "Use the instruction <code><a cbot|direct>direction</a>()</code> to calculate the angle of the rotation that the bot must perform in order to turn towards the blue cross. The coordinates of the object are given by <code>spot.position</code>. The following line will put the angle of the necessary rotation into the <a cbot|var>variable</a> <code>dir</code>:",
+      "reason": "Restituito il contesto dell’esercizio"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter004/level005/po/it.po",
+      "msgid": "If the distance to the target is greater than 5m, move towards the target. First calculate the angle necessary to face the target with the instruction <code><a cbot|direct>direction</a></code>. You can then adjust the speed of the right-hand and left-hand motor in order to follow the target:",
+      "reason": "Chiarito l’uso dell’angolo calcolato"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level001/po/it.po",
+      "msgid": "In order to solve this problem easily, we will use a new way to move the bot with the instruction <code><a cbot|goto>goto</a></code>. With this instruction you can very easily reach every position, if you know the exact location in the form of its x and y coordinates. The bot will turn towards the goal, move forward, and even turn around any obstacle.",
+      "reason": "Resa completa e naturale la spiegazione del movimento"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level001/po/it.po",
+      "msgid": "Use these instructions in order to move forward of a certain distance, or to perform a rotation of a certain angle. All parameters are relative to the current position of the bot.",
+      "reason": "Distinti posizione e orientamento"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter005/level002/po/it.po",
+      "msgid": "This exercise is very similar to the previous one. There are now three <a object|titan>titanium cubes</a> that you must move to 3 finishing pads. Here are the coordinates of the finishing pads:",
+      "reason": "Chiariti oggetti e destinazioni"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter006/level001/po/it.po",
+      "msgid": "You still have to define the function called <code>Square</code>. In order to do this, you will have to write some instructions outside the <a cbot|bloc>block</a> that until now was the frame of each one of your programs. At the very end of the program, after the last closing brace, we will define the function <code>Square</code>. The program will take the following shape:",
+      "reason": "Ripristinata la spiegazione didattica della funzione esterna al blocco principale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/exercises/chapter006/level001/po/it.po",
+      "msgid": "<code><a cbot|object>object</a>::</code>\nWhen you write this in front of the function name, you can have access in the function to all the characteristics of the bot, such as <code>position</code>, <code>orientation</code>, etc. In this exercise, this element is not compulsory, as we will not need the characteristics of the bot in the function.",
+      "reason": "Esplicitato dove scrivere il prefisso"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter001/level001/po/it.po",
+      "msgid": "Please report to the <a object|Huston>Houston Mission Control</a> for further directives about your forthcoming mission.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/missions/chapter001/level002/po/it.po",
+      "msgid": "Walk down the street that runs beside <a object|Huston>Mission Control</a>. You will find a <a object|titan>titanium cube</a> on the left hand side of the road, right after the <a object|botgr>grabber bot</a>.",
+      "reason": "Corretto collegamento originale"
+    },
+    {
+      "catalog": "translations/colobot-data/levels/plus/chapter001/level001/po/it.po",
+      "msgid": "Please report to the <a object|Huston>Houston Mission Control</a> for further directives about your forthcoming mission.",
+      "reason": "Corretto collegamento originale"
+    }
+  ]
+}

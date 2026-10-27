@@ -117,8 +117,8 @@ msgid ""
 "The pre-built <a object|derrick>Derrick</a> and <a "
 "|object\\radar>RadarStation</a> are indestructible."
 msgstr ""
-"La <a object|derrick>torre di estrazione</a> e la <a |object\\radar>stazione"
-" radar</a> già costruite sono indistruttibili."
+"La <a object|derrick>torre di estrazione</a> e la <a object|radar>stazione "
+"radar</a> già costruite sono indistruttibili."
 
 #. type: Bullet: 'o'
 #: ../help/help.E.txt:16

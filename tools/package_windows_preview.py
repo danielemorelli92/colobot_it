@@ -12,6 +12,7 @@ import sys
 import tempfile
 import zipfile
 import polib
+from test_package_links import verify_links, regression_checks
 
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(description=__doc__)
@@ -64,7 +65,7 @@ with tempfile.TemporaryDirectory() as temp:
     add(base+'lang/fr/LC_MESSAGES/colobot.mo',mo.read_bytes())
     translated=gettext.GNUTranslations(io.BytesIO(mo.read_bytes()))
     assert translated.gettext('Missions')=='Missioni'
-add(base+'mod/manifest.txt','DisplayName text="Italiano - anteprima 0.4 (slot French)"\nVersion text="0.4"\nSummary text="Cataloghi italiani completi per 0.2.2-alpha. Usa French solo in questa anteprima."\n')
+add(base+'mod/manifest.txt','DisplayName text="Italiano - 1.0 RC1 (slot French)"\nVersion text="1.0-rc1"\nSummary text="Traduzione italiana revisionata per 0.2.2-alpha. Usa French nelle impostazioni."\n')
 # This file is a template copied on first launch; it never replaces existing saves.
 add(base+'config-iniziale.ini','[Language]\nLang=fr\n\n[Mods]\nNames=mod\nEnabled=1\n')
 launcher=r'''@echo off
@@ -102,51 +103,64 @@ if not "%GAME_EXIT%"=="0" (
 exit /b %GAME_EXIT%
 '''
 add('Avvia-Italiano.cmd',launcher.replace('\n','\r\n').encode('ascii'))
-add('LEGGIMI-ITALIANO.txt','''COLOBOT GOLD 0.2.2-alpha WIN64 - ANTEPRIMA ITALIANA 0.4
+add('LEGGIMI-ITALIANO.txt', """COLOBOT GOLD 0.2.2-alpha WIN64 - ITALIANO 1.0 RC1
 
+INSTALLAZIONE E AGGIORNAMENTO
 1. Chiudi il gioco.
 2. Estrai TUTTO questo ZIP nella cartella che contiene colobot.exe e data.
    Devono comparire Avvia-Italiano.cmd e la cartella colobot-it-preview.
-3. Fai doppio clic su Avvia-Italiano.cmd.
-4. Apri Missioni, Terra, prima missione: Equipaggiamento.
-   Campagna principale, interfaccia e aiuto generale sono ora tradotti.
-   Se aggiorni dalla 0.1 o 0.2, sostituisci i file dell'anteprima.
-   Conserva la cartella dei salvataggi: la 0.4 riutilizza quella precedente.
+3. Se hai una precedente anteprima, accetta la sostituzione dei suoi file.
+4. Avvia Avvia-Italiano.cmd.
 
-NON copiare file nella cartella lang originale. Non sostituire l'eseguibile.
-L'anteprima usa un catalogo separato e una mod tramite le opzioni ufficiali.
-Per funzionare con il gioco originale usa temporaneamente lo slot French:
-e' normale vedere French nelle impostazioni. Non scegliere Italiano, che
-il binario ufficiale non riconosce. Se cambi lingua, torna a French.
+Non copiare file nella cartella lang originale e non sostituire l'eseguibile.
+Per compatibilita' con il gioco ufficiale, scegli French nelle impostazioni.
+Il launcher usa un catalogo separato e una mod tramite le opzioni ufficiali.
+Non vengono sostituiti eseguibili, DLL o font.
 
-Il launcher crea configurazione e salvataggi separati in:
+SALVATAGGI
+Il launcher resta identico a quello delle anteprime. Riutilizza:
 %LOCALAPPDATA%\\ColobotItalianPreview-0.1
-I tuoi salvataggi normali non sono importati: e' normale non vederli qui.
-Il launcher non modifica i file originali del gioco.
+Conserva questa cartella: contiene salvataggi e impostazioni delle anteprime.
+La configurazione iniziale viene copiata soltanto se non esiste gia'.
+I salvataggi dell'avvio normale di Colobot restano separati.
 Per giocare normalmente, avvia il tuo consueto colobot.exe.
-Per rimuovere l'anteprima elimina Avvia-Italiano.cmd, colobot-it-preview
-e LEGGIMI-ITALIANO.txt. La cartella separata di salvataggi si puo' conservare.
+Per rimuovere la traduzione elimina Avvia-Italiano.cmd, colobot-it-preview
+e LEGGIMI-ITALIANO.txt. La cartella separata dei salvataggi si puo' conservare.
 
-COPERTURA E LIMITI
-Interfaccia: 659/659; campagna principale: 878/878.
-Aiuto generale: 141/141; robot: 176/176; oggetti ed edifici: 323/323.
-I conteggi comprendono identificatori e frammenti di codice lasciati invariati.
-Completati anche esercizi, sfide, battaglie, livelli aggiuntivi, CBOT e manuale.
-5172/5172 voci compilate nei 146 cataloghi; nessuna vuota o fuzzy.
-Non e' una revisione linguistica finale: il collaudo completo nel gioco resta da fare.
-Nessun nuovo eseguibile. Completati i testi dei cataloghi della release.
-Nomi di programmi, codice eseguibile e crediti restano invariati; i commenti sono tradotti.
-Le descrizioni di mod esterne e i metadati dell'addon AltTextures non sono cataloghi del gioco.
-Catalogo gettext, testi generati, marcatori e struttura del pacchetto verificati
-in Linux. Il funzionamento di base della 0.1 e' stato confermato su Windows
-dall’utente. Anche la 0.2 e' stata avviata su Windows dall’utente. La 0.4 e' da collaudare.
-Se non parte o i testi restano francesi, conserva il messaggio di errore e
-segnala il contenuto della finestra e la disposizione delle cartelle.
+CANDIDATA ALLA VERSIONE 1.0
+146 cataloghi, 5172 voci compilate; zero vuote o fuzzy, entrambi i plurali italiani.
+Coperti interfaccia, missioni, esercizi, sfide, battaglie, livelli aggiuntivi,
+gioco libero, SatCom, riferimento CBOT e commenti degli esempi.
+Nomi di programmi, istruzioni, identificatori e stringhe del codice sono invariati.
+La RC1 corregge terminologia, spiegazioni degli esercizi e collegamenti SatCom.
+I controlli Linux verificano cataloghi, dati generati, codice, collegamenti,
+logica delle scene e contenuto dello ZIP. La RC1 richiede ancora una prova
+interattiva su Windows: non e' ancora la versione stabile 1.0.
+
+TEST FINALE CONSIGLIATO
+- Apri un salvataggio della 0.4, salva e ricarica nella RC1.
+- Apri istruzioni e soluzione di una missione; segui il link per Houston.
+- Nel SatCom apri un robot, un edificio e una funzione CBOT; prova Indietro.
+- Apri SwitchCell1 e controlla commenti e link a grab/drop.
+- In un esercizio copia un esempio nell'editor e compilalo; prova l'aiuto
+  di radar e il collegamento al convertitore.
+- Controlla menu, messaggi e testi lunghi alla tua normale risoluzione.
+La checklist dettagliata e' in sources/docs/COLLAUDO-1.0-RC1.md.
+Se noti problemi, indica missione o esercizio, pagina e frase; per difetti
+visivi aggiungi uno screenshot. Se il gioco non parte, conserva l'errore.
+
+LIMITI NOTI
+French e' il nome dello slot nel binario ufficiale.
+Il gioco originale contiene solo TODO per il robot disegnatore: la pagina
+italiana segnala che quella documentazione non e' disponibile.
+I metadati non gettext dell'addon AltTextures e le mod esterne non sono inclusi.
+Il catalogo desktop/manuale e la patch nativa italiana sono inclusi nei sorgenti;
+questo ZIP non ricompila il motore ne' modifica l'installatore.
 
 LICENZA E SORGENTI
 GNU GPL v3 o successiva, come i progetti originali.
 Vedi colobot-it-preview/LICENZA-GPL3.txt e SORGENTI.txt.
-''')
+""")
 add(base+'LICENZA-GPL3.txt',(a.data_source/'LICENSE.txt').read_bytes())
 add(base+'SORGENTI.txt','''Basi ufficiali Colobot: Gold Edition (GPL v3 o successiva):
 https://github.com/colobot/colobot/tree/e3addd66f6613174c1a61c373808046e7d49b320
@@ -166,7 +180,10 @@ for folder in ['translations','tools','docs']:
             add(base+'sources/'+src.relative_to(ROOT).as_posix(),src.read_bytes())
 add(base+'sources/README.md',(ROOT/'README.md').read_bytes())
 add(base+'sources/patches/colobot-0.2.2-alpha-italian.patch',(ROOT/'patches/colobot-0.2.2-alpha-italian.patch').read_bytes())
-add(base+'COPERTURA.json', json.dumps({'version':'0.4','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count},indent=2)+'\n')
+regression_checks()
+link_report = verify_links(files)
+print('PASS packaged SatCom links:', link_report)
+add(base+'COPERTURA.json', json.dumps({'version':'1.0-rc1','entries':total_count,'nonempty_entries':translated_count,'untranslated':total_count-translated_count,'satcom':link_report},indent=2)+'\n')
 # Inspect the actual archive after writing; no Windows launch is claimed.
 manifest={name:hashlib.sha256(data).hexdigest() for name,data in files.items()}
 add(base+'SHA256SUMS.json',json.dumps(manifest,indent=2)+'\n')
@@ -174,6 +191,7 @@ with zipfile.ZipFile(a.output,'w',zipfile.ZIP_DEFLATED) as z:
     for name,data in sorted(files.items()): z.writestr(name,data)
 with zipfile.ZipFile(a.output) as z:
     assert z.testzip() is None
+    assert verify_links({name: z.read(name) for name in z.namelist()}) == link_report
     for name,digest in manifest.items(): assert hashlib.sha256(z.read(name)).hexdigest()==digest
     scene=z.read(base+'mod/levels/missions/chapter001/level001/scene.txt').decode()
     assert 'Title.F text="Equipaggiamento"' in scene

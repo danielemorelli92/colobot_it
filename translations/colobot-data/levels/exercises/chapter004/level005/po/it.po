@@ -188,9 +188,10 @@ msgid ""
 "<code><a cbot|direct>direction</a></code>. You can then adjust the speed of "
 "the right-hand and left-hand motor in order to follow the target:"
 msgstr ""
-"Oltre i 5 m avvicinati. Calcola prima l’angolo con <code><a "
-"cbot|direct>direction</a></code>, poi regola i motori per seguire il "
-"bersaglio:"
+"Se il bersaglio è a più di 5 m, avvicinati. Calcola prima l’angolo "
+"necessario a orientare il robot verso il bersaglio con <code><a "
+"cbot|direct>direction</a></code>. Poi regola le velocità dei motori destro e"
+" sinistro per seguirlo:"
 
 #. type: Source code
 #: ../help/help.E.txt:36

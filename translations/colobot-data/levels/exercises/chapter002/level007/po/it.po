@@ -170,8 +170,9 @@ msgid ""
 "<code>angle</code>, we must define the variable with the following line at "
 "the beginning of the program:"
 msgstr ""
-"Per ricordare l’angolo serve una variabile numerica. Se la chiami "
-"<code>angle</code>, dichiarala all’inizio così:"
+"Per ricordare l’angolo dell’ultima rotazione serve una variabile che "
+"contenga un numero. Se scegli di chiamarla <code>angle</code>, devi "
+"dichiararla all’inizio del programma con questa riga:"
 
 #. type: Source code
 #: ../help/help.E.txt:46
@@ -188,8 +189,10 @@ msgid ""
 "<a cbot|type>text about variable types</a> if you want to know more about "
 "the different types of variables and what they can contain."
 msgstr ""
-"Il tipo <a cbot|type>float</a> contiene numeri interi o reali. Per "
-"approfondire consulta i <a cbot|type>tipi di variabili</a>."
+"Il tipo <a cbot|type>float</a> permette di memorizzare numeri interi o "
+"reali. Per saperne di più sui diversi tipi di variabili e sulle informazioni"
+" che possono contenere, consulta la pagina sui <a cbot|type>tipi di "
+"variabili</a>."
 
 #. type: Plain text
 #: ../help/help.E.txt:50

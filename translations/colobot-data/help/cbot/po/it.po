@@ -842,8 +842,8 @@ msgid ""
 "beginning of the bloc, the next time the loop is repeated."
 msgstr ""
 "Questa istruzione salta le istruzioni rimanenti nel <code><a "
-"cbot|bloc>bloc</a></code> di un ciclo <code><a cbot|while>while</a></code> o"
-" <code><a cbot|for>for</a></code>. L’esecuzione riprende dall’inizio del "
+"cbot|bloc>blocco</a></code> di un ciclo <code><a cbot|while>while</a></code>"
+" o <code><a cbot|for>for</a></code>. L’esecuzione riprende dall’inizio del "
 "blocco all’iterazione successiva."
 
 #. type: Source code
@@ -2910,7 +2910,7 @@ msgid ""
 "<code><a cbot|class>class</a></code>, <code><a cbot|pointer>reference</a></code>\n"
 "<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>."
 msgstr ""
-"<code><a cbot|class>class</a></code>, <code><a cbot|pointer>reference</a></code>\n"
+"<code><a cbot|class>class</a></code>, <code><a cbot|pointer>riferimento</a></code>\n"
 "<a cbot>Programmazione</a>, <a cbot|type>tipi</a> e <a cbot|category>categorie</a>."
 
 #. type: \b; header
@@ -6808,7 +6808,7 @@ msgid ""
 "cbot|convert>Converter</a>)."
 msgstr ""
 "Un edificio capace di svolgere un’azione, per esempio un <a "
-"cbot|convert>convertitore</a>."
+"object|convert>convertitore</a>."
 
 #. type: Plain text
 #: ../E/isbusy.txt:11
@@ -9430,7 +9430,7 @@ msgid ""
 "they always return a <a cbot|bool>bool</a>. They are mainly used in <a "
 "cbot|cond>conditions</a>."
 msgstr ""
-"Gli operatori di confronto agiscono su valori <a cbot|bool>float</a> e "
+"Gli operatori di confronto agiscono su valori <a cbot|float>float</a> e "
 "restituiscono un <a cbot|bool>bool</a>. Sono usati soprattutto nelle <a "
 "cbot|cond>condizioni</a>."
 
@@ -10171,7 +10171,7 @@ msgid ""
 "<code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|static>static</a></code>, <code><a cbot|synchro>synchronized</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>, <code><a cbot|extends>extends</a></code>\n"
 "<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>."
 msgstr ""
-"<code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|static>static</a></code>, <code><a cbot|synchro>synchronized</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>, <code><a cbot|extends>extends</a></code>\n"
+"<code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|static>static</a></code>, <code><a cbot|synchro>synchronized</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>riferimento</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>, <code><a cbot|extends>extends</a></code>\n"
 "<a cbot>Programmazione</a>, <a cbot|type>tipi</a> e <a cbot|category>categorie</a>."
 
 #. type: \b; header
@@ -10276,7 +10276,7 @@ msgid ""
 "<code><a cbot|class>class</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|function>functions</a></code>\n"
 "<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>."
 msgstr ""
-"<code><a cbot|class>class</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|function>functions</a></code>\n"
+"<code><a cbot|class>class</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|function>funzioni</a></code>\n"
 "<a cbot>Programmazione</a>, <a cbot|type>tipi</a> e <a cbot|category>categorie</a>."
 
 #. type: Plain text
@@ -10431,8 +10431,8 @@ msgid ""
 "can be safely copied to a pointer of type Child, which has access to the "
 "child members."
 msgstr ""
-"Un <code><a cbot|pointer>Reference</a></code> di tipo Parent può indicare un"
-" oggetto Child, ma non accedere ai membri specifici di Child. Dopo aver "
+"Un <code><a cbot|pointer>Riferimento</a></code> di tipo Parent può indicare "
+"un oggetto Child, ma non accedere ai membri specifici di Child. Dopo aver "
 "verificato che indichi davvero un Child, puoi copiarlo in un riferimento "
 "Child per accedere a quei membri."
 
@@ -10531,7 +10531,7 @@ msgid ""
 "<code><a cbot|class>class</a></code>, <code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>\n"
 "<a cbot>Programming</a>, <a cbot|type>types</a> and <a cbot|category>categories</a>."
 msgstr ""
-"<code><a cbot|class>class</a></code>, <code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>reference</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>\n"
+"<code><a cbot|class>class</a></code>, <code><a cbot|public>public</a></code>, <code><a cbot|private>private</a></code>, <code><a cbot|protected>protected</a></code>, <code><a cbot|new>new</a></code>, <code><a cbot|pointer>riferimento</a></code>, <code><a cbot|this>this</a></code>, <code><a cbot|super>super</a></code>\n"
 "<a cbot>Programmazione</a>, <a cbot|type>tipi</a> e <a cbot|category>categorie</a>."
 
 #. type: Plain text
@@ -10747,7 +10747,7 @@ msgid ""
 msgstr ""
 "Modalità <code>\"r\"</code>: lettura.\n"
 "Modalità <code>\"w\"</code>: scrittura.\n"
-"Modalità <code>\"w\"</code>: aggiunta in fondo."
+"Modalità <code>\"a\"</code>: aggiunta in fondo."
 
 #. type: Plain text
 #: ../E/function.txt:14

@@ -1,4 +1,4 @@
-# Terminologia italiana iniziale
+# Terminologia italiana — 1.0 RC1
 
 | Inglese | Italiano |
 |---|---|
@@ -15,8 +15,9 @@
 | SatCom | SatCom |
 | CBOT / nomi di funzioni | invariati |
 
-I codici dei collegamenti (compreso `object|Huston`), `<key help/>`, `<button 63/>`,
-`<format key>` e gli altri marcatori devono restare invariati. Si traduce solo
+I codici dei collegamenti, `<key help/>`, `<button 63/>`,
+`<format key>` e gli altri marcatori devono restare invariati, salvo le correzioni esplicite
+dei refusi originali elencate in `tools/review_rules.py`. Si traduce solo
 il testo visibile. Numeri e punteggiatura nella prosa possono essere localizzati;
 i numeri nei programmi e gli identificatori restano invariati.
 
@@ -46,3 +47,23 @@ Gli identificatori API come `PowerPlant`, `PowerStation` e `WingedGrabber`
 restano sempre in inglese. Le parentesi angolari che racchiudono nomi visibili
 come `<build a ...>` si traducono; i veri tag come `<a object|factory>` restano
 invariati. Il validatore distingue i due casi.
+
+
+| Inglese | Italiano |
+|---|---|
+| information exchange post | centro di scambio dati |
+| radar station | stazione radar |
+| autolab | laboratorio automatico |
+| converter | convertitore |
+| drawer bot | robot disegnatore |
+| array | array |
+| reference (descrizione, non identificatore) | riferimento |
+| parent class / base class | classe base |
+| child class / derived class | classe derivata |
+| field / method | campo / metodo |
+| source code | codice sorgente |
+
+Le didascalie «riferimento», «funzioni» e «blocco» restano prosa anche quando
+il testo originale le visualizza in monospazio. Si traducono senza modificare
+le parole chiave `class`, `public`, `static`, i nomi di funzione o le stringhe
+negli esempi eseguibili.

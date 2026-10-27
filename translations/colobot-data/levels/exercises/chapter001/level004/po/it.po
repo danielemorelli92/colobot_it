@@ -101,11 +101,13 @@ msgid ""
 "example <code>item</code>. If we put this together, we get the following "
 "line:"
 msgstr ""
-"Una <a cbot|var>variabile</a> è una scatola con un nome, dove conservare, "
-"leggere o modificare informazioni. Prima dichiarala indicando il <a "
-"cbot|type>tipo</a>, qui <code>object</code>, che descrive oggetti come "
-"minerale, ragni, formiche, robot o batterie. Poi scegli il nome, per esempio"
-" <code>item</code>. Ottieni:"
+"Una <a cbot|var>variabile</a> è come una piccola scatola con un nome: puoi "
+"inserirvi informazioni, leggerle e modificarle. Prima di usarla devi "
+"dichiararla, indicando il <a cbot|type>tipo</a>. Qui useremo "
+"<code>object</code>, che contiene i dati di un oggetto, come un pezzo di "
+"minerale, un ragno, una formica, un robot o una batteria. Scegli poi il nome"
+" della variabile, per esempio <code>item</code>. La dichiarazione completa "
+"è:"
 
 #. type: Source code
 #: ../help/help.E.txt:11
@@ -139,9 +141,10 @@ msgid ""
 " Then we use the instruction <c/>goto();<n/> in order to move the bot to "
 "this position. Here is a line that puts all this together:"
 msgstr ""
-"<code>item</code> contiene posizione, orientamento, inclinazione e altri "
-"dati. Scrivi <code>item.position</code> per leggerne la posizione e "
-"raggiungila con <c/>goto();<n/>. Ecco l’istruzione completa:"
+"La variabile <code>item</code> contiene diversi dati sull’oggetto, fra cui "
+"posizione, orientamento e inclinazione. Per ottenere la posizione del pezzo "
+"di minerale di titanio, scrivi <code>item.position</code>. Puoi poi "
+"raggiungerla con <c/>goto();<n/>. Questa riga combina le due operazioni:"
 
 #. type: Source code
 #: ../help/help.E.txt:19
@@ -204,7 +207,7 @@ msgid ""
 "Then you must look for the <a cbot|convert>converter</a>, and put the "
 "information about the converter into the variable <code>item</code>:"
 msgstr ""
-"Cerca quindi il <a cbot|convert>convertitore</a> e memorizzane i dati in "
+"Cerca quindi il <a object|convert>convertitore</a> e memorizzane i dati in "
 "<code>item</code>:"
 
 #. type: Source code

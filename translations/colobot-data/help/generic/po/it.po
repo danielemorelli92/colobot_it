@@ -1314,7 +1314,7 @@ msgstr ""
 "<code><a cbot|new>new</a>        </code>Crea una nuova istanza\n"
 "<code><a cbot|this>this</a>       </code>Riferimento all’istanza attuale\n"
 "<code><a cbot|extends>extends</a>    </code>Estende una classe\n"
-"<code><a cbot|super>super</a>      </code>Permette l’accesso alla classe genitrice"
+"<code><a cbot|super>super</a>      </code>Permette l’accesso alla classe base"
 
 #. type: Plain text
 #: ../E/command.txt:40

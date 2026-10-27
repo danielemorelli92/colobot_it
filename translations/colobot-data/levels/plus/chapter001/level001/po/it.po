@@ -79,7 +79,7 @@ msgid ""
 "Please report to the <a object|Huston>Houston Mission Control</a> for "
 "further directives about your forthcoming mission."
 msgstr ""
-"Presentati al <a object|Huston>centro di controllo missione di Houston</a> "
+"Presentati al <a object|huston>centro di controllo missione di Houston</a> "
 "per ulteriori direttive sulla tua prossima missione."
 
 #. type: \b; header

@@ -65,8 +65,10 @@ msgid ""
 "location in the form of its x and y coordinates. The bot will turn towards "
 "the goal, move forward, and even turn around any obstacle."
 msgstr ""
-"Per semplificare usa <code><a cbot|goto>goto</a></code>: conoscendo x e y "
-"della destinazione, il robot si gira, avanza e aggira persino gli ostacoli."
+"Per risolvere più facilmente questo esercizio useremo un nuovo modo di "
+"muovere il robot: l’istruzione <code><a cbot|goto>goto</a></code>. Basta "
+"conoscere le coordinate x e y della destinazione. Il robot si orienta verso "
+"quel punto, avanza e aggira gli eventuali ostacoli."
 
 #. type: Plain text
 #: ../help/help.E.txt:7
@@ -104,8 +106,9 @@ msgid ""
 " perform a rotation of a certain angle. All parameters are relative to the "
 "current position of the bot."
 msgstr ""
-"Spostamento di una distanza o rotazione di un angolo, relativi alla "
-"posizione attuale."
+"Queste istruzioni fanno avanzare il robot di una certa distanza oppure lo "
+"fanno ruotare di un certo angolo. I parametri sono relativi alla posizione e"
+" all’orientamento attuali del robot."
 
 #. type: Source code
 #: ../help/help.E.txt:15

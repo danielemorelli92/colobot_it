@@ -111,8 +111,8 @@ msgid ""
 "Use the instruction <c/><a cbot|receive>receive</a>(\"Direction\");<n/> in order to read the information contained in the <a object|exchange>exchange post</a>. This is of course possible only when the bot is close enough to the exchange post.\n"
 "You will need a <a cbot|var>variable</a> to contain the value retrieved from the exchange post. Let us call it <code>dir</code>; you must declare it with the following line:"
 msgstr ""
-"Usa <c/><a cbot|receive>receive</a>(\"Direction\");<n/> per leggere i dati del <a object|exchange>centro</a>, quando sei abbastanza vicino.\n"
-"Conserva il valore in una <a cbot|var>variabile</a>, per esempio <code>dir</code>, da dichiarare così:"
+"Usa <c/><a cbot|receive>receive</a>(\"Direction\");<n/> per leggere il dato contenuto nel <a object|exchange>centro di scambio dati</a>. Il robot deve essere abbastanza vicino al centro.\n"
+"Per conservare il valore ricevuto serve una <a cbot|var>variabile</a>: chiamiamola <code>dir</code> e dichiariamola con questa riga:"
 
 #. type: Source code
 #: ../help/help.E.txt:19

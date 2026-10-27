@@ -1,52 +1,69 @@
-# Anteprima Windows 0.4 — cataloghi completi
+# Italiano 1.0 RC1 per Windows
 
-Base: `colobot-gold-0.2.2-alpha-win64` ufficiale. Download in `dist/`.
-Estrarre nello stesso percorso della 0.1/0.2 e sostituire i file dell’anteprima.
-La cartella dei salvataggi resta `%LOCALAPPDATA%\ColobotItalianPreview-0.1`:
-non eliminarla. Launcher e configurazione iniziale non cambiano.
+Base: `colobot-gold-0.2.2-alpha-win64` ufficiale.
+Pacchetto: `dist/colobot-0.2.2-alpha-win64-italiano-1.0-rc1.zip`.
 
-Tutti i 146 cataloghi sono completi: 5.172 voci, zero vuote e zero fuzzy.
-Delle voci compilate, 702 sono identiche al sorgente per mantenere codice,
-identificatori, nomi, immagini e crediti. Due messaggi hanno entrambe le forme
-plurali italiane. Vedere `coverage-0.4.json` e `verification.json`.
+Estrarre nella cartella del gioco, sostituire i file della precedente anteprima
+e avviare `Avvia-Italiano.cmd`. La cartella dei salvataggi rimane
+`%LOCALAPPDATA%\ColobotItalianPreview-0.1`: non eliminarla.
+Launcher e configurazione iniziale sono identici alla 0.4; la configurazione
+non viene ricopiata se esiste già. Il gioco originale e il suo avvio normale
+restano disponibili.
 
-Il pacchetto resta compatibile con il binario ufficiale grazie allo slot French.
-Il launcher usa `-langdir`, `-mod`, `-datadir` e `-savedir`; catalogo isolato in
-`lang/fr/LC_MESSAGES/colobot.mo`, dati I rimappati in F nell’overlay.
-Non modifica font, DLL, eseguibile, cartella lang originale o logica dei livelli.
-L’avvio normale resta disponibile e separato. La configurazione iniziale è
-copiata soltanto se non esiste, senza sovrascrivere preferenze o salvataggi.
+## Revisione dalla 0.4
 
-## Verifiche della 0.4
+40 voci corrette in 23 cataloghi. La lettura mirata e il confronto con gli
+originali hanno chiarito spiegazioni di variabili, funzioni, movimento e mira,
+uniformato didascalie e nomi e tradotto alcune etichette monospaziate.
+Il robot rilevatore a zampe non viene più descritto come tiratore. La tabella
+di apertura dei file usa correttamente `a` per l’aggiunta, anziché ripetere `w`:
+è una correzione della documentazione, non una modifica dei programmi.
 
-Gettext, formati, entrambe le forme plurali, lookup dei MO, marcatori e
-collegamenti: riusciti. Build dati completa: riuscita. Tutte le 4.455 voci dei
-cataloghi dati sono presenti negli output italiani generati. Il pacchetto
-confronta tutte le scene con i sorgenti, escludendo solo le righe di testo
-localizzate; verifica anche CRC e SHA256 dei contenuti.
+Corretti alcuni errori ereditati dai sorgenti:
 
-Il test di preservazione controlla 542 esempi di codice, nomi di programmi e
-riferimenti a immagini. Tre intestazioni dei rapporti e una tabella di esempio
-numerico sono prosa monospaziata, anche se l’estrattore le chiama Source code:
-vengono tradotte preservando marcatori e numeri.
+| Rimando originale | Destinazione italiana corretta |
+|---|---|
+| `object\Huston` | `object\huston` |
+| `cbot\convert` | `object\convert` |
+| `cbot\radar()` | `cbot\radar` |
+| `\object\radar` | `object\radar` |
+| testo `float` collegato a `cbot\bool` | `cbot\float` |
 
-Le anteprime 0.1/0.2 sono state avviate su Windows dall’utente. Su sua richiesta,
-le prove estese nel gioco vengono fatte dopo la traduzione completa. La 0.4
-rimane da collaudare interattivamente; nessuna dichiarazione di test Windows,
-CTest o compilazione completa del motore non eseguiti.
+Le eccezioni del validatore sono elencate in `tools/review_rules.py` e sono
+limitate a questi rimandi, alle didascalie di prosa e alla specifica tabella
+errata. Restano rifiutate modifiche arbitrarie a codice, stringhe e marcatori.
+`docs/revision-1.0-rc1.json` elenca tutte le voci modificate.
 
-## Ambito
+## Verifiche della candidata
 
-Completati i cataloghi della release fissata. La descrizione non gettext
-dell’addon AltTextures resta inglese, i nomi delle lingue sono nel binario
-ufficiale e il codice eseguibile non viene riscritto. Le mod esterne sono
-fuori ambito. La traduzione completa richiede ancora revisione linguistica e
-verifica visiva: completamento dei cataloghi e qualità collaudata sono distinti.
+146 cataloghi, 5.172 voci compilate, zero vuote e zero fuzzy. 700 voci sono
+identiche al sorgente per mantenere codice, nomi, immagini e crediti.
+Gettext, entrambe le forme plurali e lookup dei MO passano i controlli.
+Build dati completa riuscita: tutte le 4.455 voci presenti nei file generati.
+542 esempi, immagini e identificatori controllati; logica di tutte le 173 scene
+e titoli di capitolo del pacchetto confrontata con i sorgenti.
 
-## Commenti degli esempi — aggiornamento 0.4
+Il nuovo controllo verifica i 3.534 collegamenti dei 452 documenti italiani
+distribuiti, incluse le due occorrenze che puntano ad ancore nominate. Simula
+la risoluzione dei percorsi del gioco, incluse `%lvl%` e `%lng%`, richiede
+pagine italiane e viene ripetuto sullo ZIP finale. Non verifica visivamente
+l’area cliccabile, la cronologia del SatCom o la disposizione del testo.
+Il pacchetto verifica anche CRC e SHA256 dei file.
 
-Tradotti i commenti in 80 voci dei cataloghi del SatCom, fra cui SwitchCell1,
-ricarica, raccolta del titanio e riferimento CBOT. I controlli sul codice ora
-escludono soltanto il testo dei commenti //, riconosciuti fuori dalle stringhe:
-istruzioni, argomenti, stringhe, nomi e marcatori rimangono verificati.
-Le anteprime precedenti restano disponibili. Il launcher non cambia.
+La 0.4 è stata dichiarata funzionante dall’utente. La RC1 è nuova e richiede
+il [collaudo finale](COLLAUDO-1.0-RC1.md). Nessun avvio Windows o CTest del
+motore è stato eseguito qui; la build completa del motore resta bloccata
+dalle dipendenze OpenGL mancanti.
+
+## Limiti
+
+Per compatibilità con il binario ufficiale, il catalogo è in
+`lang/fr/LC_MESSAGES/colobot.mo` e i dati italiani `I` sono rimappati in `F`.
+Scegliere **French** nelle impostazioni. Nessuna sostituzione di eseguibile,
+DLL o font. Lo ZIP non contiene una nuova versione compilata del gioco.
+
+La pagina originale del robot disegnatore contiene solo `TODO`: ora viene
+segnalata chiaramente l’assenza della documentazione. Le stringhe dei programmi
+restano in inglese per preservare gli esempi; i commenti sono tradotti.
+Metadati non gettext di AltTextures e mod esterne non sono inclusi.
+La copertura dei cataloghi non equivale a un collaudo di ogni schermata.

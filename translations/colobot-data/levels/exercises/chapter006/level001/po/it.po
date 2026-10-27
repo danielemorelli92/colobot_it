@@ -102,9 +102,11 @@ msgid ""
 "will define the function <code>Square</code>. The program will take the "
 "following shape:"
 msgstr ""
-"Devi ancora definire <code>Square</code>. Scrivila fuori dal <a "
-"cbot|bloc>blocco</a> principale, dopo l’ultima graffa. Definiamo lì "
-"<code>Square</code>:"
+"Devi ancora definire la funzione <code>Square</code>. Finora hai scritto "
+"tutte le istruzioni nel <a cbot|bloc>blocco</a> della funzione principale. "
+"La definizione di <code>Square</code> va invece fuori da quel blocco, alla "
+"fine del programma, dopo l’ultima parentesi graffa di chiusura. Il programma"
+" avrà questa forma:"
 
 #. type: Source code
 #: ../help/help.E.txt:15
@@ -156,7 +158,7 @@ msgid ""
 "When you write this in front of the function name, you can have access in the function to all the characteristics of the bot, such as <code>position</code>, <code>orientation</code>, etc. In this exercise, this element is not compulsory, as we will not need the characteristics of the bot in the function."
 msgstr ""
 "<code><a cbot|object>object</a>::</code>\n"
-"Permette di accedere nella funzione alle proprietà del robot, come <code>position</code> e <code>orientation</code>. Qui è facoltativo perché non servono."
+"Scrivendo questo prefisso davanti al nome della funzione, puoi accedere alle proprietà del robot, come <code>position</code> e <code>orientation</code>. In questo esercizio è facoltativo, perché la funzione non usa tali proprietà."
 
 #. type: Plain text
 #: ../help/help.E.txt:33

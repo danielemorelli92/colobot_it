@@ -1254,7 +1254,7 @@ msgstr "Veicolo lunare Apollo"
 #: ../E/lrv.txt:5
 #, no-wrap
 msgid "<code>< no archive picture available  ></code>"
-msgstr "<code>< no archive picture available  ></code>"
+msgstr "<code>< nessuna immagine d’archivio disponibile ></code>"
 
 #. type: Plain text
 #: ../E/lrv.txt:9
@@ -1498,7 +1498,7 @@ msgstr "<code>PowerCell</code>"
 #: ../E/radar.txt:1
 #, no-wrap
 msgid "<button 168/> Radar"
-msgstr "<button 168/> Radar"
+msgstr "<button 168/> Stazione radar"
 
 #. type: Image filename
 #: ../E/radar.txt:2

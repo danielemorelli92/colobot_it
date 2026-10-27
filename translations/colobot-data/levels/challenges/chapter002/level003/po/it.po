@@ -61,7 +61,8 @@ msgid ""
 msgstr ""
 "Il cannone ha una portata di circa 40 m. I nemici appartengono alla "
 "categoria <code>AlienAnt</code>. Girati verso la formica più vicina anche se"
-" è oltre i 40 m, ma spara solo quando è più vicina per risparmiare energia."
+" si trova a più di 40 m, ma spara soltanto quando è a meno di 40 m, per non "
+"sprecare energia."
 
 #. type: \b; header
 #: ../help/help.E.txt:7

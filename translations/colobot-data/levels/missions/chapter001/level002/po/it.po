@@ -127,7 +127,7 @@ msgid ""
 "You will find a <a object|titan>titanium cube</a> on the left hand side of "
 "the road, right after the <a object|botgr>grabber bot</a>."
 msgstr ""
-"Percorri la strada che costeggia il <a object|Huston>centro di controllo "
+"Percorri la strada che costeggia il <a object|huston>centro di controllo "
 "missione</a>. Troverai un <a object|titan>cubo di titanio</a> sul lato "
 "sinistro, subito dopo il <a object|botgr>robot trasportatore</a>."
 

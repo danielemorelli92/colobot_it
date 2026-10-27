@@ -11,7 +11,8 @@ help=(level/'help/help.I.txt').read_text()
 solution=(level/'help/soluce.I.txt').read_text()
 assert 'Dal centro di addestramento della NASA' in help
 assert '\\key help;' in help and '\\button 63;' in help
-assert '\\u object\\Huston;' in help
+assert '\\u object\\huston;' in help
+assert '\\u object\\Huston;' not in help
 assert 'Al primo incrocio gira verso est (a sinistra).' in solution
 assert (a.build/'help/po/cbot/I/cbot/abstime.txt').is_file()
 print('PASS: Italian scene title, briefing, walkthrough, key/button/link markup and CBot help output.')

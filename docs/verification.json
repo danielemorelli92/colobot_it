@@ -8,12 +8,12 @@
     "gnu_gettext": "passed for all 146 catalogs including both plural forms",
     "markup_and_mo_lookup": "passed",
     "cpp_language_roundtrip": "passed",
-    "official_data_build": "passed for 0.3",
+    "official_data_build": "passed for 1.0-rc1",
     "generated_first_mission": "passed",
     "font_accent_coverage": "passed",
     "full_engine_build": "blocked: OpenGL development files missing at CMake configuration",
     "ctest": "not run",
-    "interactive_game": "not run",
+    "interactive_game": "not run locally; user confirmed preview 0.4, RC1 awaiting Windows checks",
     "external_translation_search": "partial",
     "generated_campaign": "all 878 entries verified",
     "gameplay_preservation": "all packaged scenes and chapter titles compared to original, excluding localized labels",
@@ -21,10 +21,18 @@
     "plural_runtime_lookup": "passed for 0, 1, 2, 10",
     "generated_all_data": "all 4455 data entries found",
     "code_preservation": "Executable code unchanged after excluding lexically identified // comments; strings and identifiers preserved",
-    "raw_code_and_tabs": "passed: native <c/> code and literal indentation preserved"
+    "raw_code_and_tabs": "passed: native <c/> code and literal indentation preserved",
+    "packaged_satcom_links": {
+      "documents": 452,
+      "links": 3534,
+      "named_anchors": 2,
+      "status": "passed",
+      "requires_italian_target": true
+    },
+    "explicit_upstream_errata": "enumerated exceptions only; negative tests protect arbitrary code, literals, link changes and anchors"
   },
-  "preview": "0.4",
-  "identical_to_source": 702,
+  "preview": "1.0-rc1",
+  "identical_to_source": 700,
   "fully_populated_categories": {
     "interface": 659,
     "campaign": 878,
@@ -37,10 +45,16 @@
     "preview_0.1": "User confirmed launch and Italian mission/SatCom, screenshots reviewed; font issue resolved by restart",
     "preview_0.2": "User confirmed launch; no extended interactive test",
     "preview_0.3": "User reported everything appears to work",
-    "preview_0.4": "not run"
+    "preview_0.4": "User reported everything appears to work",
+    "1.0-rc1": "not run; final checklist supplied"
   },
   "fuzzy_entries": 0,
   "data_entries_verified_in_generated_output": 4455,
   "preserved_code_images_script_names": 542,
-  "translated_comment_entries": 80
+  "translated_comment_entries": 80,
+  "revision": {
+    "changed_entries": 40,
+    "changed_catalogs": 23,
+    "method": "whole-catalog automated checks and targeted linguistic review; no claim of exhaustive interactive proofreading"
+  }
 }

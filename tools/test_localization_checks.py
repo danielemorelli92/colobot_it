@@ -17,3 +17,16 @@ for source,target,flags in [
     except ValueError: pass
     else: raise AssertionError((source,target))
 print('PASS: translated bracketed prose accepted; changed link/button/key/code/printf/tooltip rejected.')
+# The RC review permits only enumerated upstream errata and prose captions.
+check_translation('<a object|Huston>Houston</a>', '<a object|huston>Houston</a>')
+check_translation('<code><a cbot|pointer>reference</a></code>', '<code><a cbot|pointer>riferimento</a></code>')
+for source, target in [
+    ('<a object|Huston>Houston</a>', '<a object|human>Houston</a>'),
+    ('<code>reference();</code>', '<code>riferimento();</code>'),
+    ('<code>"w"</code>', '<code>"a"</code>'),
+    (r'Notes\m notes;', r'Note\m other;'),
+]:
+    try: check_translation(source, target)
+    except ValueError: pass
+    else: raise AssertionError((source, target))
+print('PASS: explicit upstream errata accepted; arbitrary code, literals and anchors protected.')

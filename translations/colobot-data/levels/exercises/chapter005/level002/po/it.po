@@ -46,8 +46,9 @@ msgid ""
 "object|titan>titanium cubes</a> that you must move to 3 finishing pads. Here"
 " are the coordinates of the finishing pads:"
 msgstr ""
-"Come prima, ma ora sposta tre <a object|titan>cubi</a> su tre piattaforme, "
-"alle coordinate:"
+"Questo esercizio è simile al precedente, ma ora devi spostare tre <a "
+"object|titan>cubi di titanio</a> su tre piattaforme di arrivo. Ecco le "
+"coordinate delle piattaforme:"
 
 #. type: Plain text
 #: ../help/help.E.txt:4

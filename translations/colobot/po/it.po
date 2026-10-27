@@ -188,7 +188,7 @@ msgid "There are unsaved changes. Do you want to save them before leaving?"
 msgstr "Ci sono modifiche non salvate. Vuoi salvarle prima di uscire?"
 
 msgid "Keyword help(\\key cbot;)"
-msgstr "Aiuto sulla parola chiave(\\key cbot;)"
+msgstr "Aiuto sulla parola chiave (\\key cbot;)"
 
 msgid "Compilation ok (0 errors)"
 msgstr "Compilazione riuscita (0 errori)"
