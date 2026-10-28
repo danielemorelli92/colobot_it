@@ -32,8 +32,6 @@ etichette dei cicli, sono tradotte. Codice eseguibile, identificatori e stringhe
 dei programmi sono preservati; i commenti degli esempi sono tradotti.
 
 - [Risultati e limiti delle verifiche](docs/VERIFICHE.md)
-- [Proposta per i manutentori](docs/upstream/ISSUE-ITALIAN.md)
-- [Come presentare le due PR](docs/PROPOSTA-UPSTREAM.md)
 - [Glossario](docs/GLOSSARIO.md)
 
 La versione comunitaria Windows è stata provata dall’utente. L’integrazione
@@ -82,7 +80,7 @@ La locale italiana deve essere disponibile. È possibile anche selezionare
 **Italiano** nelle opzioni del gioco. Usare un profilo di prova distinto da quello
 della 0.2.2-alpha, perché `dev` è una versione successiva del motore.
 
-## Esportare i contributi
+## Esportare le patch
 
 ```sh
 .venv/bin/python tools/export_upstream.py --engine build/src/colobot --data build/src/colobot-data --output build/prs
@@ -92,7 +90,6 @@ Il comando produce `colobot-italian.patch` e `colobot-data-italian.patch`, da
 applicare ai rispettivi fork dei repository ufficiali sui commit fissati.
 La prima contiene registrazione, cataloghi del motore e test; la seconda i
 cataloghi dei dati e i due POT rigenerati. Gli output restano in `build/`.
-Non sono state inviate issue o PR ai manutentori.
 
 ## Licenza e contributi
 
