@@ -22,6 +22,10 @@
 > archives come from the official `ip7z/7zip` GitHub release because their old
 > `7-zip.org` addresses return HTTP 404. `tools\build_windows_022.cmd all`
 > configures, builds, validates and installs in sequence, stopping on failure.
+> A local overlay of the pinned `boost-modular-build-helper` port adds the
+> missing `vc144` to `vc140` filename normalization for MSVC 14.4. Its port
+> revision is incremented so dependent Boost libraries are rebuilt with the
+> expected names. Boost itself remains at 1.82.0; the registry is preserved.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.

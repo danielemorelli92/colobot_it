@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Cache checksum-verified Windows build tools for the pinned vcpkg release."""
+"""Prepare the Windows tool cache and pinned Boost compatibility overlay."""
 import argparse
 from concurrent.futures import ThreadPoolExecutor
 import hashlib
+import io
+import json
 from pathlib import Path
+import subprocess
+import tarfile
 import time
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -15,6 +19,33 @@ MIRRORS = {
     '7zip': 'https://github.com/ip7z/7zip/releases/download/21.07/7z2107-extra.7z',
     '7zip_msi': 'https://github.com/ip7z/7zip/releases/download/21.07/7z2107-x64.msi',
 }
+BOOST_HELPER_TREE = '98f75b07bdab1080c9470eb115836035d7142397'
+
+
+def prepare_boost_overlay(vcpkg, overlays):
+    # Start from the exact port used by the release; leave the registry intact.
+    blob = subprocess.check_output(
+        ['git', '-C', str(vcpkg), 'archive', BOOST_HELPER_TREE])
+    port = overlays / 'boost-modular-build-helper'
+    port.mkdir(parents=True, exist_ok=True)
+    with tarfile.open(fileobj=io.BytesIO(blob)) as archive:
+        archive.extractall(port, filter='data')
+    helper = port / 'boost-modular-build.cmake'
+    text = helper.read_text(encoding='utf-8')
+    anchor = '        string(REPLACE "-vc143-" "-vc140-" NEW_FILENAME ${NEW_FILENAME}) # To merge VS2022 and VS2015 binaries\n'
+    if text.count(anchor) != 1:
+        raise ValueError('Unexpected pinned Boost library naming rules')
+    addition = '        string(REPLACE "-vc144-" "-vc140-" NEW_FILENAME ${NEW_FILENAME}) # MSVC 14.4 uses the same vcpkg library names\n'
+    helper.write_text(text.replace(anchor, anchor + addition),
+                      encoding='utf-8', newline='\n')
+    manifest = port / 'vcpkg.json'
+    metadata = json.loads(manifest.read_text(encoding='utf-8'))
+    # Rebuild dependents such as Atomic instead of reusing the old vc144 names.
+    metadata['port-version'] = 4
+    manifest.write_text(json.dumps(metadata, indent=2) + '\n',
+                        encoding='utf-8', newline='\n')
+    print('Boost compatibility overlay ready: normalize vc144 library names.', flush=True)
+    return port
 
 
 def digest(path):
@@ -55,6 +86,8 @@ def cache_tool(tool, downloads):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--vcpkg', type=Path, required=True)
+    parser.add_argument('--overlays', type=Path,
+                        default=Path(__file__).resolve().parents[1] / 'build/release-022/overlay-ports')
     args = parser.parse_args()
     tools = ET.parse(args.vcpkg / 'scripts/vcpkgTools.xml').getroot()
     selected = [next(tool for tool in tools.findall('tool')
@@ -65,6 +98,7 @@ def main():
     with ThreadPoolExecutor(max_workers=3) as pool:
         results = list(pool.map(lambda tool: cache_tool(tool, downloads), selected))
     print(f'Windows build tool archives ready: {len(results)} verified.', flush=True)
+    prepare_boost_overlay(args.vcpkg, args.overlays)
 
 
 if __name__ == '__main__':
