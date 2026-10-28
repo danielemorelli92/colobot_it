@@ -128,7 +128,8 @@ applicare la patch, rendere disponibile la locale `it_IT.UTF-8`, compilare il
 motore ed eseguire CTest e le prove di selezione/rendering.
 Nessuna modifica è stata inviata ai repository ufficiali.
 
-[Glossario](docs/GLOSSARIO.md).
+[Glossario](docs/GLOSSARIO.md) ·
+[Proposta per l’integrazione ufficiale](docs/PROPOSTA-UPSTREAM.md).
 Licenza GPL v3 o successiva, come i progetti upstream. Per nuove release,
 aggiornare i pin dopo il confronto dei sorgenti e usare `msgmerge`, revisionando
 le voci fuzzy e le correzioni esplicite in `tools/review_rules.py`.
