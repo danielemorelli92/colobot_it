@@ -1,0 +1,120 @@
+name: Windows native Italian
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/windows-native.yml'
+      - 'tools/**'
+      - 'translations/**'
+      - 'patches/**'
+      - 'upstream.json'
+
+permissions:
+  contents: read
+
+jobs:
+  windows64:
+    runs-on: windows-2022
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: msys2 {0}
+    env:
+      PYTHONUTF8: '1'
+      PYTHONPATH: ${{ github.workspace }}/build/python-deps
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: true
+          install: >-
+            git
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-cmake
+            mingw-w64-ucrt-x86_64-ninja
+            mingw-w64-ucrt-x86_64-python
+            mingw-w64-ucrt-x86_64-python-pip
+            mingw-w64-ucrt-x86_64-gettext-tools
+            mingw-w64-ucrt-x86_64-glew
+            mingw-w64-ucrt-x86_64-glm
+            mingw-w64-ucrt-x86_64-physfs
+            mingw-w64-ucrt-x86_64-libsndfile
+            mingw-w64-ucrt-x86_64-openal
+            mingw-w64-ucrt-x86_64-libpng
+            mingw-w64-ucrt-x86_64-SDL2
+            mingw-w64-ucrt-x86_64-SDL2_image
+            mingw-w64-ucrt-x86_64-SDL2_ttf
+            mingw-w64-ucrt-x86_64-nlohmann-json
+            mingw-w64-ucrt-x86_64-gtest
+      - name: Prepare pinned sources
+        run: |
+          set -euo pipefail
+          python -m pip install --target "$PYTHONPATH" -r tools/requirements.txt
+          for name in colobot colobot-data; do
+            ref=$(python -c "import json; print(json.load(open('upstream.json'))['$name'])")
+            git init "build/src/$name"
+            git -C "build/src/$name" remote add origin "https://github.com/colobot/$name.git"
+            git -C "build/src/$name" fetch --depth=1 origin "$ref"
+          done
+          python tools/prepare.py --engine build/src/colobot --data build/src/colobot-data --output build/prepared
+          python tools/validate.py --require-complete --engine build/prepared/colobot --data build/prepared/colobot-data
+      - name: Configure
+        run: |
+          set -euo pipefail
+          cmake -G Ninja -S build/prepared/colobot -B build/engine \
+            -DCMAKE_BUILD_TYPE=Release -DTESTS=ON -DDESKTOP=OFF \
+            -DPORTABLE=ON -DPORTABLE_SAVES=ON \
+            -DCMAKE_INSTALL_PREFIX="$PWD/build/install"
+          cmake -G Ninja -S build/prepared/colobot-data -B build/data \
+            -DTRANSLATIONS=ON -DCOLOBOT_INSTALL_DATA_DIR="$PWD/build/install/data"
+      - name: Build
+        run: |
+          set +e
+          set -uo pipefail
+          cmake --build build/engine --parallel 2 2>&1 | tee build/windows-build.log
+          result=${PIPESTATUS[0]}
+          if [ "$result" -ne 0 ]; then
+            python -c "from pathlib import Path; s=Path('build/windows-build.log').read_text(errors='replace'); print('::error::'+s[-12000:].replace('%','%25').replace('\r','%0D').replace('\n','%0A'))"
+            exit "$result"
+          fi
+          set -e
+          cmake --build build/data --parallel 2
+      - name: Test and install
+        run: |
+          set -euo pipefail
+          ctest --test-dir build/engine --output-on-failure -j2
+          cmake --install build/engine
+          cmake --install build/data
+          python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
+          python tools/check_links.py --data-build build/data
+          python tools/test_code_preservation.py
+          python tools/test_code_comments.py
+          python tools/test_localization_checks.py
+      - name: Package and check portable runtime
+        run: |
+          set -euo pipefail
+          pacman -Q > build/msys2-packages.txt
+          python tools/package_windows_native.py --install build/install --runtime-bin "$MINGW_PREFIX/bin" --engine-source build/prepared/colobot --data-source build/prepared/colobot-data --output build/windows-package
+          mkdir -p build/checks
+          g++ -std=c++20 -I"$MINGW_PREFIX/include/SDL2" tools/test_windows_runtime.cpp -o build/checks/runtime-check.exe -lSDL2_image -lSDL2_ttf -lSDL2 -lintl -liconv
+          python tools/package_windows_native.py --check-runtime build/checks/runtime-check.exe --output build/windows-package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: colobot-italiano-windows64-native
+          path: build/windows-package/
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: windows-test-results
+          path: |
+            build/windows-build.log
+            build/engine/Testing/Temporary/LastTest.log
+            build/msys2-packages.txt
+          if-no-files-found: ignore
+          retention-days: 14

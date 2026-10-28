@@ -38,6 +38,20 @@ La versione comunitaria Windows è stata provata dall’utente. L’integrazione
 nativa è stata compilata e avviata su Linux; una build nativa Windows di `dev`
 resta da verificare. Questa non è una distribuzione ufficiale di Colobot.
 
+## Provare la versione nativa Windows
+
+Il [workflow Windows](https://github.com/danielemorelli92/colobot_it/actions/workflows/windows-native.yml)
+compila su Windows 64 bit, esegue i test e prepara l’artifact
+`colobot-italiano-windows64-native`. Quando il job è verde, aprire l’esecuzione
+e scaricare l’artifact dalla sezione **Artifacts** (con accesso a GitHub).
+
+Estrarre tutto in una **cartella nuova** e avviare `colobot.exe`: la lingua è
+Italiano e i salvataggi di prova rimangono nella sottocartella `saves`.
+Controllare selettore della lingua, missione Equipaggiamento, SatCom e un
+salvataggio/ricaricamento. Questa è una build di sviluppo separata dalla 1.0.
+Il runner controlla cataloghi, plurali, immagini e font senza richiedere una
+scheda grafica; l’avvio grafico completo si verifica sul PC dell’utente.
+
 ## Preparare i sorgenti
 
 Servono Python >=3.12, Git, CMake >=3.21, un compilatore C++20, GNU gettext e
