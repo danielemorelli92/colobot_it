@@ -9,7 +9,7 @@ import shutil
 import json
 
 ROOT = Path(__file__).resolve().parents[1]
-PINS = json.loads((ROOT/'upstream.json').read_text())
+PINS = json.loads((ROOT/'upstream.json').read_text(encoding='utf-8'))
 p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--engine', type=Path, required=True)
 p.add_argument('--data', type=Path, required=True)

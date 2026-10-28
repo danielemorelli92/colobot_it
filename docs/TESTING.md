@@ -3,17 +3,23 @@
 Results recorded on 2026-10-28 against the official `dev` commits pinned in
 [upstream.json](../upstream.json), with this repository's patch and catalogs.
 Reproduction instructions are in [BUILDING.md](BUILDING.md).
+Both pinned commits matched the upstream `dev` branch heads when the final
+repository review was performed on that date.
 
 ## Localization checks
 
 | Check | Result |
 |---|---|
+| Template inventory | All 146 upstream template directories have Italian catalogs. A fixture with a missing catalog was rejected and identified the missing file. |
 | Gettext catalogs | 146 catalogs; 5,188 translated entries; no empty or fuzzy entries. GNU gettext compilation, format checks, Italian plural forms and MO lookups passed. |
+| Engine and desktop source coverage | All 660 engine messages matched fresh xgettext extraction. All 58 desktop INI/POD source text units matched their template. |
 | Generated data | All 4,470 data catalog entries found in the generated Italian files. |
 | Code and references | 546 code examples, program names and image references checked. Executable code and string literals preserved; example comments translated. |
 | SatCom links | 3,550 links across 453 Italian documents resolved, including two named-anchor references. |
 | Validation safeguards | Regression checks reject malformed markup, altered executable code and unresolved SatCom links. |
 | Patch export | Both exported patches applied successfully to their respective pristine pinned source trees. |
+| Export portability | Under simulated Windows CP1252/CRLF defaults, both patches remained UTF-8 with LF line endings, applied without whitespace errors, and reproduced all 148 catalog/template files byte for byte. Existing output was preserved on a repeat export. |
+| Checkout line endings | A clone with `core.autocrlf=true` preserved LF text files through `.gitattributes`. |
 
 The pinned upstream `help/cbot` and `help/generic` POT files did not include all
 current English source text. Both templates were regenerated and are included in
@@ -24,8 +30,8 @@ and loop labels.
 
 Environment: Debian 13, GCC 14.2, C++20, CMake 4.4.4 and GNU gettext 0.23.1.
 
-- Release configuration, compilation and installation passed with `TESTS=ON`,
-  `DESKTOP=OFF` and `PORTABLE=ON`.
+- Clean source preparation, Release configuration, full compilation and
+  installation passed with `TESTS=ON`, `DESKTOP=OFF` and `PORTABLE=ON`.
 - All 205 enabled CTest tests passed, including the two added tests for the
   Italian language round trip and compatibility of existing language identifiers.
 - Native startup was checked with an Italian system locale and with an English

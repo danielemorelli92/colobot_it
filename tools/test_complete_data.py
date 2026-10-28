@@ -26,7 +26,7 @@ for path in sorted(root.rglob('it.po')):
         else:
             files=[target/'scene.txt',*sorted((target/'help').glob('*.I.txt'))]
     assert files,(path,'no Italian output')
-    text='\n'.join(f.read_text() for f in files)
+    text='\n'.join(f.read_text(encoding='utf-8') for f in files)
     for entry in po:
         native=convert_tag_syntax_to_escape_syntax(entry.msgstr).strip()
         code='\n'.join(r'\s;'+line for line in convert_tag_syntax_to_escape_syntax(entry.msgstr).split('\n')).strip()

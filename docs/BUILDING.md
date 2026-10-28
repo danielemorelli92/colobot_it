@@ -53,6 +53,8 @@ python tools/validate.py --require-complete --engine build/prepared/colobot --da
 The preparation tool archives the pinned commits into new source trees, copies
 the Italian catalogs and updated templates, and applies the engine patch.
 The original checkouts are preserved.
+With `--require-complete`, validation also checks that every upstream template
+directory has an Italian catalog, in addition to checking individual entries.
 
 ## Configure
 
@@ -146,3 +148,4 @@ python tools/export_upstream.py --engine build/src/colobot --data build/src/colo
 Apply each patch to its respective repository at the pinned commit. The export
 contains only the upstream contribution; this repository's documentation and
 helper scripts are not included.
+Exported patches use UTF-8 and LF line endings on both Linux and Windows.

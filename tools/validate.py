@@ -17,7 +17,16 @@ a = p.parse_args()
 total = translated = 0
 with tempfile.TemporaryDirectory() as temp:
     for name, source in [('colobot', a.engine), ('colobot-data', a.data)]:
-        for path in sorted((ROOT/'translations'/name).rglob('it.po')):
+        overlay = ROOT/'translations'/name
+        catalogs = sorted(overlay.rglob('it.po'))
+        if a.require_complete:
+            expected = {path.parent.relative_to(source) for path in source.rglob('*.pot')}
+            actual = {path.parent.relative_to(overlay) for path in catalogs}
+            if not expected or expected != actual:
+                missing = sorted(str(path/'it.po') for path in expected - actual)
+                extra = sorted(str(path/'it.po') for path in actual - expected)
+                raise ValueError(f'{name}: catalog inventory mismatch; missing={missing}; extra={extra}')
+        for path in catalogs:
             catalog = polib.pofile(str(path), check_for_duplicates=True)
             pots = list((source/path.relative_to(ROOT/'translations'/name).parent).glob('*.pot'))
             assert len(pots) == 1, path

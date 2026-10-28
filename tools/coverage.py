@@ -22,6 +22,6 @@ report={'revision':a.label,'catalogs':len(rows),'entries':sum(r['entries'] for r
         'identical_to_source':sum(r['identical_to_source'] for r in rows),
         'untranslated':sum(r['untranslated'] for r in rows),'details':rows}
 text=json.dumps(report,indent=2)+'\n'
-if a.output:a.output.write_text(text)
+if a.output:a.output.write_text(text, encoding='utf-8', newline='\n')
 else:print(text,end='')
-print(f"Coverage: {report['nonempty']}/{report['entries']}; {report['identical_to_source']} entries intentionally identical to source; {report['untranslated']} untranslated.")
+print(f"Coverage: {report['nonempty']}/{report['entries']}; {report['identical_to_source']} entries identical to source; {report['untranslated']} untranslated.")

@@ -17,7 +17,7 @@ for source,target,flags in [
     except ValueError: pass
     else: raise AssertionError((source,target))
 print('PASS: translated bracketed prose accepted; changed link/button/key/code/printf/tooltip rejected.')
-# The RC review permits only enumerated upstream errata and prose captions.
+# Permit only enumerated upstream errata and prose captions.
 check_translation('<a object|Huston>Houston</a>', '<a object|huston>Houston</a>')
 check_translation('<code><a cbot|pointer>reference</a></code>', '<code><a cbot|pointer>riferimento</a></code>')
 for source, target in [
