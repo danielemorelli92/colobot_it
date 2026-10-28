@@ -23,6 +23,20 @@ if not exist "%COLOBOT022_ROOT%\vcpkg\vcpkg.exe" (
     echo Missing vcpkg at %COLOBOT022_ROOT%\vcpkg
     exit /b 1
 )
+rem Manifest overrides refer to historical port trees absent in a shallow clone.
+for /f "delims=" %%S in ('git -C "%COLOBOT022_ROOT%\vcpkg" rev-parse --is-shallow-repository') do (
+    if /i "%%S"=="true" (
+        echo Downloading vcpkg history required by the pinned library versions...
+        git -C "%COLOBOT022_ROOT%\vcpkg" fetch --unshallow https://github.com/microsoft/vcpkg.git f6a5d4e8eb7476b8d7fc12a56dff300c1c986131
+        if errorlevel 1 exit /b 1
+    )
+)
+set "COLOBOT022_NINJA="
+for /f "delims=" %%N in ('where ninja.exe 2^>nul') do if not defined COLOBOT022_NINJA set "COLOBOT022_NINJA=%%N"
+if not defined COLOBOT022_NINJA (
+    echo Ninja was not found. Open the x64 Visual Studio tools prompt.
+    exit /b 1
+)
 if not exist "%COLOBOT022_PROJECT%\build\python-deps\polib.py" (
     "%COLOBOT022_PYTHON%" -m pip install --target "%COLOBOT022_PROJECT%\build\python-deps" -r "%COLOBOT022_PROJECT%\tools\requirements.txt"
     if errorlevel 1 exit /b 1
@@ -32,6 +46,7 @@ if errorlevel 1 exit /b 1
 cmake -G Ninja ^
   -S "%COLOBOT022_PROJECT%\build\release-022\prepared\colobot" ^
   -B "%COLOBOT022_ROOT%\engine" ^
+  -DCMAKE_MAKE_PROGRAM:FILEPATH="%COLOBOT022_NINJA%" ^
   -DCMAKE_C_COMPILER=cl.exe -DCMAKE_CXX_COMPILER=cl.exe ^
   -DCMAKE_TOOLCHAIN_FILE="%COLOBOT022_ROOT%/vcpkg/scripts/buildsystems/vcpkg.cmake" ^
   -DVCPKG_TARGET_TRIPLET=x64-windows-static ^
@@ -47,6 +62,7 @@ if errorlevel 1 exit /b 1
 cmake -G Ninja ^
   -S "%COLOBOT022_PROJECT%\build\release-022\prepared\colobot-data" ^
   -B "%COLOBOT022_ROOT%\data" ^
+  -DCMAKE_MAKE_PROGRAM:FILEPATH="%COLOBOT022_NINJA%" ^
   -DCMAKE_C_COMPILER=cl.exe -DCMAKE_CXX_COMPILER=cl.exe ^
   -DPython3_EXECUTABLE="%COLOBOT022_PYTHON%" ^
   -DTRANSLATIONS=ON -DMUSIC=OFF ^

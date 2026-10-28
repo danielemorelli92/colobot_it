@@ -11,7 +11,9 @@
 > `f6a5d4e8eb7476b8d7fc12a56dff300c1c986131` bootstrapped at
 > `C:\colobot-build-022\vcpkg`, run `tools\build_windows_022.cmd configure`,
 > then `tools\build_windows_022.cmd build` after successful configuration.
-> Configuration downloads and compiles static dependencies and can take time.
+> Configuration completes a shallow vcpkg history when necessary: the pinned
+> `libiconv` and `physfs` overrides require historical port trees. It also
+> downloads and compiles static dependencies and can take time.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.
