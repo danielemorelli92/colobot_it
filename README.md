@@ -1,5 +1,28 @@
 # Colobot: Gold Edition — Italian translation / Traduzione italiana
 
+> **Windows 0.2.2 compatibility branch.** The maintainer contribution remains on
+> [main](https://github.com/danielemorelli92/colobot_it/tree/main), targeting `dev`.
+> This branch additionally provides `tools/prepare_022.py` and
+> `tools/build_windows_022.cmd` for a local MSVC x64 build of the original
+> 0.2.2-alpha release with native Italian language selection.
+>
+> In an x64 Visual Studio 2022 Developer Command Prompt, with MSYS2 at
+> `C:\msys64` and vcpkg revision
+> `f6a5d4e8eb7476b8d7fc12a56dff300c1c986131` bootstrapped at
+> `C:\colobot-build-022\vcpkg`, run `tools\build_windows_022.cmd configure`,
+> then `tools\build_windows_022.cmd build` after successful configuration.
+> Configuration downloads and compiles static dependencies and can take time.
+> The helper applies the archived native 0.2.2 registration patch and updates
+> matching catalog entries from the current translation. It validates all
+> 5,172 entries before configuring the build.
+>
+> Build output goes to `C:\colobot-build-022\install`. Music downloads are
+> skipped: final packaging is intended to retain the official 0.2.2 assets,
+> soundtrack, existing languages and folder layout, replacing the executable
+> and adding Italian text only. The source preparation and catalog checks have
+> passed on Linux; the MSVC build and final runtime validation are pending.
+> The instructions below describe the separate `dev` contribution.
+
 [English](#english) | [Italiano](#italiano)
 
 ## English
