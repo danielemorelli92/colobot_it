@@ -35,8 +35,9 @@ dei programmi sono preservati; i commenti degli esempi sono tradotti.
 - [Glossario](docs/GLOSSARIO.md)
 
 La versione comunitaria Windows è stata provata dall’utente. L’integrazione
-nativa è stata compilata e avviata su Linux; una build nativa Windows di `dev`
-resta da verificare. Questa non è una distribuzione ufficiale di Colobot.
+nativa è stata compilata e avviata su Linux. Sul PC Windows dell’utente sono
+riuscite compilazione, installazione e 205 test automatici; l’avvio grafico
+nativo Windows è in corso di verifica. Questa non è una distribuzione ufficiale di Colobot.
 
 ## Preparare i sorgenti
 

@@ -27,11 +27,26 @@ inclusi aggiornati, insieme alle traduzioni di `searchall` e delle etichette
 dei cicli. Il confronto iniziale con i soli POT committati non rilevava queste
 voci: i conteggi sopra riguardano i dati rigenerati.
 
+## Prova locale Windows
+
+Risultati riportati dall’utente sul proprio PC Windows 64 bit con MSYS2 UCRT64:
+GCC 16.2.0, CMake 4.4.4 e Python 3.14.9. Sorgenti preparati sui commit fissati,
+cataloghi validati: 5.188 voci tradotte, nessuna vuota o fuzzy.
+
+- Configurazione con `DESKTOP=ON`, `PORTABLE=ON`, `PORTABLE_SAVES=ON` e test abilitati.
+- Compilazione del gioco completata (311 target) e dei dati completata (144 target).
+- CTest: **205 test superati in 14,75 secondi**. `CBotUT.PublicClasses` e
+  `CBotUT.StringAsArray` sono già disabilitati dal progetto e non sono stati eseguiti.
+- Installazione di gioco e dati nella cartella di prova riuscita senza errori.
+- Avvio grafico, selezione di Italiano e collaudo nel gioco ancora da confermare.
+
+Questa verifica è locale sul PC dell’utente, non un’esecuzione GitHub Actions.
+
 ## Limiti del collaudo
 
-- La nuova integrazione `dev` non è stata compilata o avviata su Windows.
-  L’utente ha provato il pacchetto comunitario 1.0 con il binario 0.2.2-alpha.
-- Desktop/manpage non generati nella build nativa; il relativo PO compila
+- Il collaudo grafico della nuova integrazione Windows è ancora da confermare.
+  La precedente prova della 1.0 riguarda l’eseguibile ufficiale 0.2.2-alpha.
+- Desktop/manpage non generati nella build Linux; il relativo PO compila
   con gettext. Le risorse audio opzionali non sono state collaudate.
 - Le prove automatiche e l’avvio della prima missione non sostituiscono
   una partita completa o una revisione linguistica di ogni schermata.
