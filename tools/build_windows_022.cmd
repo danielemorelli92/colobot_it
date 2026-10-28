@@ -8,7 +8,14 @@ if /i not "%VSCMD_ARG_TGT_ARCH%"=="x64" (
 if "%~1"=="" goto usage
 if /i "%~1"=="configure" goto configure
 if /i "%~1"=="build" goto build
+if /i "%~1"=="all" goto all
 goto usage
+
+:all
+call "%~f0" configure
+if errorlevel 1 exit /b 1
+call "%~f0" build
+exit /b %errorlevel%
 
 :configure
 set "COLOBOT022_ROOT=C:\colobot-build-022"
@@ -53,6 +60,8 @@ if not exist "%COLOBOT022_PROJECT%\build\python-deps\polib.py" (
     if errorlevel 1 exit /b 1
 )
 "%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_022.py" --reuse
+if errorlevel 1 exit /b 1
+"%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_windows_022_tools.py" --vcpkg "%COLOBOT022_ROOT%\vcpkg"
 if errorlevel 1 exit /b 1
 cmake -G Ninja ^
   -S "%COLOBOT022_PROJECT%\build\release-022\prepared\colobot" ^
@@ -110,4 +119,5 @@ exit /b 0
 :usage
 echo Usage: tools\build_windows_022.cmd configure
 echo        tools\build_windows_022.cmd build
+echo        tools\build_windows_022.cmd all
 exit /b 1

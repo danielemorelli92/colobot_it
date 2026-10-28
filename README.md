@@ -17,6 +17,11 @@
 > The library ports stay at the 2023 revision above. The helper updates only
 > `vcpkg.exe` to the checksum-verified 2024-06-10 release, which recognizes
 > MSVC 14.4 supplied with recent Visual Studio 2022 installations.
+> Before CMake runs, six Windows tool archives are downloaded or checked in
+> the vcpkg cache against their original SHA512 values. The two 7-Zip 21.07
+> archives come from the official `ip7z/7zip` GitHub release because their old
+> `7-zip.org` addresses return HTTP 404. `tools\build_windows_022.cmd all`
+> configures, builds, validates and installs in sequence, stopping on failure.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.
