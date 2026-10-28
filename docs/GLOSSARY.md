@@ -2,6 +2,8 @@
 
 The tables record terminology used in the Italian catalogs. API identifiers,
 CBOT keywords, function names and executable string literals remain unchanged.
+The gettext catalog layout and native language registration follow the
+[official translation guidelines](https://github.com/colobot/colobot/wiki/Working-with-translations).
 
 ## Interface and gameplay
 

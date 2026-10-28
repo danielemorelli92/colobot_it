@@ -27,6 +27,7 @@ The upstream commits are pinned in [upstream.json](upstream.json).
 - [Build, validate and export the contribution](docs/BUILDING.md)
 - [Recorded Linux and Windows test results and limitations](docs/TESTING.md)
 - [Italian terminology and code/markup preservation rules](docs/GLOSSARY.md)
+- [Official translation guidelines](https://github.com/colobot/colobot/wiki/Working-with-translations)
 
 Builds and all 205 enabled CTest tests passed on Linux and Windows. Local Windows
 checks also covered Italian menus and SatCom, language persistence, and
@@ -82,6 +83,7 @@ manutentori:
 - [Compilare, validare ed esportare il contributo](docs/BUILDING.md)
 - [Risultati e limiti dei test Linux e Windows](docs/TESTING.md)
 - [Terminologia italiana e regole per codice e marcatori](docs/GLOSSARY.md)
+- [Linee guida ufficiali per le traduzioni](https://github.com/colobot/colobot/wiki/Working-with-translations)
 
 Compilazione e tutti i 205 test CTest abilitati sono riusciti su Linux e Windows.
 Il collaudo locale Windows ha verificato anche menu e SatCom in italiano,

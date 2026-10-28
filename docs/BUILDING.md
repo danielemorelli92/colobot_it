@@ -12,6 +12,43 @@ The preparation and export tools refuse to overwrite existing output directories
   system libraries instead of the corresponding submodules.
 - On Windows, use MSYS2 UCRT64 with its native compiler, dependencies and Ninja.
 
+The [official translation guide](https://github.com/colobot/colobot/wiki/Working-with-translations)
+describes the workflow used here. Its Python 2.7/CMake 2.8 requirements and
+`src/` examples refer to older versions. The pinned engine requires CMake >=3.21
+and C++20, and the data tools use Python 3. This repository's preparation tool
+requires Python >=3.12. Current engine source paths start with `colobot-base/src/`.
+
+## Translation layout and workflow
+
+The `translations/` overlay preserves the upstream catalog layout:
+
+| Area | Upstream repository | Catalog location |
+|---|---|---|
+| Interface | `colobot/colobot` | `po/it.po` |
+| Desktop and manpage | `colobot/colobot` | `desktop/po/it.po` |
+| SatCom | `colobot/colobot-data` | `help/<section>/po/it.po` |
+| Chapter names | `colobot/colobot-data` | `levels/<mode>/po/it.po` |
+| Mission/exercise text and instructions | `colobot/colobot-data` | `levels/<mode>/chapterNNN/levelNNN/po/it.po` |
+
+Edit the Italian `msgstr` values in this repository's source catalogs, preserving
+the English `msgid` text and gettext escaping. The preservation rules and the
+enumerated upstream typo corrections are described in [GLOSSARY.md](GLOSSARY.md).
+Prepare fresh sources and run validation after editing, using the commands below.
+Interface changes require rebuilding/installing the engine translation catalogs;
+SatCom and level text changes only require rebuilding/installing the data.
+
+The native registration patch covers the `Language` enum, `LANGUAGE_MAP`,
+`CApplication::GetLanguageChar()`, environment/locale handling in
+`CApplication::SetLanguage()`, and the language selector in
+`CScreenSetupGame::CreateInterface()`. Italian uses `it` and `I`; the existing
+language identifiers are preserved.
+
+For submission, export the two change sets described below and apply them to
+forks of their respective official repositories. The contribution targets `dev`
+and is intended for review as commits and pull requests. Follow the maintainers'
+instructions in [issue #1902](https://github.com/colobot/colobot/issues/1902)
+for the next contribution steps.
+
 ## Fetch the upstream sources
 
 ```sh
