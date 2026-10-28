@@ -23,6 +23,17 @@ if not exist "%COLOBOT022_ROOT%\vcpkg\vcpkg.exe" (
     echo Missing vcpkg at %COLOBOT022_ROOT%\vcpkg
     exit /b 1
 )
+rem The 2023 executable rejects MSVC 14.4; keep its ports but update the tool.
+"%COLOBOT022_ROOT%\vcpkg\vcpkg.exe" version | findstr /c:"2024-06-10-" >nul
+if errorlevel 1 (
+    echo Updating the vcpkg executable for MSVC 14.4 support...
+    "%COLOBOT022_ROOT%\vcpkg\scripts\tls12-download.exe" github.com /microsoft/vcpkg-tool/releases/download/2024-06-10/vcpkg.exe "%COLOBOT022_ROOT%\vcpkg\vcpkg-2024-06-10.exe"
+    if errorlevel 1 exit /b 1
+    "%COLOBOT022_PYTHON%" -c "import hashlib,sys; from pathlib import Path; digest=hashlib.sha256(Path(sys.argv[1]).read_bytes()).hexdigest(); sys.exit(0 if digest=='39f45d17cd4d2139fccd4da67c33d141cd384f3a781c5e6239283482fa568107' else 'vcpkg download checksum mismatch')" "%COLOBOT022_ROOT%\vcpkg\vcpkg-2024-06-10.exe"
+    if errorlevel 1 exit /b 1
+    move /y "%COLOBOT022_ROOT%\vcpkg\vcpkg-2024-06-10.exe" "%COLOBOT022_ROOT%\vcpkg\vcpkg.exe" >nul
+    if errorlevel 1 exit /b 1
+)
 rem Manifest overrides refer to historical port trees absent in a shallow clone.
 for /f "delims=" %%S in ('git -C "%COLOBOT022_ROOT%\vcpkg" rev-parse --is-shallow-repository') do (
     if /i "%%S"=="true" (

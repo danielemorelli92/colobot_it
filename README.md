@@ -14,6 +14,9 @@
 > Configuration completes a shallow vcpkg history when necessary: the pinned
 > `libiconv` and `physfs` overrides require historical port trees. It also
 > downloads and compiles static dependencies and can take time.
+> The library ports stay at the 2023 revision above. The helper updates only
+> `vcpkg.exe` to the checksum-verified 2024-06-10 release, which recognizes
+> MSVC 14.4 supplied with recent Visual Studio 2022 installations.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.
