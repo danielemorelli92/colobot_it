@@ -26,6 +26,9 @@
 > missing `vc144` to `vc140` filename normalization for MSVC 14.4. Its port
 > revision is incremented so dependent Boost libraries are rebuilt with the
 > expected names. Boost itself remains at 1.82.0; the registry is preserved.
+> The installed MSYS2 UCRT64 `pkgconf.exe` supplies `PKG_CONFIG`, preserved in
+> vcpkg's build environment through its supported `VCPKG_KEEP_ENV_VARS` setting.
+> This avoids downloading the removed MSYS2 pkgconf 1.8.0 package.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.
@@ -36,6 +39,14 @@
 > and adding Italian text only. The source preparation and catalog checks have
 > passed on Linux; the MSVC build and final runtime validation are pending.
 > The instructions below describe the separate `dev` contribution.
+
+The Windows build uses the MSVC/vcpkg/static configuration documented in the
+[official MSVC guide](https://github.com/colobot/colobot/wiki/How-to-Build-Colobot%3A-Gold-Edition-Using-MSVC)
+and the [0.2.2 Windows workflow](https://github.com/colobot/colobot/blob/colobot-gold-0.2.2-alpha/.github/workflows/build.yml).
+Its old tool downloads require the compatibility measures above on current
+Visual Studio and MSYS2 installations. The current `dev` branch instead uses
+the upstream `Windows-CI` preset in `CMakePresets.json`; its options differ from
+0.2.2 and should not be copied into the release build unchanged.
 
 [English](#english) | [Italiano](#italiano)
 

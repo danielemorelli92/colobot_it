@@ -26,6 +26,8 @@ set "PYTHONUTF8=1"
 set "PYTHONPATH=%COLOBOT022_PROJECT%\build\python-deps"
 set "VCPKG_FORCE_DOWNLOADED_BINARIES=1"
 set "VCPKG_MAX_CONCURRENCY=2"
+call :setup_pkgconfig
+if errorlevel 1 exit /b 1
 if not exist "%COLOBOT022_ROOT%\vcpkg\vcpkg.exe" (
     echo Missing vcpkg at %COLOBOT022_ROOT%\vcpkg
     exit /b 1
@@ -99,6 +101,8 @@ set "COLOBOT022_PYTHON=C:\msys64\ucrt64\bin\python.exe"
 set "PATH=%PATH%;C:\msys64\usr\bin;C:\msys64\ucrt64\bin"
 set "PYTHONUTF8=1"
 set "PYTHONPATH=%COLOBOT022_PROJECT%\build\python-deps"
+call :setup_pkgconfig
+if errorlevel 1 exit /b 1
 cmake --build "%COLOBOT022_ROOT%\engine" --parallel 2
 if errorlevel 1 exit /b 1
 cmake --build "%COLOBOT022_ROOT%\data" --parallel 2
@@ -116,6 +120,22 @@ if errorlevel 1 exit /b 1
 echo Build installed in %COLOBOT022_ROOT%\install
 echo Final packaging will reuse the original game's assets and music.
 exit /b 0
+
+:setup_pkgconfig
+rem vcpkg supports a supplied pkg-config through this environment variable.
+set "PKG_CONFIG=C:\msys64\ucrt64\bin\pkgconf.exe"
+if not exist "%PKG_CONFIG%" (
+    echo Missing %PKG_CONFIG%. Install mingw-w64-ucrt-x86_64-pkgconf in MSYS2.
+    exit /b 1
+)
+if defined VCPKG_KEEP_ENV_VARS (
+    set "VCPKG_KEEP_ENV_VARS=%VCPKG_KEEP_ENV_VARS%;PKG_CONFIG"
+) else (
+    set "VCPKG_KEEP_ENV_VARS=PKG_CONFIG"
+)
+echo Using installed pkg-config: %PKG_CONFIG%
+"%PKG_CONFIG%" --version
+exit /b %errorlevel%
 
 :usage
 echo Usage: tools\build_windows_022.cmd configure
