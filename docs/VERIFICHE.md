@@ -42,16 +42,24 @@ cataloghi validati: 5.188 voci tradotte, nessuna vuota o fuzzy.
   e letta la home del SatCom in italiano. Inizializzazione OpenGL e audio riuscita.
 - Corretti due titoli descrittivi rimasti inglesi nella home del SatCom:
   «Type» -> «Tipi» e «Constants» -> «Costanti», preservando i marcatori di stile.
-- Persistenza della lingua e prova di salvataggio/ricaricamento ancora da confermare.
+- Confermate la persistenza dell’italiano nei menu dopo la chiusura e il riavvio
+  del gioco, la creazione e il caricamento di un salvataggio manuale e la
+  visualizzazione delle istruzioni italiane con F1 dopo il caricamento.
 
 Questa verifica è locale sul PC dell’utente, non un’esecuzione GitHub Actions.
 
 ## Limiti del collaudo
 
-- La prova Windows conferma avvio e SatCom; il collaudo completo della partita
-  resta aperto. I messaggi sui file musicali mancanti sono previsti con `MUSIC=OFF`,
+- La prova Windows conferma avvio, menu e SatCom in italiano, persistenza della
+  lingua e salvataggio/ricaricamento nella prima missione. I messaggi sui file
+  musicali mancanti sono previsti con `MUSIC=OFF`,
   usato per velocizzare questa build di prova. È stato riportato anche il fallback
   della locale C++: il caricamento dei dati italiani del SatCom è confermato.
+- Cambiando lingua durante una missione, i documenti SatCom possono mantenere
+  la lingua iniziale fino al riavvio della missione. L’utente ha osservato il
+  comportamento anche con altre lingue; il codice ufficiale conserva i percorsi
+  dei documenti risolti al caricamento della missione. Questa logica non è
+  modificata dalla patch italiana ed è stata lasciata invariata.
 - Desktop/manpage non generati nella build Linux; il relativo PO compila
   con gettext. Le risorse audio opzionali non sono state collaudate.
 - Le prove automatiche e l’avvio della prima missione non sostituiscono
