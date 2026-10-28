@@ -44,8 +44,9 @@ Servono Python >=3.12, Git, CMake >=3.21, un compilatore C++20, GNU gettext e
 le dipendenze indicate nelle [istruzioni del progetto](https://github.com/colobot/colobot/blob/dev/docs/README-dev.md).
 Su Debian/Ubuntu servono inoltre `nlohmann-json3-dev` e `libgtest-dev` per usare
 le librerie di sistema al posto dei rispettivi submodule. I comandi seguenti
-compilano il motore e i dati; la generazione di desktop e manpage è disabilitata.
-Il catalogo desktop viene comunque controllato da gettext.
+sono per Linux e compilano il motore e i dati con desktop e manpage disabilitati.
+Su Windows/MSYS2 usare **`-DDESKTOP=ON`**: serve a generare `colobot.rc`,
+richiesto dall’eseguibile. Il catalogo desktop viene comunque controllato da gettext.
 
 ```sh
 python3 -m venv .venv
