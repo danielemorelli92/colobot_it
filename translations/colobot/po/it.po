@@ -1,12 +1,11 @@
 # Italian translation of Colobot: Gold Edition.
 # Distributed under the same license as the upstream package.
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"Project-Id-Version: Colobot: Gold Edition\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: DATE\n"
-"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"PO-Revision-Date: 2026-10-28 12:05+0000\n"
 "Last-Translator: Colobot Italian translation contributors\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -186,6 +185,13 @@ msgstr "Impossibile aprire l’indirizzo %s nel browser."
 
 msgid "There are unsaved changes. Do you want to save them before leaving?"
 msgstr "Ci sono modifiche non salvate. Vuoi salvarle prima di uscire?"
+
+msgid ""
+"This save file is from a different version of the game and might not work correctly.\n"
+"Do you want to open it anyway?"
+msgstr ""
+"Questo salvataggio proviene da una versione diversa del gioco e potrebbe non funzionare correttamente.\n"
+"Vuoi aprirlo comunque?"
 
 msgid "Keyword help(\\key cbot;)"
 msgstr "Aiuto sulla parola chiave (\\key cbot;)"
@@ -472,7 +478,7 @@ msgid "Number of particles\\Explosions, dust, reflections, etc."
 msgstr "Numero di particelle\\Esplosioni, polvere, riflessi, ecc."
 
 msgid "Render distance\\Maximum visibility"
-msgstr "Distanza di visualizzazione\\Visibilità massima"
+msgstr "Distanza visiva\\Visibilità massima"
 
 msgid "Pause blur\\Blur the background on the pause screen"
 msgstr "Sfocatura in pausa\\Sfoca lo sfondo nella schermata di pausa"

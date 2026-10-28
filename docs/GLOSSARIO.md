@@ -1,4 +1,4 @@
-# Terminologia italiana — 1.0
+# Terminologia italiana
 
 | Inglese | Italiano |
 |---|---|

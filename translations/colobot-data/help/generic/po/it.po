@@ -1,11 +1,10 @@
 # Italian translation of Colobot: Gold Edition.
 # Distributed under the same license as the upstream package.
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"Project-Id-Version: Colobot: Gold Edition\n"
 "POT-Creation-Date: DATE\n"
-"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"PO-Revision-Date: 2026-10-28 12:05+0000\n"
 "Last-Translator: Colobot Italian translation contributors\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -93,25 +92,25 @@ msgid "Specific instructions for bots:"
 msgstr "Istruzioni specifiche per i robot:"
 
 #. type: \t; header
-#: ../E/cbot.txt:60
+#: ../E/cbot.txt:61
 #, no-wrap
 msgid "Instructions about topology:"
 msgstr "Istruzioni relative alla topografia:"
 
 #. type: \t; header
-#: ../E/cbot.txt:66
+#: ../E/cbot.txt:67
 #, no-wrap
 msgid "Instructions specific to some bots:"
 msgstr "Istruzioni specifiche per alcuni robot:"
 
 #. type: \t; header
-#: ../E/cbot.txt:79
+#: ../E/cbot.txt:80
 #, no-wrap
 msgid "Specific instructions for exchange posts:"
 msgstr "Istruzioni specifiche per i centri di scambio dati:"
 
 #. type: Plain text
-#: ../E/cbot.txt:80
+#: ../E/cbot.txt:81
 #, no-wrap
 msgid ""
 "<code><a cbot|receive>receive</a>    </code>Receives an information\n"
@@ -125,19 +124,19 @@ msgstr ""
 "<code><a cbot|delinfo>deleteinfo</a> </code>Elimina un dato esistente"
 
 #. type: \t; header
-#: ../E/cbot.txt:85
+#: ../E/cbot.txt:86
 #, no-wrap
 msgid "Specific instructions for classes:"
 msgstr "Istruzioni specifiche per le classi:"
 
 #. type: \t; header
-#: ../E/cbot.txt:97
+#: ../E/cbot.txt:98
 #, no-wrap
 msgid "Specific instructions for strings:"
 msgstr "Istruzioni specifiche per le stringhe:"
 
 #. type: Plain text
-#: ../E/cbot.txt:98
+#: ../E/cbot.txt:99
 #, no-wrap
 msgid ""
 "<code><a cbot|strlen>strlen</a>     </code>Gets string length\n"
@@ -159,13 +158,13 @@ msgstr ""
 "<code><a cbot|strlower>strlower</a>   </code>Converte in minuscolo"
 
 #. type: \t; header
-#: ../E/cbot.txt:107
+#: ../E/cbot.txt:108
 #, no-wrap
 msgid "Specific instructions for files:"
 msgstr "Istruzioni specifiche per i file:"
 
 #. type: Plain text
-#: ../E/cbot.txt:108
+#: ../E/cbot.txt:109
 #, no-wrap
 msgid ""
 "<code><a cbot|open>open</a>       </code>Opens a file\n"
@@ -183,13 +182,13 @@ msgstr ""
 "<code><a cbot|deletef>deletefile</a> </code>Elimina un file"
 
 #. type: \t; header
-#: ../E/battles.txt:53 ../E/cbot.txt:131 ../E/freehelp.txt:4
+#: ../E/battles.txt:53 ../E/cbot.txt:132 ../E/freehelp.txt:4
 #, no-wrap
 msgid "See also"
 msgstr "Vedi anche"
 
 #. type: Plain text
-#: ../E/cbot.txt:132
+#: ../E/cbot.txt:133
 #, no-wrap
 msgid "<a cbot|type>Types</a> and <a cbot|category>categories</a>."
 msgstr "<a cbot|type>Tipi</a> e <a cbot|category>categorie</a>."
@@ -723,7 +722,7 @@ msgstr ""
 "<code><a cbot|sizeof>sizeof</a>     </code>Dimensione di un array"
 
 #. type: Plain text
-#: ../E/cbot.txt:61
+#: ../E/cbot.txt:62
 #, no-wrap
 msgid ""
 "<code><a cbot|space>space</a>      </code>Calculates a free space\n"
@@ -737,13 +736,13 @@ msgstr ""
 "<code><a cbot|flatgrnd>flatground</a> </code>Restituisce il raggio di un’area pianeggiante"
 
 #. type: \t; header
-#: ../E/cbot.txt:115
+#: ../E/cbot.txt:116
 #, no-wrap
 msgid "Mathematical functions:"
 msgstr "Funzioni matematiche:"
 
 #. type: Plain text
-#: ../E/cbot.txt:116
+#: ../E/cbot.txt:117
 #, no-wrap
 msgid ""
 "<code><a cbot|rand>rand</a>       </code>Returns a random value\n"
@@ -1291,7 +1290,7 @@ msgstr ""
 "key>PageUp</format>/<format key>PageDown</format>."
 
 #. type: Plain text
-#: ../E/cbot.txt:86
+#: ../E/cbot.txt:87
 #, no-wrap
 msgid ""
 "<code><a cbot|class>class</a>      </code>Class declararion\n"
@@ -1335,6 +1334,34 @@ msgstr ""
 "<format key><key quit/></format> = abbandona la missione <button 11/>"
 
 #. type: Plain text
+#: ../E/cbot.txt:68
+#, no-wrap
+msgid ""
+"<code><a cbot|grab>grab</a>       </code>Picks up an object\n"
+"<code><a cbot|drop>drop</a>       </code>Puts down an object\n"
+"<code><a cbot|sniff>sniff</a>      </code>Sounds the subsoil\n"
+"<code><a cbot|thump>thump</a>      </code>Overturns alien insects\n"
+"<code><a cbot|recycle>recycle</a>    </code>Recycles a derelict bot\n"
+"<code><a cbot|shield>shield</a>     </code>Extends or withdraws the shield\n"
+"<code><a cbot|fire>fire</a>       </code>Fires the cannon\n"
+"<code><a cbot|aim>aim</a>        </code>Rotates the cannon\n"
+"<code><a cbot|build>build</a>      </code>Builds a building\n"
+"<code><a cbot|flag>flag</a>       </code>Plants a flag\n"
+"<code><a cbot|deflag>deflag</a>     </code>Removes a flag"
+msgstr ""
+"<code><a cbot|grab>grab</a>       </code>Prende un oggetto\n"
+"<code><a cbot|drop>drop</a>       </code>Posa un oggetto\n"
+"<code><a cbot|sniff>sniff</a>      </code>Esamina il sottosuolo\n"
+"<code><a cbot|thump>thump</a>      </code>Rovescia gli insetti alieni\n"
+"<code><a cbot|recycle>recycle</a>    </code>Ricicla un robot distrutto\n"
+"<code><a cbot|shield>shield</a>     </code>Estende o ritira lo scudo\n"
+"<code><a cbot|fire>fire</a>       </code>Spara con il cannone\n"
+"<code><a cbot|aim>aim</a>        </code>Ruota il cannone\n"
+"<code><a cbot|build>build</a>      </code>Costruisce un edificio\n"
+"<code><a cbot|flag>flag</a>       </code>Pianta una bandiera\n"
+"<code><a cbot|deflag>deflag</a>     </code>Rimuove una bandiera"
+
+#. type: Plain text
 #: ../E/cbot.txt:30
 #, no-wrap
 msgid ""
@@ -1342,6 +1369,7 @@ msgid ""
 "<code><a cbot|radar>radar</a>      </code>Advanced object detection\n"
 "<code><a cbot|radarall>radarall</a>   </code>Advanced multiple objects detection\n"
 "<code><a cbot|search>search</a>     </code>Object detection from a specific point\n"
+"<code><a cbot|searchall>searchall</a>     </code>Detection of multiple objects from a specific point\n"
 "<code><a cbot|direct>direction</a>  </code>Calculates a rotation angle\n"
 "<code><a cbot|dist>distance</a>   </code>Calculates a distance\n"
 "<code><a cbot|dist2d>distance2d</a> </code>Calculates a distance\n"
@@ -1372,6 +1400,7 @@ msgstr ""
 "<code><a cbot|radar>radar</a>      </code>Rilevamento avanzato degli oggetti\n"
 "<code><a cbot|radarall>radarall</a>   </code>Rilevamento avanzato di più oggetti\n"
 "<code><a cbot|search>search</a>     </code>Rilevamento degli oggetti da un punto specifico\n"
+"<code><a cbot|searchall>searchall</a>     </code>Rilevamento di più oggetti da un punto specifico\n"
 "<code><a cbot|direct>direction</a>  </code>Calcola un angolo di rotazione\n"
 "<code><a cbot|dist>distance</a>   </code>Calcola una distanza\n"
 "<code><a cbot|dist2d>distance2d</a> </code>Calcola una distanza\n"
@@ -1397,31 +1426,3 @@ msgstr ""
 "<code><a cbot|researched>researched</a> </code>Verifica se una tecnologia è stata ricercata\n"
 "<code><a cbot|canbuild>canbuild</a>   </code>Verifica se un edificio può essere costruito\n"
 "<code><a cbot|buildingenabled>buildingenabled</a> </code>Verifica se un edificio è disponibile nella missione attuale"
-
-#. type: Plain text
-#: ../E/cbot.txt:67
-#, no-wrap
-msgid ""
-"<code><a cbot|grab>grab</a>       </code>Picks up an object\n"
-"<code><a cbot|drop>drop</a>       </code>Puts down an object\n"
-"<code><a cbot|sniff>sniff</a>      </code>Sounds the subsoil\n"
-"<code><a cbot|thump>thump</a>      </code>Overturns alien insects\n"
-"<code><a cbot|recycle>recycle</a>    </code>Recycles a derelict bot\n"
-"<code><a cbot|shield>shield</a>     </code>Extends or withdraws the shield\n"
-"<code><a cbot|fire>fire</a>       </code>Fires the cannon\n"
-"<code><a cbot|aim>aim</a>        </code>Rotates the cannon\n"
-"<code><a cbot|build>build</a>      </code>Builds a building\n"
-"<code><a cbot|flag>flag</a>       </code>Plants a flag\n"
-"<code><a cbot|deflag>deflag</a>     </code>Removes a flag"
-msgstr ""
-"<code><a cbot|grab>grab</a>       </code>Prende un oggetto\n"
-"<code><a cbot|drop>drop</a>       </code>Posa un oggetto\n"
-"<code><a cbot|sniff>sniff</a>      </code>Esamina il sottosuolo\n"
-"<code><a cbot|thump>thump</a>      </code>Rovescia gli insetti alieni\n"
-"<code><a cbot|recycle>recycle</a>    </code>Ricicla un robot distrutto\n"
-"<code><a cbot|shield>shield</a>     </code>Estende o ritira lo scudo\n"
-"<code><a cbot|fire>fire</a>       </code>Spara con il cannone\n"
-"<code><a cbot|aim>aim</a>        </code>Ruota il cannone\n"
-"<code><a cbot|build>build</a>      </code>Costruisce un edificio\n"
-"<code><a cbot|flag>flag</a>       </code>Pianta una bandiera\n"
-"<code><a cbot|deflag>deflag</a>     </code>Rimuove una bandiera"

@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Validate all Italian catalogs against pinned upstream templates and GNU gettext."""
 import argparse
-import collections
 import gettext
 from pathlib import Path
-import re
 import subprocess
 import tempfile
 import polib

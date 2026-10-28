@@ -1,11 +1,10 @@
 # Italian translation of Colobot: Gold Edition.
 # Distributed under the same license as the upstream package.
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Colobot 0.2.2-alpha\n"
+"Project-Id-Version: Colobot: Gold Edition\n"
 "POT-Creation-Date: DATE\n"
-"PO-Revision-Date: 2026-10-26 00:00+0000\n"
+"PO-Revision-Date: 2026-10-28 12:05+0000\n"
 "Last-Translator: Colobot Italian translation contributors\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -48,10 +47,10 @@ msgstr "Tempo in secondi."
 #. type: \t; header
 #: ../E/abstime.txt:10 ../E/acos.txt:11 ../E/aim.txt:23 ../E/array.txt:41
 #: ../E/asin.txt:11 ../E/atan.txt:11 ../E/atan2.txt:16 ../E/bloc.txt:48
-#: ../E/bool.txt:4 ../E/break.txt:24 ../E/build.txt:25
+#: ../E/bool.txt:4 ../E/break.txt:49 ../E/build.txt:25
 #: ../E/buildingenabled.txt:22 ../E/canbuild.txt:22 ../E/canresearch.txt:14
 #: ../E/category.txt:119 ../E/ceil.txt:12 ../E/class.txt:120 ../E/close.txt:6
-#: ../E/cond.txt:4 ../E/continue.txt:24 ../E/cos.txt:11 ../E/deflag.txt:12
+#: ../E/cond.txt:4 ../E/continue.txt:49 ../E/cos.txt:11 ../E/deflag.txt:12
 #: ../E/deletef.txt:9 ../E/delinfo.txt:13 ../E/destroy.txt:15
 #: ../E/detect.txt:27 ../E/direct.txt:13 ../E/dist.txt:29 ../E/dist2d.txt:13
 #: ../E/do.txt:27 ../E/drop.txt:28 ../E/eof.txt:13 ../E/errmode.txt:32
@@ -69,13 +68,13 @@ msgstr "Tempo in secondi."
 #: ../E/public.txt:49 ../E/radar.txt:80 ../E/radarall.txt:19 ../E/rand.txt:8
 #: ../E/readln.txt:18 ../E/receive.txt:16 ../E/recycle.txt:12
 #: ../E/research.txt:18 ../E/researched.txt:14 ../E/researches.txt:29
-#: ../E/retobj.txt:13 ../E/return.txt:29 ../E/round.txt:12 ../E/search.txt:25
-#: ../E/send.txt:17 ../E/shield.txt:18 ../E/sin.txt:11 ../E/sizeof.txt:21
-#: ../E/sniff.txt:16 ../E/space.txt:22 ../E/sqrt.txt:11 ../E/static.txt:20
-#: ../E/strfind.txt:18 ../E/string.txt:32 ../E/strleft.txt:14
-#: ../E/strlen.txt:12 ../E/strlower.txt:10 ../E/strmid.txt:18
-#: ../E/strright.txt:14 ../E/strupper.txt:10 ../E/strval.txt:17
-#: ../E/super.txt:45 ../E/switch.txt:70 ../E/synchro.txt:23
+#: ../E/retobj.txt:13 ../E/return.txt:29 ../E/round.txt:12 ../E/search.txt:48
+#: ../E/searchall.txt:12 ../E/send.txt:17 ../E/shield.txt:18 ../E/sin.txt:11
+#: ../E/sizeof.txt:21 ../E/sniff.txt:16 ../E/space.txt:22 ../E/sqrt.txt:11
+#: ../E/static.txt:20 ../E/strfind.txt:18 ../E/string.txt:32
+#: ../E/strleft.txt:14 ../E/strlen.txt:12 ../E/strlower.txt:10
+#: ../E/strmid.txt:18 ../E/strright.txt:14 ../E/strupper.txt:10
+#: ../E/strval.txt:17 ../E/super.txt:45 ../E/switch.txt:70 ../E/synchro.txt:23
 #: ../E/takeoff.txt:15 ../E/tan.txt:11 ../E/term.txt:30 ../E/testinfo.txt:16
 #: ../E/this.txt:52 ../E/thump.txt:12 ../E/topo.txt:13 ../E/true.txt:4
 #: ../E/trunc.txt:12 ../E/turn.txt:32 ../E/type.txt:32 ../E/var.txt:66
@@ -86,7 +85,7 @@ msgstr "Vedi anche"
 
 #. type: Plain text
 #: ../E/abstime.txt:11 ../E/aim.txt:24 ../E/array.txt:42 ../E/bool.txt:5
-#: ../E/break.txt:25 ../E/cond.txt:5 ../E/continue.txt:25 ../E/deflag.txt:13
+#: ../E/break.txt:50 ../E/cond.txt:5 ../E/continue.txt:50 ../E/deflag.txt:13
 #: ../E/deletef.txt:10 ../E/destroy.txt:16 ../E/detect.txt:28
 #: ../E/direct.txt:14 ../E/dist.txt:30 ../E/dist2d.txt:14 ../E/drop.txt:29
 #: ../E/errmode.txt:33 ../E/expr.txt:199 ../E/extern.txt:30 ../E/false.txt:5
@@ -98,7 +97,7 @@ msgstr "Vedi anche"
 #: ../E/pencolor.txt:15 ../E/pendown.txt:18 ../E/penup.txt:12
 #: ../E/penwidth.txt:15 ../E/point.txt:36 ../E/produce.txt:31
 #: ../E/recycle.txt:13 ../E/retobj.txt:14 ../E/return.txt:30
-#: ../E/search.txt:26 ../E/shield.txt:19 ../E/sizeof.txt:22 ../E/sniff.txt:17
+#: ../E/search.txt:49 ../E/shield.txt:19 ../E/sizeof.txt:22 ../E/sniff.txt:17
 #: ../E/space.txt:23 ../E/string.txt:33 ../E/switch.txt:71 ../E/takeoff.txt:16
 #: ../E/term.txt:31 ../E/thump.txt:13 ../E/topo.txt:14 ../E/true.txt:5
 #: ../E/turn.txt:33 ../E/type.txt:33 ../E/var.txt:67 ../E/void.txt:11
@@ -1119,7 +1118,8 @@ msgstr ""
 #: ../E/file.txt:10 ../E/fire.txt:9 ../E/float.txt:19 ../E/goto.txt:11
 #: ../E/grab.txt:11 ../E/if.txt:22 ../E/int.txt:13 ../E/motor.txt:14
 #: ../E/move.txt:7 ../E/radar.txt:13 ../E/radarall.txt:11 ../E/return.txt:9
-#: ../E/switch.txt:46 ../E/turn.txt:18 ../E/wait.txt:9 ../E/while.txt:19
+#: ../E/searchall.txt:4 ../E/switch.txt:46 ../E/turn.txt:18 ../E/wait.txt:9
+#: ../E/while.txt:19
 #, no-wrap
 msgid "For specialists"
 msgstr "Per gli esperti"
@@ -1139,12 +1139,13 @@ msgstr "Per gli esperti"
 #: ../E/radar.txt:14 ../E/radarall.txt:12 ../E/rand.txt:2 ../E/readln.txt:8
 #: ../E/receive.txt:2 ../E/recycle.txt:2 ../E/research.txt:2
 #: ../E/researched.txt:2 ../E/retobj.txt:2 ../E/round.txt:2 ../E/search.txt:2
-#: ../E/send.txt:2 ../E/shield.txt:2 ../E/sin.txt:2 ../E/sniff.txt:2
-#: ../E/space.txt:2 ../E/sqrt.txt:2 ../E/strfind.txt:4 ../E/strleft.txt:4
-#: ../E/strlen.txt:4 ../E/strlower.txt:4 ../E/strmid.txt:4 ../E/strright.txt:4
-#: ../E/strupper.txt:4 ../E/strval.txt:8 ../E/switch.txt:47 ../E/takeoff.txt:2
-#: ../E/tan.txt:2 ../E/testinfo.txt:2 ../E/thump.txt:2 ../E/topo.txt:2
-#: ../E/trunc.txt:2 ../E/turn.txt:19 ../E/wait.txt:10 ../E/writeln.txt:8
+#: ../E/searchall.txt:5 ../E/send.txt:2 ../E/shield.txt:2 ../E/sin.txt:2
+#: ../E/sniff.txt:2 ../E/space.txt:2 ../E/sqrt.txt:2 ../E/strfind.txt:4
+#: ../E/strleft.txt:4 ../E/strlen.txt:4 ../E/strlower.txt:4 ../E/strmid.txt:4
+#: ../E/strright.txt:4 ../E/strupper.txt:4 ../E/strval.txt:8
+#: ../E/switch.txt:47 ../E/takeoff.txt:2 ../E/tan.txt:2 ../E/testinfo.txt:2
+#: ../E/thump.txt:2 ../E/topo.txt:2 ../E/trunc.txt:2 ../E/turn.txt:19
+#: ../E/wait.txt:10 ../E/writeln.txt:8
 #, no-wrap
 msgid "Syntax:"
 msgstr "Sintassi:"
@@ -3859,7 +3860,7 @@ msgstr ""
 "vicino nell’area indicata; <code>-1</code> quello più lontano. "
 
 #. type: \t; header
-#: ../E/radar.txt:65 ../E/retobj.txt:10 ../E/search.txt:22
+#: ../E/radar.txt:65 ../E/retobj.txt:10 ../E/search.txt:45
 #, no-wrap
 msgid "Return value: <code><a cbot|object>object</a></code>"
 msgstr "Valore restituito: <code><a cbot|object>object</a></code>"
@@ -4220,12 +4221,6 @@ msgstr ""
 msgid "Instruction <code>search</code>"
 msgstr "Istruzione <code>search</code>"
 
-#. type: Source code
-#: ../E/search.txt:3
-#, no-wrap
-msgid "<c/>search ( category, position );<n/>"
-msgstr "<c/>search ( category, position );<n/>"
-
 #. type: \t; header
 #: ../E/produce.txt:9 ../E/topo.txt:7
 #, no-wrap
@@ -4233,17 +4228,7 @@ msgid "position: <code><a cbot|point>point</a></code>"
 msgstr "position: <code><a cbot|point>point</a></code>"
 
 #. type: Plain text
-#: ../E/search.txt:20
-#, no-wrap
-msgid ""
-"<code>search</code> returns the object of the given category that is closest"
-" to the position indicated here. "
-msgstr ""
-"<code>search</code> restituisce l’oggetto della categoria indicata più "
-"vicino alla posizione specificata. "
-
-#. type: Plain text
-#: ../E/search.txt:23
+#: ../E/search.txt:46
 #, no-wrap
 msgid ""
 "Characteristics of the object that has been found. The value <code><a "
@@ -8079,7 +8064,7 @@ msgstr ""
 "<code>360</code>)"
 
 #. type: \t; header
-#: ../E/radar.txt:42
+#: ../E/radar.txt:42 ../E/search.txt:22
 #, no-wrap
 msgid ""
 "min: <code><a cbot|float>float</a></code> (default value: <code>0</code>)"
@@ -8088,7 +8073,7 @@ msgstr ""
 "<code>0</code>)"
 
 #. type: \t; header
-#: ../E/radar.txt:45
+#: ../E/radar.txt:45 ../E/search.txt:25
 #, no-wrap
 msgid ""
 "max: <code><a cbot|float>float</a></code> (default value: <code>1000</code>)"
@@ -8097,7 +8082,7 @@ msgstr ""
 "<code>1000</code>)"
 
 #. type: \t; header
-#: ../E/radar.txt:48
+#: ../E/radar.txt:48 ../E/search.txt:28
 #, no-wrap
 msgid ""
 "sens: <code><a cbot|float>float</a></code> (default value: <code>1</code>)"
@@ -8106,7 +8091,7 @@ msgstr ""
 "<code>1</code>)"
 
 #. type: \t; header
-#: ../E/radar.txt:51
+#: ../E/radar.txt:51 ../E/search.txt:31
 #, no-wrap
 msgid ""
 "filter: <code><a cbot|int>int</a></code> (default value: <code><format "
@@ -8116,7 +8101,7 @@ msgstr ""
 "const>FilterNone</format></code>)"
 
 #. type: Plain text
-#: ../E/radar.txt:52
+#: ../E/radar.txt:52 ../E/search.txt:32
 #, no-wrap
 msgid ""
 "Determines which type of objects should be detected. Especially useful in "
@@ -8127,7 +8112,7 @@ msgstr ""
 "cbot|array>array</a> o <format const>Any</format>. Filtri disponibili:"
 
 #. type: Plain text
-#: ../E/radar.txt:54
+#: ../E/radar.txt:54 ../E/search.txt:34
 #, no-wrap
 msgid ""
 "<code><format const>FilterNone</format>        </code>Detects everything (default)\n"
@@ -8145,7 +8130,7 @@ msgstr ""
 "<code><format const>FilterNeutral</format>     </code>Solo oggetti neutrali, come risorse"
 
 #. type: Plain text
-#: ../E/radar.txt:61
+#: ../E/radar.txt:61 ../E/search.txt:41
 #, no-wrap
 msgid ""
 "The last three are mainly useful in <a battles>code battles</a>. You can "
@@ -8325,18 +8310,6 @@ msgstr ""
 "cbot>programmazione</a>, <a cbot|type>tipi</a> e <a "
 "cbot|expr>espressioni</a>."
 
-#. type: Plain text
-#: ../E/search.txt:5
-#, no-wrap
-msgid ""
-"Detects the object of the given category that is closest to the given "
-"position. Similar to <c/><a cbot|radar>radar();</a><n/>, but can search "
-"starting from the specific point instead of the actual bot's position."
-msgstr ""
-"Rileva l’oggetto della categoria indicata più vicino alla posizione "
-"specificata. Simile a <c/><a cbot|radar>radar();</a><n/>, ma permette di "
-"partire da un punto diverso dalla posizione del robot."
-
 #. type: Bullet: 'o'
 #: ../E/search.txt:8
 #, no-wrap
@@ -8376,16 +8349,6 @@ msgstr ""
 "bots[3] = LeggedGrabber;\n"
 "point p(50, 24, 0);\n"
 "object grabberNearestThePoint = search(bots, p);<n/>"
-
-#. type: \t; header
-#: ../E/search.txt:19
-#, no-wrap
-msgid ""
-"position: <code><a cbot|point>point</a></code> (default value: <code><a "
-"cbot|this>this</a>.<a cbot|object>position</a></code>)"
-msgstr ""
-"position: <code><a cbot|point>point</a></code> (valore predefinito: <code><a"
-" cbot|this>this</a>.<a cbot|object>position</a></code>)"
 
 #. type: \b; header
 #: ../E/sin.txt:1
@@ -11553,3 +11516,258 @@ msgstr ""
 "Vero se l’oggetto è appena morto e l’animazione è in corso. Accedere a "
 "questa o ad altre proprietà dopo la fine dell’animazione causa un errore che"
 " interrompe il programma."
+
+#. type: Plain text
+#: ../E/break.txt:23 ../E/continue.txt:24
+#, no-wrap
+msgid "You can give a loop a label like this:"
+msgstr "Puoi assegnare un’etichetta a un ciclo in questo modo:"
+
+#. type: Source code
+#: ../E/break.txt:24 ../E/continue.txt:25
+#, no-wrap
+msgid ""
+"<code>this_is_a_label: while ( true )\n"
+"{\n"
+"\t</code>Instructions ...<c/>\n"
+"}"
+msgstr ""
+"<code>this_is_a_label: while ( true )\n"
+"{\n"
+"\t</code>Istruzioni ...<c/>\n"
+"}"
+
+#. type: Plain text
+#: ../E/break.txt:29 ../E/continue.txt:30
+#, no-wrap
+msgid ""
+"By default when multiple loops are nested inside one another, this "
+"instruction affects the innermost loop. If this is not what you want, you "
+"can use a label to tell this instruction which loop it should affect:"
+msgstr ""
+"Quando più cicli sono annidati, questa istruzione agisce sul ciclo più "
+"interno. Per farla agire su un altro ciclo, puoi indicarne l’etichetta:"
+
+#. type: Source code
+#: ../E/break.txt:30
+#, no-wrap
+msgid ""
+"<c/>string result = \"\";\n"
+"foo: for(int outer = 0; true; ++outer)\n"
+"{\n"
+"\tresult += \"A\";\n"
+"\tfor(int inner = 1; inner < 3; ++inner)\n"
+"\t{\n"
+"\t\tresult += \"B\";\n"
+"\t\tif(inner == outer)\n"
+"\t\t{\n"
+"\t\t\tresult += \"*\";\n"
+"\t\t\tbreak foo;\n"
+"\t\t}\n"
+"\t\tresult += \"C\";\n"
+"\t}\n"
+"\tresult += \"D\";\n"
+"}\n"
+"result += \"E\";\n"
+"message(result);  // Prints: ABCBCDAB*E"
+msgstr ""
+"<c/>string result = \"\";\n"
+"foo: for(int outer = 0; true; ++outer)\n"
+"{\n"
+"\tresult += \"A\";\n"
+"\tfor(int inner = 1; inner < 3; ++inner)\n"
+"\t{\n"
+"\t\tresult += \"B\";\n"
+"\t\tif(inner == outer)\n"
+"\t\t{\n"
+"\t\t\tresult += \"*\";\n"
+"\t\t\tbreak foo;\n"
+"\t\t}\n"
+"\t\tresult += \"C\";\n"
+"\t}\n"
+"\tresult += \"D\";\n"
+"}\n"
+"result += \"E\";\n"
+"message(result);  // Stampa: ABCBCDAB*E"
+
+#. type: Source code
+#: ../E/continue.txt:31
+#, no-wrap
+msgid ""
+"<c/>string result = \"\";\n"
+"foo: for(int outer = 0; outer < 3; ++outer)\n"
+"{\n"
+"\tresult += \"A\";\n"
+"\tfor(int inner = 0; inner < 2; ++inner)\n"
+"\t{\n"
+"\t\tresult += \"B\";\n"
+"\t\tif(inner == outer)\n"
+"\t\t{\n"
+"\t\t\tresult += \"*\";\n"
+"\t\t\tcontinue foo;\n"
+"\t\t}\n"
+"\t\tresult += \"C\";\n"
+"\t}\n"
+"\tresult += \"D\";\n"
+"}\n"
+"message(result);  // Prints: AB*ABCB*ABCBCD"
+msgstr ""
+"<c/>string result = \"\";\n"
+"foo: for(int outer = 0; outer < 3; ++outer)\n"
+"{\n"
+"\tresult += \"A\";\n"
+"\tfor(int inner = 0; inner < 2; ++inner)\n"
+"\t{\n"
+"\t\tresult += \"B\";\n"
+"\t\tif(inner == outer)\n"
+"\t\t{\n"
+"\t\t\tresult += \"*\";\n"
+"\t\t\tcontinue foo;\n"
+"\t\t}\n"
+"\t\tresult += \"C\";\n"
+"\t}\n"
+"\tresult += \"D\";\n"
+"}\n"
+"message(result);  // Stampa: AB*ABCB*ABCBCD"
+
+#. type: Source code
+#: ../E/search.txt:3
+#, no-wrap
+msgid "<c/>search ( category, center, min, max, sens, filter );<n/>"
+msgstr "<c/>search ( category, center, min, max, sens, filter );<n/>"
+
+#. type: Plain text
+#: ../E/search.txt:5
+#, no-wrap
+msgid ""
+"Detects an object of the given category in a given radius from a given "
+"center. Similar to <c/><a cbot|radar>radar();</a><n/>, but can search "
+"starting from the specific point instead of the actual bot's position."
+msgstr ""
+"Rileva un oggetto della categoria indicata entro un certo raggio dal centro "
+"specificato. È simile a <c/><a cbot|radar>radar();</a><n/>, ma permette di "
+"cercare a partire da un punto diverso dalla posizione del robot."
+
+#. type: \t; header
+#: ../E/search.txt:19
+#, no-wrap
+msgid ""
+"center: <code><a cbot|point>point</a></code> (default value: <code><a "
+"cbot|this>this</a>.<a cbot|object>position</a></code>)"
+msgstr ""
+"center: <code><a cbot|point>point</a></code> (valore predefinito: <code><a "
+"cbot|this>this</a>.<a cbot|object>position</a></code>)"
+
+#. type: Plain text
+#: ../E/search.txt:20
+#, no-wrap
+msgid "The center of the search area."
+msgstr "Il centro dell’area di ricerca."
+
+#. type: Plain text
+#: ../E/search.txt:23
+#, no-wrap
+msgid ""
+"Minimum detection distance, in meters. Objects that are closer to the center"
+" than the minimum distance will not be detected."
+msgstr ""
+"Distanza minima di rilevamento, in metri. Gli oggetti più vicini al centro "
+"non vengono rilevati."
+
+#. type: Plain text
+#: ../E/search.txt:26
+#, no-wrap
+msgid ""
+"Maximum detection distance, in meters. Objects that are farther away from "
+"the center than the maximum distance will not be detected."
+msgstr ""
+"Distanza massima di rilevamento, in metri. Gli oggetti più lontani dal "
+"centro non vengono rilevati."
+
+#. type: Plain text
+#: ../E/search.txt:29
+#, no-wrap
+msgid ""
+"Determines which way the objects are detected. With value <code>1</code>, "
+"returns the object closest to the center. With value <code>-1</code>, the "
+"farthest object in the area will be returned."
+msgstr ""
+"Determina l’ordine di rilevamento. <code>1</code> restituisce l’oggetto più "
+"vicino al centro; <code>-1</code> quello più lontano nell’area indicata."
+
+#. type: Plain text
+#: ../E/search.txt:43
+#, no-wrap
+msgid ""
+"Filters and IDs can be mixed using bitwise OR operator <code>|</code>, for "
+"example <c/>search(Any, position, 0, 1000, 1, 2 | FilterOnlyLanding);<n/> "
+"will only detect an object from team <code>2</code> that is on the ground. "
+"Attention: you can specify only one team ID at once, but you can specify "
+"several filters at once."
+msgstr ""
+"Puoi combinare filtri e ID con l’OR bit a bit <code>|</code>. Per esempio "
+"<c/>search(Any, position, 0, 1000, 1, 2 | FilterOnlyLanding);<n/> rileva "
+"soltanto un oggetto a terra della squadra <code>2</code>. Puoi specificare "
+"un solo ID di squadra, ma più filtri insieme."
+
+#. type: \b; header
+#: ../E/searchall.txt:1
+#, no-wrap
+msgid "Instruction <code>searchall</code>"
+msgstr "Istruzione <code>searchall</code>"
+
+#. type: Plain text
+#: ../E/searchall.txt:2
+#, no-wrap
+msgid ""
+"<code>searchall</code> is an enhancement of the <code><a "
+"cbot|search>search</a>()</code> instruction -- it detects all objects "
+"matching the given criteria."
+msgstr ""
+"<code>searchall</code> estende l’istruzione <code><a "
+"cbot|search>search</a>()</code>: rileva tutti gli oggetti che soddisfano i "
+"criteri indicati."
+
+#. type: Source code
+#: ../E/searchall.txt:6
+#, no-wrap
+msgid "<c/>searchall ( category, center, min, max, sens, filter );<n/>"
+msgstr "<c/>searchall ( category, center, min, max, sens, filter );<n/>"
+
+#. type: Plain text
+#: ../E/searchall.txt:8
+#, no-wrap
+msgid ""
+"The instruction works generally the same as the <c/><a "
+"cbot|search>search</a>();<n/> instruction with the only difference being "
+"that it returns an <a cbot|array>array</a> of <a cbot|object>objects</a> "
+"instead of one object. If no object is found, an empty array (<code><a "
+"cbot|null>null</a></code>) is returned."
+msgstr ""
+"Funziona come <c/><a cbot|search>search</a>();<n/>, ma restituisce un <a "
+"cbot|array>array</a> di <a cbot|object>oggetti</a> anziché uno solo. Se non "
+"trova nulla, restituisce un array vuoto (<code><a "
+"cbot|null>null</a></code>)."
+
+#. type: Plain text
+#: ../E/searchall.txt:10
+#, no-wrap
+msgid ""
+"The order of objects in the returned array is sorted by distance and depends"
+" on the <code>sens</code> parameter. The first object in the array is the "
+"object which would be returned by the <c/>search();<n/> function called with"
+" the exactly same parameters."
+msgstr ""
+"L’array restituito è ordinato per distanza secondo il parametro "
+"<code>sens</code>. Il primo oggetto è quello che <c/>search();<n/> "
+"restituirebbe con gli stessi parametri."
+
+#. type: Plain text
+#: ../E/searchall.txt:13
+#, no-wrap
+msgid ""
+"<c/><a cbot|search>search</a>();<n/>, <a cbot>programming</a>, <a "
+"cbot|type>types</a> and <a cbot|category>categories</a>."
+msgstr ""
+"<c/><a cbot|search>search</a>();<n/>, <a cbot>programmazione</a>, <a "
+"cbot|type>tipi</a> e <a cbot|category>categorie</a>."

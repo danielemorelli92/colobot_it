@@ -6,10 +6,10 @@ import subprocess
 import tarfile
 import io
 import shutil
+import json
 
-PINS = {'colobot': 'e3addd66f6613174c1a61c373808046e7d49b320',
-        'colobot-data': '910b0dd8cf722b0bafbdfe9a506a1ca21f0b8f06'}
 ROOT = Path(__file__).resolve().parents[1]
+PINS = json.loads((ROOT/'upstream.json').read_text())
 p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('--engine', type=Path, required=True)
 p.add_argument('--data', type=Path, required=True)
@@ -23,10 +23,12 @@ for name, source in [('colobot', a.engine), ('colobot-data', a.data)]:
     blob = subprocess.check_output(['git', '-C', str(source), 'archive', PINS[name]])
     with tarfile.open(fileobj=io.BytesIO(blob)) as archive:
         archive.extractall(dest, filter='data')
-    for po in (ROOT / 'translations' / name).rglob('it.po'):
+    for po in (ROOT / 'translations' / name).rglob('*'):
+        if not po.is_file():
+            continue
         target = dest / po.relative_to(ROOT / 'translations' / name)
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(po, target)
-subprocess.run(['git', 'apply', '--check', str(ROOT/'patches/colobot-0.2.2-alpha-italian.patch')], cwd=a.output/'colobot', check=True)
-subprocess.run(['git', 'apply', str(ROOT/'patches/colobot-0.2.2-alpha-italian.patch')], cwd=a.output/'colobot', check=True)
+subprocess.run(['git', 'apply', '--check', str(ROOT/'patches/colobot-dev-italian.patch')], cwd=a.output/'colobot', check=True)
+subprocess.run(['git', 'apply', str(ROOT/'patches/colobot-dev-italian.patch')], cwd=a.output/'colobot', check=True)
 print('Prepared', a.output.resolve())

@@ -1,0 +1,118 @@
+--- a/colobot-base/src/common/language.h
++++ b/colobot-base/src/common/language.h
+@@ -35,7 +35,8 @@
+     LANGUAGE_RUSSIAN = 4,
+     LANGUAGE_CZECH = 5,
+     LANGUAGE_PORTUGUESE_BRAZILIAN = 6,
+-    LANGUAGE_MAGYAR = 7
++    LANGUAGE_MAGYAR = 7,
++    LANGUAGE_ITALIAN = 8
+ };
+ 
+ bool ParseLanguage(const std::string& str, Language& language);
+--- a/colobot-base/src/common/language.cpp
++++ b/colobot-base/src/common/language.cpp
+@@ -23,6 +23,7 @@
+ 
+ const std::map<Language, std::string> LANGUAGE_MAP = {
+     { LANGUAGE_MAGYAR,  "hu" },
++    { LANGUAGE_ITALIAN, "it" },
+     { LANGUAGE_CZECH,   "cs" },
+     { LANGUAGE_ENGLISH, "en" },
+     { LANGUAGE_GERMAN,  "de" },
+--- a/colobot-base/src/ui/screen/screen_setup_game.cpp
++++ b/colobot-base/src/ui/screen/screen_setup_game.cpp
+@@ -145,6 +145,7 @@
+     // TODO: Add something like GetSupportedLanguages() and GetLanguageFriendlyName() for this
+     pli->SetItemName(1+LANGUAGE_ENV, "[System default]");
+     pli->SetItemName(1+LANGUAGE_MAGYAR, "Magyar");
++    pli->SetItemName(1+LANGUAGE_ITALIAN, "Italiano");
+     pli->SetItemName(1+LANGUAGE_CZECH, "Czech");
+     pli->SetItemName(1+LANGUAGE_ENGLISH, "English");
+     pli->SetItemName(1+LANGUAGE_FRENCH, "French");
+--- a/colobot-base/src/app/app.cpp
++++ b/colobot-base/src/app/app.cpp
+@@ -1804,6 +1804,10 @@
+             langChar = 'E';
+             break;
+ 
++        case LANGUAGE_ITALIAN:
++            langChar = 'I';
++            break;
++
+         case LANGUAGE_CZECH:
+             langChar = 'C';
+             break;
+@@ -1875,6 +1879,10 @@
+             {
+                 m_language = LANGUAGE_ENGLISH;
+             }
++            else if (envLang == "it")
++            {
++                m_language = LANGUAGE_ITALIAN;
++            }
+             else if (envLang == "cs")
+             {
+                 m_language = LANGUAGE_MAGYAR;
+@@ -1916,6 +1924,10 @@
+     {
+         default:
+             locale = "";
++            break;
++
++        case LANGUAGE_ITALIAN:
++            locale = "it_IT.utf8";
+             break;
+ 
+         case LANGUAGE_MAGYAR:
+--- a/test/src/app/app_test.cpp
++++ b/test/src/app/app_test.cpp
+@@ -23,6 +23,7 @@
+ 
+ #include <functional>
+ #include <memory>
++#include <utility>
+ 
+ #include <gtest/gtest.h>
+ #include <hippomocks.h>
+@@ -282,3 +283,40 @@
+ 
+     TestCreateUpdateEvent(relTimeExact, absTimeExact, relTime, absTime, relTimeReal, absTimeReal);
+ }
++
++
++TEST_F(CApplicationUT, ItalianLanguageRoundTrip)
++{
++    Language language = LANGUAGE_ENV;
++    ASSERT_TRUE(ParseLanguage("it", language));
++    EXPECT_EQ(LANGUAGE_ITALIAN, language);
++
++    m_app->SetLanguage(language);
++    EXPECT_EQ(LANGUAGE_ITALIAN, m_app->GetLanguage());
++    EXPECT_EQ('I', m_app->GetLanguageChar());
++    EXPECT_EQ("I", m_app->GetLanguageDir().string());
++
++    std::string code;
++    ASSERT_TRUE(LanguageToString(language, code));
++    EXPECT_EQ("it", code);
++}
++
++TEST_F(CApplicationUT, ExistingLanguageIdentifiersStayCompatible)
++{
++    EXPECT_EQ(7, LANGUAGE_MAGYAR);
++    EXPECT_NE(LANGUAGE_MAGYAR, LANGUAGE_ITALIAN);
++
++    const std::pair<const char*, char> languages[] = {
++        {"en", 'E'}, {"fr", 'F'}, {"de", 'D'}, {"pl", 'P'},
++        {"ru", 'R'}, {"cs", 'C'}, {"pt", 'B'}, {"hu", 'H'}
++    };
++    for (const auto& [code, character] : languages)
++    {
++        SCOPED_TRACE(code);
++        Language language = LANGUAGE_ENV;
++        ASSERT_TRUE(ParseLanguage(code, language));
++        m_app->SetLanguage(language);
++        EXPECT_EQ(character, m_app->GetLanguageChar());
++        EXPECT_NE('I', m_app->GetLanguageChar());
++    }
++}

@@ -1,135 +1,103 @@
-# Colobot: Gold Edition — italiano
+# Colobot: Gold Edition — traduzione italiana
 
-**Traduzione italiana 1.0 per Colobot Gold 0.2.2-alpha Windows 64 bit.**
+Traduzione italiana dell’interfaccia, delle missioni e del SatCom, con sorgenti
+pronti per proporre l’integrazione nativa nel progetto Colobot.
 
-[Scarica lo ZIP](dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip).
-Apri il file su GitHub e premi **Download raw file**.
+## Giocare su Windows con la 0.2.2-alpha
 
-## Installare o aggiornare
+[Scarica la traduzione stabile 1.0](dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip)
+— su GitHub premi **Download raw file**.
 
-1. Chiudi il gioco.
-2. Estrai tutto lo ZIP nella cartella che contiene `colobot.exe` e `data`.
-3. Se hai una precedente anteprima o la RC1, accetta la sostituzione dei suoi file.
-4. Avvia `Avvia-Italiano.cmd`.
+Chiudi il gioco, estrai tutto nella cartella con `colobot.exe` e `data`,
+sostituisci i file della traduzione precedente e avvia `Avvia-Italiano.cmd`.
+Mantieni **French** nelle impostazioni: il pacchetto usa quello slot per
+funzionare con l’eseguibile ufficiale già distribuito. Salvataggi e impostazioni
+restano in `%LOCALAPPDATA%\ColobotItalianPreview-0.1`.
 
-La 1.0 riutilizza `%LOCALAPPDATA%\ColobotItalianPreview-0.1`:
-**conserva i salvataggi e le impostazioni delle anteprime**. Il launcher è
-identico a quello della RC1 e copia la configurazione soltanto al primo avvio.
+[Installazione e rimozione](docs/RELEASE-1.0.md). Lo ZIP 1.0 e il suo SHA256
+sono invariati. I suoi sorgenti e gli strumenti originali sono conservati nel
+[tag `italiano-v1.0`](https://github.com/danielemorelli92/colobot_it/tree/italiano-v1.0).
 
-Per compatibilità con l’eseguibile ufficiale, scegli **French** nelle impostazioni.
-Il pacchetto carica il catalogo italiano e i dati tramite le opzioni ufficiali
-`-langdir` e `-mod`. Non sostituisce eseguibili, DLL, font o la cartella `lang`
-originale. I salvataggi dell’avvio normale di Colobot restano separati.
-La patch sorgente per integrare nativamente `it`/`it_IT.utf8` è inclusa, ma
-non viene compilata nello ZIP.
+## Integrazione nativa in dev
 
-## Versione stabile 1.0
+Il ramo principale contiene il contributo per i commit ufficiali fissati in
+[upstream.json](upstream.json). Include **146 cataloghi, 5.188 voci compilate,
+zero vuote o fuzzy**, entrambe le forme dei plurali italiani e la patch per
+selezionare **Italiano** nell’eseguibile normale (`it`, locale italiana UTF-8,
+codice dei dati `I`). I codici delle lingue esistenti restano invariati.
 
-La 1.0 promuove la RC1 accettata dall’utente: **testi, dati di gioco, launcher
-e configurazione sono identici**. Cambiano soltanto l’etichetta della versione,
-la documentazione e i metadati del pacchetto. Se hai già la RC1, puoi continuare
-a usarla: l’aggiornamento serve ad avere il pacchetto definitivo.
+La build dei dati ha evidenziato due POT ufficiali arretrati rispetto ai testi
+inglesi: sono stati rigenerati e le relative voci, fra cui `searchall` e le
+etichette dei cicli, sono tradotte. Codice eseguibile, identificatori e stringhe
+dei programmi sono preservati; i commenti degli esempi sono tradotti.
 
-[Note della versione 1.0](docs/RELEASE-1.0.md).
+- [Risultati e limiti delle verifiche](docs/VERIFICHE.md)
+- [Proposta per i manutentori](docs/upstream/ISSUE-ITALIAN.md)
+- [Come presentare le due PR](docs/PROPOSTA-UPSTREAM.md)
+- [Glossario](docs/GLOSSARIO.md)
 
-## Revisione inclusa dalla RC1
+La versione comunitaria Windows è stata provata dall’utente. L’integrazione
+nativa è stata compilata e avviata su Linux; una build nativa Windows di `dev`
+resta da verificare. Questa non è una distribuzione ufficiale di Colobot.
 
-Revisionate **40 voci in 23 cataloghi** rispetto alla 0.4:
+## Preparare i sorgenti
 
-- Uniformati alcuni nomi e didascalie del SatCom, inclusa «Stazione radar».
-- Chiarite le spiegazioni su variabili, funzioni, movimento, mira e altitudine.
-- Corretti rimandi originali a Houston, convertitore, radar e tipo float.
-- Corrette la descrizione del robot rilevatore a zampe e la modalità di
-  aggiunta ai file nella documentazione, errate anche nel testo originale.
-- Tradotte didascalie monospaziate che non sono istruzioni CBOT.
-
-Il nuovo controllo percorre **3.534 collegamenti in 452 documenti**, comprese
-le due occorrenze con ancore nominate, e richiede destinazioni italiane esistenti.
-Viene eseguito anche leggendo lo ZIP finale.
-
-[Note storiche della RC1](docs/ANTEPRIMA-WINDOWS.md) ·
-[Checklist di riferimento](docs/COLLAUDO-1.0-RC1.md) ·
-[Registro delle correzioni](docs/revision-1.0-rc1.json).
-
-## Copertura e limiti
-
-**146 cataloghi, 5.172 voci compilate, zero vuote e zero fuzzy.**
-Coperti interfaccia, campagna, esercizi, sfide, battaglie, gioco libero,
-missioni aggiuntive, SatCom, robot, oggetti, edifici, riferimento CBOT,
-programmi e catalogo desktop/manuale. Le due voci con plurali contengono
-entrambe le forme italiane. [Copertura per catalogo](docs/coverage-1.0.json).
-
-700 voci restano identiche al sorgente: codice, identificatori, immagini,
-nomi propri e crediti. I commenti degli esempi sono tradotti; istruzioni,
-nomi dei programmi e stringhe del codice sono preservati.
-Il sorgente contiene solo `TODO` per il robot disegnatore: la pagina italiana
-avvisa che la documentazione non è disponibile in questa versione del gioco.
-I metadati non gettext dell’addon AltTextures e le mod esterne non sono inclusi.
-Il catalogo desktop è nei sorgenti; lo ZIP Windows non modifica l’installatore
-né genera una pagina man Unix.
-
-La revisione ha combinato controlli sull’intero catalogo e lettura mirata delle
-spiegazioni e della terminologia. La candidata è stata accettata dall’utente
-come versione finale; non è stato dichiarato un collaudo di ogni schermata
-e missione. Questa è una traduzione della comunità, non una release ufficiale
-approvata dagli sviluppatori di Colobot.
-
-## Verifiche
-
-- Tutti i PO compilano con GNU gettext `--check --check-format`.
-- Lookup MO e plurali verificati per 0, 1, 2 e 10.
-- Marcatori, tasti, pulsanti, link, ancore e rientri controllati.
-- Build completa dei dati con gli script ufficiali: tutte le 4.455 voci dei
-  dati ritrovate negli output italiani; incluse le 878 voci della campagna.
-- 542 esempi di codice, riferimenti a immagini e nomi di programmi verificati.
-- Logica delle 173 scene e titoli di capitolo nel pacchetto confrontata con
-  l’originale, escludendo soltanto le righe di testo localizzate.
-- ZIP verificato con CRC, SHA256 dei file e risoluzione dei link SatCom.
-- Test C++ della mappatura delle lingue riuscito.
-
-L’utente ha confermato il funzionamento delle anteprime e accettato la RC1.
-Il contenuto di gioco della 1.0 è confrontato byte per byte con la RC1.
-Nessuna prova interattiva Windows è stata eseguita nell’ambiente di sviluppo. La build
-completa del motore è bloccata dalle dipendenze OpenGL mancanti; CTest del
-gioco non eseguito. Il pacchetto usa l’eseguibile già installato dall’utente.
-[Registro delle verifiche](docs/verification.json).
-
-## Sorgenti e ricostruzione
-
-Servono Python >=3.12, Git, GNU gettext, CMake >=3.16 e compilatore C++17.
-I pin delle release ufficiali sono in `tools/prepare.py`.
+Servono Python >=3.12, Git, CMake >=3.21, un compilatore C++20, GNU gettext e
+le dipendenze indicate nelle [istruzioni del progetto](https://github.com/colobot/colobot/blob/dev/docs/README-dev.md).
+Su Debian/Ubuntu servono inoltre `nlohmann-json3-dev` e `libgtest-dev` per usare
+le librerie di sistema al posto dei rispettivi submodule. I comandi seguenti
+compilano il motore e i dati; la generazione di desktop e manpage è disabilitata.
+Il catalogo desktop viene comunque controllato da gettext.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/pip install -r tools/requirements.txt
-git clone https://github.com/colobot/colobot.git ../colobot
-git clone https://github.com/colobot/colobot-data.git ../colobot-data
-.venv/bin/python tools/prepare.py --engine ../colobot --data ../colobot-data --output build/prepared
+git clone --branch dev https://github.com/colobot/colobot.git build/src/colobot
+git clone --branch dev https://github.com/colobot/colobot-data.git build/src/colobot-data
+.venv/bin/python tools/prepare.py --engine build/src/colobot --data build/src/colobot-data --output build/prepared
 .venv/bin/python tools/validate.py --require-complete --engine build/prepared/colobot --data build/prepared/colobot-data
-.venv/bin/python tools/test_localization_checks.py
-.venv/bin/python tools/test_code_comments.py
+cmake -S build/prepared/colobot -B build/engine -DTESTS=ON -DDESKTOP=OFF -DPORTABLE=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PWD/build/install"
+cmake --build build/engine --parallel 2
+ctest --test-dir build/engine --output-on-failure
+cmake --install build/engine
+cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON -DCOLOBOT_INSTALL_DATA_DIR="$PWD/build/install/data"
+cmake --build build/data --parallel 2
+cmake --install build/data
+.venv/bin/python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
+.venv/bin/python tools/check_links.py --data-build build/data
 .venv/bin/python tools/test_code_preservation.py
-.venv/bin/python tools/test_package_links.py
-g++ -std=c++17 -I build/prepared/colobot/src build/prepared/colobot/src/common/language.cpp tools/test_language.cpp -o build/test_language
-build/test_language
-cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON
-cmake --build build/data -j2
-COLOBOT_DATA_SOURCE=build/prepared/colobot-data .venv/bin/python tools/package_windows_preview.py --data-build build/data --data-source build/prepared/colobot-data --output dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip
-.venv/bin/python tools/test_package_links.py --archive dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip
+.venv/bin/python tools/test_code_comments.py
+.venv/bin/python tools/test_localization_checks.py
 ```
 
-Il preparatore usa archivi dei commit fissati, preserva i checkout originali
-e rifiuta di sovrascrivere la destinazione. Il confezionatore verifica anche
-la corrispondenza tra cataloghi e dati generati. Per ricostruire lo ZIP dai
-sorgenti inclusi, usa lo stesso layout di cartelle descritto sopra.
+Il preparatore usa archivi dei commit fissati, applica le traduzioni e la patch
+in una destinazione nuova e preserva i checkout originali. Per provare l’avvio
+nativo da una sessione grafica Linux:
 
-Per una versione nativa, installare le dipendenze indicate nell’[analisi](docs/ANALISI.md),
-applicare la patch, rendere disponibile la locale `it_IT.UTF-8`, compilare il
-motore ed eseguire CTest e le prove di selezione/rendering.
-Nessuna modifica è stata inviata ai repository ufficiali.
+```sh
+XDG_DATA_HOME="$PWD/build/xdg" LC_ALL=it_IT.UTF-8 build/install/colobot -savedir "$PWD/build/native-profile"
+```
 
-[Glossario](docs/GLOSSARIO.md) ·
-[Proposta per l’integrazione ufficiale](docs/PROPOSTA-UPSTREAM.md).
-Licenza GPL v3 o successiva, come i progetti upstream. Per nuove release,
-aggiornare i pin dopo il confronto dei sorgenti e usare `msgmerge`, revisionando
-le voci fuzzy e le correzioni esplicite in `tools/review_rules.py`.
+La locale italiana deve essere disponibile. È possibile anche selezionare
+**Italiano** nelle opzioni del gioco. Usare un profilo di prova distinto da quello
+della 0.2.2-alpha, perché `dev` è una versione successiva del motore.
+
+## Esportare i contributi
+
+```sh
+.venv/bin/python tools/export_upstream.py --engine build/src/colobot --data build/src/colobot-data --output build/prs
+```
+
+Il comando produce `colobot-italian.patch` e `colobot-data-italian.patch`, da
+applicare ai rispettivi fork dei repository ufficiali sui commit fissati.
+La prima contiene registrazione, cataloghi del motore e test; la seconda i
+cataloghi dei dati e i due POT rigenerati. Gli output restano in `build/`.
+Non sono state inviate issue o PR ai manutentori.
+
+## Licenza e contributi
+
+GPL v3 o successiva, come Colobot e Colobot Data; vedere [LICENSE](LICENSE).
+La traduzione è stata preparata con assistenza AI e revisionata nel gioco da
+un utente italofono. Le segnalazioni linguistiche restano benvenute: indicare
+versione, modalità, missione o esercizio, pagina e frase; per problemi visivi
+aggiungere risoluzione e screenshot.
