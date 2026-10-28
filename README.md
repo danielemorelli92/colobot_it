@@ -75,10 +75,13 @@ in una destinazione nuova e preserva i checkout originali. Per provare l’avvio
 nativo da una sessione grafica Linux:
 
 ```sh
-XDG_DATA_HOME="$PWD/build/xdg" LC_ALL=it_IT.UTF-8 build/install/colobot -savedir "$PWD/build/native-profile"
+cd build/install
+XDG_DATA_HOME="$PWD/xdg" LC_ALL=it_IT.UTF-8 ./colobot -savedir "$PWD/native-profile"
 ```
 
-La locale italiana deve essere disponibile. È possibile anche selezionare
+Avviare il programma dalla cartella di installazione: questa build portatile
+cerca i dati rispetto alla cartella corrente. In MSYS2 usare `./colobot.exe`
+dalla stessa cartella. La locale italiana deve essere disponibile su Linux. È possibile anche selezionare
 **Italiano** nelle opzioni del gioco. Usare un profilo di prova distinto da quello
 della 0.2.2-alpha, perché `dev` è una versione successiva del motore.
 
