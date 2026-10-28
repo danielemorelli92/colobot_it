@@ -4,223 +4,106 @@
 
 ## English
 
-Italian translation of the interface, missions and SatCom, with sources prepared
-for native integration into Colobot.
+Italian translation of the interface, missions and SatCom, prepared for native
+integration into the official `dev` branches.
 
-Upstream proposal: [colobot/colobot#1902](https://github.com/colobot/colobot/issues/1902).
+Upstream discussion: [colobot/colobot#1902](https://github.com/colobot/colobot/issues/1902).
 
-### Native integration in dev
+### Contribution
 
-The main branch contains the contribution for the official commits pinned in
-[upstream.json](upstream.json). It includes **146 catalogs, 5,188 translated
-entries, no empty or fuzzy entries**, both Italian plural forms, and a patch to
-select **Italiano** in the standard executable (`it`, Italian UTF-8 locale,
-data language code `I`). Existing language codes remain unchanged.
+- Native **Italiano** language selection: `it`, Italian UTF-8 locale and data
+  language code `I`. Existing language identifiers are preserved.
+- **146 catalogs and 5,188 translated entries**, with no empty or fuzzy entries
+  and both Italian plural forms.
+- Translated example comments, with executable code, identifiers and string
+  literals preserved.
+- Regenerated `help/cbot` and `help/generic` POT files to cover English source
+  text missing from the pinned upstream templates.
 
-Building the data revealed that two upstream POT files were out of date with
-the English sources. These templates have been regenerated, and the corresponding
-entries, including `searchall` and loop labels, are translated. Executable code,
-identifiers and program string literals are preserved; example comments are
-translated.
+The upstream commits are pinned in [upstream.json](upstream.json).
 
-- [Test results and limitations — in Italian](docs/VERIFICHE.md)
-- [Glossary — in Italian](docs/GLOSSARIO.md)
+### Review and verification
 
-The community Windows package has been tested in game. The native integration
-has been built and run on Linux. Local Windows checks confirmed successful
-compilation, installation, 205 automated tests and graphical startup, along with
-Italian menus and SatCom, language persistence after restarting, and saving/loading
-in the first mission. This is not an official Colobot distribution.
+- [Build, validate and export the contribution](docs/BUILDING.md)
+- [Recorded Linux and Windows test results and limitations](docs/TESTING.md)
+- [Italian terminology and code/markup preservation rules](docs/GLOSSARY.md)
 
-### Playing on Windows with 0.2.2-alpha
+Builds and all 205 enabled CTest tests passed on Linux and Windows. Local Windows
+checks also covered Italian menus and SatCom, language persistence, and
+saving/loading in the first mission. See the test report for the scope of these
+checks and the two tests already disabled upstream.
 
-[Download the stable Italian translation 1.0](dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip)
-— on GitHub, click **Download raw file**.
+### Repository layout
 
-Close the game, extract everything into the folder containing `colobot.exe` and
-`data`, replace any files from the previous translation, and run
-`Avvia-Italiano.cmd`. Keep **French** selected in the settings: this package uses
-that language slot to work with the already released official executable.
-Saves and settings remain in `%LOCALAPPDATA%\ColobotItalianPreview-0.1`.
+| Path | Purpose |
+|---|---|
+| [translations/colobot](translations/colobot) | Engine and desktop Italian catalogs for `colobot/colobot`. |
+| [translations/colobot-data](translations/colobot-data) | Italian data catalogs and two updated templates for `colobot/colobot-data`. |
+| [patches/colobot-dev-italian.patch](patches/colobot-dev-italian.patch) | Native language registration and two language tests. |
+| [tools](tools) | Source preparation, localization checks and export of the two upstream patches. |
 
-[Installation and removal — in Italian](docs/RELEASE-1.0.md). The 1.0 ZIP and its
-SHA256 are unchanged. Its sources and original tools are preserved in the
-[`italiano-v1.0` tag](https://github.com/danielemorelli92/colobot_it/tree/italiano-v1.0).
-
-### Preparing the sources
-
-You need Python >=3.12, Git, CMake >=3.21, a C++20 compiler, GNU gettext and the
-dependencies listed in the [project instructions](https://github.com/colobot/colobot/blob/dev/docs/README-dev.md).
-On Debian/Ubuntu, also install `nlohmann-json3-dev` and `libgtest-dev` to use the
-system libraries instead of the corresponding submodules. The commands below
-are for Linux and build the engine and data with desktop integration and manpages
-disabled. On Windows/MSYS2, use **`-DDESKTOP=ON`** to generate `colobot.rc`, which
-the executable requires. The desktop catalog is checked by gettext regardless.
-
-```sh
-python3 -m venv .venv
-.venv/bin/pip install -r tools/requirements.txt
-git clone --branch dev https://github.com/colobot/colobot.git build/src/colobot
-git clone --branch dev https://github.com/colobot/colobot-data.git build/src/colobot-data
-.venv/bin/python tools/prepare.py --engine build/src/colobot --data build/src/colobot-data --output build/prepared
-.venv/bin/python tools/validate.py --require-complete --engine build/prepared/colobot --data build/prepared/colobot-data
-cmake -S build/prepared/colobot -B build/engine -DTESTS=ON -DDESKTOP=OFF -DPORTABLE=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PWD/build/install"
-cmake --build build/engine --parallel 2
-ctest --test-dir build/engine --output-on-failure
-cmake --install build/engine
-cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON -DCOLOBOT_INSTALL_DATA_DIR="$PWD/build/install/data"
-cmake --build build/data --parallel 2
-cmake --install build/data
-.venv/bin/python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
-.venv/bin/python tools/check_links.py --data-build build/data
-.venv/bin/python tools/test_code_preservation.py
-.venv/bin/python tools/test_code_comments.py
-.venv/bin/python tools/test_localization_checks.py
-```
-
-The preparation tool uses archives of the pinned commits, applies the translations
-and patch in a new destination, and preserves the original checkouts. To test
-native startup from a graphical Linux session:
-
-```sh
-cd build/install
-XDG_DATA_HOME="$PWD/xdg" LC_ALL=it_IT.UTF-8 ./colobot -savedir "$PWD/native-profile"
-```
-
-Run the program from the installation folder: this portable build resolves data
-paths relative to the current working directory. In MSYS2, run `./colobot.exe`
-from the same folder. The Italian locale must be available on Linux. You can also
-select **Italiano** in the game settings. Use a test profile separate from your
-0.2.2-alpha profile, since `dev` is a newer version of the engine.
-
-### Exporting the patches
-
-```sh
-.venv/bin/python tools/export_upstream.py --engine build/src/colobot --data build/src/colobot-data --output build/prs
-```
-
-The command produces `colobot-italian.patch` and `colobot-data-italian.patch` for
-application to the respective forks of the official repositories at the pinned
-commits. The first contains language registration, engine catalogs and tests;
-the second contains the data catalogs and the two regenerated POT files.
-Outputs remain under `build/`.
-
-### License and contributions
+### License and provenance
 
 GPL v3 or later, like Colobot and Colobot Data; see [LICENSE](LICENSE).
 The translation was prepared with AI assistance and reviewed in game by an
-Italian speaker. Translation reports are welcome: include the version, game
-mode, mission or exercise, page and text. For visual issues, also include the
-resolution and a screenshot.
+Italian speaker. This repository contains a proposed contribution, not an
+official Colobot release.
+
+The earlier community Windows package for 0.2.2-alpha and its installation guide
+remain available in the [archived 1.0 release](https://github.com/danielemorelli92/colobot_it/blob/italiano-v1.0/docs/RELEASE-1.0.md).
 
 ---
 
 ## Italiano
 
-Traduzione italiana dell’interfaccia, delle missioni e del SatCom, con sorgenti
-pronti per proporre l’integrazione nativa nel progetto Colobot.
+Traduzione italiana dell’interfaccia, delle missioni e del SatCom, preparata per
+l’integrazione nativa nei rami `dev` ufficiali.
 
-Proposta di integrazione: [colobot/colobot#1902](https://github.com/colobot/colobot/issues/1902).
+Discussione sul contributo: [colobot/colobot#1902](https://github.com/colobot/colobot/issues/1902).
 
-### Integrazione nativa in dev
+### Contenuto del contributo
 
-Il ramo principale contiene il contributo per i commit ufficiali fissati in
-[upstream.json](upstream.json). Include **146 cataloghi, 5.188 voci compilate,
-zero vuote o fuzzy**, entrambe le forme dei plurali italiani e la patch per
-selezionare **Italiano** nell’eseguibile normale (`it`, locale italiana UTF-8,
-codice dei dati `I`). I codici delle lingue esistenti restano invariati.
+- Selezione nativa di **Italiano**: `it`, locale italiana UTF-8 e codice dei dati
+  `I`. Gli identificatori delle lingue esistenti sono preservati.
+- **146 cataloghi e 5.188 voci tradotte**, nessuna vuota o fuzzy ed entrambe le
+  forme dei plurali italiani.
+- Commenti degli esempi tradotti, preservando codice eseguibile, identificatori
+  e stringhe dei programmi.
+- POT `help/cbot` e `help/generic` rigenerati per includere i testi inglesi
+  mancanti nei template dei commit ufficiali fissati.
 
-La build dei dati ha evidenziato due POT ufficiali arretrati rispetto ai testi
-inglesi: sono stati rigenerati e le relative voci, fra cui `searchall` e le
-etichette dei cicli, sono tradotte. Codice eseguibile, identificatori e stringhe
-dei programmi sono preservati; i commenti degli esempi sono tradotti.
+I commit ufficiali di riferimento sono fissati in [upstream.json](upstream.json).
 
-- [Risultati e limiti delle verifiche](docs/VERIFICHE.md)
-- [Glossario](docs/GLOSSARIO.md)
+### Revisione e verifiche
 
-La versione comunitaria Windows è stata provata dall’utente. L’integrazione
-nativa è stata compilata e avviata su Linux. Sul PC Windows dell’utente sono
-riuscite compilazione, installazione, 205 test automatici e avvio grafico;
-l’utente ha confermato menu e SatCom in italiano, persistenza della lingua al
-riavvio e salvataggio/ricaricamento nella prima missione. Questa non è una
-distribuzione ufficiale di Colobot.
+La documentazione tecnica seguente è in inglese per facilitare la revisione dei
+manutentori:
 
-### Giocare su Windows con la 0.2.2-alpha
+- [Compilare, validare ed esportare il contributo](docs/BUILDING.md)
+- [Risultati e limiti dei test Linux e Windows](docs/TESTING.md)
+- [Terminologia italiana e regole per codice e marcatori](docs/GLOSSARY.md)
 
-[Scarica la traduzione stabile 1.0](dist/colobot-0.2.2-alpha-win64-italiano-1.0.zip)
-— su GitHub premi **Download raw file**.
+Compilazione e tutti i 205 test CTest abilitati sono riusciti su Linux e Windows.
+Il collaudo locale Windows ha verificato anche menu e SatCom in italiano,
+persistenza della lingua e salvataggio/ricaricamento nella prima missione.
+Il rapporto dei test descrive l’ambito delle verifiche e i due test già
+disabilitati dal progetto ufficiale.
 
-Chiudi il gioco, estrai tutto nella cartella con `colobot.exe` e `data`,
-sostituisci i file della traduzione precedente e avvia `Avvia-Italiano.cmd`.
-Mantieni **French** nelle impostazioni: il pacchetto usa quello slot per
-funzionare con l’eseguibile ufficiale già distribuito. Salvataggi e impostazioni
-restano in `%LOCALAPPDATA%\ColobotItalianPreview-0.1`.
+### Struttura della repository
 
-[Installazione e rimozione](docs/RELEASE-1.0.md). Lo ZIP 1.0 e il suo SHA256
-sono invariati. I suoi sorgenti e gli strumenti originali sono conservati nel
-[tag `italiano-v1.0`](https://github.com/danielemorelli92/colobot_it/tree/italiano-v1.0).
+| Percorso | Contenuto |
+|---|---|
+| [translations/colobot](translations/colobot) | Cataloghi italiani del motore e del desktop per `colobot/colobot`. |
+| [translations/colobot-data](translations/colobot-data) | Cataloghi italiani dei dati e due template aggiornati per `colobot/colobot-data`. |
+| [patches/colobot-dev-italian.patch](patches/colobot-dev-italian.patch) | Registrazione nativa della lingua e due test delle lingue. |
+| [tools](tools) | Preparazione dei sorgenti, controlli della traduzione ed esportazione delle due patch. |
 
-### Preparare i sorgenti
-
-Servono Python >=3.12, Git, CMake >=3.21, un compilatore C++20, GNU gettext e
-le dipendenze indicate nelle [istruzioni del progetto](https://github.com/colobot/colobot/blob/dev/docs/README-dev.md).
-Su Debian/Ubuntu servono inoltre `nlohmann-json3-dev` e `libgtest-dev` per usare
-le librerie di sistema al posto dei rispettivi submodule. I comandi seguenti
-sono per Linux e compilano il motore e i dati con desktop e manpage disabilitati.
-Su Windows/MSYS2 usare **`-DDESKTOP=ON`**: serve a generare `colobot.rc`,
-richiesto dall’eseguibile. Il catalogo desktop viene comunque controllato da gettext.
-
-```sh
-python3 -m venv .venv
-.venv/bin/pip install -r tools/requirements.txt
-git clone --branch dev https://github.com/colobot/colobot.git build/src/colobot
-git clone --branch dev https://github.com/colobot/colobot-data.git build/src/colobot-data
-.venv/bin/python tools/prepare.py --engine build/src/colobot --data build/src/colobot-data --output build/prepared
-.venv/bin/python tools/validate.py --require-complete --engine build/prepared/colobot --data build/prepared/colobot-data
-cmake -S build/prepared/colobot -B build/engine -DTESTS=ON -DDESKTOP=OFF -DPORTABLE=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PWD/build/install"
-cmake --build build/engine --parallel 2
-ctest --test-dir build/engine --output-on-failure
-cmake --install build/engine
-cmake -S build/prepared/colobot-data -B build/data -DTRANSLATIONS=ON -DCOLOBOT_INSTALL_DATA_DIR="$PWD/build/install/data"
-cmake --build build/data --parallel 2
-cmake --install build/data
-.venv/bin/python tools/test_complete_data.py --build build/data --source build/prepared/colobot-data
-.venv/bin/python tools/check_links.py --data-build build/data
-.venv/bin/python tools/test_code_preservation.py
-.venv/bin/python tools/test_code_comments.py
-.venv/bin/python tools/test_localization_checks.py
-```
-
-Il preparatore usa archivi dei commit fissati, applica le traduzioni e la patch
-in una destinazione nuova e preserva i checkout originali. Per provare l’avvio
-nativo da una sessione grafica Linux:
-
-```sh
-cd build/install
-XDG_DATA_HOME="$PWD/xdg" LC_ALL=it_IT.UTF-8 ./colobot -savedir "$PWD/native-profile"
-```
-
-Avviare il programma dalla cartella di installazione: questa build portatile
-cerca i dati rispetto alla cartella corrente. In MSYS2 usare `./colobot.exe`
-dalla stessa cartella. La locale italiana deve essere disponibile su Linux. È possibile anche selezionare
-**Italiano** nelle opzioni del gioco. Usare un profilo di prova distinto da quello
-della 0.2.2-alpha, perché `dev` è una versione successiva del motore.
-
-### Esportare le patch
-
-```sh
-.venv/bin/python tools/export_upstream.py --engine build/src/colobot --data build/src/colobot-data --output build/prs
-```
-
-Il comando produce `colobot-italian.patch` e `colobot-data-italian.patch`, da
-applicare ai rispettivi fork dei repository ufficiali sui commit fissati.
-La prima contiene registrazione, cataloghi del motore e test; la seconda i
-cataloghi dei dati e i due POT rigenerati. Gli output restano in `build/`.
-
-### Licenza e contributi
+### Licenza e provenienza
 
 GPL v3 o successiva, come Colobot e Colobot Data; vedere [LICENSE](LICENSE).
 La traduzione è stata preparata con assistenza AI e revisionata nel gioco da
-un utente italofono. Le segnalazioni linguistiche restano benvenute: indicare
-versione, modalità, missione o esercizio, pagina e frase; per problemi visivi
-aggiungere risoluzione e screenshot.
+un utente italofono. Questa repository contiene una proposta di contributo,
+non una release ufficiale di Colobot.
+
+Il precedente pacchetto comunitario Windows per la 0.2.2-alpha e la relativa guida
+restano disponibili nella [versione 1.0 archiviata](https://github.com/danielemorelli92/colobot_it/blob/italiano-v1.0/docs/RELEASE-1.0.md).
