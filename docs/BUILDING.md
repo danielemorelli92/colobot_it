@@ -195,10 +195,18 @@ From the MSYS2 UCRT64 shell, after installing the tested native Windows build:
 python tools/package_windows.py
 ```
 
-This creates `build/Colobot-Italiano-Windows64.zip` and its SHA256 file. The ZIP
-contains the installed game, runtime DLLs and codecs, a fresh Italian profile,
-corresponding game/data/translation sources and dependency licenses. Personal
-profiles and logs are excluded. The original installation is preserved.
+This creates two archives, each with a SHA256 file:
+
+- `build/colobot-gold-win64-italiano.zip`: the playable game, including the
+  original native `colobot.exe`, required DLLs/codecs, `data/`, `lang/` and license
+  notices. Italian is available in the normal language selector alongside the
+  existing languages. No launcher or initial profile/settings are supplied.
+- `build/colobot-gold-win64-italiano-sources.zip`: corresponding game, data and
+  translation sources, kept outside the playable installation.
+
+Personal profiles, logs, old launchers and development files are excluded from
+the game archive. Runtime dependency notices are consolidated into a single
+file under `licenses/`. The original installation is preserved.
 The defaults use `build/install` and `build/prepared`; other locations can be
 specified with the options shown by `--help`.
 
@@ -211,7 +219,9 @@ cmake --build build/data --parallel 2
 cmake --install build/data
 ```
 
-Extract the ZIP to a new folder and double-click `Gioca-in-italiano.cmd` from
-Windows Explorer, outside MSYS2, before sharing it. No MSYS2 installation should
-be needed on the receiving PC. The package includes sources, so it is larger
-than a binary-only bundle. Packaging does not replace this final Windows test.
+Extract the game ZIP to a new, writable folder and double-click `colobot.exe`
+from Windows Explorer, outside MSYS2, before sharing it. Check that **Italiano**
+is available under **Options > Game**. No MSYS2 installation should be needed
+on the receiving PC. Make the matching source ZIP available alongside the game
+when distributing it; it is not needed to run the game. Packaging does not
+replace this final Windows test.
