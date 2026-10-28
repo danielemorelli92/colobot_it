@@ -38,14 +38,20 @@ cataloghi validati: 5.188 voci tradotte, nessuna vuota o fuzzy.
 - CTest: **205 test superati in 14,75 secondi**. `CBotUT.PublicClasses` e
   `CBotUT.StringAsArray` sono già disabilitati dal progetto e non sono stati eseguiti.
 - Installazione di gioco e dati nella cartella di prova riuscita senza errori.
-- Avvio grafico, selezione di Italiano e collaudo nel gioco ancora da confermare.
+- Avvio grafico riuscito dalla cartella di installazione; caricata la prima missione
+  e letta la home del SatCom in italiano. Inizializzazione OpenGL e audio riuscita.
+- Corretti due titoli descrittivi rimasti inglesi nella home del SatCom:
+  «Type» -> «Tipi» e «Constants» -> «Costanti», preservando i marcatori di stile.
+- Persistenza della lingua e prova di salvataggio/ricaricamento ancora da confermare.
 
 Questa verifica è locale sul PC dell’utente, non un’esecuzione GitHub Actions.
 
 ## Limiti del collaudo
 
-- Il collaudo grafico della nuova integrazione Windows è ancora da confermare.
-  La precedente prova della 1.0 riguarda l’eseguibile ufficiale 0.2.2-alpha.
+- La prova Windows conferma avvio e SatCom; il collaudo completo della partita
+  resta aperto. I messaggi sui file musicali mancanti sono previsti con `MUSIC=OFF`,
+  usato per velocizzare questa build di prova. È stato riportato anche il fallback
+  della locale C++: il caricamento dei dati italiani del SatCom è confermato.
 - Desktop/manpage non generati nella build Linux; il relativo PO compila
   con gettext. Le risorse audio opzionali non sono state collaudate.
 - Le prove automatiche e l’avvio della prima missione non sostituiscono

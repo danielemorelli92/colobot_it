@@ -71,13 +71,13 @@ msgstr ""
 #: ../E/cbot.txt:8
 #, no-wrap
 msgid "<code><format type>Type</format></code>"
-msgstr "<code><format type>Type</format></code>"
+msgstr "<code><format type>Tipi</format></code>"
 
 #. type: Bullet: 'o'
 #: ../E/cbot.txt:11
 #, no-wrap
 msgid "<code><format const>Constants</format></code>"
-msgstr "<code><format const>Constants</format></code>"
+msgstr "<code><format const>Costanti</format></code>"
 
 #. type: \t; header
 #: ../E/cbot.txt:14

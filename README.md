@@ -36,8 +36,8 @@ dei programmi sono preservati; i commenti degli esempi sono tradotti.
 
 La versione comunitaria Windows è stata provata dall’utente. L’integrazione
 nativa è stata compilata e avviata su Linux. Sul PC Windows dell’utente sono
-riuscite compilazione, installazione e 205 test automatici; l’avvio grafico
-nativo Windows è in corso di verifica. Questa non è una distribuzione ufficiale di Colobot.
+riuscite compilazione, installazione, 205 test automatici e avvio grafico;
+l’utente ha confermato la visualizzazione del SatCom in italiano. Questa non è una distribuzione ufficiale di Colobot.
 
 ## Preparare i sorgenti
 

@@ -9,6 +9,8 @@ LINK_CORRECTIONS = {
 }
 # These are descriptive captions styled as code, not CBot instructions.
 PROSE_CODE_CORRECTIONS = {
+    '<code><format type>Type</format></code>': '<code><format type>Tipi</format></code>',
+    '<code><format const>Constants</format></code>': '<code><format const>Costanti</format></code>',
     '<code>this_is_a_label: while ( true )\n{\n\t</code>Instructions ...<c/>\n}': '<code>this_is_a_label: while ( true )\n{\n\t</code>Istruzioni ...<c/>\n}',
     '<code>< no archive picture available  ></code>': '<code>< nessuna immagine d’archivio disponibile ></code>',
     '<code><a cbot|bloc>bloc</a></code>': '<code><a cbot|bloc>blocco</a></code>',
