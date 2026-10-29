@@ -2,6 +2,7 @@
 """Preserve the final game and test saves, then remove only Colobot build caches."""
 import argparse
 from datetime import datetime
+import gettext
 import hashlib
 import json
 import os
@@ -12,7 +13,8 @@ import sys
 import tempfile
 import zipfile
 
-from package_windows_022 import PACKAGE_NAME, italian_files, manifest
+from package_windows_022 import (PACKAGE_NAME, ROOT, check_executable,
+                                 italian_files, manifest, source_files)
 
 
 def digest(path):
@@ -49,7 +51,39 @@ def backup_item(source, target):
             raise ValueError(f'Verifica copia impostazioni fallita: {source}')
 
 
-def clean(build_root, destination, legacy_build=None, apply=False):
+def verify_game(game, names):
+    missing = sorted(name for name in names if not (game / name).is_file())
+    if missing:
+        raise ValueError('Cartella del gioco incompleta: ' + ', '.join(missing[:3]))
+    check_executable(game / 'colobot.exe')
+    with (game / 'lang/it/LC_MESSAGES/colobot.mo').open('rb') as stream:
+        catalog = gettext.GNUTranslations(stream)
+    if catalog.info().get('language') != 'it' or catalog.gettext('Missions') != 'Missioni':
+        raise ValueError('La cartella del gioco non contiene il catalogo italiano atteso.')
+
+
+def recover_sources(build_root, game, names, apply):
+    prepared = build_root / 'italiano/build/release-022/prepared'
+    files = source_files(prepared, ROOT, build_root, game, names)
+    print('Archivio sorgenti assente: verra conservato dai sorgenti della compilazione.', flush=True)
+    if not apply:
+        return None
+    target = build_root / (PACKAGE_NAME+'-sources.zip')
+    with tempfile.TemporaryDirectory(prefix='colobot-sorgenti-', dir=build_root) as temporary:
+        staged = Path(temporary) / target.name
+        with zipfile.ZipFile(staged, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
+            for name, path in sorted(files.items()):
+                archive.write(path, PACKAGE_NAME+'-sources/'+name)
+        with zipfile.ZipFile(staged) as archive:
+            if archive.testzip() is not None:
+                raise ValueError('Verifica archivio dei sorgenti ricreato fallita.')
+        staged.replace(target)
+    target.with_suffix('.zip.sha256').write_text(
+        digest(target)+'  '+target.name+'\n', encoding='utf-8', newline='\n')
+    return target
+
+
+def clean(build_root, destination, legacy_build=None, apply=False, game=None):
     reject_links(build_root.absolute())
     build_root, destination = build_root.resolve(), destination.resolve()
     targets = [build_root / name for name in ('engine', 'data', 'vcpkg', 'install', 'italiano/build')]
@@ -67,23 +101,43 @@ def clean(build_root, destination, legacy_build=None, apply=False):
             raise ValueError('Aprire il terminale nella cartella italiano, fuori dai file di compilazione.')
     if destination.is_relative_to(build_root):
         raise ValueError('La copia finale deve stare fuori dalla cartella di compilazione.')
+    if game is not None:
+        game = game.resolve()
+        if any(game.is_relative_to(target) or target.is_relative_to(game) for target in targets):
+            raise ValueError('Il gioco da conservare deve stare fuori dalle cartelle da eliminare.')
+        original = manifest()
+        verify_game(game, original | italian_files(original))
+        print(f'Gioco italiano verificato e conservato nella posizione attuale: {game}', flush=True)
 
-    def artifact(name):
-        for parent in (build_root, destination):
+    def artifact(name, required=True):
+        parents = [build_root, destination]
+        if game is not None:
+            parents.append(game.parent)
+        for parent in parents:
             if (parent / name).is_file():
                 return parent / name
-        raise FileNotFoundError(f'Archivio finale mancante: {name}. Nessuna cartella eliminata.')
+        if required:
+            raise FileNotFoundError(f'Archivio finale mancante: {name}. Nessuna cartella eliminata.')
+        return None
 
     original = manifest()
     artifacts = {}
     for suffix in ('.zip', '-sources.zip'):
         name = PACKAGE_NAME+suffix
-        archive_path, checksum_path = artifact(name), artifact(name+'.sha256')
-        fields = checksum_path.read_text(encoding='utf-8').split()
-        expected = fields[0] if fields else ''
+        archive_path = artifact(name, required=game is None)
+        if archive_path is None:
+            if suffix == '.zip':
+                continue
+            archive_path = recover_sources(build_root, game, original, apply)
+            if archive_path is None:
+                continue
+        checksum_path = artifact(name+'.sha256', required=game is None)
         print(f'Verifica integrita: {name}', flush=True)
-        if digest(archive_path) != expected:
-            raise ValueError(f'Checksum non valido: {name}. Nessuna cartella eliminata.')
+        if checksum_path is not None:
+            fields = checksum_path.read_text(encoding='utf-8').split()
+            expected = fields[0] if fields else ''
+            if digest(archive_path) != expected:
+                raise ValueError(f'Checksum non valido: {name}. Nessuna cartella eliminata.')
         with zipfile.ZipFile(archive_path) as archive:
             if archive.testzip() is not None:
                 raise ValueError(f'Archivio danneggiato: {name}')
@@ -95,13 +149,16 @@ def clean(build_root, destination, legacy_build=None, apply=False):
                 for license_path in ('colobot/LICENSE.txt', 'colobot-data/LICENSE.txt'):
                     if PACKAGE_NAME+'-sources/'+license_path not in archive.namelist():
                         raise ValueError('Archivio sorgenti finale incompleto.')
-        artifacts[name], artifacts[name+'.sha256'] = archive_path, checksum_path
+        artifacts[name] = archive_path
+        if checksum_path is not None:
+            artifacts[name+'.sha256'] = checksum_path
     report_name = PACKAGE_NAME+'-verification.json'
-    report_path = artifact(report_name)
-    report = json.loads(report_path.read_text(encoding='utf-8'))
-    if report.get('total_game_files') != 4708 or report.get('runtime_dlls_added') != []:
-        raise ValueError('Rapporto della build finale inatteso.')
-    artifacts[report_name] = report_path
+    report_path = artifact(report_name, required=game is None)
+    if report_path is not None:
+        report = json.loads(report_path.read_text(encoding='utf-8'))
+        if report.get('total_game_files') != 4708 or report.get('runtime_dlls_added') != []:
+            raise ValueError('Rapporto della build finale inatteso.')
+        artifacts[report_name] = report_path
     hashes = {name: digest(source) for name, source in artifacts.items()}
     for name, source in artifacts.items():
         target = destination / name
@@ -157,7 +214,9 @@ def clean(build_root, destination, legacy_build=None, apply=False):
             shutil.move(str(source), str(target))
         if digest(target) != hashes[name]:
             raise ValueError(f'Verifica archivio spostato fallita: {target}')
-    game = destination / PACKAGE_NAME
+    existing_game = game is not None
+    if game is None:
+        game = destination / PACKAGE_NAME
     if not game.exists():
         with tempfile.TemporaryDirectory(prefix='.estrazione-colobot-', dir=destination) as temporary:
             with zipfile.ZipFile(destination / (PACKAGE_NAME+'.zip')) as archive:
@@ -169,6 +228,8 @@ def clean(build_root, destination, legacy_build=None, apply=False):
         raise FileNotFoundError(f'Il gioco nella destinazione finale e incompleto: {game}')
     if any(not (game / name).is_file() for name in original | italian_files(original)):
         raise ValueError(f'La cartella del gioco finale e incompleta: {game}')
+    if existing_game:
+        verify_game(game, original | italian_files(original))
 
     free_before = shutil.disk_usage(build_root).free
     removed, failed = [], []
@@ -211,6 +272,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--apply', action='store_true', help='Esegui la pulizia; altrimenti mostra solo una anteprima')
     parser.add_argument('--destination', type=Path)
+    parser.add_argument('--game', type=Path, help='Cartella del gioco gia estratto da conservare senza spostarla')
     args = parser.parse_args()
     if os.name != 'nt':
         parser.error('Eseguire questo comando su Windows.')
@@ -218,7 +280,7 @@ def main():
     destination = args.destination or home / 'Desktop/Colobot-Italiano'
     legacy = Path('C:/msys64/home') / home.name / 'colobot-italiano-test/build'
     try:
-        clean(Path('C:/colobot-build-022'), destination, legacy, apply=args.apply)
+        clean(Path('C:/colobot-build-022'), destination, legacy, apply=args.apply, game=args.game)
     except (OSError, ValueError, zipfile.BadZipFile) as error:
         print(f'Pulizia interrotta: {error}', file=sys.stderr)
         return 1

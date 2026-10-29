@@ -10,7 +10,10 @@ import unittest
 from unittest.mock import patch
 import zipfile
 
+import polib
+
 import cleanup_windows_022 as cleanup
+from test_package_windows_022 import executable
 
 
 class CleanupTests(unittest.TestCase):
@@ -68,6 +71,31 @@ class CleanupTests(unittest.TestCase):
 
     def assert_builds_exist(self):
         self.assertTrue(all(target.is_dir() for target in self.targets))
+
+    def existing_game(self):
+        desktop = self.base / 'Desktop'
+        desktop.mkdir()
+        with zipfile.ZipFile(self.archives[0]) as archive:
+            archive.extractall(desktop)
+        game = desktop / cleanup.PACKAGE_NAME
+        (game / 'colobot.exe').write_bytes(executable())
+        po = polib.POFile()
+        po.metadata = {'Language': 'it', 'Content-Type': 'text/plain; charset=UTF-8'}
+        po.append(polib.POEntry(msgid='Missions', msgstr='Missioni'))
+        po.save_as_mofile(str(game / 'lang/it/LC_MESSAGES/colobot.mo'))
+        return game
+
+    def remove_bundles(self):
+        for archive in self.archives:
+            archive.unlink()
+            archive.with_suffix('.zip.sha256').unlink()
+        (self.build / (cleanup.PACKAGE_NAME+'-verification.json')).unlink()
+
+    def source_tree(self):
+        prepared = self.build / 'italiano/build/release-022/prepared'
+        for name in ('colobot', 'colobot-data', 'translation'):
+            (prepared / name).mkdir(parents=True)
+            (prepared / name / 'LICENSE.txt').write_text('Source license fixture')
 
     def test_preview_changes_nothing(self):
         self.assertEqual(self.run_cleanup(), {'applied': False})
@@ -143,6 +171,64 @@ class CleanupTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Cartella collegata'):
             self.run_cleanup(apply=True)
         self.assertEqual(self.profile.read_text(), 'Current game profile')
+
+    def test_existing_game_does_not_require_game_zip_or_report(self):
+        game = self.existing_game()
+        self.archives[0].unlink()
+        self.archives[0].with_suffix('.zip.sha256').unlink()
+        (self.build / (cleanup.PACKAGE_NAME+'-verification.json')).unlink()
+        (game / 'saves/Pilot').mkdir(parents=True)
+        (game / 'saves/Pilot/progress.txt').write_text('Current extracted game progress')
+        before = {path.relative_to(game): cleanup.digest(path)
+                  for path in game.rglob('*') if path.is_file()}
+        result = self.run_cleanup(apply=True, game=game)
+        self.assertEqual(result['game'], str(game))
+        self.assertEqual(len(result['removed']), 6)
+        self.assertFalse((self.destination / cleanup.PACKAGE_NAME).exists())
+        after = {path.relative_to(game): cleanup.digest(path)
+                 for path in game.rglob('*') if path.is_file()}
+        self.assertEqual(before, after)
+        self.assertTrue((self.destination / self.archives[1].name).is_file())
+
+    def test_existing_game_recovers_missing_sources_before_cleanup(self):
+        game = self.existing_game()
+        self.remove_bundles()
+        self.source_tree()
+        result = self.run_cleanup(apply=True, game=game)
+        sources = self.destination / self.archives[1].name
+        with zipfile.ZipFile(sources) as archive:
+            self.assertIsNone(archive.testzip())
+            self.assertIn(cleanup.PACKAGE_NAME+'-sources/colobot/LICENSE.txt', archive.namelist())
+        self.assertEqual(len(result['removed']), 6)
+        self.assertTrue((game / 'colobot.exe').is_file())
+
+    def test_missing_sources_and_preview_leave_all_builds_intact(self):
+        game = self.existing_game()
+        self.remove_bundles()
+        self.source_tree()
+        self.assertEqual(self.run_cleanup(game=game), {'applied': False})
+        self.assert_builds_exist()
+        self.assertFalse(self.destination.exists())
+        self.assertFalse(self.archives[1].exists())
+
+    def test_incomplete_existing_game_prevents_all_deletion(self):
+        game = self.existing_game()
+        (game / 'data/fonts/fonts.ini').unlink()
+        with self.assertRaisesRegex(ValueError, 'Cartella del gioco incompleta'):
+            self.run_cleanup(apply=True, game=game)
+        self.assert_builds_exist()
+
+    def test_game_inside_a_cleanup_target_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, 'fuori dalle cartelle'):
+            self.run_cleanup(apply=True, game=self.build / 'install')
+        self.assert_builds_exist()
+
+    def test_missing_source_tree_prevents_deletion_when_archives_are_gone(self):
+        game = self.existing_game()
+        self.remove_bundles()
+        with self.assertRaises(FileNotFoundError):
+            self.run_cleanup(apply=True, game=game)
+        self.assert_builds_exist()
 
 
 if __name__ == '__main__':

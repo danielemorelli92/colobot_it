@@ -85,6 +85,11 @@
 > conflicting backup files and linked deletion paths; regression checks are in
 > `tools/test_cleanup_windows_022.py`. MSYS2 and Visual Studio Build Tools can
 > then be uninstalled through Windows Settings if no other projects need them.
+> If the game has already been extracted elsewhere, use
+> `python tools/cleanup_windows_022.py --game "PATH_TO_EXTRACTED_GAME" --apply`.
+> This checks the complete Italian game and leaves it in place; the game ZIP
+> and old verification metadata are optional. A missing source archive is
+> recreated and checked from the retained build sources before deleting them.
 > The instructions below describe the separate `dev` contribution.
 
 The Windows build uses the MSVC/vcpkg/static configuration documented in the
