@@ -50,8 +50,8 @@ The translation was prepared with AI assistance and reviewed in game by an
 Italian speaker. This repository contains a proposed contribution, not an
 official Colobot release.
 
-The earlier community Windows package for 0.2.2-alpha and its installation guide
-remain available in the [archived 1.0 release](https://github.com/danielemorelli92/colobot_it/blob/italiano-v1.0/docs/RELEASE-1.0.md).
+The community Windows 0.2.2 build and packaging tools are maintained separately
+on the [windows-0.2.2 branch](https://github.com/danielemorelli92/colobot_it/tree/windows-0.2.2).
 
 ---
 
@@ -107,5 +107,5 @@ La traduzione è stata preparata con assistenza AI e revisionata nel gioco da
 un utente italofono. Questa repository contiene una proposta di contributo,
 non una release ufficiale di Colobot.
 
-Il precedente pacchetto comunitario Windows per la 0.2.2-alpha e la relativa guida
-restano disponibili nella [versione 1.0 archiviata](https://github.com/danielemorelli92/colobot_it/blob/italiano-v1.0/docs/RELEASE-1.0.md).
+Gli strumenti per compilare e impacchettare la versione comunitaria Windows 0.2.2
+sono mantenuti separatamente nel [ramo windows-0.2.2](https://github.com/danielemorelli92/colobot_it/tree/windows-0.2.2).
