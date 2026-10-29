@@ -56,10 +56,23 @@
 > identifiers, translations and flags.
 >
 > Build output goes to `C:\colobot-build-022\install`. Music downloads are
-> skipped: final packaging is intended to retain the official 0.2.2 assets,
-> soundtrack, existing languages and folder layout, replacing the executable
-> and adding Italian text only. The source preparation and catalog checks have
-> passed on Linux; the MSVC build and final runtime validation are pending.
+> skipped. The MSVC x64 Release build and installation completed successfully
+> on Windows on 2026-10-29 using MSVC 19.44.35229. The executable imports only
+> Windows system DLLs. All 5,172 catalog entries, 4,455 generated data entries
+> and 3,534 SatCom links passed validation; the final runtime check is pending.
+>
+> `python tools/package_windows_022.py --original "PATH_TO_ORIGINAL_GAME"`
+> creates `C:\colobot-build-022\colobot-gold-0.2.2-alpha-win64-italiano.zip`
+> from the installed build and an original official Windows 0.2.2 folder.
+> It copies only the 4,255 paths in `tools/windows_022_manifest.txt`, preserves
+> original assets, music and existing languages, replaces `colobot.exe`,
+> adds 452 Italian help pages and the Italian interface catalog, and inserts
+> Italian title/summary lines into 173 level files without changing other lines.
+> The playable archive has exactly 4,708 files, with no added runtime DLLs,
+> launchers, profiles or development files. Sources, dependency source caches
+> and license notices go into a separate `-sources.zip`. Checksums and a
+> verification report are written alongside the archives. Packaging is tested
+> by `python tools/test_package_windows_022.py`; the original folder is preserved.
 > The instructions below describe the separate `dev` contribution.
 
 The Windows build uses the MSVC/vcpkg/static configuration documented in the
