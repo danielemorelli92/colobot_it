@@ -70,16 +70,3 @@ disabled upstream and were not executed.
   `DESKTOP=ON`.
 - Automated checks and the manual checks above do not cover a complete
   playthrough or a linguistic review of every screen.
-
-## Portable Windows packaging tool
-
-`python tools/test_package_windows.py` checks dependency traversal (including
-cycles and runtime-loaded codecs), rejection of missing imports, exclusion of
-Windows system DLLs and personal profiles, native Italian registration markers
-and the installed MO catalog, separate source packaging, license inclusion,
-ZIP integrity and both SHA256 checksums. The game ZIP keeps the installed
-`colobot.exe` unchanged and contains no launcher, forced initial settings,
-personal profiles or development source trees.
-These checks use fixtures and mocked PE inspection. They do not establish that
-a particular Windows ZIP runs independently of MSYS2; that requires the final
-Windows Explorer launch described in [BUILDING.md](BUILDING.md).
