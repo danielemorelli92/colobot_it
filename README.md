@@ -8,6 +8,10 @@
 > The `.cmd` file is a five-line CRLF launcher without batch labels. It invokes
 > `tools/build_windows_022.py`, whose sequencing, arguments and failure handling
 > are checked by `python tools/test_build_windows_022.py` without a compiler.
+> Source archives explicitly use LF newlines, as required by the original
+> data translation reader. The build phase detects earlier CRLF preparations
+> and restores the pinned data sources and Italian catalogs before generation.
+> This recovery is checked by `python tools/test_prepare_022.py`.
 >
 > In an x64 Visual Studio 2022 Developer Command Prompt, with MSYS2 at
 > `C:\msys64` and vcpkg revision

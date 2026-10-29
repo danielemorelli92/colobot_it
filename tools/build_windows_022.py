@@ -78,7 +78,8 @@ class WindowsBuild:
         if not (self.project / 'build/python-deps/polib.py').is_file():
             self.run(self.python, '-m', 'pip', 'install', '--target',
                      self.project / 'build/python-deps', '-r', self.project / 'tools/requirements.txt')
-        self.run(self.python, self.project / 'tools/prepare_022.py', '--reuse')
+        self.run(self.python, self.project / 'tools/prepare_022.py',
+                 '--reuse', '--repair-data-newlines')
         self.run(self.python, self.project / 'tools/prepare_windows_022_tools.py',
                  '--vcpkg', self.vcpkg, '--msys', self.msys)
         print('Configuring native Italian Colobot 0.2.2 with MSVC x64...', flush=True)
@@ -114,6 +115,8 @@ class WindowsBuild:
 
     def build(self):
         print('Building and checking the native Italian release...', flush=True)
+        self.run(self.python, self.project / 'tools/prepare_022.py',
+                 '--reuse', '--repair-data-newlines')
         self.run(self.cmake, '--build', self.root / 'engine', '--parallel', '2')
         self.run(self.cmake, '--build', self.root / 'data', '--parallel', '2')
         checks = self.prepared / 'translation/tools'

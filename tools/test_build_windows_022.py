@@ -74,7 +74,7 @@ class WindowsBuildTests(unittest.TestCase):
                                 if arg.endswith(('.py', 'dumpbin.exe')))
         self.assertEqual(sequence, [
             'prepare_022.py', 'prepare_windows_022_tools.py', 'configure colobot',
-            'configure colobot-data', 'build engine', 'build data',
+            'configure colobot-data', 'prepare_022.py', 'build engine', 'build data',
             'test_complete_data.py', 'check_links.py', 'install engine',
             'install data', 'dumpbin.exe',
         ])
@@ -84,6 +84,9 @@ class WindowsBuildTests(unittest.TestCase):
             self.assertTrue(any(option in args for args in self.commands()), option)
         self.assertIn('-DCMAKE_BUILD_TYPE=Release', engine)
         self.assertIn(f'-DCMAKE_INSTALL_PREFIX={(self.root / "install").as_posix()}', engine)
+        for args in self.commands():
+            if str(self.project / 'tools/prepare_022.py') in args:
+                self.assertIn('--repair-data-newlines', args)
         for args, env, kwargs in self.calls:
             self.assertEqual(env['PKG_CONFIG'], str(self.msys / 'ucrt64/bin/pkgconf.exe'))
             self.assertEqual(env['COLOBOT022_MSYS_ROOT'], str(self.msys))
@@ -135,6 +138,7 @@ class WindowsBuildTests(unittest.TestCase):
     def test_build_only_reuses_prepared_installation(self):
         self.build.execute('build')
         self.assertFalse(any('-S' in args or 'fetch' in args for args in self.commands()))
+        self.assertTrue(any('--repair-data-newlines' in args for args in self.commands()))
         self.assertEqual(Path(self.commands()[-1][0]).name, 'dumpbin.exe')
 
 

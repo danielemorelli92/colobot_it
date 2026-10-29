@@ -13,6 +13,7 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import tempfile
 
 import polib
 
@@ -45,7 +46,8 @@ def ensure_commit(repo, url, commit):
 
 def extract(repo, commit, dest, *paths):
     blob = subprocess.check_output(
-        ['git', '-C', str(repo), 'archive', commit, *paths])
+        ['git', '-c', 'core.autocrlf=false', '-c', 'core.eol=lf',
+         '-C', str(repo), 'archive', commit, *paths])
     dest.mkdir(parents=True, exist_ok=True)
     with tarfile.open(fileobj=io.BytesIO(blob)) as archive:
         archive.extractall(dest, filter='data')
@@ -101,6 +103,43 @@ def validate(project, output, msgfmt):
         '--msgfmt', msgfmt)
 
 
+def repair_data_newlines(output, recorded, repo):
+    """Recover data catalogs damaged by generation from CRLF English input.
+
+    The original i18n reader opens input with newline='\n', leaving a trailing
+    '\r' in message IDs. Generation then also rewrites the PO files, so merely
+    converting the English files is insufficient: restore the complete pinned
+    data tree and its original, verified Italian inputs before rebuilding.
+    """
+    data = output / 'colobot-data'
+    inputs = [*(data / 'help').rglob('E/*.txt'),
+              *(data / 'levels').rglob('*.E.txt')]
+    if not any(b'\r\n' in path.read_bytes() for path in inputs):
+        return False
+    for rel, digest in recorded['italian_files'].items():
+        original = output / 'translation/translations' / rel
+        if hashlib.sha256(original.read_bytes()).hexdigest() != digest:
+            raise ValueError(f'Original Italian input changed: {rel}')
+    ensure_commit(repo, 'https://github.com/colobot/colobot-data.git', PINS['colobot-data'])
+    with tempfile.TemporaryDirectory(prefix='colobot-data-lf-', dir=output.parent) as temporary:
+        staged = Path(temporary) / 'colobot-data'
+        extract(repo, PINS['colobot-data'], staged)
+        originals = output / 'translation/translations/colobot-data'
+        for po in originals.rglob('it.po'):
+            target = staged / po.relative_to(originals)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(po, target)
+        backup = Path(temporary) / 'previous-data'
+        data.rename(backup)
+        try:
+            staged.rename(data)
+        except OSError:
+            backup.rename(data)
+            raise
+    print('Restored pinned data sources with LF newlines and original Italian catalogs.', flush=True)
+    return True
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, default=ROOT / 'build/release-022/prepared')
@@ -109,6 +148,8 @@ def main():
     parser.add_argument('--msgfmt', default='msgfmt')
     parser.add_argument('--reuse', action='store_true',
                         help='reuse only a completed, unchanged preparation')
+    parser.add_argument('--repair-data-newlines', action='store_true',
+                        help='restore pinned data and Italian catalogs if previous Git archives used CRLF')
     args = parser.parse_args()
     output = args.output.resolve()
     marker = output / 'preparation.json'
@@ -118,6 +159,9 @@ def main():
         recorded = json.loads(marker.read_text(encoding='utf-8'))
         if recorded['pins'] != PINS or recorded['translation_release'] != TRANSLATION_RELEASE:
             raise ValueError('Preparation uses different source revisions')
+        if args.repair_data_newlines:
+            repo = args.data.resolve() if args.data else ROOT / 'build/release-022/repos/colobot-data'
+            repair_data_newlines(output, recorded, repo)
         refreshed = 0
         for rel, digest in recorded['italian_files'].items():
             original = output / 'translation/translations' / rel
