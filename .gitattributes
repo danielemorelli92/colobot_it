@@ -1,4 +1,7 @@
 * text=auto eol=lf
 
+# Keep Windows batch launchers in CRLF format.
+*.cmd text eol=crlf
+
 # Unified diffs require a single space on empty context lines.
 *.patch whitespace=-blank-at-eol

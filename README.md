@@ -5,6 +5,9 @@
 > This branch additionally provides `tools/prepare_022.py` and
 > `tools/build_windows_022.cmd` for a local MSVC x64 build of the original
 > 0.2.2-alpha release with native Italian language selection.
+> The `.cmd` file is a five-line CRLF launcher without batch labels. It invokes
+> `tools/build_windows_022.py`, whose sequencing, arguments and failure handling
+> are checked by `python tools/test_build_windows_022.py` without a compiler.
 >
 > In an x64 Visual Studio 2022 Developer Command Prompt, with MSYS2 at
 > `C:\msys64` and vcpkg revision
