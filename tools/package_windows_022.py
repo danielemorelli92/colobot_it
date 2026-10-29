@@ -12,8 +12,6 @@ import sys
 import tempfile
 import zipfile
 
-from package_windows import write_zip
-
 ROOT = Path(__file__).resolve().parents[1]
 PACKAGE_NAME = 'colobot-gold-0.2.2-alpha-win64-italiano'
 ITALIAN = re.compile(rb'^(Title|Resume|ScriptName)\.I\s')
@@ -25,6 +23,20 @@ SYSTEM_DLLS = {name.lower() for name in (
     'COMCTL32.dll', 'SHLWAPI.dll', 'WINHTTP.dll', 'WININET.dll', 'BCRYPT.dll',
     'NORMALIZ.dll', 'RPCRT4.dll', 'DINPUT8.dll', 'DXGI.dll', 'D3D11.dll',
     'UCRTBASE.dll', 'MSVCRT.dll', 'NTDLL.dll', 'WINTRUST.dll', 'DBGHELP.dll')}
+
+
+def write_zip(tree, destination):
+    files = sorted(path for path in tree.rglob('*') if path.is_file())
+    print(f'Compressing {destination.name}: {len(files)} files...', flush=True)
+    with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
+        for path in files:
+            archive.write(path, path.relative_to(tree.parent).as_posix())
+    with zipfile.ZipFile(destination) as archive:
+        bad = archive.testzip()
+        if bad:
+            raise ValueError(f'ZIP integrity check failed: {bad}')
+    with destination.open('rb') as stream:
+        return hashlib.file_digest(stream, 'sha256').hexdigest()
 
 
 def pe_imports(path):

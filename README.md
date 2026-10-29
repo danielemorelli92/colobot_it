@@ -59,7 +59,8 @@
 > skipped. The MSVC x64 Release build and installation completed successfully
 > on Windows on 2026-10-29 using MSVC 19.44.35229. The executable imports only
 > Windows system DLLs. All 5,172 catalog entries, 4,455 generated data entries
-> and 3,534 SatCom links passed validation; the final runtime check is pending.
+> and 3,534 SatCom links passed validation. The contributor subsequently
+> confirmed that the extracted, clean Italian game works on Windows.
 >
 > `python tools/package_windows_022.py --original "PATH_TO_ORIGINAL_GAME"`
 > creates `C:\colobot-build-022\colobot-gold-0.2.2-alpha-win64-italiano.zip`
@@ -73,6 +74,17 @@
 > and license notices go into a separate `-sources.zip`. Checksums and a
 > verification report are written alongside the archives. Packaging is tested
 > by `python tools/test_package_windows_022.py`; the original folder is preserved.
+>
+> After packaging and runtime verification, close the game and MSYS2 terminals.
+> Run `python tools/cleanup_windows_022.py --apply` from the repository directory
+> to verify both archives, move them to `Desktop/Colobot-Italiano`, extract the
+> playable game there, and back up test saves/settings before deleting the
+> project build trees, vcpkg checkout and previous MSYS2 test build. The clone,
+> unrelated files and normal AppData profiles are retained. Without `--apply`,
+> the command only previews the cleanup. It refuses mismatched archives,
+> conflicting backup files and linked deletion paths; regression checks are in
+> `tools/test_cleanup_windows_022.py`. MSYS2 and Visual Studio Build Tools can
+> then be uninstalled through Windows Settings if no other projects need them.
 > The instructions below describe the separate `dev` contribution.
 
 The Windows build uses the MSVC/vcpkg/static configuration documented in the
