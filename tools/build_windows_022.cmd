@@ -63,7 +63,7 @@ if not exist "%COLOBOT022_PROJECT%\build\python-deps\polib.py" (
 )
 "%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_022.py" --reuse
 if errorlevel 1 exit /b 1
-"%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_windows_022_tools.py" --vcpkg "%COLOBOT022_ROOT%\vcpkg"
+"%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_windows_022_tools.py" --vcpkg "%COLOBOT022_ROOT%\vcpkg" --msys "%COLOBOT022_MSYS_ROOT%"
 if errorlevel 1 exit /b 1
 cmake -G Ninja ^
   -S "%COLOBOT022_PROJECT%\build\release-022\prepared\colobot" ^
@@ -81,7 +81,10 @@ cmake -G Ninja ^
   -DGETTEXT_MSGFMT_EXECUTABLE=C:/msys64/ucrt64/bin/msgfmt.exe ^
   -DGETTEXT_MSGMERGE_EXECUTABLE=C:/msys64/ucrt64/bin/msgmerge.exe ^
   -DCMAKE_INSTALL_PREFIX="%COLOBOT022_ROOT%/install"
-if errorlevel 1 exit /b 1
+if errorlevel 1 (
+    "%COLOBOT022_PYTHON%" "%COLOBOT022_PROJECT%\tools\prepare_windows_022_tools.py" --vcpkg "%COLOBOT022_ROOT%\vcpkg" --report-failure
+    exit /b 1
+)
 cmake -G Ninja ^
   -S "%COLOBOT022_PROJECT%\build\release-022\prepared\colobot-data" ^
   -B "%COLOBOT022_ROOT%\data" ^
@@ -124,14 +127,15 @@ exit /b 0
 :setup_pkgconfig
 rem vcpkg supports a supplied pkg-config through this environment variable.
 set "PKG_CONFIG=C:\msys64\ucrt64\bin\pkgconf.exe"
+set "COLOBOT022_MSYS_ROOT=C:\msys64"
 if not exist "%PKG_CONFIG%" (
     echo Missing %PKG_CONFIG%. Install mingw-w64-ucrt-x86_64-pkgconf in MSYS2.
     exit /b 1
 )
 if defined VCPKG_KEEP_ENV_VARS (
-    set "VCPKG_KEEP_ENV_VARS=%VCPKG_KEEP_ENV_VARS%;PKG_CONFIG"
+    set "VCPKG_KEEP_ENV_VARS=%VCPKG_KEEP_ENV_VARS%;PKG_CONFIG;COLOBOT022_MSYS_ROOT"
 ) else (
-    set "VCPKG_KEEP_ENV_VARS=PKG_CONFIG"
+    set "VCPKG_KEEP_ENV_VARS=PKG_CONFIG;COLOBOT022_MSYS_ROOT"
 )
 echo Using installed pkg-config: %PKG_CONFIG%
 "%PKG_CONFIG%" --version

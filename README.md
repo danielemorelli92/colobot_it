@@ -29,9 +29,24 @@
 > The installed MSYS2 UCRT64 `pkgconf.exe` supplies `PKG_CONFIG`, preserved in
 > vcpkg's build environment through its supported `VCPKG_KEEP_ENV_VARS` setting.
 > This avoids downloading the removed MSYS2 pkgconf 1.8.0 package.
+> The three GNU ports (`libiconv`, `gettext-libintl`, `gettext`) also have local
+> overlays that reuse the installed MSYS2 environment through a host-tool port.
+> This bypasses their complete retired 2023 MSYS2 archive set, leaving vcpkg's
+> own scripts and library sources intact. Missing tools are installed with
+> `pacman --needed`, including the Automake 1.16 compiler wrapper required by
+> the old build scripts. Autoconf 2.71 and Automake 1.16 are selected explicitly.
+> Before the library build, a host check compiles, links
+> and runs x64 MSVC programs through that wrapper in Release and Debug modes.
+> Installed tool versions and the probe result are saved under
+> `build/release-022/host-tools-check/verification.json`.
+> On a library configuration failure, the script also prints excerpts from
+> that library's compiler/configure logs.
 > The helper applies the archived native 0.2.2 registration patch and updates
 > matching catalog entries from the current translation. It validates all
 > 5,172 entries before configuring the build.
+> Reusing prepared sources accepts gettext's normal catalog metadata/order
+> updates while checking original input hashes and preserving all message
+> identifiers, translations and flags.
 >
 > Build output goes to `C:\colobot-build-022\install`. Music downloads are
 > skipped: final packaging is intended to retain the official 0.2.2 assets,

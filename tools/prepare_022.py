@@ -55,6 +55,19 @@ def key(entry):
     return entry.msgctxt, entry.msgid, entry.msgid_plural
 
 
+def catalog_content(path):
+    # GNU msgmerge updates dates, comments and ordering during normal builds.
+    # Compare message content and flags while retaining the original input hash.
+    catalog = polib.pofile(str(path))
+    headers = {name: catalog.metadata.get(name) for name in
+               ('Language', 'Plural-Forms', 'Content-Type', 'Content-Transfer-Encoding')}
+    entries = sorted(json.dumps(
+        [entry.msgctxt, entry.msgid, entry.msgid_plural, entry.msgstr,
+         sorted(entry.msgstr_plural.items()), sorted(entry.flags), entry.obsolete],
+        ensure_ascii=False) for entry in catalog)
+    return headers, entries
+
+
 def update_catalogs(project):
     changed = 0
     count = 0
@@ -105,9 +118,18 @@ def main():
         recorded = json.loads(marker.read_text(encoding='utf-8'))
         if recorded['pins'] != PINS or recorded['translation_release'] != TRANSLATION_RELEASE:
             raise ValueError('Preparation uses different source revisions')
+        refreshed = 0
         for rel, digest in recorded['italian_files'].items():
-            if hashlib.sha256((output / rel).read_bytes()).hexdigest() != digest:
-                raise ValueError(f'Prepared Italian file changed: {rel}')
+            original = output / 'translation/translations' / rel
+            if hashlib.sha256(original.read_bytes()).hexdigest() != digest:
+                raise ValueError(f'Original Italian input changed: {rel}')
+            prepared = output / rel
+            if hashlib.sha256(prepared.read_bytes()).hexdigest() != digest:
+                if catalog_content(prepared) != catalog_content(original):
+                    raise ValueError(f'Prepared Italian message content changed: {rel}')
+                refreshed += 1
+        if refreshed:
+            print(f'Accepted gettext metadata/order updates in {refreshed} catalogs; message content verified.', flush=True)
         validate(output / 'translation', output, args.msgfmt)
         print(f'Reusing validated preparation: {output}', flush=True)
         return
